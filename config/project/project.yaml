@@ -1,4 +1,4 @@
-dateModified: 1724305927
+dateModified: 1724307098
 email:
   fromEmail: bhashkar007@gmail.com
   fromName: Halo
@@ -8,9 +8,10 @@ meta:
     4fdc851f-7db3-4c90-880c-a187ac552886: Halo # Halo
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
 system:
-  edition: solo
+  edition: team
   live: true
-  name: Halo
+  name: 'Halo Hair'
+  retryDuration: null
   schemaVersion: 5.3.0.2
   timeZone: America/Los_Angeles
 users:
