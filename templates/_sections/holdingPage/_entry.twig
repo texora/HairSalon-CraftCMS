@@ -1,0 +1,510 @@
+{% extends "_layouts/main" %}
+
+{% block main %}
+    
+	{% cache using key craft.app.request.fullUri %}
+
+        <section class="hero-banner position-relative image-position text-white pt-150 pb-60" style="background-image: url('./static/images/banner-image.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+                        <div class="banner-text text-md-center">
+                            <h1>We’re looking for passionate &. skilled stylists/colourists throughout the UK</h1>
+                            <p>Fixed salary of £40,000pa plus 10% performance bonus</p>
+                            <div class="email-address">
+                                <form class="my-4">
+                                    <div class="input-group gap-md-3 gap-lg-4 flex-md-nowrap align-items-center row-gap-3 justify-content-between position-relative">
+                                        <div class="form-group">
+                                            <label class="d-block text-uppercase text-start fw-semibold" for="email">Email</label>
+                                            <input type="email" class="form-control bg-transparent border-0 rounded-0 px-0 pt-2 pb-0" id="email" aria-describedby="email" placeholder="Enter your email address"> </div>
+                                        <div class="form-group">
+                                            <label class="d-block text-uppercase text-start fw-semibold" for="exampleInputEmail1">City</label>
+                                            <div class="dropdown-arrow position-relative">
+                                                <select class="form-control bg-transparent border-0 rounded-0 px-3 pt-2 pb-0 position-relative z-2">
+                                                    <option value="darlington" selected>Darlington, County Durham Opening October 2024</option>
+                                                    <option value="thornaby">Thornaby, Teeside Opening October 2024</option>
+                                                    <option value="willerby">Willerby, Hull Opening October 2024</option>
+                                                    <option value="durham">Durham Opening Winter 2024</option>
+                                                    <option value="york">York Opening Winter 2024</option>
+                                                    <option value="derby">Derby Opening Winter 2024</option>
+                                                    <option value="scunthorpe">Scunthorpe Opening Winter 2024</option>
+                                                    <option value="reading">Reading Opening Winter 2024</option>
+                                                    <option value="bracknell">Bracknell Opening Winter 2024</option>
+                                                    <option value="wokingham">Wokingham Opening Winter 2024</option>
+                                                    <option value="swindon">Swindon Opening Winter 2024</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="sbumit-button">
+                                            <button class="btn btn-sbumit bg-white rounded-0 text-uppercase w-100" type="button" id="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p>Find out more, give us your email address and select what salon you are interested in and we will send you our recruitment information pack immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-benefits pt-100 pb-md-5 pb-4">
+            <div class="container">
+                <div class="section-title mb-md-5 mb-4 text-center text-md-start">
+                    <h2 class="mb-md-3">Our Benefits</h2> 
+                </div>
+                <div class="row row-gap-3 row-gap-md-4 font-gilroy column-gap-16">
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_740)">
+                                        <path d="M23.3335 5V11.6667C23.3335 12.1087 23.5091 12.5326 23.8217 12.8452C24.1342 13.1577 24.5581 13.3333 25.0002 13.3333H31.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M28.3335 35H11.6668C10.7828 35 9.93493 34.6488 9.30981 34.0237C8.68469 33.3986 8.3335 32.5507 8.3335 31.6667V8.33333C8.3335 7.44928 8.68469 6.60143 9.30981 5.97631C9.93493 5.35119 10.7828 5 11.6668 5H23.3335L31.6668 13.3333V31.6667C31.6668 32.5507 31.3156 33.3986 30.6905 34.0237C30.0654 34.6488 29.2176 35 28.3335 35Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M24 27.533C23.3787 27.8407 22.7033 28 22.0198 28C21.3363 28 20.6609 27.8407 20.0396 27.533C19.3901 27.2908 18.6997 27.2036 18.0159 27.2774C17.3322 27.3513 16.6715 27.5845 16.0792 27.9609C16.5033 27.8023 16.8772 27.5172 17.1575 27.1386C17.4379 26.7599 17.6133 26.3032 17.6634 25.8214V19.4027C17.6675 18.6529 17.8994 17.9254 18.3234 17.3318C18.7474 16.7382 19.34 16.3115 20.0102 16.1171C20.6804 15.9227 21.3911 15.9714 22.0332 16.2557C22.6753 16.5401 23.2132 17.0443 23.5644 17.691M21.5446 22.826H16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_740">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Competitive Salary</a></h3>
+                            <p>£40,000 pa that’s £19 per hour plus 10% bonus paid monthly.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_783)">
+                                        <path d="M11.6665 29.9998C11.6665 30.8839 12.0177 31.7317 12.6428 32.3569C13.2679 32.982 14.1158 33.3332 14.9998 33.3332C15.8839 33.3332 16.7317 32.982 17.3569 32.3569C17.982 31.7317 18.3332 30.8839 18.3332 29.9998C18.3332 29.1158 17.982 28.2679 17.3569 27.6428C16.7317 27.0177 15.8839 26.6665 14.9998 26.6665C14.1158 26.6665 13.2679 27.0177 12.6428 27.6428C12.0177 28.2679 11.6665 29.1158 11.6665 29.9998Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.3333 29.9998H30C30.8841 29.9998 31.7319 29.6486 32.357 29.0235C32.9821 28.3984 33.3333 27.5506 33.3333 26.6665V14.9998C33.3333 14.1158 32.9821 13.2679 32.357 12.6428C31.7319 12.0177 30.8841 11.6665 30 11.6665H14.1667C11.7355 11.6665 9.40394 12.6323 7.68485 14.3514C5.96577 16.0704 5 18.402 5 20.8332V26.6665C5 27.5506 5.35119 28.3984 5.97631 29.0235C6.60143 29.6486 7.44928 29.9998 8.33333 29.9998H11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 11.6665L25.0002 6.6665L26.6668 11.6665" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6665 19.1668C21.6665 18.9458 21.7543 18.7339 21.9106 18.5776C22.0669 18.4213 22.2788 18.3335 22.4998 18.3335H25.8332C26.0542 18.3335 26.2661 18.4213 26.4224 18.5776C26.5787 18.7339 26.6665 18.9458 26.6665 19.1668V22.5002C26.6665 22.7212 26.5787 22.9331 26.4224 23.0894C26.2661 23.2457 26.0542 23.3335 25.8332 23.3335H22.4998C22.2788 23.3335 22.0669 23.2457 21.9106 23.0894C21.7543 22.9331 21.6665 22.7212 21.6665 22.5002V19.1668Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M33.3335 26.6665H36.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_783">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">30 days holidays</a></h3>
+                            <p>Relax and recharge with 30 days of annual leave, plus  public holidays too.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_824)">
+                                        <path d="M15 23.3335C15 26.0952 19.4767 28.3335 25 28.3335C30.5233 28.3335 35 26.0952 35 23.3335C35 20.5718 30.5233 18.3335 25 18.3335C19.4767 18.3335 15 20.5718 15 23.3335Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 23.3335V30.0002C15 32.7602 19.4767 35.0002 25 35.0002C30.5233 35.0002 35 32.7602 35 30.0002V23.3335" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 10C5 11.7867 6.90667 13.4367 10 14.33C13.0933 15.2233 16.9067 15.2233 20 14.33C23.0933 13.4367 25 11.7867 25 10C25 8.21333 23.0933 6.56333 20 5.67C16.9067 4.77667 13.0933 4.77667 10 5.67C6.90667 6.56333 5 8.21333 5 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 10V26.6667C5 28.1467 6.28667 29.0833 8.33333 30" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 18.3335C5 19.8135 6.28667 20.7502 8.33333 21.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_824">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">£1000 annual friend & family credit</a></h3>
+                            <p>Give your friends and family the treat they deserve with £1000 of free services at halo salons.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_749)">
+                                        <path d="M21.6665 8.33325H34.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6665 15H29.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6665 25H34.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6665 31.6667H29.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 8.33341C5 7.89139 5.17559 7.46746 5.48816 7.1549C5.80072 6.84234 6.22464 6.66675 6.66667 6.66675H13.3333C13.7754 6.66675 14.1993 6.84234 14.5118 7.1549C14.8244 7.46746 15 7.89139 15 8.33341V15.0001C15 15.4421 14.8244 15.866 14.5118 16.1786C14.1993 16.4912 13.7754 16.6667 13.3333 16.6667H6.66667C6.22464 16.6667 5.80072 16.4912 5.48816 16.1786C5.17559 15.866 5 15.4421 5 15.0001V8.33341Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 24.9999C5 24.5579 5.17559 24.134 5.48816 23.8214C5.80072 23.5088 6.22464 23.3333 6.66667 23.3333H13.3333C13.7754 23.3333 14.1993 23.5088 14.5118 23.8214C14.8244 24.134 15 24.5579 15 24.9999V31.6666C15 32.1086 14.8244 32.5325 14.5118 32.8451C14.1993 33.1577 13.7754 33.3333 13.3333 33.3333H6.66667C6.22464 33.3333 5.80072 33.1577 5.48816 32.8451C5.17559 32.5325 5 32.1086 5 31.6666V24.9999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_749">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Holiday purchase scheme</a></h3>
+                            <p>If you want more time off, we offer the option to buy additional days to suit your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_794)">
+                                        <path d="M25 35H10C8.67392 35 7.40215 34.4732 6.46447 33.5355C5.52678 32.5979 5 31.3261 5 30V28.3333H21.6667V31.6667C21.6667 32.5507 22.0179 33.3986 22.643 34.0237C23.2681 34.6488 24.1159 35 25 35ZM25 35C25.8841 35 26.7319 34.6488 27.357 34.0237C27.9821 33.3986 28.3333 32.5507 28.3333 31.6667V28.3333M28.3333 21.6667V8.33334C28.3333 7.67407 28.5288 7.0296 28.8951 6.48144C29.2614 5.93327 29.782 5.50603 30.3911 5.25374C31.0001 5.00145 31.6704 4.93544 32.317 5.06405C32.9636 5.19267 33.5575 5.51014 34.0237 5.97631C34.4899 6.44249 34.8073 7.03643 34.936 7.68304C35.0646 8.32964 34.9986 8.99986 34.7463 9.60895C34.494 10.218 34.0667 10.7386 33.5186 11.1049C32.9704 11.4712 32.3259 11.6667 31.6667 11.6667H28.3333M31.6667 5H13.3333C12.8457 4.9994 12.3605 5.07015 11.8933 5.21M8.53667 8.585C8.40146 9.0445 8.33299 9.52103 8.33333 10V28.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.3335 11.6667H21.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 18.3333H18.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 5L35 35" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_794">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">No Zero Hours Contracts</a></h3>
+                            <p>Enjoy job security with guaranteed hours and no zero hours contracts.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_835)">
+                                        <path d="M17.4998 34.9999H9.99984C9.11578 34.9999 8.26794 34.6487 7.64281 34.0236C7.01769 33.3985 6.6665 32.5506 6.6665 31.6666V11.6666C6.6665 10.7825 7.01769 9.93468 7.64281 9.30956C8.26794 8.68444 9.11578 8.33325 9.99984 8.33325H29.9998C30.8839 8.33325 31.7317 8.68444 32.3569 9.30956C32.982 9.93468 33.3332 10.7825 33.3332 11.6666V16.6666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M26.6665 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.6665 18.3333H23.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.3335 29.9999C23.3335 31.768 24.0359 33.4637 25.2861 34.714C26.5364 35.9642 28.2321 36.6666 30.0002 36.6666C31.7683 36.6666 33.464 35.9642 34.7142 34.714C35.9644 33.4637 36.6668 31.768 36.6668 29.9999C36.6668 28.2318 35.9644 26.5361 34.7142 25.2859C33.464 24.0356 31.7683 23.3333 30.0002 23.3333C28.2321 23.3333 26.5364 24.0356 25.2861 25.2859C24.0359 26.5361 23.3335 28.2318 23.3335 29.9999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M30 27.5V30L30.8333 30.8333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_835">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Flexible working 2 to 5 days per week</a></h3>
+                            <p>Tailor your work schedule with flexible hours, working between 2 to 5 days a week, to fit your lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_761)">
+                                        <path d="M5 35H35" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M31.6665 34.9999V28.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M31.6668 28.3333C32.5509 28.3333 33.3987 27.9821 34.0239 27.3569C34.649 26.7318 35.0002 25.884 35.0002 24.9999V21.6666C35.0002 20.7825 34.649 19.9347 34.0239 19.3096C33.3987 18.6844 32.5509 18.3333 31.6668 18.3333C30.7828 18.3333 29.9349 18.6844 29.3098 19.3096C28.6847 19.9347 28.3335 20.7825 28.3335 21.6666V24.9999C28.3335 25.884 28.6847 26.7318 29.3098 27.3569C29.9349 27.9821 30.7828 28.3333 31.6668 28.3333Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.3332 35.0001V11.6667C23.3332 10.3407 22.8064 9.0689 21.8687 8.13121C20.931 7.19353 19.6593 6.66675 18.3332 6.66675H11.6665C10.3404 6.66675 9.06865 7.19353 8.13097 8.13121C7.19329 9.0689 6.6665 10.3407 6.6665 11.6667V35.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 28.3333V34.9999" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 21.6667H16.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 15H16.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_761">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">World class salon environment</a></h3>
+                            <p>Work in a modern, world-class salon environment that inspires creativity and excellence.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_804)">
+                                        <path d="M19.6583 34.9999H8.33333C7.44928 34.9999 6.60143 34.6487 5.97631 34.0236C5.35119 33.3985 5 32.5506 5 31.6666V11.6666C5 10.7825 5.35119 9.93468 5.97631 9.30956C6.60143 8.68444 7.44928 8.33325 8.33333 8.33325H28.3333C29.2174 8.33325 30.0652 8.68444 30.6904 9.30956C31.3155 9.93468 31.6667 10.7825 31.6667 11.6666V18.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M30 23.3333V29.9999H36.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.3335 29.9999C23.3335 31.768 24.0359 33.4637 25.2861 34.714C26.5364 35.9642 28.2321 36.6666 30.0002 36.6666C31.7683 36.6666 33.464 35.9642 34.7142 34.714C35.9644 33.4637 36.6668 31.768 36.6668 29.9999C36.6668 28.2318 35.9644 26.5361 34.7142 25.2859C33.464 24.0356 31.7683 23.3333 30.0002 23.3333C28.2321 23.3333 26.5364 24.0356 25.2861 25.2859C24.0359 26.5361 23.3335 28.2318 23.3335 29.9999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6665 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 18.3333H31.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_804">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Planned Training & development</a></h3>
+                            <p>Grow your skills with ongoing training and development opportunities, we have 100 day development plans for everyone.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_847)">
+                                        <path d="M30 8.33325L35 13.3333L30 18.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 29.9999H13.3333L25 13.3333H35" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_847">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">UK-wide career progression</a></h3>
+                            <p>Advance your career with opportunities for progression and movement across our salons throughout the UK. Unlock your potential with pathways to senior roles...</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_774)">
+                                        <path d="M36.6668 10H28.3335V18.3333H20.0002V26.6667H11.6668V35H3.3335" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10 16.6667V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 10L10 5L15 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_774">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Technical ladder</a></h3>
+                            <p>Opportunity to progress into higher technical skills, get rewarded with higher pay.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_816)">
+                                        <path d="M8.3335 35V8.33333C8.3335 7.44928 8.68469 6.60143 9.30981 5.97631C9.93493 5.35119 10.7828 5 11.6668 5H28.3335C29.2176 5 30.0654 5.35119 30.6905 5.97631C31.3156 6.60143 31.6668 7.44928 31.6668 8.33333V35L26.6668 31.6667L23.3335 35L20.0002 31.6667L16.6668 35L13.3335 31.6667L8.3335 35Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M24 23.533C23.3787 23.8407 22.7033 24 22.0198 24C21.3363 24 20.6609 23.8407 20.0396 23.533C19.3901 23.2908 18.6997 23.2036 18.0159 23.2774C17.3322 23.3513 16.6715 23.5845 16.0792 23.9609C16.5033 23.8023 16.8772 23.5172 17.1575 23.1386C17.4379 22.7599 17.6133 22.3032 17.6634 21.8214V15.4027C17.6675 14.6529 17.8994 13.9254 18.3234 13.3318C18.7474 12.7382 19.34 12.3115 20.0102 12.1171C20.6804 11.9227 21.3911 11.9714 22.0332 12.2557C22.6753 12.5401 23.2132 13.0443 23.5644 13.691M21.5446 18.826H16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_816">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Enhanced pay for maternity, paternity, and adoption leave</a></h3>
+                            <p>We support your growing family with enhanced pay during maternity, paternity, and adoption leave.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_855)">
+                                        <path d="M29.2548 27.9168C26.9106 25.5729 23.7314 24.2561 20.4165 24.2561C17.1015 24.2561 13.9223 25.5729 11.5781 27.9168" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M29.9998 6.33997C27.7031 5.01395 24.9736 4.6546 22.4119 5.34098C19.8501 6.02736 17.666 7.70324 16.3398 9.99997L33.6598 20C34.9859 17.7032 35.3452 14.9737 34.6588 12.412C33.9725 9.85025 32.2966 7.66609 29.9998 6.33997Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M27.8866 16.6666C30.6499 11.8832 31.5949 7.25989 29.9999 6.33989C28.4049 5.41989 24.8749 8.54989 22.1133 13.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25 15L20 23.66" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 32.0833C5.51882 31.8254 6.08749 31.6832 6.66667 31.6666C7.31583 31.6531 7.95854 31.7977 8.53929 32.0881C9.12005 32.3784 9.62138 32.8058 10 33.3333C10.3786 33.8608 10.88 34.2882 11.4607 34.5786C12.0415 34.8689 12.6842 35.0136 13.3333 35C13.9825 35.0136 14.6252 34.8689 15.206 34.5786C15.7867 34.2882 16.288 33.8608 16.6667 33.3333C17.0453 32.8058 17.5466 32.3784 18.1274 32.0881C18.7081 31.7977 19.3508 31.6531 20 31.6666C20.6492 31.6531 21.2919 31.7977 21.8726 32.0881C22.4534 32.3784 22.9547 32.8058 23.3333 33.3333C23.712 33.8608 24.2133 34.2882 24.794 34.5786C25.3748 34.8689 26.0175 35.0136 26.6667 35C27.3158 35.0136 27.9585 34.8689 28.5393 34.5786C29.12 34.2882 29.6214 33.8608 30 33.3333C30.3786 32.8058 30.88 32.3784 31.4607 32.0881C32.0415 31.7977 32.6842 31.6531 33.3333 31.6666C33.9125 31.6832 34.4812 31.8254 35 32.0833" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_855">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Sabbaticals for long service</a></h3>
+                            <p>Reward your dedication with sabbatical leave, offering extended time off for a trip round the world or career break.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_867)">
+                                        <path d="M5 33.3333H35V20C35 18.6739 34.4732 17.4021 33.5355 16.4645C32.5979 15.5268 31.3261 15 30 15H10C8.67392 15 7.40215 15.5268 6.46447 16.4645C5.52678 17.4021 5 18.6739 5 20V33.3333Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 24.6716C5.52 24.8966 6.09 25.0116 6.66667 25C7.31583 25.0136 7.95854 24.8689 8.53929 24.5786C9.12005 24.2882 9.62138 23.8608 10 23.3333C10.3786 22.8058 10.88 22.3784 11.4607 22.0881C12.0415 21.7977 12.6842 21.6531 13.3333 21.6666C13.9825 21.6531 14.6252 21.7977 15.206 22.0881C15.7867 22.3784 16.288 22.8058 16.6667 23.3333C17.0453 23.8608 17.5466 24.2882 18.1274 24.5786C18.7081 24.8689 19.3508 25.0136 20 25C20.6492 25.0136 21.2919 24.8689 21.8726 24.5786C22.4534 24.2882 22.9547 23.8608 23.3333 23.3333C23.712 22.8058 24.2133 22.3784 24.794 22.0881C25.3748 21.7977 26.0175 21.6531 26.6667 21.6666C27.3158 21.6531 27.9585 21.7977 28.5393 22.0881C29.12 22.3784 29.6214 22.8058 30 23.3333C30.3786 23.8608 30.88 24.2882 31.4607 24.5786C32.0415 24.8689 32.6842 25.0136 33.3333 25C33.9167 25.0116 34.4867 24.8966 35 24.6716" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19.9998 6.66675L22.4415 9.39675C22.8772 9.86514 23.1689 10.449 23.2818 11.0787C23.3947 11.7083 23.3241 12.3572 23.0783 12.9478C22.8325 13.5384 22.422 14.0458 21.8957 14.4094C21.3694 14.7731 20.7496 14.9776 20.1102 14.9986C19.4709 15.0196 18.839 14.8562 18.2899 14.5278C17.7409 14.1995 17.298 13.7201 17.014 13.1469C16.73 12.5737 16.6169 11.9309 16.6883 11.2952C16.7597 10.6595 17.0124 10.0577 17.4165 9.56175L19.9998 6.66675Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_867">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Your birthday off</a></h3>
+                            <p>Celebrate your special day with a paid day off on your birthday, because you deserve it!</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_876)">
+                                        <path d="M23.3335 5V11.6667C23.3335 12.1087 23.5091 12.5326 23.8217 12.8452C24.1342 13.1577 24.5581 13.3333 25.0002 13.3333H31.6668" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M28.3335 35H11.6668C10.7828 35 9.93493 34.6488 9.30981 34.0237C8.68469 33.3986 8.3335 32.5507 8.3335 31.6667V8.33333C8.3335 7.44928 8.68469 6.60143 9.30981 5.97631C9.93493 5.35119 10.7828 5 11.6668 5H23.3335L31.6668 13.3333V31.6667C31.6668 32.5507 31.3156 33.3986 30.6905 34.0237C30.0654 34.6488 29.2176 35 28.3335 35Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 28.3333H25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 21.6667H25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_876">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Calm App subscription</a></h3>
+                            <p>Prioritise your mental well-being with a free subscription to the Calm App, helping you manage stress and maintain balance.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_886)">
+                                        <path d="M18.3335 10H33.3335" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.3335 20H33.3335" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M20 30H33.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.6665 26.6666C6.6665 25.7825 7.01769 24.9347 7.64281 24.3096C8.26794 23.6844 9.11578 23.3333 9.99984 23.3333C10.8839 23.3333 11.7317 23.6844 12.3569 24.3096C12.982 24.9347 13.3332 25.7825 13.3332 26.6666C13.3332 27.6516 12.4998 28.3333 11.6665 29.1666L6.6665 33.3333H13.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99984 16.6667V6.66675L6.6665 10.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_886">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">BUPA Health Care Plan</a></h3>
+                            <p>Access top-tier health care services with our BUPA Health Care Plan refreshed.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_898)">
+                                        <path d="M15 35.0001V25.0001C15 24.116 15.3512 23.2682 15.9763 22.6431C16.6014 22.0179 17.4493 21.6667 18.3333 21.6667H20.5683" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M32.8033 17.8033L20 5L5 20H8.33333V31.6667C8.33333 32.5507 8.68452 33.3986 9.30964 34.0237C9.93477 34.6488 10.7826 35 11.6667 35H20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M36.6667 26.6667C36.6667 33.3334 32.5 36.6667 30.8333 36.6667C29.1667 36.6667 25 33.3334 25 26.6667C26.6667 26.6667 29.1667 25.8334 30.8333 24.1667C32.5 25.8334 35 26.6667 36.6667 26.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_898">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Life Assurance (4x salary)</a></h3>
+                            <p>Enjoy peace of mind with life assurance coverage at four times your salary, protecting your loved ones' future in the event of your death.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                       <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_907)">
+                                        <path d="M18.3332 34.9999H9.99984C9.11578 34.9999 8.26794 34.6487 7.64281 34.0236C7.01769 33.3985 6.6665 32.5506 6.6665 31.6666V11.6666C6.6665 10.7825 7.01769 9.93468 7.64281 9.30956C8.26794 8.68444 9.11578 8.33325 9.99984 8.33325H29.9998C30.8839 8.33325 31.7317 8.68444 32.3569 9.30956C32.982 9.93468 33.3332 10.7825 33.3332 11.6666V17.4999" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M26.6665 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.6665 18.3333H24.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M29.6666 34.695L26.0466 36.5916C25.9391 36.6475 25.8183 36.6725 25.6975 36.6637C25.5767 36.6549 25.4608 36.6127 25.3626 36.5418C25.2644 36.4709 25.1878 36.3742 25.1414 36.2623C25.095 36.1504 25.0807 36.0279 25.0999 35.9083L25.7916 31.89L22.8632 29.045C22.7758 28.9605 22.7139 28.8531 22.6846 28.7351C22.6553 28.6171 22.6598 28.4933 22.6975 28.3777C22.7352 28.2621 22.8047 28.1595 22.8979 28.0815C22.9912 28.0035 23.1045 27.9533 23.2249 27.9366L27.2716 27.35L29.0816 23.695C29.1357 23.5861 29.2191 23.4945 29.3225 23.4305C29.4258 23.3664 29.545 23.3325 29.6666 23.3325C29.7881 23.3325 29.9073 23.3664 30.0107 23.4305C30.114 23.4945 30.1974 23.5861 30.2516 23.695L32.0616 27.35L36.1082 27.9366C36.2283 27.9539 36.3411 28.0044 36.434 28.0825C36.5268 28.1606 36.596 28.263 36.6336 28.3784C36.6713 28.4937 36.6759 28.6172 36.6469 28.735C36.618 28.8528 36.5567 28.9602 36.4699 29.045L33.5416 31.89L34.2316 35.9066C34.2523 36.0264 34.239 36.1496 34.1932 36.2622C34.1474 36.3748 34.071 36.4723 33.9726 36.5436C33.8741 36.615 33.7577 36.6573 33.6364 36.6658C33.5152 36.6743 33.394 36.6486 33.2866 36.5916L29.6666 34.695Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_907">
+                                            <rect width="40" height="40" fill="white" /> 
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Annual wellness week</a></h3>
+                            <p>Prioritise your well-being with our annual wellness week, dedicated to activities that support your mental and physical health.</p>
+                        </div> 
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_918)">
+                                        <path d="M6.6665 11.6666C6.6665 10.7825 7.01769 9.93468 7.64281 9.30956C8.26794 8.68444 9.11578 8.33325 9.99984 8.33325H29.9998C30.8839 8.33325 31.7317 8.68444 32.3569 9.30956C32.982 9.93468 33.3332 10.7825 33.3332 11.6666V31.6666C33.3332 32.5506 32.982 33.3985 32.3569 34.0236C31.7317 34.6487 30.8839 34.9999 29.9998 34.9999H9.99984C9.11578 34.9999 8.26794 34.6487 7.64281 34.0236C7.01769 33.3985 6.6665 32.5506 6.6665 31.6666V11.6666Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M26.6665 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.6665 18.3333H33.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6665 23.3333H11.6882" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6831 23.3333H16.6912" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6831 23.3333H21.6912" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M26.6919 23.3333H26.7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.6919 28.3333H21.7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.6831 28.3333H11.6912" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6831 28.3333H16.6912" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_918">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Social events calendar</a></h3>
+                            <p>Connect with colleagues and unwind with a packed calendar of social events throughout the year.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_936)">
+                                        <path d="M30.1001 24.2485L32.3374 21.9645C32.0727 21.6946 31.8773 21.3621 31.7686 20.9967C31.6599 20.6313 31.6412 20.2442 31.7142 19.8696C31.7871 19.4951 31.9495 19.1446 32.1869 18.8494C32.4242 18.5541 32.7293 18.3232 33.0751 18.177C33.4208 18.0307 33.7966 17.9738 34.1691 18.0111C34.5415 18.0485 34.8992 18.179 35.2105 18.391C35.5217 18.6031 35.7769 18.8902 35.9535 19.227C36.13 19.5637 36.2224 19.9397 36.2225 20.3216C36.5969 20.3213 36.9655 20.4152 37.2958 20.5951C37.6261 20.775 37.9078 21.0352 38.1159 21.3527C38.324 21.6702 38.4522 22.0352 38.4891 22.4153C38.5259 22.7954 38.4703 23.1789 38.3271 23.5319C38.1839 23.8848 37.9576 24.1963 37.6683 24.4386C37.3789 24.681 37.0355 24.8468 36.6683 24.9214C36.3011 24.9959 35.9216 24.9769 35.5633 24.866C35.2051 24.7551 34.8792 24.5557 34.6145 24.2856L32.5434 26.4" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M21.3191 35.4989C24.5158 38.4301 28.2202 39.7874 29.5887 38.532C30.9596 37.2754 29.4788 33.8811 26.2809 30.951C23.0842 28.0198 19.3798 26.6625 18.0113 27.9179C16.6404 29.1745 18.1212 32.5688 21.3191 35.4989Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M22.75 32.7L23.8 33.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M29.2643 39C33.491 34.4706 34.5192 28.2296 31.56 25.0604C28.6019 21.89 22.7765 22.9916 18.5498 27.5199" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.05225 5.42104H11.947V2.47368C11.947 2.08284 11.7917 1.708 11.5153 1.43163C11.239 1.15526 10.8641 1 10.4733 1H7.52593C7.13508 1 6.76025 1.15526 6.48388 1.43163C6.20751 1.708 6.05225 2.08284 6.05225 2.47368V5.42104Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9471 3.21045C11.9471 5.60665 12.6943 7.94391 14.084 9.89654L14.1576 9.9997C15.5956 12.0197 16.3683 14.4376 16.3682 16.9172V26.0525C16.3682 26.8342 16.0576 27.5839 15.5049 28.1366C14.9522 28.6893 14.2025 28.9999 13.4208 28.9999H4.57871C3.79702 28.9999 3.04735 28.6893 2.49461 28.1366C1.94187 27.5839 1.63135 26.8342 1.63135 26.0525V16.9157C1.63135 14.437 2.40356 12.0201 3.84187 9.9997L3.91555 9.89654C5.30549 7.94413 6.0524 5.60708 6.05239 3.21045" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.63135 19.8675C2.22082 19.6141 2.73024 19.205 3.10503 18.6842C3.43981 18.2178 3.88309 17.8399 4.3966 17.5831C4.91011 17.3264 5.4784 17.1985 6.05239 17.2105C6.62638 17.1985 7.19468 17.3264 7.70818 17.5831C8.22169 17.8399 8.66498 18.2178 8.99975 18.6842C9.33453 19.1506 9.77781 19.5285 10.2913 19.7852C10.8048 20.042 11.3731 20.1699 11.9471 20.1579C12.5211 20.1699 13.0894 20.042 13.6029 19.7852C14.1164 19.5285 14.5597 19.1506 14.8945 18.6842C15.2689 18.1623 15.7783 17.7521 16.3682 17.4979" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_936">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Free snacks and drinks</a></h3>
+                            <p>Enjoy complimentary snacks and drinks throughout your workday to keep you energised and refreshed.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_951)">
+                                        <path d="M5 20C5 21.9698 5.38799 23.9204 6.14181 25.7403C6.89563 27.5601 8.00052 29.2137 9.3934 30.6066C10.7863 31.9995 12.4399 33.1044 14.2597 33.8582C16.0796 34.612 18.0302 35 20 35C21.9698 35 23.9204 34.612 25.7403 33.8582C27.5601 33.1044 29.2137 31.9995 30.6066 30.6066C31.9995 29.2137 33.1044 27.5601 33.8582 25.7403C34.612 23.9204 35 21.9698 35 20C35 18.0302 34.612 16.0796 33.8582 14.2597C33.1044 12.4399 31.9995 10.7863 30.6066 9.3934C29.2137 8.00052 27.5601 6.89563 25.7403 6.14181C23.9204 5.38799 21.9698 5 20 5C18.0302 5 16.0796 5.38799 14.2597 6.14181C12.4399 6.89563 10.7863 8.00052 9.3934 9.3934C8.00052 10.7863 6.89563 12.4399 6.14181 14.2597C5.38799 16.0796 5 18.0302 5 20Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25 15.0001C25 14.116 24.6488 13.2682 24.0237 12.6431C23.3986 12.0179 22.5507 11.6667 21.6667 11.6667C20.7826 11.6667 19.9348 12.0179 19.3096 12.6431C18.6845 13.2682 18.3333 14.116 18.3333 15.0001V23.3334C18.3333 24.2175 17.9821 25.0653 17.357 25.6904C16.7319 26.3156 15.8841 26.6667 15 26.6667H25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 20H21.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_951">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Annual social & wellness budget</a></h3>
+                            <p>Enjoy a dedicated budget to support your social and wellness activities, promoting a balanced and fulfilling lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="benefits-item bg-white p-sm-4 p-3 h-100">
+                            <div class="benefits-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_16_960)">
+                                        <path d="M19.9998 34.9999H9.99984C9.11578 34.9999 8.26794 34.6487 7.64281 34.0236C7.01769 33.3985 6.6665 32.5506 6.6665 31.6666V11.6666C6.6665 10.7825 7.01769 9.93468 7.64281 9.30956C8.26794 8.68444 9.11578 8.33325 9.99984 8.33325H29.9998C30.8839 8.33325 31.7317 8.68444 32.3569 9.30956C32.982 9.93468 33.3332 10.7825 33.3332 11.6666V19.1666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M26.6665 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3335 5V11.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.6665 18.3333H33.3332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M28.3335 28.3333C28.3335 29.2174 28.6847 30.0652 29.3098 30.6904C29.9349 31.3155 30.7828 31.6667 31.6668 31.6667C32.5509 31.6667 33.3987 31.3155 34.0239 30.6904C34.649 30.0652 35.0002 29.2174 35.0002 28.3333C35.0002 27.4493 34.649 26.6014 34.0239 25.9763C33.3987 25.3512 32.5509 25 31.6668 25C30.7828 25 29.9349 25.3512 29.3098 25.9763C28.6847 26.6014 28.3335 27.4493 28.3335 28.3333Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M36.6665 36.6666C36.6665 35.7825 36.3153 34.9347 35.6902 34.3096C35.0651 33.6844 34.2172 33.3333 33.3332 33.3333H29.9998C29.1158 33.3333 28.2679 33.6844 27.6428 34.3096C27.0177 34.9347 26.6665 35.7825 26.6665 36.6666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g>
+                                    <defs>
+                                        <clipPath id="clip0_16_960">
+                                            <rect width="40" height="40" fill="white" /> </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3><a href="#">Charity volunteer days</a></h3>
+                            <p>Give back to the community with dedicated charity volunteer days, making a positive impact beyond the salon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-banner py-md-5 py-4">
+            <div class="container-sm px-sm-3 px-0">
+                <div class="player-wrapper position-relative">
+                    <video poster="./static/images/video-poster-image.png" class="video-player">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="text-with-image text-center text-lg-start pt-md-5 pt-4 pb-100">
+            <div class="container">
+                <div class="row align-items-center row-gap-4">
+                    <div class="col-12 col-lg-6 order-lg-1 order-2">
+                        <div class="text-content">
+                            <div class="d-lg-block d-none">
+                                <div class="border-top mb-4"></div>
+                                <h2>Who are we?</h2> </div>
+                            <p>We are a team of experienced businesspeople looking to revolutionise the UK hair industry. We bring new ideas, big investment and put our team at the heart of our business success. We aim to be the most successful chain of hair salons within 3 years, with 40 UK locations identified. Our first 3 salons will open in October 2024.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-lg-2 order-1">
+                        <div class="image image-hover-animation overflow-hidden">
+                            <div class="d-lg-none">
+                                <div class="border-top mb-4 mx-auto"></div>
+                                <h2>Who are we?</h2> </div> <img class="img-fluid" src="./static/images/who-are-we.png" alt="who-are-we"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+	{% endcache %}
+
+{% endblock %}

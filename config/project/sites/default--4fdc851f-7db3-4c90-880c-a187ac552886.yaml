@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: Halo
+name: 'Halo Hair Group'
 primary: true
 siteGroup: 5a77901a-6b9c-460b-bb5c-032b263bc717 # Halo
 sortOrder: 1

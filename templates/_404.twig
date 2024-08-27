@@ -1,0 +1,24 @@
+{% extends "_layouts/main" %}
+{% set bodyClass = 'page-404' %}
+
+{% block main %}
+
+  <div class="bg-ve-blue lg:rounded-2xl max-w-[1600px] w-full mx-auto relative flex justify-center overflow-hidden">
+    <div class="pt-[106px] flex flex-col items-center px-4">
+        {% set entry = craft.entries({section: 'error404'}).one() %}
+        {{ entry.rteTextOnly|retconAttr('h5', { class: 'text-lg md:text-xl text-ve-black mb-10'})|retconAttr('br', { class: 'md:block hidden'}) }}
+        {% if not entry.ctas.isEmpty() %}
+            <div class="flex items-center gap-4 md:flex-row flex-col mb-[88px]">
+                {% for link in entry.ctas %}
+                    {{ link.getLink({
+                        class: 'btn btn-black btn-hover-white'
+                    }) }}
+                {% endfor %}
+          </div>
+        {% endif %}
+        <img src="{{ url('frontend/dist/images/404.svg') }}" />
+    </div>
+  </div>
+     
+{% endblock %}
+{# END CONTENT #}
