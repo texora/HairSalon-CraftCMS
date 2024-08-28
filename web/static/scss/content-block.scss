@@ -1,0 +1,32 @@
+.text-with-image {
+	h2 {
+		margin-bottom: 1.5rem;
+		font-weight: var(--fw-light);
+	}
+	.border-top {
+		max-width: 120px;
+	}
+}
+.image-hover-animation {
+    img {
+        transform: scale(1);
+        transition: .5s ease-in-out;
+    }
+    &:hover {
+        img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media(min-width:992px) {
+	.text-with-image {
+		.border-top {
+			max-width: 120px;
+		}
+	}
+	.text-content {
+		max-width: 540px;
+	}
+}

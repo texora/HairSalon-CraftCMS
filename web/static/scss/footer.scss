@@ -1,0 +1,36 @@
+.footer {
+	padding:2rem 0;
+	.footer-copyright-text {
+		p {
+			font-size: 0.875rem;
+			line-height: var(--line-height-20);
+			opacity: 1;
+		}
+	}
+	.footer-copyright-link {
+		ul {
+			li {
+				a {
+					border: solid 1px var(--white);
+					border-radius: 50%;
+					height: 34px;
+					width: 34px;
+					svg {
+						path {
+							transition: 0.5s all;
+						}
+					}
+					&:hover {
+						background-color: var(--white);
+						transform: translateY(-5px);
+						svg {
+							path {
+								fill: var(--black);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
