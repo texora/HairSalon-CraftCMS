@@ -1,0 +1,23 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: 'Text Only'
+options:
+  alignment:
+    options:
+      - left
+      - right
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - alignment
+  - underline
+  - fontBackgroundColor
+  - fontFamily

@@ -5,6 +5,8 @@
     "craftcms/ckeditor": "^4.2.0",
     "craftcms/cms": "5.3.6",
     "nystudio107/craft-seomatic": "^5.1.2",
+    "servd/craft-asset-storage": "^4.0.6",
+    "spicyweb/craft-embedded-assets": "^5.1.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

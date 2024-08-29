@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: benefits
+instructions: null
+name: Benefits
+searchable: false
+settings:
+  createButtonLabel: 'Add Benefit'
+  entryTypes:
+    - b9fcd03b-b339-45a2-a20c-a1ad70811bfb # Benefits
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

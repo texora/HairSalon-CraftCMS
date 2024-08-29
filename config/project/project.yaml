@@ -1,26 +1,73 @@
-dateModified: 1724761042
+dateModified: 1724932411
 email:
   fromEmail: bhashkar007@gmail.com
   fromName: Halo
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      cdnUrlPattern: ''
+      customSubfolder: ''
+      makeUploadsPublic: true
+      optimisePrefix: ''
+      optimiseUrlPattern: ''
+      projectSlug: ''
+      securityKey: ''
+      subfolder: local/
+    type: servd\AssetStorage\AssetsPlatform\Fs
+    url: 'https://halo-hair.files.svdcdn.com'
 meta:
   __names__:
     0ccd9cb4-cb6f-44da-b932-3dae09c2db79: 'Holding Page' # Holding Page
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
+    5c1885e7-2d6a-4df5-8de7-646816d23c2a: Benefits # Benefits
+    7aea93d0-d819-4905-8279-efcfd692ad42: Text # Text
+    8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec: 'Text Area' # Text Area
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
     067dc454-76f0-47fe-8a39-6380da7fc55e: SEO # SEO
+    75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
+    84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
+    b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
+    c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
+    cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video
+    d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true
     licenseKey: N504S2U3EOSZSRS9T1WIHJYY
     schemaVersion: 3.0.12
+  servd-asset-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      adjustFeedmeLogs: ''
+      assetsEnvironment: ''
+      assetsEnvironmentOverwrite: ''
+      cacheClearMode: full
+      clearCachesOnSave: always
+      disableDynamic: ''
+      disableTransforms: ''
+      fsMapsEnabled: ''
+      imageAutoConversion: webp
+      injectCors: ''
+      projectSlug: $SERVD_PROJECT_SLUG
+      securityKey: $SERVD_SECURITY_KEY
+      suppressWarnings: ''
+      useLocalVolumes: false
 system:
   edition: team
   live: true

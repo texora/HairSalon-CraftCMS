@@ -238,7 +238,6 @@ body {
     font-size: var(--text-base);
     line-height: var(--line-height-24);
     color: var(--black);
-    word-break: break-all;
     background: rgba(247, 247, 247, 1);
     font-family: 'Gilroy';
     font-weight: var(--fw-normal);
@@ -261,6 +260,9 @@ h1, h2, h3, h4, h5, h6 {
         font-family: 'Gilroy';
         font-weight: var(--fw-bold);
     }
+}
+h1, h2 {
+    word-break: break-word;
 }
 h1 {
     font-size: var(--text-3xxl);
@@ -354,9 +356,13 @@ a {
 .container {
     padding: 0 18px;
 }
+
 @media(min-width:576px) {
     .container {
         padding: 0 12px;
+    }
+    h1, h2 {
+        word-break: inherit;
     }
 }
 @media(min-width:768px) {
