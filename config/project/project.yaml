@@ -1,8 +1,16 @@
-dateModified: 1724932411
+dateModified: 1724996631
 email:
-  fromEmail: bhashkar007@gmail.com
-  fromName: Halo
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: $SERVD_SMTP_USERNAME
+  fromName: 'Halo Hair Group'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: $SERVD_SMTP_HOSTNAME
+    password: $SERVD_SMTP_PASSWORD
+    port: '2525'
+    useAuthentication: '1'
+    username: $SERVD_SMTP_USERNAME
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   uploads:
     hasUrls: true
@@ -34,6 +42,7 @@ meta:
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
+    d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
 plugins:
   ckeditor:
@@ -68,6 +77,21 @@ plugins:
       securityKey: $SERVD_SECURITY_KEY
       suppressWarnings: ''
       useLocalVolumes: false
+  wheelform:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      cp_label: Forms
+      disabled_fields: ''
+      from_email: info@halohairgroup.com
+      from_name: 'Halo Group'
+      recaptcha_min_score: '0.5'
+      recaptcha_public: ''
+      recaptcha_secret: ''
+      recaptcha_version: '2'
+      success_message: 'Thank You! we will review your submission shortly.'
+      volume_id: '1'
 system:
   edition: team
   live: true

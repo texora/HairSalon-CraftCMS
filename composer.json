@@ -7,7 +7,8 @@
     "nystudio107/craft-seomatic": "^5.1.2",
     "servd/craft-asset-storage": "^4.0.6",
     "spicyweb/craft-embedded-assets": "^5.1.2",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "xpertbot/craft-wheelform": "^4.0.2"
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",

@@ -83,6 +83,44 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            dateAdded: '2024-08-30T05:13:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b03a17ef-d769-4093-a833-30189418fc32
+            userCondition: null
+          -
+            dateAdded: '2024-08-30T05:13:45+00:00'
+            elementCondition: null
+            fieldUid: d12a0940-24db-484d-bf19-8c937a040875 # Form Cities (with opening date)
+            handle: formCities
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9034995-9ace-459e-8193-170391a002d7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-30T05:13:45+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: formText
+            includeInCards: false
+            instructions: null
+            label: 'Form Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2369a84b-7b21-4576-9c9c-9b181a83c8d8
+            userCondition: null
+            warning: null
+            width: 50
         name: Banner
         uid: 0ff3d69f-275e-42b4-8ea0-5236aa457801
         userCondition: null

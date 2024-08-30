@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: formCities
+instructions: null
+name: 'Form Cities (with opening date)'
+searchable: false
+settings:
+  addRowLabel: 'Add City'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - City
+            -
+              - handle
+              - city
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults: null
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f5fefa63489d36be3325e7e9bb85300",
+    "content-hash": "37077f5624a3b8ea6681a7b4f59845e9",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5894,6 +5894,58 @@
                 "graphql"
             ],
             "time": "2023-07-05T14:23:37+00:00"
+        },
+        {
+            "name": "xpertbot/craft-wheelform",
+            "version": "4.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xpertbot/craft-wheelform/zipball/714dadf5c97da86ac1209ab8ca560111399d2b19",
+                "reference": "714dadf5c97da86ac1209ab8ca560111399d2b19",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Wheel Form",
+                "handle": "wheelform",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://github.com/xpertbot/craft-wheelform/CHANGELOG.md",
+                "components": {
+                    "mailer": "Wheelform\\Mailer"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "wheelform\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wheel Interactive",
+                    "homepage": "https://wheelinteractive.com"
+                }
+            ],
+            "description": "Craft CMS 5 Form administrator with Database integration",
+            "keywords": [
+                "Wheel Form",
+                "WheelForm",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/xpertbot/craft-wheelform/blob/master/README.md",
+                "issues": "https://github.com/xpertbot/craft-wheelform/issues"
+            },
+            "time": "2024-07-12T01:24:09+00:00"
         },
         {
             "name": "yiisoft/yii2",
