@@ -30,7 +30,7 @@
                                             <div class="dropdown-arrow position-relative">
                                                 <select name="city" class="form-control bg-transparent border-0 rounded-0 px-3 pt-2 pb-0 position-relative z-2">
                                                     {% for row in entry.formCities %}
-                                                        <option value="darlington"{% if loop.first %} selected{% endif %}>{{ row.city }}</option>
+                                                        <option value="{{ row.city }}"{% if loop.first %} selected{% endif %}>{{ row.city }}</option>
                                                     {% endfor %}
                                                 </select>
                                             </div>
