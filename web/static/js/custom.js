@@ -25,5 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'fullscreen' // Toggle fullscreen
     ];
     const player = Plyr.setup('.video-player', { controls });
+
 });
+
 

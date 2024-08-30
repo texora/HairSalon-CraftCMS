@@ -82,15 +82,19 @@
             {% set posterImage = entry.posterImage.eagerly().one() %}
             <section class="video-banner py-md-5 py-4">
                 <div class="container-sm px-sm-3 px-0">
-                    <div class="player-wrapper position-relative">
+                    <div class="player-wrapper position-relative iframe-responsive">
                         {% if embeddedVideo %}
-                            {{ embeddedVideo.getIframeCode(
-                                ['autoplay=0', 'controls=0', 'playsinline=1'],
-                                ['loading=lazy'],
-                                ['frameborder'],
-                                ['allowtransparency'],
-                                ['allowfullscreen']
-                            ) }}
+                            <div class="video-player" id="player1">
+                                {{ embeddedVideo.getIframeCode(
+                                    ['autoplay=0', 'controls=0', 'playsinline=1'],
+                                    ['loading=lazy'],
+                                    ['frameborder'],
+                                    ['allowtransparency'],
+                                    ['data-plyr-provider="'~ embeddedVideo.providerName|lower ~'"'],
+                                    ['data-plyr-embed-id="'~ embeddedVideo.code ~'"'],
+                                    ['allowfullscreen']
+                                ) }}
+                            </div>
                         {% else %}
                             <video{% if posterImage %} poster="{{ posterImage.url }}"{% endif %} class="video-player">
                                 <source src="{{ video.url }}" />

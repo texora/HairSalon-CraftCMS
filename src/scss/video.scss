@@ -1,4 +1,4 @@
-.player-wrapper {
+.video-banner {
 	.plyr__control--overlaid {
 		background: url("../images/play-icon.svg");
 		background-position:center;
@@ -26,9 +26,8 @@
 		}
 	}
 }
-
 @media(min-width:768px) {
-	.player-wrapper {
+	.video-banner {
 		.plyr__control--overlaid {
 			width:90px;
 			height:90px;

@@ -7,13 +7,14 @@
 			margin:0.5rem 0;
 		}
 		p {
-			font-size: var(--text-base);
-			line-height: var(--line-height-23);
+			font-size: var(--text-sm);
+			line-height: var(--line-height-20);
 		}
 		.benefits-icon {
 			img, svg {
 				transition: 0.5s all;
-				max-width: 2.5rem;
+				max-width: 2rem;
+				height: auto;
 			}
 		}
 		&:hover {
@@ -36,6 +37,15 @@
 				font-size: var(--text-2xl);
 				line-height: var(--line-height-28);
 				margin:1rem 0;
+			}
+			p {
+				font-size: var(--text-base);
+				line-height: var(--line-height-23);
+			}
+			.benefits-icon {
+				img, svg {
+					max-width: 2.5rem;
+				}
 			}
 		}
 	}
