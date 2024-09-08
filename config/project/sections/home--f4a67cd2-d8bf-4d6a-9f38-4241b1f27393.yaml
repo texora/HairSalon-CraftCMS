@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - c94b79ec-0b53-47e3-8ef9-4b8562781846 # Home
+handle: home
+maxAuthors: 1
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/home/_entry.twig
+    uriFormat: __home__
+type: single

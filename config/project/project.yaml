@@ -1,4 +1,4 @@
-dateModified: 1724996631
+dateModified: 1725802791
 email:
   fromEmail: $SERVD_SMTP_USERNAME
   fromName: 'Halo Hair Group'
@@ -28,7 +28,7 @@ fs:
     url: 'https://halo-hair.files.svdcdn.com'
 meta:
   __names__:
-    0ccd9cb4-cb6f-44da-b932-3dae09c2db79: 'Holding Page' # Holding Page
+    0ccd9cb4-cb6f-44da-b932-3dae09c2db79: Jobs # Jobs
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
     5c1885e7-2d6a-4df5-8de7-646816d23c2a: Benefits # Benefits
@@ -40,10 +40,12 @@ meta:
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
     b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
+    c94b79ec-0b53-47e3-8ef9-4b8562781846: Home # Home
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
+    f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: Home # Home
 plugins:
   ckeditor:
     edition: standard

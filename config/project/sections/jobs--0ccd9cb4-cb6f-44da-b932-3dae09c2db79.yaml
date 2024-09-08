@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - e8c8e356-5c73-4595-b2c6-b5973a67da4c # Holding Page
-handle: holdingPage
+handle: jobs
 maxAuthors: 1
-name: 'Holding Page'
+name: Jobs
 previewTargets:
   -
     __assoc__:
@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/holdingPage/_entry.twig
-    uriFormat: __home__
+    uriFormat: jobs
 type: single
