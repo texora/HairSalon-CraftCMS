@@ -1,0 +1,137 @@
+color: null
+fieldLayouts:
+  ad371e97-2bc4-46dd-a098-4c96608faea9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-21T04:57:07+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dcb62e17-ad2b-46f0-8f8a-dd2e522798f9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T05:01:07+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: shortDescription
+            includeInCards: false
+            instructions: null
+            label: 'Short Description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a755a7ac-c935-43e1-aca2-73fb7dc07246
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T05:01:07+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46e07e78-6b84-44d8-8da0-dd0978867dd1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T05:01:07+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: salaryText
+            includeInCards: false
+            instructions: null
+            label: 'Salary Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24d0db9e-600a-4b54-a0ff-ce448d833e72
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T05:01:07+00:00'
+            elementCondition: null
+            fieldUid: 75916bae-efdb-428b-b8e2-0904b4627e76 # Rich Text
+            handle: jobDetail
+            includeInCards: false
+            instructions: null
+            label: 'Job Detail'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e288145-8870-485a-9b47-0f2db589a83b
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Job Detail'
+        uid: 0f659dc9-f34a-43d5-b7f4-588cb989c0ef
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-21T05:01:07+00:00'
+            elementCondition: null
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b037834-9aec-43f3-9eb9-798a0def52f3
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 89ac8d0f-9c70-437f-8912-c1ab2d504ac9
+        userCondition: null
+handle: jobs
+hasTitleField: true
+icon: ''
+name: Jobs
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: youtubeVideo
+instructions: null
+name: 'Youtube Video'
+searchable: false
+settings:
+  url: ''
+translationKeyFormat: null
+translationMethod: none
+type: wrav\oembed\fields\OembedField

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: rteTextOnly
+instructions: null
+name: 'RTE - Text Only'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: d8b6f4ed-eead-4f24-ad26-8f297bd97741 # Text Only
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

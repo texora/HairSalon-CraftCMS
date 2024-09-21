@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - e8c8e356-5c73-4595-b2c6-b5973a67da4c # Holding Page
+handle: holdingPage
+maxAuthors: 1
+name: 'Holding Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/holdingPage/_entry.twig
+    uriFormat: jobs
+type: single

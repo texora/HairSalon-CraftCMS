@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  cf5232e6-d640-4ee4-bd6a-bd9002183bba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-21T07:36:28+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f46cd5e3-a436-490d-8225-845f12f69752
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T07:41:13+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: testimonialText
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4515454-008f-4cd1-a8ea-545338108364
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T07:41:13+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: testimonialAuthor
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Author'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e6a2b72-047e-4a51-a13f-89bb27875bb5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T07:41:13+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: authorDesignation
+            includeInCards: false
+            instructions: null
+            label: 'Author Designation'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49a0b3e7-f23e-41fe-89e1-a5e1449f4e21
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-09-21T07:41:13+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: authorPhoto
+            includeInCards: false
+            instructions: null
+            label: 'Author Photo'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04e18c7d-35ee-4baf-926f-57ebb63f14ee
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-09-21T07:41:13+00:00'
+            elementCondition: null
+            fieldUid: d54816d2-a954-46ab-b48e-ee1b79a75db5 # Youtube Video
+            handle: video
+            includeInCards: false
+            instructions: null
+            label: Video
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12f2205f-6d77-4196-8300-d0d472379b49
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a671de7c-95a4-4936-96b1-c44074314f06
+        userCondition: null
+handle: videoTestimonial
+hasTitleField: false
+icon: radio
+name: 'Video Testimonial'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

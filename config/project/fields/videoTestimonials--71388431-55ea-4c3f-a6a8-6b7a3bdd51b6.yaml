@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: videoTestimonials
+instructions: null
+name: 'Video Testimonials'
+searchable: false
+settings:
+  createButtonLabel: 'Add Video Testimonial'
+  entryTypes:
+    - 2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a # Video Testimonial
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

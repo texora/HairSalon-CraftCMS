@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8eb9df4d-b6b1-4331-9b12-46c97ce4b33e # Site Globals
+handle: siteGlobals
+maxAuthors: 1
+name: 'Site Globals'
+propagationMethod: all
+siteSettings:
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

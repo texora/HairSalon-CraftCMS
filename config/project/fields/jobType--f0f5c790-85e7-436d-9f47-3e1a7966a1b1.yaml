@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: jobType
+instructions: null
+name: 'Job Type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Full Time'
+        -
+          - value
+          - fullTime
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Part Time'
+        -
+          - value
+          - partTime
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

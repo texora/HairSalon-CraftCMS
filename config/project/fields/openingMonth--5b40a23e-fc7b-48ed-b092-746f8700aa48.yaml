@@ -1,0 +1,142 @@
+columnSuffix: null
+handle: openingMonth
+instructions: null
+name: 'Opening Month'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - January
+        -
+          - value
+          - '1'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - February
+        -
+          - value
+          - '2'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - March
+        -
+          - value
+          - '3'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - April
+        -
+          - value
+          - '4'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - May
+        -
+          - value
+          - '5'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - June
+        -
+          - value
+          - '6'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - July
+        -
+          - value
+          - '7'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - August
+        -
+          - value
+          - '8'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - September
+        -
+          - value
+          - '9'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - October
+        -
+          - value
+          - '10'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - November
+        -
+          - value
+          - '11'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - December
+        -
+          - value
+          - '12'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

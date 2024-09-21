@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  230ced69-a554-44d1-9c36-f091c9f73c41:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-21T04:34:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: 'City Name'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f3a312df-1a06-48f3-9a31-f07401ca51a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T06:45:25+00:00'
+            elementCondition: null
+            fieldUid: 5b40a23e-fc7b-48ed-b092-746f8700aa48 # Opening Month
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6423dcbd-7b0f-4c70-8170-8ed6f8b66f70
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T04:49:42+00:00'
+            elementCondition: null
+            fieldUid: 2f4521a5-bf9c-4655-bd15-483fa28c005f # Year
+            handle: openingYear
+            includeInCards: false
+            instructions: null
+            label: 'Opening Year'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13b2fc7f-1afa-46fc-9177-e53f51fc9547
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T04:49:42+00:00'
+            elementCondition: null
+            fieldUid: 7f82abc5-4a85-431f-8ffa-c9d3452c3c4e # Phase
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8471ac0-016f-4dca-a872-dd111d632bc4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T04:53:34+00:00'
+            elementCondition: null
+            fieldUid: 27b29006-47a2-40b1-a7c1-7f0db71cc8a2 # Icon
+            handle: phaseIcon
+            includeInCards: false
+            instructions: null
+            label: 'Phase Icon'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d97e0b4d-706c-4bdd-b9ce-6b4abb5c0372
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T04:53:34+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7723db7a-beb2-48db-9e49-965b1da9bb51
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 45091198-6547-4036-aa85-4d1135c1e130
+        userCondition: null
+handle: rolloutPlans
+hasTitleField: true
+icon: ''
+name: 'Rollout Plans'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

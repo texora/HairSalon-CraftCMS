@@ -1,0 +1,35 @@
+columnSuffix: null
+handle: icon
+instructions: null
+name: Icon
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:c5ad5b48-ebb0-4704-9f40-8a12ff6648e2' # Site Uploads
+  defaultUploadLocationSubpath: icons
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: thumbs
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:c5ad5b48-ebb0-4704-9f40-8a12ff6648e2' # Site Uploads
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add an Icon'
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:c5ad5b48-ebb0-4704-9f40-8a12ff6648e2' # Site Uploads
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

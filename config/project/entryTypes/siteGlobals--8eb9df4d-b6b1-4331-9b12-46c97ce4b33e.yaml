@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  cc571c50-9d27-4503-a260-177bd62b6c0b:
+  b9194e9f-f980-43b4-9e1d-3b2bbc8c662a:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-08T13:36:00+00:00'
+            dateAdded: '2024-09-21T07:17:32+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,114 +31,73 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e1ff899a-6c53-4a34-babd-9a7428b506c2
+            uid: cd7ef261-806b-4e58-b2fe-2363b8f79e89
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-21T06:51:16+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: heroImage
-            includeInCards: false
-            instructions: null
-            label: 'Hero Image'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b77b08eb-bcab-4de1-af36-ff275946e21e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-21T07:02:15+00:00'
-            elementCondition: null
-            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
-            handle: heroText
-            includeInCards: false
-            instructions: null
-            label: 'Hero Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e7aa6182-04f7-4d35-a509-0198412a2c9b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-21T07:02:15+00:00'
-            elementCondition: null
-            fieldUid: d54816d2-a954-46ab-b48e-ee1b79a75db5 # Youtube Video
             handle: null
             includeInCards: false
-            instructions: 'It video will pop-up on click the pay button.'
-            label: null
+            instructions: null
+            label: 'Header Logo'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8e4eafc5-206e-4711-9579-513cb0865ea1
+            uid: 39511ba1-6eb6-4912-915f-fbf67eacbdd4
             userCondition: null
             warning: null
             width: 100
-        name: Hero
-        uid: 9cccb05f-85e8-4e71-b342-31d0f86e0385
+        name: General
+        uid: 4bbcb028-888e-44e6-8a57-00626886ca20
         userCondition: null
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-21T07:35:31+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: highlightedHeading
-            includeInCards: false
-            instructions: null
-            label: 'Highlighted Heading Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 276b3fbf-89c2-4447-8ebd-908005f275e0
+            heading: 'Form Section'
+            type: craft\fieldlayoutelements\Heading
+            uid: ec3dd056-def8-4e5f-8583-615ac164ac04
             userCondition: null
-            warning: null
-            width: 50
           -
-            dateAdded: '2024-09-21T07:35:31+00:00'
-            elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: greyHeading
-            includeInCards: false
-            instructions: null
-            label: 'Grey Heading Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5c2da70f-e2f9-43e6-986b-c59317654138
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-21T07:35:31+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: singleLineText
+            handle: heading
             includeInCards: false
             instructions: null
-            label: 'Single Line Text'
+            label: Heading
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8d055799-28f0-4d8e-8fc8-d6709a5e30d3
+            uid: 72dee0b7-b7ce-4cf7-a0a2-2defb6615e18
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-09-21T07:35:31+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: Text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84a6a0de-0fa0-4d3c-9407-00f144794246
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
             handle: null
@@ -149,34 +108,51 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 63cd0db7-0ed4-447c-b4e7-3a20fd3203dc
-            userCondition: null
-            warning: null
-            width: 50
-        name: 'Halo Career'
-        uid: a0f0a532-c200-4c44-8e5a-386fb8a3b862
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-09-21T07:43:35+00:00'
-            elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: heading
-            includeInCards: false
-            instructions: null
-            label: Heading
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 69c6cf40-e043-466f-b367-bba67da1c221
+            uid: 79f46f60-1b17-4695-bdf5-8b5c7fde318e
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-21T07:43:35+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: formText
+            includeInCards: false
+            instructions: 'It will be shown above the form.'
+            label: 'Form Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d835cc1-e56f-42ef-824f-1b6efc532010
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T07:27:02+00:00'
+            elementCondition: null
+            heading: 'Text Section'
+            type: craft\fieldlayoutelements\Heading
+            uid: b621a29c-a4fc-46b1-9bfb-4fa085dde5a9
+            userCondition: null
+          -
+            dateAdded: '2024-09-21T07:27:02+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: text2
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5ba28e4-f590-4eb3-a4e5-096032700fa9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
             handle: cta2
@@ -187,20 +163,14 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4528452d-3b45-4322-ba99-7f47497f6b5e
+            uid: daebc77f-3ba0-4dca-aa41-f3d05e477543
             userCondition: null
             warning: null
             width: 100
-        name: 'Join Us'
-        uid: 2eba7f8f-0444-4b02-bd76-2231e3695934
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
-            dateAdded: '2024-09-21T07:41:37+00:00'
+            dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
-            fieldUid: 71388431-55ea-4c3f-a6a8-6b7a3bdd51b6 # Video Testimonials
+            fieldUid: 4a757ae5-8a0f-4384-ab08-99d5e96e32dc # Bullet Points
             handle: null
             includeInCards: false
             instructions: null
@@ -209,39 +179,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 941a361f-4bd4-40fc-92fc-0de3810ca674
+            uid: 012eb096-d585-4931-818e-44a5c3295412
             userCondition: null
             warning: null
             width: 100
-        name: 'Video Testimonials'
-        uid: 58fcc293-15ab-4ed9-b822-3fac529a5335
+        name: 'Work with Halo'
+        uid: f546d70d-bc48-4575-8360-c74763ef8154
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-09-08T13:37:27+00:00'
-            elementCondition: null
-            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 65d7366e-d69e-4c05-9ffb-495730b302f8
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: fc0ff4de-988b-4205-b217-12e2c95b76b6
-        userCondition: null
-handle: home
+handle: siteGlobals
 hasTitleField: false
 icon: ''
-name: Home
+name: 'Site Globals'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null
