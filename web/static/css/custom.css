@@ -538,12 +538,12 @@ input:-webkit-autofill {
   background-position: center;
 }
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-  background-image: url(../img/arrow-next.svg);
+  background-image: url(../static/svg/arrow-next.svg);
   left: 0;
   transform: rotate(180deg);
 }
 .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
-  background-image: url(../img/arrow-next.svg);
+  background-image: url(../static/svg/arrow-next.svg);
   right: 0;
 }
 .openings-section .nav-product-salon .slick-disabled, .collective-section .nav-product .slick-disabled {
