@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: jobGrid
+height: 260
+interlace: none
+mode: crop
+name: 'Job Grid'
+position: center-center
+quality: null
+upscale: true
+width: 357

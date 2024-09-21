@@ -36,6 +36,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-09-21T11:43:46+00:00'
+            elementCondition: null
+            fieldUid: f0f5c790-85e7-436d-9f47-3e1a7966a1b1 # Job Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3282ae2a-5424-4f38-a97d-1899422bad67
+            userCondition: null
+            warning: null
+            width: 25
+          -
             dateAdded: '2024-09-21T05:01:07+00:00'
             elementCondition: null
             fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
@@ -50,7 +66,7 @@ fieldLayouts:
             uid: a755a7ac-c935-43e1-aca2-73fb7dc07246
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             dateAdded: '2024-09-21T05:01:07+00:00'
             elementCondition: null

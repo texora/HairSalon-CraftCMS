@@ -1,0 +1,60 @@
+{% set siteGlobals = craft.entries().section('siteGlobals').one() %}
+<section class="work-at">
+    <div class="container">
+        <div class="work-at-halo">
+            <div class="row align-items-center row-gap-5">
+                <div class="col-12 col-md-5">
+                    {% if siteGlobals.heading %}<h2>{{ siteGlobals.heading }}</h2>{% endif %}
+                    {{ siteGlobals.text }}
+                    {{ siteGlobals.cta.getLink({
+                        class: 'btn benefits'
+                    }) }}
+                </div>
+                <div class="col-12 col-md-6 offset-lg-1">
+                    <div class="email-form">
+                        {% if siteGlobals.formText %}<h4>{{ siteGlobals.formText|nl2br }}</h4>{% endif %}
+                        <form>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="email" class="email-bx form-control" name="email" placeholder="Enter Your Email address">
+                            </div>
+                            <div class="email">
+                                <label for="city">City</label>
+                                <select class="form-control city-bx">
+                                    {% for rolloutPlan in craft.entries().section('rolloutPlans').orderBy('openingYear ASC').all() %}
+                                        <option value="{{ rolloutPlan.title }}">{{ rolloutPlan.title }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="email">
+                                <button class="btn btn-black" type="submit">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="looking-for">
+    <div class="container">
+        <div class="work-at-halo">
+            <div class="row align-items-center row-gap-5">
+                <div class="col-12 col-md-6">
+                    {{ siteGlobals.text2 }}
+                    {{ siteGlobals.cta2.getLink({
+                        class: 'btn benefits btn-black'
+                    }) }}
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul>
+                        {% for bulletPoint in siteGlobals.bulletPoints %}
+                            <li><img src="/static/svg/check.svg"> {{ bulletPoint.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

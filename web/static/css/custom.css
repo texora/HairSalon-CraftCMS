@@ -1,0 +1,1067 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: local('../fonts/Gilroy Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraboldItalic.eot');
+    src: local('../fonts/Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
+        url('../fonts/Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('../fonts/Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.eot');
+    src: local('../fonts/Gilroy Black'), local('Gilroy-Black'),
+        url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff'),
+        url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: local('../fonts/Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('../fonts/Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('../fonts/Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-MediumItalic.eot');
+    src: local('../fonts/Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('../fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-MediumItalic.woff') format('woff'),
+        url('../fonts/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-BlackItalic.eot');
+    src: local('../fonts/Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+        url('../fonts/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-BlackItalic.woff') format('woff'),
+        url('../fonts/Gilroy-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-UltraLight.eot');
+    src: local('../fonts/Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('../fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
+        url('../fonts/Gilroy-UltraLight.woff') format('woff'),
+        url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-RegularItalic.eot');
+    src: local('../fonts/Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('../fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-RegularItalic.woff') format('woff'),
+        url('../fonts/Gilroy-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiboldItalic.eot');
+    src: local('../fonts/Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
+        url('../fonts/Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-HeavyItalic.eot');
+    src: local('../fonts/Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+        url('../fonts/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-HeavyItalic.woff') format('woff'),
+        url('../fonts/Gilroy-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Extrabold.eot');
+    src: local('../fonts/Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-BoldItalic.eot');
+    src: local('../fonts/Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('../fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-BoldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-UltraLightItalic.eot');
+    src: local('../fonts/Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+        url('../fonts/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-UltraLightItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-UltraLightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-LightItalic.eot');
+    src: local('../fonts/Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('../fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-LightItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-LightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Heavy.eot');
+    src: local('../fonts/Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('../fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilroy-Heavy.woff') format('woff'),
+        url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Thin.eot');
+    src: local('../fonts/Gilroy Thin'), local('Gilroy-Thin'),
+        url('../fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Thin.woff2') format('woff2'),
+        url('../fonts/Gilroy-Thin.woff') format('woff'),
+        url('../fonts/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ThinItalic.eot');
+    src: local('../fonts/Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+        url('../fonts/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-ThinItalic.woff') format('woff'),
+        url('../fonts/Gilroy-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/** font Bricolage Grotesque **/
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-ExtraLight.eot');
+    src: url('../fonts/BricolageGrotesque-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-ExtraLight.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-ExtraLight.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-ExtraLight.svg#BricolageGrotesque-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-ExtraBold.eot');
+    src: url('../fonts/BricolageGrotesque-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-ExtraBold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-ExtraBold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-ExtraBold.svg#BricolageGrotesque-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Bold.eot');
+    src: url('../fonts/BricolageGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Bold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Bold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Bold.svg#BricolageGrotesque-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Regular.eot');
+    src: url('../fonts/BricolageGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Regular.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Regular.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Regular.svg#BricolageGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-SemiBold.eot');
+    src: url('../fonts/BricolageGrotesque-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-SemiBold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-SemiBold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-SemiBold.svg#BricolageGrotesque-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Medium.eot');
+    src: url('../fonts/BricolageGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Medium.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Medium.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Medium.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Medium.svg#BricolageGrotesque-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Gilroy;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h2 {
+    font-size: 3rem;
+}
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+.btn {
+    transition: 0.5s all;
+    width: 180px;
+    padding: 16px 20px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.btn-white {
+    background: #fff;
+    color: #000;
+}
+.btn-white:hover, .btn-white:focus {
+    color: #fff;
+    border: solid 1px #fff;
+}
+.main-header-top {
+    z-index: 999;
+}
+.main-header-top.activeheader .navbar-brand img, .main-header-top.open-header .navbar-brand img {
+    filter:  brightness(100) invert(1);
+}
+.main-header-top .apply-btn {
+    padding: 8px 12px;
+    height: auto;
+    text-transform: uppercase;
+}
+.main-header-top nav a {
+    font-weight: 400;
+}
+.main-header-top nav .nav-link {
+    padding: 0.5rem 0 !important;
+}
+.main-header-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.banner-section {
+    position: relative;
+    background-position: top center;
+}
+.banner-text-content {
+    position: relative;
+    z-index: 2;
+}
+.banner-section:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-color: hsl(0deg 0% 0% / 60%);
+}
+.building-section h2, .changing-uk h2, .work-at-halo h2 {
+    line-height: 61px;
+    margin-bottom: 0;
+}
+.looking-for .work-at-halo h2 {
+    margin-bottom: 0.5rem;
+}
+.work-at .work-at-halo h2 {
+    margin-bottom: 1.25rem;
+}
+.home .openings-section .slick-current + .slick-slide{
+    position: relative;
+    top: 45px;
+    padding-bottom: 45px;
+} 
+.home .senior-card h4, 
+.darlington-card h4 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: 0px 0px 0.5px #FFF;
+}
+.home .senior-card h6 {
+    font-family: Gilroy;
+    font-weight: 400;
+    color: #353535;
+}
+.home .senior-card .card-body {
+    padding: 1rem 0 0 0;
+}
+.home .senior-card .card-body a {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 500;
+    color: #353535;
+   font-size: 18px;
+   margin-top: 20px;
+}
+.home .building-section {
+    padding: 120px 0 60px 0;
+}
+.home .collective-section .location h4{
+    font-size: 24px;
+}
+.work-at .email-form {
+    max-width: 520px;
+    margin-left: auto;
+}
+.work-at .email .btn {
+  text-transform: uppercase;
+  height: auto;
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 20px;
+}
+.work-at .email .btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: solid 1px #000;
+}
+.changing-uk .btn {
+    margin-top: 40px !important;
+}
+.changing-uk .btn:focus {
+     color: #000;
+     background-color: #fff;
+}
+.banner-section h1, .different-section h1 {
+    line-height: 70px;
+    width: 100%;
+}
+.banner-section h2, .different-section h2, 
+.banner-section p, .different-section p {
+    color: #fff;
+}
+footer {
+    padding-top: 64px;
+}
+footer ul li {
+    margin-bottom: 0;
+}
+footer .up-to-date input {
+    letter-spacing: -0.25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+    font-size: 18px;
+    padding-right: 1rem;
+    padding-left: 0;
+}
+footer .up-to-date .form-control:focus {
+     border-color: rgba(255, 255, 255, 0.40);
+     background-color: transparent;
+}
+.up-to-date label {
+    margin-bottom: 0.5rem;
+}
+.up-to-date button {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+}
+input:-internal-autofill-selected {
+    background-color: transparent;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.footer-title-image {
+    margin-top: 60px;
+}
+.footer-title-image img {
+  padding-left: 40px;
+}
+.home .slick-next,
+.home .slick-prev {
+  width: 64px;
+}
+.home .slick-prev {
+  left: -85px;
+}
+.home .slick-next {
+  right: -85px;
+}
+.openings-section .slick-current + .slick-slide {
+  position: relative;
+  top: 45px;
+  padding-bottom: 45px;
+}
+.openings-section .nav-product-salon .slick-next:before,
+.openings-section .nav-product-salon .slick-prev:before, 
+.collective-section .nav-product .slick-next:before, 
+.collective-section .nav-product .slick-prev:before {
+  content: "";
+  width: 64px;
+  height: 12px;
+  stroke-width: 2px;
+  stroke: #353535;
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+.openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
+  background-image: url(../img/arrow-next.svg);
+  left: 0;
+  transform: rotate(180deg);
+}
+.openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
+  background-image: url(../img/arrow-next.svg);
+  right: 0;
+}
+.openings-section .nav-product-salon .slick-disabled, .collective-section .nav-product .slick-disabled {
+    opacity: 0.5;
+}
+.openings-section .card-body {
+    padding-top: 1.5rem;
+}
+.openings-section {
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.openings-section h2 {
+    font-size: 2.5rem;
+}
+.work-at .email .form-control {
+    margin: 6px 0 0 0px;
+    padding-bottom: 0.5rem;
+    color: #9A9A9A;
+    border-bottom: 0.8px solid rgba(0, 0, 0, 0.20);
+    border-radius: 0;
+    font-family: Gilroy;
+}
+.work-at .email .form-control:placeholder {
+     color: #9A9A9A;
+}
+.work-at .email .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.city-bx {
+    appearance: auto;
+}
+.work-at .btn {
+    border: 1px solid #fff;
+    background: transparent;
+    width: 250px;
+    margin-top: 20px;
+    height: auto;
+    padding: 16px 20px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0;
+}
+.work-at .btn:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.looking-for .btn-black, .btn-black {
+    background: #000000;
+    width: 180px;
+    height: auto;
+    padding: 16px 20px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0;
+    margin-top: 40px;
+}
+.looking-for .btn-black:hover, .looking-for .btn-black:focus, .btn-black:hover, .btn-black:focus {
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+}
+.home .i-love-working, .looking-for, .salary-benefirs .competitive-section {
+    margin: 0;
+    padding: 100px 0;
+}
+.home .i-love-working  .work-at-halo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+}
+.home .i-love-working h3 {
+    font-weight: 400;
+}
+.home .i-love-working .card {
+    margin-left: auto;
+   max-width: 450px;
+}
+.home .i-love-working .flex-row-reverse .card {
+    margin-left: 0;
+    margin-right: auto;
+}
+.looking-for ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.looking-for ul li {
+    color: #353535;
+    font-weight: 500;
+    font-family: 'Bricolage Grotesque';
+}
+.looking-for ul li img {
+    margin-right: 0.5rem;
+}
+.salary-benefirs .competitive-section .card {
+   transition: 0.5s all;
+}
+.salary-benefirs .competitive-section .card:hover img {
+   filter: brightness(0) invert(1);
+}
+.salary-benefirs .specialists {
+   --bs-gutter-x: 4rem;
+    row-gap: 4rem !important;
+}
+.salary-benefirs .stylists-section .btn {
+    background: transparent;
+    border: 1px solid #000;
+    width: 160px;
+    height: auto;
+    padding: 10px;
+    margin-top: 16px;
+    font-family: Gilroy;
+    font-size: 18px;
+    border-radius: 0;
+    margin-top: auto;
+}
+.salary-benefirs .competitive-section .card:hover .btn  {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+.banner-video .video-btn {
+    background-color: transparent;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    color: #fff;
+    gap: 26px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 24px;
+     font-family: 'Bricolage Grotesque';
+    border: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-modal .modal-dialog {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 15px;
+  border-radius: 1rem;
+}
+
+.video-modal .modal-body {
+  position:relative;
+  padding:0px;
+}
+.video-modal .embed-responsive-item {
+    border-radius: 0.5rem;
+}
+.video-modal .btn-close {
+  position:absolute;
+  right:-50px;
+  top:0;
+  height: auto;
+  --bs-btn-close-bg:none;
+    position: absolute;
+  width: 32px;
+  opacity: 1;
+}
+.video-modal .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+.video-modal .close:hover {
+  opacity: 1;
+}
+.video-modal .close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.video-modal .close:after {
+  transform: rotate(-45deg);
+}
+
+.senior-card-badge {
+  border-radius: 99px;
+    background: #fff;
+    color: #353535;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-family: Gilroy;
+    padding: 3px 13px !important;
+    line-height: 20px;
+}
+.i-love-working h5 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 500;
+}
+.i-love-working h5 img {
+    border-radius: 50%;
+}
+.collective-section .slick-slider, .openings-section .slick-slider {
+    margin-right:-30px;
+    margin-left:-30px;
+}
+.collective-section .slick-slide, .openings-section .slick-slide {
+    margin-right:30px;
+    margin-left:30px;
+}
+.collective-section .nav-product .slick-slide .slide, 
+.openings-section .nav-product-salon .slick-slide .slide {
+    padding: 0;
+}
+.collective-section .nav-product .slick-next, .collective-section .nav-product .slick-prev, 
+.openings-section .nav-product-salon .slick-next, .openings-section .nav-product-salon .slick-prev {
+    z-index: 9;
+}
+.welcome-to-halo {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.welcome-to-halo h2 {
+   margin-bottom: 1rem;
+}
+.welcome-to-halo p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.welcome-to-halo .section-title {
+    margin-bottom: 70px;
+}
+.text-content {
+    max-width: 595px;
+   margin: 0 auto;
+   padding: 0 0.5rem;
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1355px;
+    }
+}
+@media(max-width:991px) {
+    .main-header-top nav ul {
+        gap: 0;
+        padding: 20px 0;
+    }
+    .home .collective-section .location h4 {
+        text-align: left;
+    }
+    .salary-benefirs .specialists {
+       --bs-gutter-x: 3rem;
+        row-gap: 3rem !important;
+    }
+    /* Hamburger css */
+    .navbar-toggler:focus { 
+        outline: none;
+        outline: 0px auto -webkit-focus-ring-color; 
+        box-shadow: none; 
+    }
+    .main-header-top .nav-icon {
+      width: 20px;
+      height: 15px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      top: 3px;
+      margin-right: 8px;
+    }
+
+    .main-header-top .nav-icon span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+    }
+
+    .main-header-top .nav-icon span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    .main-header-top .nav-icon span:nth-child(2) {
+      top: 7px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    .main-header-top .nav-icon span:nth-child(3) {
+      top: 14px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+      width: 100%;
+      right: 0;
+      margin-left: auto;
+    }
+
+    .main-header-top .nav-icon.open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: -2px;
+      left: 8px;
+    }
+
+    .main-header-top .nav-icon.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    .main-header-top .nav-icon.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 15px;
+      left: 8px;
+      right: inherit;
+      width: 100%;
+    }
+    /* Hamburger end */
+
+    .main-header-top.activeheader .nav-icon span, .main-header-top.open-header .nav-icon span {
+        background: #000;
+    }
+    .main-header-top.open-header {
+        background: #fff;
+        box-shadow: 1px 1px 5px #bdbdbd;
+    }
+    .open-header nav a, .open-header nav .navbar-brand {
+        color: #353535 !important;
+    }
+    .open-header .apply-btn {
+        background: #000;
+        color: #fff !important;
+    }
+    .collective-section .slick-slider, .openings-section .slick-slider {
+        margin-right:-15px;
+        margin-left:-15px;
+    }
+    .collective-section .slick-slide, .openings-section .slick-slide {
+        margin-right:15px;
+        margin-left:15px;
+    }
+}
+@media(max-width:767px) {
+    h2, .openings-section h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .banner-section h1, .different-section h1 {
+        font-size: 48px;
+        text-align: center;
+        line-height: 52px;
+    }
+    .building-section h2, .changing-uk h2, .work-at-halo h2, 
+    .collective-section .talented h3, .openings-section h3, .who-are-section h2, 
+    .rollout-section h2, .revolutionise-section h2, .process-section h2, .test-process h2 {
+        font-size: 2rem;
+    }
+    .banner-section a {
+        justify-content: center;
+    }
+    .banner-section {
+        height: 630px;
+        padding: 140px 0;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home .building-section {
+        padding: 100px 0 60px 0;
+    }
+    .building-section h4, .collective-section .location h4 {
+        font-size: 18px;
+    }
+    .home .collective-section .location h4 {
+        font-size: 18px;
+    }
+    .home .changing-uk {
+        padding: 40px 24px;
+    }
+    .looking-for ul {
+        float: none;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .home .work-at-halo p {
+        font-size: 16px;
+        margin-bottom: 0.25rem;
+    }
+    .home .i-love-working h3 {
+        font-size: 1.5rem;
+    }
+    .home .i-love-working .work-at-halo {
+        row-gap: 3.75rem;
+    }
+    .home .i-love-working h5 {
+       font-size: 18px;
+    }
+    .home .i-love-working {
+        margin: 0;
+        padding: 25px 0 85px 0;
+    }
+    .looking-for {
+        padding: 60px 0 25px 0;
+    }
+    .salary-benefirs .specialists {
+       --bs-gutter-x: 1.5rem;
+        row-gap: 1.25rem !important;
+    }
+    .salary-benefirs .great-hair-section {
+        margin: 0;
+        padding: 50px 0;
+    }
+    .work-at, .revolutionise-section {
+        padding: 40px 0;
+    }
+    .salary-benefirs .competitive-section {
+        padding: 60px 0 50px 0;
+    }
+    .about-banner h1, .salary-banner h1 {
+        width: 100%;
+    }
+    .banner-video .video-btn {
+        float: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .video-modal .btn-close {
+      right:0px;
+      top:-40px;
+    }
+    .building-section h2, .changing-uk h2, .work-at-halo h2 {
+        line-height: 35px;
+    }
+    .home .senior-card h4, .darlington-card h4 {
+        font-size: 20px;
+    }
+    .work-at .email label {
+        margin-bottom: 0.5rem;
+    }
+    .footer-title-image img {
+      padding-left: 0px;
+    }
+    .welcome-to-halo .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:425px) {
+    .home .building-section .btn, .home .changing-uk .btn, 
+    .work-at-halo .btn, .home .looking-for .work-at-halo .btn {
+        width: 100%;
+    }
+    .container {
+        padding: 0 .5rem;
+    }
+    .collective-section .nav-product .slick-slide .slide, .openings-section .nav-product-salon .slick-slide .slide {
+        padding: 0 5px;
+    }
+    .collective-section .slick-slider, .openings-section .slick-slider {
+        margin-right:-5px;
+        margin-left:-5px;
+    }
+    .collective-section .slick-slide, .openings-section .slick-slide {
+        margin-right:5px;
+        margin-left:5px;
+    }
+    .home .openings-section .slick-current + .slick-slide {
+        top: 0px;
+        padding-bottom: 0px;
+    }
+    /* .home .openings-section .slick-current {
+        position: relative;
+        top: 0px;
+        padding-bottom: 0px;
+    }*/
+}
+

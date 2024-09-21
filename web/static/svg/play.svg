@@ -1,0 +1,37 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bi_626_1381)">
+<rect width="48" height="48" rx="24" fill="white" fill-opacity="0.2"/>
+<rect x="0.244898" y="0.244898" width="47.5102" height="47.5102" rx="23.7551" stroke="white" stroke-opacity="0.06" stroke-width="0.489796"/>
+<g clip-path="url(#clip0_626_1381)">
+<g clip-path="url(#clip1_626_1381)">
+<g clip-path="url(#clip2_626_1381)">
+<path d="M29.1429 24.0004C29.1432 24.1251 29.1113 24.2478 29.0501 24.3564C28.989 24.4652 28.9007 24.5562 28.794 24.6207L22.178 28.668C22.0665 28.7362 21.9387 28.7735 21.808 28.776C21.6772 28.7784 21.5482 28.7458 21.4342 28.6817C21.3213 28.6186 21.2272 28.5265 21.1617 28.415C21.0961 28.3035 21.0615 28.1765 21.0613 28.0472V19.9536C21.0615 19.8242 21.0961 19.6972 21.1617 19.5857C21.2272 19.4742 21.3213 19.3821 21.4342 19.319C21.5482 19.2548 21.6772 19.2223 21.808 19.2247C21.9387 19.2272 22.0665 19.2644 22.178 19.3327L28.794 23.38C28.9007 23.4445 28.989 23.5355 29.0501 23.6442C29.1113 23.753 29.1432 23.8756 29.1429 24.0004Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_bi_626_1381" x="-5.87755" y="-7.83674" width="59.7551" height="61.7143" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="2.93878"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_626_1381"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_626_1381" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="0.489796" operator="erode" in="SourceAlpha" result="effect2_innerShadow_626_1381"/>
+<feOffset dy="-7.83674"/>
+<feGaussianBlur stdDeviation="5.87755"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_626_1381"/>
+</filter>
+<clipPath id="clip0_626_1381">
+<rect width="11.7551" height="11.7551" fill="white" transform="translate(18.1224 18.123)"/>
+</clipPath>
+<clipPath id="clip1_626_1381">
+<rect width="11.7551" height="11.7551" fill="white" transform="translate(18.1224 18.123)"/>
+</clipPath>
+<clipPath id="clip2_626_1381">
+<rect width="11.7551" height="11.7551" fill="white" transform="translate(18.1224 18.123)"/>
+</clipPath>
+</defs>
+</svg>

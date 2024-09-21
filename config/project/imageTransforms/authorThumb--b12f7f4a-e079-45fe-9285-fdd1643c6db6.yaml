@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: authorThumb
+height: 50
+interlace: none
+mode: crop
+name: 'Author Thumb'
+position: center-center
+quality: null
+upscale: true
+width: 50

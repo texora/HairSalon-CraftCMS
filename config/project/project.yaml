@@ -1,4 +1,4 @@
-dateModified: 1726905132
+dateModified: 1726921685
 elementSources:
   craft\elements\Entry:
     -
@@ -27,7 +27,15 @@ elementSources:
       key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:38dc9635-7a7d-484c-bffc-96bf8c1ae3e3' # Rollout Plans
+      tableAttributes:
+        - 'fieldInstance:13b2fc7f-1afa-46fc-9177-e53f51fc9547'
+        - status
+        - postDate
       type: native
 email:
   fromEmail: $SERVD_SMTP_USERNAME
@@ -84,7 +92,9 @@ meta:
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
+    afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
     b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
+    b12f7f4a-e079-45fe-9285-fdd1643c6db6: 'Author Thumb' # Author Thumb
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
     c94b79ec-0b53-47e3-8ef9-4b8562781846: Home # Home
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video

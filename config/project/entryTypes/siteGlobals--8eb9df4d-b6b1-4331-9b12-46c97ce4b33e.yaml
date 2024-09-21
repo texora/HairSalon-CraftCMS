@@ -84,7 +84,7 @@ fieldLayouts:
             dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
-            handle: Text
+            handle: text
             includeInCards: false
             instructions: null
             label: Text

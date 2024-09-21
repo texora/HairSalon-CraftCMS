@@ -1,0 +1,463 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{position: fixed;width: 100%;top: 0;z-index: 999;}
+.main-header-top .apply-btn {
+    font-family: Gilroy;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    color: #353535 !important;
+    background: #fff;
+    padding: 10px 12px;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+}
+.activeheader .apply-btn, .vacancies-header .apply-btn{background: #000;color:#fff !important;}
+.activeheader, .vacancies-header{
+    background: #fff;
+    box-shadow: 1px 1px 5px #bdbdbd;
+}
+
+.main-header-top nav a{
+	font-family: Gilroy;
+    font-weight: 500;
+    font-size: 16px;
+    color:#FFFFFF !important;
+}
+.main-header-top nav ul{gap: 48px;}
+.main-header-top nav .navbar-brand{
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.activeheader nav a, .activeheader nav .navbar-brand, .vacancies-header nav .navbar-brand, .vacancies-header nav a{color: #353535 !important;}
+.banner-section {
+    background: url(../img/Снимок-экрана.png);
+    height: 800px;
+    padding: 280px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-banner{
+    background-image: url(../img/image-x10.png);
+    position: relative;
+}
+.salary-banner{
+    background-image: url(../img/image-19.png);
+    position: relative;
+}
+.about-banner img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.about-banner h1, .salary-banner h1{width: 50%;text-align: center;margin: auto;}
+ .banner-section a{ display: flex;
+    text-align: right;
+    color: #fff;
+    gap: 16px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 24px;
+    font-family: Gilroy;
+    justify-content: end;
+}
+ .banner-section a:hover{color: #fff;}
+.banner-section h1, .different-section h1{
+    font-family: Bricolage Grotesque;
+font-size: 64px;
+font-weight: 500;
+color: #fff;
+}
+.building-section h2, .changing-uk h2, .work-at-halo h2{
+	font-family: Gilroy;
+font-size: 56px;
+font-weight: 400;
+color: #353535;
+margin-bottom: 10px;
+}
+.building-section{padding: 50px 0;}
+.building-section h2 span{color:#35353580;}
+.building-section h4, .collective-section .location h4{font-family: Gilroy;font-size: 24px;font-weight: 400;}
+.building-section button, .changing-uk button, .work-at-halo button, .looking-for .work-at-halo button, .basic-salary-btn{
+	background: #000000;
+	width: 180px;
+height: 60px;
+padding: 13px 20px 11px 20px;
+angle: 0 deg;
+font-family: Gilroy;
+font-size: 18px;
+font-weight: 500;
+color: #fff;
+border-radius: 0;
+margin-top: 40px;
+}
+.building-section button:hover, .work-at-halo button:hover{color: #fff;}
+.collective-section .talented h3, .openings-section h3, .who-are-section h2, .rollout-section h2, 
+.revolutionise-section h2, .process-section h2, .test-process h2{
+	font-family: Bricolage Grotesque;
+font-size: 48px;
+font-weight: 500;
+color: #353535;
+
+}
+
+.collective-section .location h4, .senior-card h4, .darlington-card h4{
+	font-weight: 400;
+	font-size: 20px;
+	text-align: right;
+    font-family: Gilroy;
+}
+.senior-card h4{text-align: left;}
+.senior-card, .stylists-section .best{
+	padding: 24px;
+	background: #F1EDE6;
+}
+.stylists-section .best{height: 100%;}
+.senior-card img, .darlington-card img, .who-are-section img{width: 100%;}
+
+.collective-section .nav-product .slick-next:before, .collective-section .nav-product .slick-prev:before, .openings-section .nav-product-salon .slick-next:before, .openings-section .nav-product-salon .slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #353535;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.collective-section .nav-product .slick-next, .openings-section .nav-product-salon .slick-next{
+	left: 0px;
+}
+
+.collective-section .nav-product .slick-prev, .openings-section .nav-product-salon .slick-prev{right: 0px;}
+.collective-section .nav-product .slick-next, .collective-section .nav-product .slick-prev, .openings-section .nav-product-salon .slick-next, .openings-section .nav-product-salon .slick-prev {
+    top: auto;
+    z-index: 999;
+    bottom: -55px;
+    margin: auto;
+}
+.collective-section .nav-product, .openings-section .nav-product-salon{margin: 50px 0;}
+.collective-section .nav-product .slick-slide .slide, .openings-section .nav-product-salon .slick-slide .slide{padding: 0 20px;}
+.darlington-card h4{text-align: center;}
+.openings-section, .looking-for{margin-top: 100px;}
+.changing-uk{
+	background: #012B48;
+	padding: 0 50px;
+	margin: 100px 0;
+}
+.changing-uk button{background: #fff;color: #000;}
+.changing-uk h2, .work-at-halo h2{color: #fff;font-family: Bricolage Grotesque;}
+.work-at-halo button{border: 1px solid #fff;background: transparent;width: 250px;margin-top: 20px;}
+ .work-at-halo p{
+    font-size: 18px;
+    font-family: Gilroy;
+    font-weight: 400;
+    color: #fff;
+}
+.work-at, .revolutionise-section{
+    background: #C5A78C;
+    padding: 80px 0;
+}
+.work-at .email-form{
+    background: #fff;
+    padding: 25px;
+}
+.work-at .email{
+    margin-top: 20px;
+}
+.work-at .email .btn{
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	height: 48px;
+	font-family: Gilroy;
+}
+.work-at .email-form h4, .i-love-working h5, .who-are-section p, .unparalleled p, .different-section p,
+.recruitment-section p, .test-process h4{
+	color: #353535;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Gilroy;
+}
+.work-at .email label, footer .up-to-date label{
+	color: #353535;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Gilroy;
+}
+.work-at .email .city-bx, .work-at .email .email-bx{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 6px 0 0 0;
+}
+.looking-for .work-at-halo h2{color: #353535 ;}
+.looking-for .work-at-halo p{color: #353535 ; margin-bottom: 0;}
+.looking-for ul{
+    list-style: none;
+    padding: 0;
+    float: right;
+    font-family: Gilroy;
+    font-size: 24px;
+}
+.i-love-working .like-share a {
+    display: inline-flex;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.i-love-working .save a{float: right;display: block;text-decoration: none;}
+.i-love-working .card h4{font-size: 20px;font-family:Gilroy;font-weight:400;padding: 20px;margin:0;}
+.i-love-working h3{
+	font-family: Gilroy;
+    font-size: 40px;
+}
+.i-love-working h5 span {
+    color: #000;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.i-love-working iframe, .recruitment-section iframe{width: 100%;}
+.i-love-working h5{margin-top: 20px;}
+.i-love-working{margin: 100px 0;}
+.i-love-working .everyone{float: right;}
+footer{background: #7C532F;padding: 50px 0 0;}
+footer ul{
+     list-style: none;
+    padding: 0;
+    font-family: Gilroy;
+    font-size: 16px;
+}
+footer ul li{margin-bottom: 10px;}
+footer ul a{text-decoration: none;color: #fff;}
+footer .up-to-date input {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding: 0;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    font-family: Gilroy;
+}
+footer .up-to-date{position: relative;}
+footer .up-to-date a {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 40px;
+    padding: 14px;
+    width: 60px;
+}
+footer .up-to-date .form-control:focus {
+    background: transparent;
+    box-shadow: 0 0 0;
+    border-color: #fff; color: #fff;
+}
+footer .up-to-date input::placeholder, footer .up-to-date label{
+   color: #fff;}
+footer h1 {
+    font-size: 440px;
+    text-align: center;
+    color: #fff;
+    opacity: 10%;
+    letter-spacing: 66px;
+    margin: -100px 0;
+}
+.who-are-section {
+    background: #C5A78C;
+    margin: 100px 0;
+}
+.reward-success{background:#F1EDE6;}
+.reward-success h2, .reward-success p{color:#353535 !important;}
+.reward-success .curve-text{right: 10px !important;}
+.who-are-section h2, .who-are-section p{color: #fff;}
+.experienced{padding: 60px;}
+.businesspeople, .recruitment-section{position: relative;}
+.businesspeople .curve-text, .something-section .curve-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    height: 204px;
+}
+.something-section .curve-text{left: auto;right: 0;}
+.phase-sunderland {
+    border-bottom: 1px solid #353535;
+    padding: 15px 0px;
+    align-items: center;
+}
+.rollout-section h2{margin-bottom: 20px;}
+.rollout-section{margin: 100px 0;}
+.phase-sunderland .phase {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.phase-sunderland .phase h4, .specialists h4, .great-hair-section h4, .working-section h4, .personal-kit h4{
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    color: #353535;
+}
+
+.phase-sunderland .sunderland ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #7C532F;
+    justify-content: end;
+}
+.unparalleled, .looking-for, .cutting-styling-section, .competitive-section,
+.great-hair-section{margin: 100px 0;}
+.something-section{margin-top: 0;}
+.stylists-section .card {
+    background: #F1EDE6;
+    padding: 24px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.stylists-section .specialists, .cutting-styling-section .specialists{gap: 24px 0 !important;}
+.specialists p, .personal-kit p{ font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    color: #353535;}
+
+.cutting-styling-section .senior-card a{
+    font-size: 18px;
+    color: #353535;
+    font-weight: 500;
+    font-family: Gilroy;
+    text-decoration: none;
+}
+.stylists-section img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.stylists-section .best img{height: 100%;width: 100%;margin: 0;}
+.stylists-section button {
+    background: transparent;
+    border: 1px solid #000;
+    width: 160px;
+    height: 48px;
+    margin-top: 16px;
+    font-family: Gilroy;
+    font-size: 18px;
+}
+.competitive-section .card:hover{
+background: #C5A78C !important;
+}
+.competitive-section .card:hover h4, .competitive-section .card:hover p, .recruitment-section p{color: #fff !important;}
+.competitive-section .card:hover button{
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+.great-hair-section .better-img{text-align: center;}
+.different-section h1{color: #353535;}
+.different-section{
+    text-align: center;
+    padding: 150px 0 100px;
+}
+.recruitment-section .director {
+    position: absolute;
+    width: 30%;
+    bottom: 20px;
+    right: 30px;
+}
+.recruitment-video .director{ left:30px;right:auto; }
+.recruitment-section h3, .working-section h3, .stylists-section .best h3{font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    font-family: Gilroy;
+}
+.working-section h3, .stylists-section .best h3{color: #353535;}
+.working-bx{width: 50%;margin: auto;position: relative;}
+.working-section h4{margin-top: 20px;}
+.working-section {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+.stylists-section .best p{font-size: 18px;font-family:Gilroy;font-weight: 400;}
+
+.working-bx::before, .working-bx::after {
+    content: "“";
+    font-size: 300px;
+    color: #F5F5F5;
+    position: absolute;
+    left:0;
+    height: 100px;
+    top: -100px;
+}
+.working-bx::after {
+    right: -120px;
+    left: auto;
+    bottom: -100px;
+    top: auto;
+    rotate: 180deg;
+    
+}
+.recruitment-section {
+    margin: 0px 0 -6px 0;
+}
+.revolutionise-section h2{color: #fff;}
+.good-people h2 {
+    font-family: Gilroy;
+    font-size: 140px;
+    opacity: 10%;
+}
+.good-people p{
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #fff;
+}
+.good-people .col-3 {
+    border-left: 1px solid #ffffff26;
+}
+.good-people .col-3:nth-child(1){border-left: none;}
+.standards .senior-card{padding: 0;background: #000;}
+.standards .senior-card h4, .chemistry-step h5, .test-process .believe{font-size: 18px; font-family: Gilroy;font-weight: 500;color: #fff;}
+.experience-section{margin: 100px 0;}
+.basic-salary-btn{width: auto;border: none;}
+
+.chemistry-step {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.process-section {
+    margin: 100px 0;
+    text-align: center;
+}
+.chemistry-step h5 {
+    color: #353535;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.test-process .believe{color:#353535;}
+.chemistry-step img{margin-left: 30px;}
+.face-to-face{background: #ECEEF2;padding: 20px;}
+.trade-test{background: #fff;padding: 20px;}
+
+.test-process{margin: 100px 0; }
+
+.personal-kit {
+    border-bottom: 1px solid;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.personal-kit:hover{
+    background: #F1EDE6;
+}

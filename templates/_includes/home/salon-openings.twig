@@ -1,0 +1,24 @@
+{% set curYear = now|date('Y') %}
+<section class="openings-section">
+    <div class="container">
+        <div class="section-title mb-5">
+            <h2>{{ curYear }} Salon Openings</h2>
+        </div>
+        {% set rolloutPlans = craft.entries().section('rolloutPlans').openingYear(curYear).with(['image']).all() %}
+        <div class="nav-product-salon">
+            {% for rolloutPlan in rolloutPlans %}
+                {% set image = rolloutPlan.image.one() %}
+                <div class="slide">
+                    <div class="darlington-card">
+                        {% if image %}
+                            <img src="{{ image.url }}" alt="{{ rolloutPlan.title }}" />
+                        {% endif %}
+                        <div class="card-body">
+                            <h4>{{ rolloutPlan.title }}</h4>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -153,6 +153,38 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            dateAdded: '2024-09-21T11:39:56+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: careerHeading
+            includeInCards: false
+            instructions: null
+            label: 'Career Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c2f2a1f-65de-4832-9909-c4648528cdb8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-21T11:39:56+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: careerSubheading
+            includeInCards: false
+            instructions: null
+            label: 'Career Subheading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c532405-4e75-42f3-8673-700e4002de87
+            userCondition: null
+            warning: null
+            width: 50
         name: 'Halo Career'
         uid: a0f0a532-c200-4c44-8e5a-386fb8a3b862
         userCondition: null

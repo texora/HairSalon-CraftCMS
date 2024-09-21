@@ -1,0 +1,16 @@
+<section class="banner-section"{% if entry.heroImage|length %} style="background-image: url({{ entry.heroImage.one().url }});"{% endif %}>
+    <div class="container">
+        <div class="row align-items-center banner-text-content row-gap-4">
+            <div class="col-12 col-md-6">
+                {{ entry.heroText }}
+            </div>
+            <div class="col-12 col-md-6">
+                {% if entry.youtubeVideo %}
+                    <div class="banner-video">
+                        <button type="button" class="video-btn " data-bs-toggle="modal" data-src="{{ entry.youtubeVideo.media.url }}" data-bs-target="#video-popup"><img src="/static/svg/play.svg" alt="lightbox"> Watch the film</button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
