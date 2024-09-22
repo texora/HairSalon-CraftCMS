@@ -36,9 +36,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-22T05:53:17+00:00'
+            dateAdded: '2024-09-22T11:46:26+00:00'
             elementCondition: null
-            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: introHeading
+            includeInCards: false
+            instructions: null
+            label: 'Intro Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19f1dda7-4192-4db6-828e-4cf90cc28835
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T11:46:26+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
             handle: introText
             includeInCards: false
             instructions: null
@@ -47,7 +63,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2104dd49-de1d-41f0-9d58-735c90a555df
+            uid: cddc0115-8249-491d-a261-d633c79f0fd0
             userCondition: null
             warning: null
             width: 100

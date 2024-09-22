@@ -1,15 +1,25 @@
 {% extends "_layouts/main" %}
 
-{% set bodyClass = 'home' %}
+{% set bodyClass = 'our-people' %}
 
 {% block main %}
 
-    {% include '_includes/hero-full-img' %}
-    {% include '_includes/about-us/about' %}
-    {% include '_includes/about-us/who-we-are' %}
-    {% include '_includes/about-us/plans' %}
-    {% include '_includes/about-us/text-w-image' %}
+    
+    <section class="different-section">
+      <div class="container">
+        <div class="row justify-content-center w-100 mx-auto">
+          <div class="col-12 col-md-8 mx-auto">
+            <h1 class="px-2 px-md-0">{{ entry.introHeading }}</h1>
+            <div class="px-md-5">
+              <p>{{ entry.introText|nl2br }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    {% include '_includes/our-people/employee-speaks' %}
     {% include '_includes/work-at-halo' %}
 
 {% endblock %}

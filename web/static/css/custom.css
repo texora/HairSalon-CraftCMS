@@ -318,6 +318,21 @@
     font-display: swap;
 }
 
+/** Acme fonts **/
+@font-face {
+    font-family: 'Acme';
+    src: url('../fonts/Acme-Regular.eot');
+    src: url('../fonts/Acme-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Acme-Regular.woff2') format('woff2'),
+        url('../fonts/Acme-Regular.woff') format('woff'),
+        url('../fonts/Acme-Regular.ttf') format('truetype'),
+        url('../fonts/Acme-Regular.svg#Acme-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     font-family: Gilroy;
     font-weight: 400;
@@ -343,7 +358,7 @@ p {
 .btn {
     transition: 0.5s all;
     width: 180px;
-    padding: 16px 20px;
+    padding: 16px 14px;
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
@@ -469,7 +484,7 @@ p {
     color: #fff;
     text-align: center;
 }
-.banner-section p, .different-section p {
+.banner-section p {
     color: #fff;
     font-size: 20px;
     line-height: 28px;
@@ -615,7 +630,7 @@ input:-webkit-autofill {
     background: #000000;
     width: 180px;
     height: auto;
-    padding: 16px 20px;
+    padding: 16px 14px;
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
@@ -813,6 +828,9 @@ input:-webkit-autofill {
 .who-are-section .content-width-50 .text-content {
     padding: 40px 12px;
 }
+.who-are-section .btn {
+    width: 220px;
+}
 .image img {
     width: 100%;
 }
@@ -828,30 +846,34 @@ input:-webkit-autofill {
 .phase-sunderland .sunderland ul {
     font-weight: 600;
 }
-/* css add for vacancies page  */
-.vacancies-header-relative .nav-icon span {
-  background: #353535;
-}
+
 .vacancy .businesspeople .curve-text {
   right: 0;
   left: auto;
 }
-.main-header-top.vacancies-header-relative nav li a {
-  color: #353535 !important;
-}
+
 .activeheader {
   position: fixed !important;
 }
-.main-header-top.vacancies-header-relative img {
-  filter: brightness(100) invert(1);
+
+.vacancy .main-header-top nav li a,
+.our-people .main-header-top nav li a,
+.cultire .main-header-top nav li a, 
+.apple .main-header-top nav li a {
+  color: #353535 !important;
 }
-.main-header-top.vacancies-header-relative .apply-btn {
-  color: #fff !important;
-  background: #000;
+.vacancy .main-header-top, .our-people .main-header-top, .cultire .main-header-top, 
+.apple .main-header-top {
+    position: relative;
+    width: 100%;
 }
-.vacancies-header-relative {
-  position: relative;
-  width: 100%;
+.vacancy .main-header-top img, .our-people .main-header-top img, .cultire .main-header-top img, .apple .main-header-top img {
+    filter: brightness(100) invert(1);
+}
+.vacancy .main-header-top .apply-btn, .our-people .main-header-top .apply-btn, .cultire .main-header-top .apply-btn, 
+.apple .main-header-top .apply-btn {
+    color: #fff !important;
+    background: #000;
 }
 .vacancy .stylists-section,
 .vacancy .cutting-styling-section {
@@ -894,6 +916,93 @@ input:-webkit-autofill {
     font-size: 14px;
     line-height: 20px;
 }
+/* ************************************************* our-people***********************/
+.our-people .recruitment-section .director h3 {
+  margin-bottom: 0;
+}
+.our-people .recruitment-section .director {
+  width: 37%;
+}
+.different-section h1 {
+  margin-bottom: 24px;
+}
+.different-section p {
+  color: #353535;
+}
+.our-people .different-section {
+  padding: 120px 0;
+}
+/*.recruitment-section .plyr--full-ui {
+  max-height: 800px;
+}*/
+.our-people .recruitment-section h3 {
+  font-family: "Bricolage Grotesque";
+}
+.working-bx::before {
+  left: -150px;
+  top: 130px;
+}
+.working-bx::before,
+.working-bx::after {
+  font-family: "Bricolage Grotesque";
+}
+.working-bx::after {
+  bottom: 100px;
+  right: -150px;
+}
+.our-people .working-section h3 {
+    font-weight: 400;
+    margin-bottom: 56px;
+}
+.our-people .working-bx img {
+    margin-bottom: 35px;
+}
+.working-bx {
+    width: 100%;
+    max-width: 800px;
+}
+.i-love-working .plyr__controls__item.plyr__control[data-plyr="fullscreen"], 
+.i-love-working .plyr__controls__item.plyr__control[data-plyr="play"] {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i-love-working .plyr--video .plyr__control--overlaid {
+    display: flex;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.i-love-working .plyr__controls__item.plyr__menu .plyr__control[data-plyr="settings"], 
+.i-love-working .plyr__controls__item.plyr__volume, 
+.i-love-working .plyr__progress__container, 
+.i-love-working .plyr__time--current.plyr__time {
+    display: none;
+}
+.i-love-working  .plyr__control svg {
+    font-size: 14px;
+}
+.trade-image {
+    height: 500px;
+}
+.trade-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.trade-test {
+    height: 100%;
+}
+.trade-test h3, .chemistry-step h5 {
+    font-family: "Bricolage Grotesque";
+}
+.about .businesspeople .curve-text{width:100px;height:100px;}
 @media (min-width: 992px) {
   .text-content {
     max-width: 600px;
@@ -1057,9 +1166,13 @@ input:-webkit-autofill {
       width: 100%;
     }
     /* Hamburger end */
-
-    .main-header-top.activeheader .nav-icon span, .main-header-top.open-header .nav-icon span {
-        background: #000;
+    .vacancy .nav-icon span,
+    .our-people .nav-icon span,
+    .cultire .nav-icon span,
+    .apple .nav-icon span 
+    .main-header-top.activeheader .nav-icon span, 
+    .main-header-top.open-header .nav-icon span {
+      background: #353535;
     }
     .main-header-top.open-header {
         background: #fff;
@@ -1087,9 +1200,9 @@ input:-webkit-autofill {
     .welcome-to-halo .content-width-50 .text-content {
         padding-bottom: 0;
     }
-    .main-header-top.vacancies-header-relative .nav-icon span {
+    /*.main-header-top.vacancies-header-relative .nav-icon span {
         background-color: #000;
-    }
+    }*/
 }
 @media (max-width: 768px) {
   .vacancy .specialists .senior-card p {
@@ -1111,6 +1224,59 @@ input:-webkit-autofill {
   .vacancy .cutting-styling-section {
     padding: 80px 0;
   }
+   .our-people .different-section p {
+    font-size: 18px;
+  }
+  .our-people .recruitment-section .director {
+    position: static;
+    width: 100%;
+    padding: 1.25rem 0.75rem;
+    margin-bottom: 0;
+  }
+  .our-people .recruitment-section .director h3 {
+    font-size: 1.25rem;
+  }
+  .our-people .recruitment-section .director h3,
+  .our-people .recruitment-section .director p {
+    color: #353535 !important;
+  }
+  .our-people .working-bx {
+    width: 100%;
+  }
+  .our-people .working-section h3 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .our-people .recruitment-section .director h3 {
+    margin-bottom: 20px;
+  }
+  .our-people .different-section {
+    padding-top: 56px;
+    padding-bottom: 32px;
+  }
+  .our-people .recruitment-section .director {
+    padding: 1.25rem 0;
+  }
+  .working-bx::before {
+    top: 3rem;
+    left: 0;
+  }
+  .working-bx::after {
+    bottom: 3rem;
+    right: 0;
+  }
+  .our-people .recruitment-section .director p {
+    font-size: 1rem ;
+}
+  .working-bx::before,
+  .working-bx::after {
+    font-size: 100px;
+    height: auto;
+  }
+  .working-section {
+    padding: 20px 0 80px 0;
+    text-align: center;
+}
 }
 @media(max-width:767px) {
     h2, .openings-section h2 {
@@ -1305,4 +1471,3 @@ input:-webkit-autofill {
     }
 
 }
-

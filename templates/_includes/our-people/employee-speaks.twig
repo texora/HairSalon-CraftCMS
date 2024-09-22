@@ -1,0 +1,42 @@
+{% if entry.employeeSpeaks.count() %}
+  {% for block in entry.employeeSpeaks.type(['employeeVideo', 'employeeText']).eagerly().all() %}
+    {% if block.type == 'employeeVideo' %}
+    <section class="recruitment-section position-static">
+      <div class="player-wrapper position-relative">
+        <!-- YouTube Video -->
+        <div class="video-player" id="player1">
+          <iframe
+            width="560"
+            height="800"
+            src="{{ block.video.media.url }}"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+            data-plyr-provider="youtube"
+            data-plyr-embed-id=""
+          ></iframe>
+        </div>
+      </div>
+      {% if block.videoText %}
+        <div class="container">
+          <div class="director-container position-relative">
+            <div class="director end-0">
+              {{ block.videoText }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </section>
+  {% elseif block.type == 'employeeText' %}
+    <section class="working-section">
+      <div class="container">
+        <div class="working-bx">
+          {{ svg('@webroot/static/svg/quote-mark.svg') }}
+          <h3>{{ block.testimonialText }}</h3>
+          <h4 class="mb-0">{{ block.employeeName }}</h4>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+  {% endfor %}
+{% endif %}
