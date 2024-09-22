@@ -1,0 +1,32 @@
+<section class="welcome-to-halo">
+    {% if entry.introText %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-7 mx-auto">
+                    <div class="section-title text-center">
+                        {{ entry.introText }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if entry.textImageGrid.eagerly().count() %}
+        <div class="container container-full-width">
+            <div class="d-flex flex-column row-gap-4 row-gap-lg-0">
+                {% for row in entry.textImageGrid.eagerly().all() %}
+                    <div class="row align-items-center row-gap-4{% if loop.index % 2 == 0 %} flex-row-reverse{% endif %}">
+                        {% set image = row.image.eagerly().one() %}
+                        <div class="col-12 col-lg-6 px-lg-0">
+                            {% if image %}<div class="image"><img src="{{ image.url }}" alt="{{ image.title }}"></div>{% endif %}
+                        </div>
+                        <div class="col-12 col-lg-6 px-0 content-width-50">
+                            <div class="text-content">
+                                {{ row.text }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+</section>

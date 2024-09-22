@@ -76,27 +76,11 @@ fieldLayouts:
           -
             dateAdded: '2024-09-22T05:31:49+00:00'
             elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: heading
-            includeInCards: false
-            instructions: null
-            label: Heading
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 85a952d6-b8f9-4cdf-9900-6bc1e62c6be5
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-22T05:31:49+00:00'
-            elementCondition: null
             fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
-            handle: welcomeText
+            handle: introText
             includeInCards: false
             instructions: null
-            label: 'Welcome Text'
+            label: 'Intro Text'
             providesThumbs: false
             required: false
             tip: null
@@ -105,7 +89,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Welcome Text'
+        name: 'Intro Text'
         uid: 5a92770a-44f6-4ae3-bb18-8e037e1cc019
         userCondition: null
       -

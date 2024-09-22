@@ -1,0 +1,30 @@
+{% if entry.benefits.count() %}
+    
+    <section class="stylists-section competitive-section">
+        <div class="container">
+            {% if entry.sectionHeading %}
+                <div class="section-title mb-sm-5 mb-4">
+                    <h2>{{ entry.sectionHeading }}</h2>
+                </div>
+            {% endif %}
+            <div class="row specialists">
+                {% for benefit in entry.benefits.eagerly().all() %}
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            {% set icon = benefit.benefitIcon.eagerly().one() %}
+                            {% if icon and icon.extension == 'svg' %}
+                                <div class="mb-3">{{ svg(icon) }}</div>
+                            {% endif %}
+                            <h4>{{ benefit.title }}</h4>
+                            <p>{{ benefit.benefitText|nl2br }}</p>
+                            {{ benefit.cta.getLink({
+                                class: 'btn button',
+                                text: 'Learm more'
+                            }) }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}
