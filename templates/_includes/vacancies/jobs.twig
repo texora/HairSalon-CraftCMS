@@ -1,0 +1,26 @@
+<section class="cutting-styling-section my-0">
+  <div class="container">
+    <div class="row specialists">
+    {% for job in craft.entries().section('jobs').limit(6).with([['image', { withTransforms: ['jobGrid'] }]]).all() %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="senior-card">
+             <div class="position-relative">
+                {% set image = job.image.one() %}
+                {% if image %}<img src="{{ image.url('jobGrid') }}" alt="{{ job.title }}" />{% endif %}
+                <div class="senior-card-badge position-absolute bottom-0 end-0">
+                    {{ job.jobType.label }}
+                </div>
+            </div>
+            <div class="card-body">
+                <h4>{{ job.title }}</h4>
+                {% if job.salaryText %}<h6>{{ job.salaryText }}</h6>{% endif %}
+                <hr>
+                <p>{{ job.shortDescription|nl2br }}</p>
+                <a class="view-job d-block" href="{{ job.url }}">{{ "View job details and apply"|t }}</a>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>

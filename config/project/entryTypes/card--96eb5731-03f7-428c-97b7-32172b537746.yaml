@@ -36,6 +36,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-09-22T10:24:36+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: cardTitle
+            includeInCards: false
+            instructions: null
+            label: 'Card Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c843c8fa-1f66-4fc3-9ad6-640ebbbac3f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-09-22T05:17:18+00:00'
             elementCondition: null
             fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
@@ -55,11 +71,11 @@ fieldLayouts:
         uid: 30720d45-3508-43d4-b58c-09bed9704a95
         userCondition: null
 handle: card
-hasTitleField: true
+hasTitleField: false
 icon: ''
 name: Card
-showSlugField: true
-showStatusField: true
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

@@ -1,0 +1,22 @@
+<section class="who-are-section vacancies-section mb-0">
+  <div class="container-fluid">
+    <div class="row align-items-center left-content">
+      <div class="col-12 col-lg-6 px-0 content-width-50">
+        <div class="experienced text-content">
+          {{ entry.heroText }}
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 businesspeople px-0">
+        {% set image = entry.heroImage.eagerly().one() %}
+        {% if image %}
+          <div class="image">
+            <img src="{{ image.url }}" alt="{{ image.title }}" />
+          </div>
+        {% endif %}
+        <div class="curve-text">
+          <img src="{{ url('static/svg/curve-text-right.svg') }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

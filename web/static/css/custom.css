@@ -324,6 +324,7 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     overflow-x: hidden;
+    color: #353535;
 }
 a {
     text-decoration: none;
@@ -338,7 +339,6 @@ h2 {
 }
 p {
     font-size: 18px;
-    line-height: 25px;
 }
 .btn {
     transition: 0.5s all;
@@ -396,6 +396,7 @@ p {
     height: 100%;
     left: 0;
     background-color: hsl(0deg 0% 0% / 60%);
+    z-index: 1;
 }
 .building-section h2, .changing-uk h2, .work-at-halo h2 {
     line-height: 61px;
@@ -408,22 +409,23 @@ p {
     margin-bottom: 1.25rem;
 }
  
-.home .senior-card h4, 
-.darlington-card h4 {
+.senior-card h4, 
+.darlington-card h4, .specialists h4 {
     font-family: 'Bricolage Grotesque';
     font-weight: 500;
     font-size: 24px;
     text-shadow: 0px 0px 0.5px #FFF;
+    color: #353535;
 }
-.home .senior-card h6 {
+.senior-card h6 {
     font-family: Gilroy;
     font-weight: 400;
     color: #353535;
 }
-.home .senior-card .card-body {
+.senior-card .card-body {
     padding: 1rem 0 0 0;
 }
-.home .senior-card .card-body a {
+.senior-card .card-body a {
     font-family: 'Bricolage Grotesque';
     font-weight: 500;
     color: #353535;
@@ -626,7 +628,7 @@ input:-webkit-autofill {
     color: #000;
     background: #fff;
 }
-.home .i-love-working, .looking-for, .salary-benefirs .competitive-section {
+.home .i-love-working, .home .looking-for, .home .salary-benefirs .competitive-section {
     margin: 0;
     padding: 100px 0;
 }
@@ -786,9 +788,11 @@ input:-webkit-autofill {
     padding-top: 120px;
     padding-bottom: 60px;
 }
-.welcome-to-halo h2 {
+.welcome-to-halo h2, .competitive-section h2 {
    margin-bottom: 1rem;
+    font-family: 'Bricolage Grotesque';
 }
+
 .welcome-to-halo p {
     font-size: 20px;
     line-height: 28px;
@@ -806,15 +810,15 @@ input:-webkit-autofill {
 .content-width-50 .text-content {
     padding: 0 30px 30px 30px
 }
+.who-are-section .content-width-50 .text-content {
+    padding: 40px 12px;
+}
 .image img {
     width: 100%;
 }
-
 .phase-sunderland .phase h4 {
-     font-family: 'Bricolage Grotesque';
-    
+     font-family: 'Bricolage Grotesque'; 
 }
-
 .phase-sunderland {
     margin-top: 20px;
 }
@@ -823,6 +827,72 @@ input:-webkit-autofill {
 }
 .phase-sunderland .sunderland ul {
     font-weight: 600;
+}
+/* css add for vacancies page  */
+.vacancies-header-relative .nav-icon span {
+  background: #353535;
+}
+.vacancy .businesspeople .curve-text {
+  right: 0;
+  left: auto;
+}
+.main-header-top.vacancies-header-relative nav li a {
+  color: #353535 !important;
+}
+.activeheader {
+  position: fixed !important;
+}
+.main-header-top.vacancies-header-relative img {
+  filter: brightness(100) invert(1);
+}
+.main-header-top.vacancies-header-relative .apply-btn {
+  color: #fff !important;
+  background: #000;
+}
+.vacancies-header-relative {
+  position: relative;
+  width: 100%;
+}
+.vacancy .stylists-section,
+.vacancy .cutting-styling-section {
+  padding-top: 120px;
+  margin: 0;
+}
+.vacancy .who-are-section,
+.cultire .who-are-section {
+  margin-top: 0;
+  background: #f1ede6;
+}
+.vacancy .who-are-section h2,
+.vacancy .who-are-section p {
+  color: #353535;
+}
+.vacancy .specialists {
+  --bs-gutter-x: 3.75rem !important;
+}
+.vacancy .specialists {
+  row-gap: 60px !important;
+}
+.vacancy .cutting-styling-section {
+  padding-bottom: 120px;
+}
+
+.vacancy .specialists .card{
+    row-gap: 12px;
+}
+.stylists-section .card{
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.stylists-section .card:hover {
+  background: #c5a78c;
+}
+.stylists-section .card:hover h4, .stylists-section .card:hover p {
+  color: #fff;
+}
+.specialists .senior-card p, .collective-section .senior-card p {
+    font-size: 14px;
+    line-height: 20px;
 }
 @media (min-width: 992px) {
   .text-content {
@@ -838,12 +908,23 @@ input:-webkit-autofill {
     margin-right: 0;
    padding: 0 0 0 30px;
   }
-  .welcome-to-halo .flex-row-reverse .text-content {
-        margin-right: 0;
-        margin-left: auto;
+  .welcome-to-halo .flex-row-reverse .text-content, .left-content .text-content {
+        margin: 0;
+        padding-left: 12px;
+        padding-right: 30px;
   }
-  .phase-sunderland .col-lg-3 {
+  .welcome-to-halo .flex-row-reverse .content-width-50, .left-content .content-width-50 {
+    margin-left: auto;
+    margin-right: 0;
+    }
+    .phase-sunderland .col-lg-3 {
     padding-left: 0 !important;
+     }
+     .container-full-width {
+        max-width: 100%;
+     }
+     .salary-benefirs .competitive-section {
+        margin-top: 60px;
     }
 }
 @media (min-width: 1200px) {
@@ -855,11 +936,18 @@ input:-webkit-autofill {
     .container {
         max-width: 1355px;
     }
+    .container-full-width {
+        max-width: 100%;
+    }
     .content-width-50 {
         width: 677px;
     }
 }
-
+@media(max-width:1199px) {
+    .welcome-to-halo .text-content {
+        padding-top: 20px;
+    }
+}
 
 @media(max-width:991px) {
     .main-header-top nav ul {
@@ -992,6 +1080,37 @@ input:-webkit-autofill {
         margin-right:15px;
         margin-left:15px;
     }
+    .content-width-50 .text-content {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .welcome-to-halo .content-width-50 .text-content {
+        padding-bottom: 0;
+    }
+    .main-header-top.vacancies-header-relative .nav-icon span {
+        background-color: #000;
+    }
+}
+@media (max-width: 768px) {
+  .vacancy .specialists .senior-card p {
+    font-size: 14px !important;
+  }
+  .vacancy .specialists h4 {
+    font-size: 1.25rem;
+  }
+  .vacancy .stylists-section {
+    padding-top: 80px;
+  }
+  .vacancy .specialists {
+    row-gap: 32px !important;
+  }
+  .vacancy .specialists {
+    --bs-gutter-x: 1.5rem !important;
+    row-gap: 0;
+  }
+  .vacancy .cutting-styling-section {
+    padding: 80px 0;
+  }
 }
 @media(max-width:767px) {
     h2, .openings-section h2 {
@@ -1006,7 +1125,7 @@ input:-webkit-autofill {
         line-height: 52px;
     }
     .building-section h2, .changing-uk h2, .work-at-halo h2, 
-    .collective-section .talented h3, .openings-section h3, .who-are-section h2, 
+    .collective-section .talented h3, .openings-section h3, 
     .rollout-section h2, .revolutionise-section h2, .process-section h2, .test-process h2 {
         font-size: 2rem;
     }
@@ -1057,8 +1176,11 @@ input:-webkit-autofill {
         margin: 0;
         padding: 25px 0 85px 0;
     }
-    .looking-for {
+    .home .looking-for {
         padding: 60px 0 25px 0;
+    }
+    .unparalleled, .looking-for, .cutting-styling-section, .competitive-section, .great-hair-section {
+        margin: 60px 0;
     }
     .salary-benefirs .specialists {
        --bs-gutter-x: 1.5rem;
@@ -1070,9 +1192,6 @@ input:-webkit-autofill {
     }
     .work-at, .revolutionise-section {
         padding: 40px 0;
-    }
-    .salary-benefirs .competitive-section {
-        padding: 60px 0 50px 0;
     }
     .about-banner h1, .salary-banner h1 {
         width: 100%;
@@ -1089,11 +1208,21 @@ input:-webkit-autofill {
     .building-section h2, .changing-uk h2, .work-at-halo h2 {
         line-height: 35px;
     }
-    .home .senior-card h4, .darlington-card h4 {
+    .senior-card h4, 
+    .darlington-card h4, 
+    .phase-sunderland .phase h4, 
+    .specialists h4, 
+    .great-hair-section h4, 
+    .working-section h4, 
+    .personal-kit h4 {
         font-size: 20px;
     }
-    .work-at .email label {
-        margin-bottom: 0.5rem;
+    .competitive-section .specialists h4 {
+         font-size: 24px;
+    }
+    .salary-benefirs .competitive-section .btn {
+       width: 100% ;
+       margin-top: 50px;
     }
     .footer-title-image img {
       padding-left: 0px;
@@ -1138,6 +1267,14 @@ input:-webkit-autofill {
     .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
         right: 0;
     }
+    .content-width-50 .text-content {
+        max-width: 540px;
+        padding: 0 12px 30px 12px;
+    }
+    .welcome-to-halo {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
 }
 
 @media(max-width:425px) {
@@ -1159,9 +1296,6 @@ input:-webkit-autofill {
     .home .openings-section .slick-current + .slick-slide {
         top: 0px;
         padding-bottom: 0px;
-    }
-    .content-width-50 .text-content {
-        padding: 0 15px 30px 15px
     }
     .welcome-to-halo .text-content-lg  {
       margin-bottom: 1.5rem;

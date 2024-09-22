@@ -1,0 +1,16 @@
+{% if entry.cards.count() %}
+  <section class="stylists-section">
+    <div class="container">
+      <div class="row specialists specialists-row">
+        {% for card in entry.cards.eagerly().all() %}
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card d-flex flex-column">
+              {% if card.cardTitle %}<h4>{{ card.cardTitle }}</h4>{% endif %}
+              <p>{{ card.cardText|nl2br }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
