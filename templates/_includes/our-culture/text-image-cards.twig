@@ -1,0 +1,68 @@
+{% if entry.textImageCards.count() %}
+  <section class="stylists-section experience-section mt-0">
+    <div class="container">
+      <div class="row specialists row-gap-2 d-none d-md-flex">
+        {% for card in entry.textImageCards.eagerly().all() %}
+          {% if card.type == 'textWImage' %}
+          <div class="col-12 col-md-8">
+            <div class="best">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex justify-content-between flex-column h-100">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.text|nl2br }}</p>
+                  </div>
+                </div>
+                {% set image = card.image.eagerly().one() %}
+                <div class="col-12 col-md-5">
+                  {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elseif card.type == 'textOnly' %}
+          <div class="col-12 col-md-4">
+            <div class="best">
+              <div class="d-flex justify-content-between flex-column h-100">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.text|nl2br }}</p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+      <div class="row specialists row-gap-2 d-flex d-md-none">
+        {% for card in entry.textImageCards.eagerly().all() %}
+          {% if card.type == 'textWImage' %}
+          <div class="col-12 col-md-8">
+            <div class="best">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md-6">
+                  <div class="d-flex justify-content-between flex-column h-100">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.text|nl2br }}</p>
+                  </div>
+                </div>
+                {% set image = card.image.eagerly().one() %}
+                <div class="col-12 col-md-5">
+                  {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elseif card.type == 'textOnly' %}
+          <div class="col-12 col-md-4">
+            <div class="best">
+              <div class="d-flex justify-content-between flex-column h-100">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.text|nl2br }}</p>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

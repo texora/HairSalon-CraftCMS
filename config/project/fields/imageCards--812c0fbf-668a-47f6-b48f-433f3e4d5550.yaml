@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: imageCards
+instructions: null
+name: 'Image Cards'
+searchable: false
+settings:
+  createButtonLabel: 'Add Image Card'
+  entryTypes:
+    - 3c9ec943-aefe-47ec-81c4-89c792843eb3 # Image Card
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

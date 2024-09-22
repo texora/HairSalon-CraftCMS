@@ -44,8 +44,9 @@ $("document").ready(function() {
 	      }
 	    ]
 	});
+	const slidesToShow = $('.nav-product-salon').hasClass('culture-slider') ? 4 : 3;
 	$('.nav-product-salon').slick({
-		slidesToShow: 3,
+		slidesToShow: slidesToShow,
 		arrows: true,
 		dots: false,
 		infinite: false,
@@ -66,6 +67,7 @@ $("document").ready(function() {
 	      }
 	    ]
 	});
+
 	$(function() {
 		$(window).on("scroll", function() {
 			if ($(window).scrollTop() > 60) {
@@ -109,5 +111,7 @@ document.getElementById('video-popup').addEventListener('hide.bs.modal', () => {
   // Stop the video by resetting the source
   document.getElementById('video').src = videoSrc;
 });
+
+
 
 

@@ -682,6 +682,9 @@ input:-webkit-autofill {
 .salary-benefirs .competitive-section .card:hover img {
    filter: brightness(0) invert(1);
 }
+.salary-benefirs .competitive-section .card:hover svg path {
+    stroke: #fff;
+}
 .salary-benefirs .specialists {
    --bs-gutter-x: 4rem;
     row-gap: 4rem !important;
@@ -999,10 +1002,140 @@ input:-webkit-autofill {
 .trade-test {
     height: 100%;
 }
-.trade-test h3, .chemistry-step h5 {
+.trade-test h3, .chemistry-step h5, .test-process h4 {
     font-family: "Bricolage Grotesque";
+    font-weight: 500;
 }
 .about .businesspeople .curve-text{width:100px;height:100px;}
+.personal-kit {
+    position: relative;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-bottom: solid 1px rgba(53, 53, 53, 0.50);
+}
+.personal-kit:hover {
+    cursor: pointer;
+}
+.iamge-hover-display {
+    position: absolute;
+    left: 0;
+}
+.iamge-hover-display {
+    position: absolute;
+    left: 23%;
+    z-index: 22;
+    top: -110px;
+}
+.iamge-hover-display img {
+   transition: 0.5s all;
+   width: 250px;
+   height: 335px;
+   object-fit: cover;
+}
+.personal-kit p:last-child, .personal-kit h4:last-child {
+    margin-bottom: 0;
+}
+.personal-kit:hover .iamge-hover-display {
+    display: block !important;
+}
+.cultire .who-are-section h2,
+.cultire .who-are-section p {
+  color: #353535;
+}
+.cultire .businesspeople .curve-text {
+  right: 0 !important;
+  left: auto;
+}
+.cultire .stylists-section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+  margin: 0;
+}
+.cultire .stylists-section .specialists {
+  --bs-gutter-x: 2.625rem !important;
+}
+.cultire .specialists {
+  row-gap: 60px !important;
+}
+.cultire .revolutionise-section h2 {
+  font-family: Gilroy;
+  font-weight: 400;
+}
+.cultire .revolutionise-section h2 span {
+  color: rgba(255, 255, 255, 0.65);
+}
+.cultire .revolutionise-section .good-people {
+  padding-top: 60px;
+  --bs-gutter-x: 2.625rem !important;
+}
+.cultire .revolutionise-section .good-people h2 {
+  line-height: 128px;
+}
+.cultire .revolutionise-section h2 {
+  font-family: Gilroy;
+  font-weight: 400;
+}
+.cultire .revolutionise-section {
+  padding: 100px 0;
+}
+.cultire .cutting-styling-section {
+  padding: 120px 0;
+}
+.cultire .cutting-styling-section .standards {
+  --bs-gutter-x: 3.75rem !important;
+}
+.cultire .cutting-styling-section .card-body {
+  padding: 6px 10px;
+}
+.cultire .cutting-styling-section .card-body h4 {
+  font-family: "Bricolage Grotesque";
+}
+.cultire .revolutionise-section .good-people h2 {
+  font-family: Acme;
+   opacity: 0.15;
+    background: linear-gradient(90deg, rgba(238, 238, 238, 0.00) 0%, #EEE 28.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cultire .revolutionise-section .col-md-3 {
+    border-right: solid 1px rgba(255, 255, 255, 0.15);
+}
+.cultire .revolutionise-section .col-md-3:last-child {
+    border: 0;
+}
+.number::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -10px;
+  height: 60%;
+  width: 10%;
+  pointer-events: none;
+}
+.cultire .openings-section .slick-current + .slick-slide{
+    position: static;
+    padding-bottom: 0;
+}
+.cultire .cutting-styling-section .card-body{
+    padding-top: 0;
+}
+.cultire .cutting-styling-section .card-body h4{
+    background-color: #000;
+    padding: 6px 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.cultire .cutting-styling-section .card-body p{
+    display: none;
+}
+.cultire .openings-section .nav-product-salon{
+    margin-bottom: 0;
+}
+ .cultire .stylists-section .best h3 {
+    font-family: "Bricolage Grotesque";
+}
+
 @media (min-width: 992px) {
   .text-content {
     max-width: 600px;
@@ -1050,6 +1183,9 @@ input:-webkit-autofill {
     }
     .content-width-50 {
         width: 677px;
+    }
+    .iamge-hover-display {
+        left: 28%;
     }
 }
 @media(max-width:1199px) {
@@ -1169,7 +1305,7 @@ input:-webkit-autofill {
     .vacancy .nav-icon span,
     .our-people .nav-icon span,
     .cultire .nav-icon span,
-    .apple .nav-icon span 
+    .apple .nav-icon span, 
     .main-header-top.activeheader .nav-icon span, 
     .main-header-top.open-header .nav-icon span {
       background: #353535;
@@ -1200,9 +1336,13 @@ input:-webkit-autofill {
     .welcome-to-halo .content-width-50 .text-content {
         padding-bottom: 0;
     }
-    /*.main-header-top.vacancies-header-relative .nav-icon span {
-        background-color: #000;
-    }*/
+    .iamge-hover-display img {
+        width: 150px;
+        height: 205px;
+    }
+    .iamge-hover-display {
+        left: 27%;
+    }
 }
 @media (max-width: 768px) {
   .vacancy .specialists .senior-card p {
@@ -1267,7 +1407,7 @@ input:-webkit-autofill {
   }
   .our-people .recruitment-section .director p {
     font-size: 1rem ;
-}
+    }
   .working-bx::before,
   .working-bx::after {
     font-size: 100px;
@@ -1276,6 +1416,55 @@ input:-webkit-autofill {
   .working-section {
     padding: 20px 0 80px 0;
     text-align: center;
+    }
+     .cultire .revolutionise-section .good-people h2 {
+    font-size: 160px;
+    margin-bottom: 40px;
+  }
+  .cultire .businesspeople .curve-text {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .cultire .content-width-50 .text-content {
+    padding: 0;
+    margin-top: 4rem;
+  }
+  .cultire .cutting-styling-section .standards,
+  .cultire .stylists-section .specialists,
+  .cultire .revolutionise-section .good-people {
+    --bs-gutter-x: 1.5rem !important;
+  }
+  .cultire .stylists-section{
+    padding: 80px 0;
+  }
+  .cultire .stylists-section .best h3 {
+    margin-bottom: 24px;
+  }
+  .cultire .best .row{
+    row-gap: 32px;
+  }
+  .cultire .revolutionise-section h2 {
+    font-size: 1.5rem;
+}
+.cultire .revolutionise-section {
+    padding: 40px 0;
+}
+.cultire .revolutionise-section .good-people {
+    padding-top: 36px;
+    row-gap: 2rem;
+}
+.cultire .cutting-styling-section {
+    padding: 80px 0;
+}
+.cultire .cutting-styling-section .card-body h4{
+    background-color: transparent;
+    padding: 20px 0 12px 0;
+    font-size: 18px;
+    color: #353535;
+}
+.cultire .cutting-styling-section .card-body p{
+    display: block;
 }
 }
 @media(max-width:767px) {
@@ -1379,8 +1568,7 @@ input:-webkit-autofill {
     .phase-sunderland .phase h4, 
     .specialists h4, 
     .great-hair-section h4, 
-    .working-section h4, 
-    .personal-kit h4 {
+    .working-section h4 {
         font-size: 20px;
     }
     .competitive-section .specialists h4 {
@@ -1412,7 +1600,7 @@ input:-webkit-autofill {
         padding-left: 0 !important;
     }
     .work-at .email-form h4, .i-love-working h5, .who-are-section p, 
-    .unparalleled p, .different-section p, .recruitment-section p, .test-process h4, 
+    .unparalleled p, .different-section p, .recruitment-section p, 
     .banner-section p, .different-section p, .welcome-to-halo p {
         font-size: 18px;
         line-height: 25px;
@@ -1440,6 +1628,15 @@ input:-webkit-autofill {
     .welcome-to-halo {
         padding-top: 80px;
         padding-bottom: 30px;
+    }
+    .cultire .revolutionise-section .col-md-3 {
+       border: 0;
+    }
+    .cutting-styling-section.openings-section .nav-product-salon {
+        margin: 0;
+    }
+    .personal-kit:hover .iamge-hover-display {
+        display: none !important;
     }
 }
 

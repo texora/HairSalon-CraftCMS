@@ -1,4 +1,4 @@
-dateModified: 1727005586
+dateModified: 1727011086
 elementSources:
   craft\elements\Entry:
     -
@@ -107,6 +107,7 @@ meta:
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
+    3c9ec943-aefe-47ec-81c4-89c792843eb3: 'Image Card' # Image Card
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
@@ -133,6 +134,7 @@ meta:
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: Jobs # Jobs
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
+    812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
     6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Rollout Plans' # Rollout Plans
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials

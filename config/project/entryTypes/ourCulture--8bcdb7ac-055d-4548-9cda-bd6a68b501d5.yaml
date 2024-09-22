@@ -150,9 +150,9 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-22T06:21:55+00:00'
+            dateAdded: '2024-09-22T13:18:06+00:00'
             elementCondition: null
-            fieldUid: 68ba543b-e8a1-466a-9338-af5cc2d458dd # Images
+            fieldUid: 812c0fbf-668a-47f6-b48f-433f3e4d5550 # Image Cards
             handle: null
             includeInCards: false
             instructions: null
@@ -161,7 +161,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 53e21a4f-16e4-4278-97fb-bd4d92b34a46
+            uid: 78f66b43-5c30-44de-94b0-b3753ce6a25f
             userCondition: null
             warning: null
             width: 100
