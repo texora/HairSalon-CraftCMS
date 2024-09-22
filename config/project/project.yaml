@@ -1,4 +1,4 @@
-dateModified: 1726924976
+dateModified: 1726990126
 elementSources:
   craft\elements\Entry:
     -
@@ -15,17 +15,11 @@ elementSources:
         - link
       type: native
     -
-      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Home
-      type: native
-    -
       key: 'single:0596fc40-de8d-419a-a76d-0d5412a5f315' # Site Globals
       type: native
     -
-      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Holding Page
-      type: native
-    -
-      key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs
-      type: native
+      heading: Collections
+      type: heading
     -
       defaultSort:
         - structure
@@ -36,6 +30,46 @@ elementSources:
         - 'fieldInstance:13b2fc7f-1afa-46fc-9177-e53f51fc9547'
         - status
         - postDate
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      heading: 'Landing Pages'
+      type: heading
+    -
+      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Home
+      type: native
+    -
+      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Holding Page
+      type: native
+    -
+      key: 'single:dd713845-af4e-4e60-9d0a-171d3ed41bb9' # About Us
+      type: native
+    -
+      key: 'single:a424a048-14aa-4cdc-a80e-3cbedee60726' # Vacancies
+      type: native
+    -
+      key: 'single:cf90e322-6859-4622-bfcb-61a01096cdc9' # Salary & Benefits
+      type: native
+    -
+      key: 'single:b421bd1c-2476-4b2e-99f3-997e88b3f7df' # Our People
+      type: native
+    -
+      key: 'single:e49f78c7-9b22-409e-b03e-671922e6915f' # Our Culture
+      type: native
+    -
+      key: 'single:acb66ef8-b78e-4e0f-8040-e9fd7a84dc02' # Apply
       type: native
 email:
   fromEmail: $SERVD_SMTP_USERNAME
@@ -67,44 +101,74 @@ fs:
 meta:
   __names__:
     0ccd9cb4-cb6f-44da-b932-3dae09c2db79: 'Holding Page' # Holding Page
+    1dfa55bc-6378-42c8-978f-4266cf07fc70: 'Text / Image Row' # Text / Image Row
+    1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us' # About Us
     1f1a03f8-9f09-4e72-90b2-73744ea2d88c: Full # Full
+    1f9056e2-e8fd-4663-8027-0bfb8882ade5: 'Text Only' # Text Only
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
+    2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
     5b40a23e-fc7b-48ed-b092-746f8700aa48: 'Opening Month' # Opening Month
     5c1885e7-2d6a-4df5-8de7-646816d23c2a: Benefits # Benefits
+    6d9a1d3c-2949-4ee9-8f74-78152e0ad6f6: Process # Process
     7aea93d0-d819-4905-8279-efcfd692ad42: Text # Text
     7f82abc5-4a85-431f-8ffa-c9d3452c3c4e: Phase # Phase
+    8bcdb7ac-055d-4548-9cda-bd6a68b501d5: 'Our Culture' # Our Culture
     8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec: 'Text Area' # Text Area
     8eb9df4d-b6b1-4331-9b12-46c97ce4b33e: 'Site Globals' # Site Globals
+    8f985adb-f8ad-4b76-acd5-678c5e7c8e6d: Vacancies # Vacancies
     27b29006-47a2-40b1-a7c1-7f0db71cc8a2: Icon # Icon
     38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Rollout Plans' # Rollout Plans
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
     64b3113c-4c07-47b2-bed6-94149314dc80: 'RTE - Text Only' # RTE - Text Only
+    65abf317-e671-4d15-b847-6c77d624328a: 'Recruitment Process' # Recruitment Process
     067dc454-76f0-47fe-8a39-6380da7fc55e: SEO # SEO
+    68ba543b-e8a1-466a-9338-af5cc2d458dd: Images # Images
+    69dd3687-8b36-4e2c-b797-7ed6b86a8ee8: 'Our People' # Our People
     96afe1ed-1049-4810-88fc-7c06133c2e03: 'RTE - Full' # RTE - Full
+    96eb5731-03f7-428c-97b7-32172b537746: Card # Card
+    97cdda06-67e6-4755-a9d3-2534f16a2c73: 'Salary Benefits' # Salary Benefits
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: Jobs # Jobs
+    784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
     6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Rollout Plans' # Rollout Plans
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
+    87994572-cfd6-45fd-960d-a94a832a89c5: 'Employee Video' # Employee Video
+    a5c4bb68-a93b-4064-94ed-c61308d2b930: 'Process Steps' # Process Steps
+    a53cfce4-0998-4b8c-b0de-13a33d2f6c6e: 'Process Step' # Process Step
+    a424a048-14aa-4cdc-a80e-3cbedee60726: Vacancies # Vacancies
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
+    acb66ef8-b78e-4e0f-8040-e9fd7a84dc02: Apply # Apply
     afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
     b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
     b12f7f4a-e079-45fe-9285-fdd1643c6db6: 'Author Thumb' # Author Thumb
+    b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
+    b421bd1c-2476-4b2e-99f3-997e88b3f7df: 'Our People' # Our People
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
+    c15e8516-7e75-4c32-b6a2-98d2d78dba3e: Cards # Cards
     c94b79ec-0b53-47e3-8ef9-4b8562781846: Home # Home
+    c8305476-25b6-417d-9392-07aa86e5d502: 'Recruitment Process' # Recruitment Process
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video
+    cf90e322-6859-4622-bfcb-61a01096cdc9: 'Salary & Benefits' # Salary & Benefits
+    cfe1f9f6-7ba4-4eec-af4d-d8fcd8687f6d: 'Text / Image Cards' # Text / Image Cards
+    d1fc2d2e-2b87-44e9-83dc-bf4de8243e18: 'Text Image Grid' # Text Image Grid
+    d6c8cf87-bfda-4180-803b-408375d5b40b: Apply # Apply
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
     d54816d2-a954-46ab-b48e-ee1b79a75db5: 'Youtube Video' # Youtube Video
+    dd713845-af4e-4e60-9d0a-171d3ed41bb9: 'About Us' # About Us
     df45790b-b0f0-427e-89e2-4767cbbf719c: Jobs # Jobs
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
+    e49f78c7-9b22-409e-b03e-671922e6915f: 'Our Culture' # Our Culture
     f0f5c790-85e7-436d-9f47-3e1a7966a1b1: 'Job Type' # Job Type
+    f1bd2935-9135-4dfd-aec4-e7459ca70d1d: 'Employee Speaks' # Employee Speaks
     f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: Home # Home
+    f5d1ded3-5a5e-400e-836c-7c4d1d346ab1: 'Trade Test Process' # Trade Test Process
 plugins:
   ckeditor:
     edition: standard
@@ -129,6 +193,7 @@ plugins:
   image-optimize:
     edition: standard
     enabled: true
+    licenseKey: 6VBBLSE3G9M4GEP56ER0U02M
     schemaVersion: 1.0.0
   image-resizer:
     edition: standard

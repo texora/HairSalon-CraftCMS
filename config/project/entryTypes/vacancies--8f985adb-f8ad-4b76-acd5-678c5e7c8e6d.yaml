@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  d223bc7b-0659-4abb-b040-f0ba3a4d17d5:
+  9cd75b7a-0226-469d-a7a2-49b4c50829d3:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-29T11:03:18+00:00'
+            dateAdded: '2024-09-22T05:13:38+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Benefit Title'
+            label: null
             max: null
             min: null
             name: null
@@ -31,46 +31,52 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c61a521b-18eb-49c5-aae4-2dd51c28bf7e
+            uid: 7f11450c-9b5a-485b-a5aa-c2f7061468d7
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:19:04+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: heroText
+            includeInCards: false
+            instructions: null
+            label: 'Hero Text'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9507c393-f0b1-44e3-a6f8-7f3e85ac6959
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T05:17:41+00:00'
             elementCondition: null
             fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: benefitIcon
+            handle: heroImage
             includeInCards: false
             instructions: null
-            label: 'Benefit Icon'
+            label: 'Hero Image'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9b9e85d8-ec75-46e7-975f-a71e3d0bcf88
+            uid: 21a54972-7fd5-4d16-a84b-643f759aa84b
             userCondition: null
             warning: null
-            width: 50
+            width: 100
+        name: 'Hero Section'
+        uid: bb87d5db-575d-4434-84a5-613cafed1789
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:17:41+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: benefitText
-            includeInCards: false
-            instructions: null
-            label: 'Benefit Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0a57b400-fe7e-4bbd-ae3d-8144e7baccb0
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-22T05:35:49+00:00'
-            elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
+            fieldUid: c15e8516-7e75-4c32-b6a2-98d2d78dba3e # Cards
             handle: null
             includeInCards: false
             instructions: null
@@ -79,19 +85,41 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 704df012-697c-4b90-aa88-e933930f6e2f
+            uid: 938c2143-5b68-4650-be61-3d1917d88a74
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 54f40c7d-5e34-4318-9cdf-62366a5d7104
+        name: 'Cards Section'
+        uid: 4fb19df5-392c-48bd-b40c-f84b7980b903
         userCondition: null
-handle: benefits
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-22T05:17:41+00:00'
+            elementCondition: null
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d3ebb62-623b-4aa7-9bc0-42a94b66fd78
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 5fa82f32-1611-4122-b5fd-56795cc016ed
+        userCondition: null
+handle: vacancies
 hasTitleField: true
-icon: table-list
-name: Benefits
-showSlugField: false
-showStatusField: false
+icon: ''
+name: Vacancies
+showSlugField: true
+showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

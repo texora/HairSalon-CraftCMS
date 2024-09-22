@@ -334,6 +334,7 @@ img {
 }
 h2 {
     font-size: 3rem;
+    line-height: normal;
 }
 p {
     font-size: 18px;
@@ -406,11 +407,7 @@ p {
 .work-at .work-at-halo h2 {
     margin-bottom: 1.25rem;
 }
-.home .openings-section .slick-current + .slick-slide{
-    position: relative;
-    top: 45px;
-    padding-bottom: 45px;
-} 
+ 
 .home .senior-card h4, 
 .darlington-card h4 {
     font-family: 'Bricolage Grotesque';
@@ -466,9 +463,15 @@ p {
     line-height: 70px;
     width: 100%;
 }
-.banner-section h2, .different-section h2, 
+.banner-section h2, .different-section h2 {
+    color: #fff;
+    text-align: center;
+}
 .banner-section p, .different-section p {
     color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
 }
 footer {
     padding-top: 64px;
@@ -508,14 +511,14 @@ input:-webkit-autofill {
 .footer-title-image img {
   padding-left: 40px;
 }
-.home .slick-next,
-.home .slick-prev {
+.openings-section .slick-next, .collective-section .slick-next,
+.openings-section .slick-prev, .collective-section .slick-prev {
   width: 64px;
 }
-.home .slick-prev {
+.openings-section .slick-prev, .collective-section .slick-prev {
   left: -85px;
 }
-.home .slick-next {
+.openings-section .slick-next, .collective-section .slick-next {
   right: -85px;
 }
 .openings-section .slick-current + .slick-slide {
@@ -538,13 +541,11 @@ input:-webkit-autofill {
   background-position: center;
 }
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-  background-image: url('../../static/svg/arrow-next.svg');
-  left: 0;
+  background-image: url(../img/arrow-next.svg);
   transform: rotate(180deg);
 }
 .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
-  background-image: url('../../static/svg/arrow-next.svg');
-  right: 0;
+  background-image: url(../img/arrow-next.svg);
 }
 .openings-section .nav-product-salon .slick-disabled, .collective-section .nav-product .slick-disabled {
     opacity: 0.5;
@@ -554,8 +555,17 @@ input:-webkit-autofill {
 }
 .openings-section {
     margin-top: 0px;
+}
+.home .openings-section {
     padding-top: 60px;
     padding-bottom: 10px;
+}
+.about .openings-section {
+    padding: 120px 0;
+}
+.about .openings-section .section-title {
+    width: 80%;
+    font-family: "Bricolage Grotesque";
 }
 .openings-section h2 {
     font-size: 2.5rem;
@@ -594,6 +604,10 @@ input:-webkit-autofill {
 .work-at .btn:hover {
     color: #fff;
     border: 1px solid #fff;
+}
+.work-at a.btn.benefits:hover {
+    background-color: #000;
+    border-color: transparent;
 }
 .looking-for .btn-black, .btn-black {
     background: #000000;
@@ -779,19 +793,74 @@ input:-webkit-autofill {
     font-size: 20px;
     line-height: 28px;
 }
+.text-content-lg p {
+    font-size: 24px;
+    line-height: 34px;
+}
+.welcome-to-halo .text-content-lg  {
+  margin-bottom: 4rem;
+}
 .welcome-to-halo .section-title {
     margin-bottom: 70px;
 }
-.text-content {
-    max-width: 595px;
-   margin: 0 auto;
-   padding: 0 0.5rem;
+.content-width-50 .text-content {
+    padding: 0 30px 30px 30px
+}
+.image img {
+    width: 100%;
+}
+
+.phase-sunderland .phase h4 {
+     font-family: 'Bricolage Grotesque';
+    
+}
+
+.phase-sunderland {
+    margin-top: 20px;
+}
+.phase-sunderland:first-child {
+    margin-top: 0
+}
+.phase-sunderland .sunderland ul {
+    font-weight: 600;
+}
+@media (min-width: 992px) {
+  .text-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 2rem;
+  }
+  .content-width-50 {
+    width: 465px;
+    margin-right: auto;
+  }
+  .content-width-50 .text-content {
+    margin-right: 0;
+   padding: 0 0 0 30px;
+  }
+  .welcome-to-halo .flex-row-reverse .text-content {
+        margin-right: 0;
+        margin-left: auto;
+  }
+  .phase-sunderland .col-lg-3 {
+    padding-left: 0 !important;
+    }
+}
+@media (min-width: 1200px) {
+    .content-width-50 {
+        width: 560px;
+    }
 }
 @media (min-width: 1400px) {
     .container {
         max-width: 1355px;
     }
+    .content-width-50 {
+        width: 677px;
+    }
 }
+
+
 @media(max-width:991px) {
     .main-header-top nav ul {
         gap: 0;
@@ -930,7 +999,6 @@ input:-webkit-autofill {
     }
     p {
         font-size: 14px;
-        line-height: 20px;
     }
     .banner-section h1, .different-section h1 {
         font-size: 48px;
@@ -1033,15 +1101,49 @@ input:-webkit-autofill {
     .welcome-to-halo .section-title {
         margin-bottom: 40px;
     }
+    .welcome-to-halo .text-content-lg  {
+      margin-bottom: 2rem;
+    }
+    .about .openings-section .section-title {
+        width: 100%;
+    }
+    .phase-sunderland {
+       margin: 20px 0 0 0;
+    }
+   .phase-sunderland h4 {
+        padding-bottom: 34.5px;
+    }
+    .phase-sunderland .col-12 {
+        padding-left: 0 !important;
+    }
+    .work-at .email-form h4, .i-love-working h5, .who-are-section p, 
+    .unparalleled p, .different-section p, .recruitment-section p, .test-process h4, 
+    .banner-section p, .different-section p, .welcome-to-halo p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .unparalleled, .rollout-section, .who-are-section {
+        margin: 50px 0;
+    }
+    .about .openings-section {
+        padding: 50px 0;
+    }
+    .about .unparalleled {
+        margin-bottom: 0;
+    }
+    .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
+        left: 0;
+    }
+    .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
+        right: 0;
+    }
 }
 
 @media(max-width:425px) {
     .home .building-section .btn, .home .changing-uk .btn, 
     .work-at-halo .btn, .home .looking-for .work-at-halo .btn {
         width: 100%;
-    }
-    .container {
-        padding: 0 .5rem;
     }
     .collective-section .nav-product .slick-slide .slide, .openings-section .nav-product-salon .slick-slide .slide {
         padding: 0 5px;
@@ -1058,10 +1160,15 @@ input:-webkit-autofill {
         top: 0px;
         padding-bottom: 0px;
     }
-    /* .home .openings-section .slick-current {
-        position: relative;
-        top: 0px;
-        padding-bottom: 0px;
-    }*/
+    .content-width-50 .text-content {
+        padding: 0 15px 30px 15px
+    }
+    .welcome-to-halo .text-content-lg  {
+      margin-bottom: 1.5rem;
+    }
+    .curve-image-text img {
+        max-width: 40%;
+    }
+
 }
 

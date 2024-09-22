@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  d223bc7b-0659-4abb-b040-f0ba3a4d17d5:
+  e325daec-a5f4-44b7-9186-2db863b09b87:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-29T11:03:18+00:00'
+            dateAdded: '2024-09-22T06:42:40+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Benefit Title'
+            label: null
             max: null
             min: null
             name: null
@@ -31,65 +31,49 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c61a521b-18eb-49c5-aae4-2dd51c28bf7e
+            uid: 6c9c3ad1-c426-46c1-ab99-487fd03e2a1e
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T06:55:34+00:00'
             elementCondition: null
-            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: benefitIcon
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: tabHeading
             includeInCards: false
             instructions: null
-            label: 'Benefit Icon'
+            label: 'Tab Heading'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9b9e85d8-ec75-46e7-975f-a71e3d0bcf88
+            uid: 515003e2-3007-42aa-874c-2e92c267fae8
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T06:55:34+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: benefitText
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: tabContent
             includeInCards: false
             instructions: null
-            label: 'Benefit Text'
+            label: 'Tab Content'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0a57b400-fe7e-4bbd-ae3d-8144e7baccb0
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-22T05:35:49+00:00'
-            elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 704df012-697c-4b90-aa88-e933930f6e2f
+            uid: 787c7c4d-7936-454e-8e65-6d1aeb9a07cf
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 54f40c7d-5e34-4318-9cdf-62366a5d7104
+        uid: a7ba994c-1ec7-410f-abfa-40147b0035f9
         userCondition: null
-handle: benefits
-hasTitleField: true
-icon: table-list
-name: Benefits
+handle: recruitmentProcess
+hasTitleField: false
+icon: ''
+name: 'Recruitment Process'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

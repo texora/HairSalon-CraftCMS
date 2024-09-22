@@ -1,6 +1,6 @@
-color: null
+color: emerald
 fieldLayouts:
-  d223bc7b-0659-4abb-b040-f0ba3a4d17d5:
+  a97bf110-6799-4c04-8426-0853163a9491:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-29T11:03:18+00:00'
+            dateAdded: '2024-09-22T05:47:49+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Benefit Title'
+            label: null
             max: null
             min: null
             name: null
@@ -31,65 +31,49 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c61a521b-18eb-49c5-aae4-2dd51c28bf7e
+            uid: 00dfac9a-3943-48a7-94b3-a9670f895ab7
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:51:23+00:00'
             elementCondition: null
-            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: benefitIcon
+            fieldUid: d54816d2-a954-46ab-b48e-ee1b79a75db5 # Youtube Video
+            handle: video
             includeInCards: false
-            instructions: null
-            label: 'Benefit Icon'
+            instructions: 'Please entry Youtube or Vimeo video URL'
+            label: Video
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9b9e85d8-ec75-46e7-975f-a71e3d0bcf88
+            uid: 449e8455-db60-4798-93ca-06e0c1fdf4ae
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:51:23+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: benefitText
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: videoText
             includeInCards: false
             instructions: null
-            label: 'Benefit Text'
+            label: 'Video Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0a57b400-fe7e-4bbd-ae3d-8144e7baccb0
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-22T05:35:49+00:00'
-            elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 704df012-697c-4b90-aa88-e933930f6e2f
+            uid: 93475d6f-f3d0-4019-9341-623626b58d4e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 54f40c7d-5e34-4318-9cdf-62366a5d7104
+        uid: 8c5e4b6d-5e30-4f9a-a2bf-b41b9b6b8562
         userCondition: null
-handle: benefits
-hasTitleField: true
-icon: table-list
-name: Benefits
+handle: employeeVideo
+hasTitleField: false
+icon: user
+name: 'Employee Video'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

@@ -1,0 +1,197 @@
+color: null
+fieldLayouts:
+  6f75b8c1-2330-43b4-b240-a87853b751e7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-22T06:32:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 52c8d4a2-854e-4e11-84c1-fbad0c39ea82
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T06:37:08+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: heroText
+            includeInCards: false
+            instructions: null
+            label: 'Hero Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 464ccf6b-ad32-4d0b-9b9f-b5efcc661e69
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T06:37:08+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: heroImage
+            includeInCards: false
+            instructions: null
+            label: 'Hero Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91f788b2-82ef-4bb6-a007-101d1dcfc54d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T06:37:08+00:00'
+            elementCondition: null
+            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
+            handle: heroCta
+            includeInCards: false
+            instructions: null
+            label: 'Hero CTA'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce0d934b-75cc-44b0-932c-1e7a1e09550e
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Hero Section'
+        uid: efc6cb89-bbc9-426e-b8d0-df002be4c30d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-22T06:56:39+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: sectionHeading
+            includeInCards: false
+            instructions: null
+            label: 'Section Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99b2c940-36fb-4cc4-bbe1-2d5af532026d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T06:56:39+00:00'
+            elementCondition: null
+            fieldUid: c8305476-25b6-417d-9392-07aa86e5d502 # Recruitment Process
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1ef5d2a-df18-4855-bde9-8dd4dd58567c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Recruitment Process'
+        uid: e7b6c86e-1f4e-4ad1-a117-65ee7318f1f0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-22T07:01:43+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: introText
+            includeInCards: false
+            instructions: null
+            label: 'Intro Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64e5d1e4-82e1-480d-b32f-f18faa7019a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-22T07:02:10+00:00'
+            elementCondition: null
+            fieldUid: b298e3da-2b5d-47a1-a1c7-24bf013ae262 # Trade Test Process
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d5e4c69-513f-4024-b269-5adf17f67aa7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Trade Test Process'
+        uid: 384bc7bb-ed4e-4bbb-a7e6-159c9fea7746
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-22T06:37:08+00:00'
+            elementCondition: null
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f6e42da-be3a-46ff-9571-690494092e73
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 30970d02-24ed-483b-bf5e-b68b9e6e3541
+        userCondition: null
+handle: apply
+hasTitleField: true
+icon: ''
+name: Apply
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

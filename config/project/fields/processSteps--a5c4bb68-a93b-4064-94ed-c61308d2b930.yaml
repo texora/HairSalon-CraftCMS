@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: processSteps
+instructions: null
+name: 'Process Steps'
+searchable: false
+settings:
+  createButtonLabel: 'Add Step'
+  entryTypes:
+    - a53cfce4-0998-4b8c-b0de-13a33d2f6c6e # Process Step
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

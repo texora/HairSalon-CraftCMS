@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: recruitmentProcess
+instructions: null
+name: 'Recruitment Process'
+searchable: false
+settings:
+  createButtonLabel: 'Add Recruitment Process'
+  entryTypes:
+    - 65abf317-e671-4d15-b847-6c77d624328a # Recruitment Process
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

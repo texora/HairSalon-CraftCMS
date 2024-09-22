@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: employeeSpeaks
+instructions: null
+name: 'Employee Speaks'
+searchable: false
+settings:
+  createButtonLabel: 'Add Employee Testimonial'
+  entryTypes:
+    - 87994572-cfd6-45fd-960d-a94a832a89c5 # Employee Video
+    - 784dddde-4bbd-4e66-b3e0-928ae791e302 # Employee Text
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

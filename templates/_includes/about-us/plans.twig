@@ -1,0 +1,29 @@
+<section class="rollout-section mt-0">
+  <div class="container">
+    {% if entry.sectionHeading %}
+      <div class="row">
+        <div class="col-12 ps-sm-0">
+          <h2 class="mb-0">{{ entry.sectionHeading }}</h2>
+        </div>
+      </div>
+    {% endif %}
+    {% set rolloutPlans = craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
+    {% for rolloutPlan, cities in rolloutPlans|group("phase") %}
+      <div class="row phase-sunderland">
+        <div class="col-12 col-lg-3">
+          <div class="phase d-flex align-items-start">
+            <h4>{{ 'Phase ' ~ rolloutPlan ~ ', ' ~ cities[0].openingYear }}</h4>
+            {{ svg('static/svg/phase-'  ~ rolloutPlan ~ '-' ~ cities[0].openingYear ~ '.svg') }}
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 sunderland">
+          <ul class="d-flex flex-column flex-md-row gap-0 gap-3 justify-content-start justify-content-lg-end">
+            {% for city in cities %}
+              <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#353535" stroke-linecap="round" stroke-linejoin="round"/></svg> {{ city.title }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: tradeTestProcess
+instructions: null
+name: 'Trade Test Process'
+searchable: false
+settings:
+  createButtonLabel: 'Add Trade Test Process'
+  entryTypes:
+    - f5d1ded3-5a5e-400e-836c-7c4d1d346ab1 # Trade Test Process
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

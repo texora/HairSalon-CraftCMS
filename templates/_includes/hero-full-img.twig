@@ -1,0 +1,17 @@
+<section class="banner-section about-banner">
+  <div class="container">
+    <div class="row align-items-center banner-text-content justify-content-center">
+      {% if entry.heroText %}
+        <div class="col-12 col-lg-8 col-xl-7 mx-auto">
+          <h1>{{ entry.heroText|nl2br }}</h1>
+        </div>
+      {% endif %}
+    </div>
+    {% set image = entry.heroImage.eagerly().one() %}
+    {% if image %}
+      <div class="curve-image-text">
+         {{ image.getImg() }}
+      </div>
+    {% endif %}
+  </div>
+</section>

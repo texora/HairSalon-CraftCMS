@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: textImageGrid
+instructions: null
+name: 'Text Image Grid'
+searchable: false
+settings:
+  createButtonLabel: 'Add Text / Image Row'
+  entryTypes:
+    - 1dfa55bc-6378-42c8-978f-4266cf07fc70 # Text / Image Row
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

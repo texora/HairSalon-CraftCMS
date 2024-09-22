@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  d223bc7b-0659-4abb-b040-f0ba3a4d17d5:
+  a156a354-193e-4ef5-b29e-c18f8f7944ba:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-29T11:03:18+00:00'
+            dateAdded: '2024-09-22T05:38:04+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Benefit Title'
+            label: null
             max: null
             min: null
             name: null
@@ -31,46 +31,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c61a521b-18eb-49c5-aae4-2dd51c28bf7e
+            uid: ea0ddaec-3047-4304-8973-489bc7eb70f1
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:53:17+00:00'
             elementCondition: null
-            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: benefitIcon
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: introText
             includeInCards: false
             instructions: null
-            label: 'Benefit Icon'
+            label: 'Intro Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9b9e85d8-ec75-46e7-975f-a71e3d0bcf88
+            uid: 2104dd49-de1d-41f0-9d58-735c90a555df
             userCondition: null
             warning: null
-            width: 50
+            width: 100
+        name: Introduction
+        uid: ba0146a8-496c-40ff-beec-ac1bddcd8342
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
-            dateAdded: '2024-08-29T11:06:33+00:00'
+            dateAdded: '2024-09-22T05:53:17+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: benefitText
-            includeInCards: false
-            instructions: null
-            label: 'Benefit Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0a57b400-fe7e-4bbd-ae3d-8144e7baccb0
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-22T05:35:49+00:00'
-            elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
+            fieldUid: f1bd2935-9135-4dfd-aec4-e7459ca70d1d # Employee Speaks
             handle: null
             includeInCards: false
             instructions: null
@@ -79,17 +69,39 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 704df012-697c-4b90-aa88-e933930f6e2f
+            uid: a4359870-f437-48de-b2dc-767a385fec3e
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 54f40c7d-5e34-4318-9cdf-62366a5d7104
+        name: 'Employee Speaks'
+        uid: 48e31218-5e87-4cfc-afe4-c56798b61d1e
         userCondition: null
-handle: benefits
-hasTitleField: true
-icon: table-list
-name: Benefits
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-22T05:59:24+00:00'
+            elementCondition: null
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 419db6f0-bd3f-4393-8fad-f5dee34284c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 2c37d5a1-5169-4d8b-a301-e605081eda44
+        userCondition: null
+handle: ourPeople
+hasTitleField: false
+icon: ''
+name: 'Our People'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null

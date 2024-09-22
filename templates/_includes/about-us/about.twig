@@ -1,0 +1,25 @@
+<section class="openings-section">
+  <div class="container">
+    {% if entry.introText %}
+      <div class="section-title mb-5">
+        <h2>
+          {{ entry.introText }}
+        </h2>
+      </div>
+    {% endif %}
+    {% if entry.imageCarousel.count() %}
+      <div class="nav-product-salon">
+        {% for image in entry.imageCarousel.eagerly().all() %}
+          <div class="slide">
+            <div class="darlington-card">
+              <img src="{{ image.url }}" alt="{{ image.title }}" />
+              <div class="card-body">
+                <h4>{{ image.title }}</h4>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
