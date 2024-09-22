@@ -1,0 +1,39 @@
+{% if entry.recruitmentProcess.count() %}
+<section class="process-section">
+	<div class="container">
+		{% if entry.sectionHeading %}
+			<div class="section-title mb-5">
+				<h2>{{ entry.sectionHeading|nl2br }}</h2>
+			</div>
+		{% endif %}
+		<div class="card p-0 border-0">
+			<nav>
+				<div class="nav nav-tabs justify-content-center mb-5 border-0" id="nav-tab" role="tablist">
+					{% for tab in entry.recruitmentProcess.eagerly().all() %}
+					<button class="nav-link{% if loop.first %} active{% endif %}" id="nav-step-{{ loop.index }}" data-bs-toggle="tab" data-bs-target="#step-{{ loop.index }}" type="button" role="tab" aria-controls="step-{{ loop.index }}" aria-selected="true">{{ tab.tabHeading }} <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64644L37.1716 0.464463C36.9763 0.269201 36.6597 0.269201 36.4645 0.464463C36.2692 0.659725 36.2692 0.976308 36.4645 1.17157L39.2929 4L36.4645 6.82842C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.73079 36.9763 7.73079 37.1716 7.53553L40.3536 4.35355ZM4.37114e-08 4.5L40 4.5L40 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="#353535"/></svg></button>
+					{% endfor %}
+				</div>
+			</nav>
+			<div class="tab-content p-0 border-0" id="nav-tabContent">
+				{% for tab in entry.recruitmentProcess.eagerly().all() %}
+				<div class="tab-pane fade{% if loop.first %} active show{% endif %}" id="step-{{ loop.index }}" role="tabpanel" aria-labelledby="nav-step-1">
+					<div class="face-to-face">
+						<div class="row row-gap-4">
+							<div class="col-12 col-lg-7">
+								{% set image = tab.image.eagerly().one() %}
+								{% if image %}<div class="trade-image"> <img src="{{ image.url }}" alt="{{ image.title }}" /> </div>{% endif %}
+							</div>
+							<div class="col-12 col-lg-5">
+								<div class="trade-test">
+									{{ tab.tabContent }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}

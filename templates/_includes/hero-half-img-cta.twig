@@ -1,0 +1,19 @@
+<section class="who-are-section something-section reward-success">
+  <div class="container-fluid">
+    <div class="row align-items-center left-content">
+      <div class="col-12 col-lg-6 px-0 content-width-50">
+        <div class="experienced text-content">
+          {{ entry.heroText|retconAttr('h2', { class: 'mb-4' }) }}
+          {{ entry.heroCta.getLink({
+              class: 'btn btn-black basic-salary-btn'
+          }) }}
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 businesspeople px-0">
+        {% set heroImage = entry.heroImage.eagerly().one() %}
+        {% if heroImage %}<div class="image"> <img src="{{ heroImage.url }}" alt="{{ heroImage.title }}" /> </div>{% endif %}
+        <div class="curve-text"> <img src="{{ url('static/svg/curve-text-right.svg') }}" /></div>
+      </div>
+    </div>
+  </div>
+</section>

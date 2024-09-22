@@ -36,17 +36,20 @@
                         {% if siteGlobals.formText %}<h4>{{ siteGlobals.formText|nl2br }}</h4>{% endif %}
                         <form>
                             <div class="email">
-                                <label for="email">Email</label>
-                                <input type="email" class="email-bx form-control" name="email" placeholder="Enter Your Email address">
-                            </div>
+                                <label for="fname">Name</label>
+                                <input type="text" class="email-bx form-control" name="fname" placeholder="Sarah Smith"> </div>
                             <div class="email">
-                                <label for="city">City</label>
-                                <select class="form-control city-bx">
-                                    {% for rolloutPlan in craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
-                                        <option value="{{ rolloutPlan.title }}">{{ rolloutPlan.title }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
+                                <label for="experience">Number of Years Experience</label>
+                                <input type="text" class="email-bx form-control" name="experience" placeholder="3 years experience"> </div>
+                            <div class="email">
+                                <label for="insta">Instagram</label>
+                                <input type="text" class="email-bx form-control" name="insta" placeholder="@Instagram"> </div>
+                            <div class="email">
+                                <label for="qualifi">Qualifications</label>
+                                <input type="text" class="email-bx form-control" name="qualifi" placeholder="NVQ Level 3"> </div>
+                            <div class="email">
+                                <label for="phonen">Phone Number</label>
+                                <input type="tel" class="email-bx form-control" name="phonen" placeholder="07543 234 554"> </div>
                             <div class="email">
                                 <button class="btn btn-black" type="submit">submit</button>
                             </div>

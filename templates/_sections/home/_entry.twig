@@ -4,6 +4,8 @@
 
 {% block main %}
 
+{% cache using key 'home-page' %}
+
     {% include '_includes/home/hero' %}
     {% include '_includes/home/halo-career' %}
     {% include '_includes/home/salon-openings' %}
@@ -26,6 +28,9 @@
             </div>
         </div>
     </div>
+
+{% endcache %}
+
 {% endblock %}
 {% js %}
     const videoPlayer = Array.from(document.querySelectorAll('.plyrVideo')).map((p) => new Plyr(p));
