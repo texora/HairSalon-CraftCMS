@@ -12,7 +12,6 @@
       <div class="col-12 col-lg-6 businesspeople px-0">
         {% set heroImage = entry.heroImage.eagerly().one() %}
         {% if heroImage %}<div class="image"> <img src="{{ heroImage.url }}" alt="{{ heroImage.title }}" /> </div>{% endif %}
-        <div class="curve-text"> <img src="{{ url('static/svg/curve-text-right.svg') }}" /></div>
       </div>
     </div>
   </div>
