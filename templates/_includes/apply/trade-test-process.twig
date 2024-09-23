@@ -1,0 +1,28 @@
+<section class="test-process">
+	<div class="container">
+		<div class="col-12 col-md-10 col-lg-8">
+			<div class="section-title mb-5">
+				{{ entry.introText|retconAttr('h2', { class: 'mb-4' }) }}
+			</div>
+		</div>
+		{% for block in entry.tradeTestProcess.eagerly().all() %}
+			{% if block.processHeading %}<h4>{{ block.processHeading }}</h4>{% endif %}
+			{% for processStep in block.processSteps.all() %}
+				<div class="row personal-kit align-items-center row-gap-3">
+					<div class="col-12 col-md-6">
+						<h4{% if not loop.first %} class="mt-5"{% endif %}>{{ processStep.heading }}</h4>
+						{% set hoverImage = processStep.hoverImage.eagerly().one() %}
+						{% if hoverImage %}
+							<div class="iamge-hover-display d-none">
+								<img src="{{ hoverImage.url }}" alt="{{ hoverImage.title }}" />
+							</div>
+						{% endif %}
+					</div>
+					<div class="col-12 col-md-6">
+						<p>{{ processStep.text|nl2br }}</p>
+					</div>
+				</div>
+			{% endfor %}
+		{% endfor %}
+	</div>
+</section>
