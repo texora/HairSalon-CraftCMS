@@ -6,7 +6,7 @@
         <div class="senior-card">
              <div class="position-relative">
                 {% set image = job.image.eagerly().one() %}
-                {% if image %}<img src="{{ image.url('jobGrid') }}" alt="{{ job.title }}" />{% endif %}
+                {% if image %}<img src="{{ image.url }}" alt="{{ job.title }}" />{% endif %}
                 <div class="senior-card-badge position-absolute bottom-0 end-0">
                     {{ job.jobType.label }}
                 </div>
@@ -16,7 +16,7 @@
                 {% if job.salaryText %}<h6>{{ job.salaryText }}</h6>{% endif %}
                 <hr>
                 <p>{{ job.shortDescription|nl2br }}</p>
-                <a class="view-job d-block" href="{{ url('apply') }}">{{ "View job details and apply"|t }}</a>
+                <a class="view-job d-block" href="{{ url('jobs/apply') }}">{{ "View job details and apply"|t }}</a>
             </div>
         </div>
       </div>

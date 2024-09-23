@@ -1,4 +1,4 @@
-dateModified: 1727094861
+dateModified: 1727095751
 elementSources:
   craft\elements\Entry:
     -
@@ -13,6 +13,9 @@ elementSources:
         - postDate
         - authors
         - link
+      type: native
+    -
+      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Home
       type: native
     -
       key: 'single:0596fc40-de8d-419a-a76d-0d5412a5f315' # Site Globals
@@ -47,9 +50,6 @@ elementSources:
     -
       heading: 'Job Pages'
       type: heading
-    -
-      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Home
-      type: native
     -
       key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Jobs
       type: native

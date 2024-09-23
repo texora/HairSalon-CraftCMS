@@ -8,16 +8,16 @@
         <div class="nav-product-salon">
             {% for rolloutPlan in rolloutPlans %}
                 {% set image = rolloutPlan.image.eagerly().one() %}
-                <div class="slide">
-                    <div class="darlington-card">
-                        {% if image %}
+                {% if image %}
+                    <div class="slide">
+                        <div class="darlington-card">
                             <img src="{{ image.url }}" alt="{{ rolloutPlan.title }}" />
-                        {% endif %}
-                        <div class="card-body">
-                            <h4>{{ rolloutPlan.title }}</h4>
+                            <div class="card-body">
+                                <h4>{{ rolloutPlan.title }}</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>

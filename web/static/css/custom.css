@@ -414,6 +414,12 @@ p {
     position: relative;
     background-position: top center;
 }
+.home .banner-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 .banner-text-content {
     position: relative;
     z-index: 2;
@@ -463,13 +469,29 @@ p {
     font-weight: 500;
     color: #353535;
    font-size: 18px;
-   margin-top: 20px;
+   margin-top: auto;
 }
 .home .building-section {
     padding: 120px 0 60px 0;
 }
 .home .collective-section .location h4{
     font-size: 24px;
+}
+.home .collective-section .slick-track {
+    display: flex;
+}
+.home .collective-section .slick-track .slick-slide {
+   height: auto;
+}
+.home .collective-section .slick-track .slick-slide>div, 
+.home .collective-section .slick-track .slick-slide .slide, 
+.home .collective-section .slick-track .slick-slide .slide .senior-card {
+   height: 100%;
+}
+.home .collective-section .slick-track .slick-slide .slide .senior-card, 
+.home .collective-section .slick-track .slick-slide .slide .senior-card .card-body {
+   display: flex;
+   flex-direction: column;
 }
 .work-at .email-form {
     max-width: 520px;
@@ -556,11 +578,17 @@ input:-webkit-autofill {
 .openings-section .slick-next, .collective-section .slick-next {
   right: -85px;
 }
-.openings-section .slick-current + .slick-slide {
+.home .openings-section .slick-current + .slick-slide {
   position: relative;
-  top: 45px;
-  padding-bottom: 45px;
+  top: 80px;
+  padding-bottom: 80px;
 }
+.home .openings-section .slick-slide.slick-current.slick-active {
+    position: relative;
+    top: 40px;
+    padding-bottom: 40px;
+}
+
 .openings-section .nav-product-salon .slick-next:before,
 .openings-section .nav-product-salon .slick-prev:before, 
 .collective-section .nav-product .slick-next:before, 
@@ -596,7 +624,7 @@ input:-webkit-autofill {
     padding-bottom: 10px;
 }
 .about .openings-section {
-    padding: 120px 0;
+    padding: 120px 0 100px 0;
 }
 .about .openings-section .section-title {
     width: 80%;
@@ -663,9 +691,19 @@ input:-webkit-autofill {
     color: #000;
     background: #fff;
 }
-.home .i-love-working, .home .looking-for, .home .salary-benefirs .competitive-section {
+.home .salary-benefirs .competitive-section {
     margin: 0;
     padding: 100px 0;
+}
+.home .i-love-working {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin: 0;
+}
+.home .looking-for {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin: 0;
 }
 .home .i-love-working  .work-at-halo {
     display: flex;
@@ -1344,6 +1382,9 @@ input:-webkit-autofill {
     .cultire .cutting-styling-section .card:hover .card-body {
         height: calc(100%);
     }
+    .about .unparalleled .row {
+        --bs-gutter-x: 4rem;
+    }
 }
 @media (min-width: 1400px) {
     .container {
@@ -1363,6 +1404,9 @@ input:-webkit-autofill {
     }
     .cutting-styling-section .card img {
         height: 360px; 
+    }
+    .about .unparalleled .row {
+        --bs-gutter-x: 6rem;
     }
 }
 @media(min-width:992px) and (max-width:1199px) {
@@ -1637,7 +1681,9 @@ input:-webkit-autofill {
     font-size: 160px;
     margin-bottom: 40px;
   }
-  .cultire .businesspeople .curve-text, .apple .businesspeople .curve-text, .businesspeople .curve-text, .something-section .curve-text {
+  .cultire .businesspeople .curve-text, 
+  .apple .businesspeople .curve-text, 
+  .businesspeople .curve-text, .something-section .curve-text {
     width: 100px;
     height: 100px;
     display: block;
@@ -1723,6 +1769,7 @@ input:-webkit-autofill {
     }
     .home .changing-uk {
         padding: 40px 24px;
+        margin-bottom: 80px;
     }
     .looking-for ul {
         float: none;
@@ -1730,7 +1777,7 @@ input:-webkit-autofill {
         gap: 1rem;
     }
     .home .work-at-halo p {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 0.25rem;
     }
     .home .i-love-working h3 {
@@ -1837,7 +1884,7 @@ input:-webkit-autofill {
         margin-top: 0;
     }
     .about .openings-section {
-        padding: 50px 0;
+        padding: 50px 0 80px 0;
     }
     .about .unparalleled {
         margin-bottom: 0;
@@ -1878,7 +1925,7 @@ input:-webkit-autofill {
     .process-section, .test-process {
         margin: 80px 0;
     }
-     .face-to-face {
+    .face-to-face {
         padding: 0;
         box-shadow: 0px 1px 2px 0px rgba(35, 39, 46, 0.08);
     }
@@ -1888,7 +1935,8 @@ input:-webkit-autofill {
     .trade-test p, .test-process .section-title p {
         font-size: 1rem;
     }
-    .cultire .openings-section .nav-product-salon .slick-prev {
+    .cultire .openings-section .nav-product-salon .slick-prev, 
+     .cultire .openings-section .nav-product-salon .slick-next {
         bottom: -20px;
     }
 }
@@ -1913,6 +1961,12 @@ input:-webkit-autofill {
         margin-left:5px;
     }
     .home .openings-section .slick-current + .slick-slide {
+      position: relative;
+      top: 60px;
+      padding-bottom: 60px;
+    }
+    .home .openings-section .slick-slide.slick-current.slick-active {
+        position: relative;
         top: 0px;
         padding-bottom: 0px;
     }
@@ -1935,6 +1989,9 @@ input:-webkit-autofill {
     }
     .cutting-styling-section .slick-list {
         padding: 0 !important;
+    }
+    .process-section .nav-link {
+        text-align: left;
     }
 
 }
