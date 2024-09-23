@@ -4,117 +4,15 @@ instructions: null
 name: Phase
 searchable: false
 settings:
-  options:
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 1'
-        -
-          - value
-          - '1'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 2'
-        -
-          - value
-          - '2'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 3'
-        -
-          - value
-          - '3'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 4'
-        -
-          - value
-          - '4'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 5'
-        -
-          - value
-          - '5'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 6'
-        -
-          - value
-          - '6'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 7'
-        -
-          - value
-          - '7'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 8'
-        -
-          - value
-          - '8'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 9'
-        -
-          - value
-          - '9'
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - 'Phase 10'
-        -
-          - value
-          - '10'
-        -
-          - default
-          - ''
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Dropdown
+type: craft\fields\Number

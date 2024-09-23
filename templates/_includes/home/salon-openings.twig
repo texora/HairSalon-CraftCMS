@@ -4,10 +4,10 @@
         <div class="section-title mb-5">
             <h2>{{ curYear }} Salon Openings</h2>
         </div>
-        {% set rolloutPlans = craft.entries().section('rolloutPlans').openingYear(curYear).with(['image']).all() %}
+        {% set rolloutPlans = craft.entries().section('rolloutPlans').openingYear(curYear).all() %}
         <div class="nav-product-salon">
             {% for rolloutPlan in rolloutPlans %}
-                {% set image = rolloutPlan.image.one() %}
+                {% set image = rolloutPlan.image.eagerly().one() %}
                 <div class="slide">
                     <div class="darlington-card">
                         {% if image %}

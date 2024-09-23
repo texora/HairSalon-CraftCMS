@@ -1,11 +1,11 @@
 <section class="i-love-working ">
     <div class="container">
         <div class="work-at-halo">
-            {% for videoTestimonial in entry.videoTestimonials.type('videoTestimonial').with([['authorPhoto', { withTransforms: ['authorThumb'] }]]).all() %}
+            {% for videoTestimonial in entry.videoTestimonials.type('videoTestimonial').all() %}
                 <div class="row align-items-center row-gap-5{% if loop.index % 2 == 0 %} flex-row-reverse{% endif %}">
                     <div class="col-12 col-md-6 ">
                         <h3>"{{ videoTestimonial.testimonialText }}"</h3>
-                        {% set photo = videoTestimonial.authorPhoto.one() %}
+                        {% set photo = videoTestimonial.authorPhoto.eagerly().one() %}
                         <h5>{% if photo %}<img src="{{ photo.url('authorThumb') }}" class="rounded-circle" alt="{{ videoTestimonial.testimonialAuthor }}" />{% endif %} {% if videoTestimonial.testimonialAuthor %}<span>{{ videoTestimonial.testimonialAuthor }}</span>{% if videoTestimonial.authorDesignation %}, {{ videoTestimonial.authorDesignation }}{% endif %}</h5>{% endif %}
                     </div>
                     <div class="col-12 col-md-6">
