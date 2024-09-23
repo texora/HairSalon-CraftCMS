@@ -281,7 +281,7 @@ hasTitleField: false
 icon: ''
 name: 'Holding Page'
 showSlugField: false
-showStatusField: false
+showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''

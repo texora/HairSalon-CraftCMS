@@ -271,11 +271,11 @@ fieldLayouts:
         uid: fc0ff4de-988b-4205-b217-12e2c95b76b6
         userCondition: null
 handle: home
-hasTitleField: false
+hasTitleField: true
 icon: ''
 name: Home
-showSlugField: false
-showStatusField: false
+showSlugField: true
+showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: ''
