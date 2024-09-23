@@ -410,7 +410,7 @@ p {
     top: 0;
     height: 100%;
     left: 0;
-    background-color: hsl(0deg 0% 0% / 60%);
+    background-color: hsl(0deg 0% 0% / 40%);
     z-index: 1;
 }
 .building-section h2, .changing-uk h2, .work-at-halo h2 {
@@ -558,11 +558,11 @@ input:-webkit-autofill {
   background-position: center;
 }
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-  background-image: url('/static/svg/arrow-next.svg');
+   background-image: url('/static/svg/arrow-next.svg');
   transform: rotate(180deg);
 }
 .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
-  background-image: url('/static/svg/arrow-next.svg');
+ background-image: url('/static/svg/arrow-next.svg');
 }
 .openings-section .nav-product-salon .slick-disabled, .collective-section .nav-product .slick-disabled {
     opacity: 0.5;
@@ -870,19 +870,21 @@ input:-webkit-autofill {
 .vacancy .main-header-top nav li a,
 .our-people .main-header-top nav li a,
 .cultire .main-header-top nav li a, 
-.apple .main-header-top nav li a {
+.apple .main-header-top nav li a, 
+.header-position-relative nav li a {
   color: #353535 !important;
 }
 .vacancy .main-header-top, .our-people .main-header-top, .cultire .main-header-top, 
-.apple .main-header-top {
+.apple .main-header-top, .header-position-relative .main-header-top {
     position: relative;
     width: 100%;
 }
-.vacancy .main-header-top img, .our-people .main-header-top img, .cultire .main-header-top img, .apple .main-header-top img {
+.vacancy .main-header-top img, .our-people .main-header-top img, 
+.cultire .main-header-top img, .apple .main-header-top img, .header-position-relative .main-header-top img {
     filter: brightness(100) invert(1);
 }
 .vacancy .main-header-top .apply-btn, .our-people .main-header-top .apply-btn, .cultire .main-header-top .apply-btn, 
-.apple .main-header-top .apply-btn {
+.apple .main-header-top .apply-btn, .header-position-relative .main-header-top .apply-btn {
     color: #fff !important;
     background: #000;
 }
@@ -1204,7 +1206,8 @@ input:-webkit-autofill {
 }
 
 .cultire .openings-section .nav-product-salon{
-    margin: 0;
+   margin-top: 0;
+   margin-bottom: 0;
 }
  .cultire .stylists-section .best h3 {
     font-family: "Bricolage Grotesque";
@@ -1216,11 +1219,11 @@ input:-webkit-autofill {
     z-index: 2;
 }
 @media(min-width:769px) {
-    .cutting-styling-section .card img {
+    .cultire .cutting-styling-section .card img {
         height: 290px;
         object-fit: cover;
     }
-    .cutting-styling-section .card-body {
+    .cultire .cutting-styling-section .card-body {
         position: absolute;
         height: 34px;
         left: 0px;
@@ -1231,7 +1234,7 @@ input:-webkit-autofill {
         padding-top: 0;
         z-index: 2;
     }
-    .cutting-styling-section .card:after {
+    .cultire .cutting-styling-section .card:after {
         content: "";
         position: absolute;
         top: 0;
@@ -1240,16 +1243,20 @@ input:-webkit-autofill {
         width: 100%;
         left: 0;
     }
-    .cutting-styling-section .card:hover .card-body {
+    .cultire .cutting-styling-section .card:hover .card-body {
         height: calc(75%);
         padding: 30px 0.5rem 0 0.5rem !important;
     }
-    .cutting-styling-section .card:hover .card-body h4, 
-    .cutting-styling-section .card:hover .card-body p {
+    .cultire .cutting-styling-section .card:hover .card-body h4, 
+    .cultire .cutting-styling-section .card:hover .card-body p {
         background-color: transparent;
         color: #fff;
         padding: 0;
     }
+    .cultire .cutting-styling-section .card:hover .card-body h4 {
+        margin-bottom: 0.5rem !important;
+    }
+
 }
 @media (min-width: 992px) {
   .text-content {
@@ -1283,20 +1290,6 @@ input:-webkit-autofill {
      .salary-benefirs .competitive-section {
         margin-top: 60px;
     }
-    /*.trade-test-content {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-    }*/
-    /*.face-to-face {
-        background: url('../img/side-view-man-working-home.png');
-        height: 100%;
-        min-height: 485px;
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }*/
     .trade-image {
         height: 100%;
         min-height: 485px;
@@ -1318,7 +1311,7 @@ input:-webkit-autofill {
         width: 560px;
     }
     .cutting-styling-section .card:hover .card-body {
-        height: calc(90%);
+        height: calc(105%);
     }
 }
 @media (min-width: 1400px) {
@@ -1335,7 +1328,7 @@ input:-webkit-autofill {
         left: 28%;
     }
     .cutting-styling-section .card:hover .card-body {
-        height: calc(90%);
+        height: calc(75%);
     }
     .cutting-styling-section .card img {
         height: 360px; 
@@ -1466,7 +1459,8 @@ input:-webkit-autofill {
     .vacancy .nav-icon span,
     .our-people .nav-icon span,
     .cultire .nav-icon span,
-    .apple .nav-icon span, 
+    .apple .nav-icon span,
+    .header-position-relative .nav-icon span, 
     .main-header-top.activeheader .nav-icon span, 
     .main-header-top.open-header .nav-icon span {
       background: #353535;
@@ -1816,6 +1810,13 @@ input:-webkit-autofill {
     }
     .cutting-styling-section.openings-section .nav-product-salon {
         margin: 0;
+    }
+    .cultire .stylists-section .best h3 {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+    }
+    .cultire .specialists {
+        row-gap: 32px !important;
     }
     .personal-kit:hover .iamge-hover-display {
         display: none !important;
