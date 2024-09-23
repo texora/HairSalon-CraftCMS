@@ -4,11 +4,15 @@
 
 {% block main %}
 
+{% cache using key 'salary-benefits-page' %}
+
     {% include '_includes/hero-full-img' %}
     {% include '_includes/salary-benefits/intro-text' %}
     {% include '_includes/salary-benefits/our-benefits' %}
 
     {% include '_includes/work-at-halo' %}
     {% include '_includes/brand-text-image' %}
+
+{% endcache %}
 
 {% endblock %}

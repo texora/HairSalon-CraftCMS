@@ -4,11 +4,15 @@
 
 {% block main %}
 
+{% cache using key 'apply-page' %}
+
     {% include '_includes/hero-half-img-cta' %}
 
     {% include '_includes/work-at-halo-apply' %}
 
     {% include '_includes/apply/recruitment-process' %}
     {% include '_includes/apply/trade-test-process' %}
+
+{% endcase %}
 
 {% endblock %}

@@ -4,10 +4,14 @@
 
 {% block main %}
 
+{% cache using key 'vacancies-page' %}
+
     {% include '_includes/hero-half-img' %}
     {% include '_includes/vacancies/cards' %}
     {% include '_includes/vacancies/jobs' %}
 
     {% include '_includes/work-at-halo' %}
+
+{% endcache %}
 
 {% endblock %}

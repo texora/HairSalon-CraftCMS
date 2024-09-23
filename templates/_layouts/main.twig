@@ -21,7 +21,7 @@
     <!-- Custom -->
     {% do view.registerCssFile('/static/css/style.css') %}
     {% do view.registerCssFile('/static/css/custom.css') %}
-    {% do view.registerCssFile('https://cdn.plyr.io/3.7.8/plyr.css') %}
+    {% do view.registerCssFile('/static/css/plyr.css') %}
 
     {% if pageCss is defined %}
         {% for cssFile in pageCss|default([]) %}
@@ -44,7 +44,7 @@
     {% do view.registerJsFile('/static/js/popper.min.js') %}
     {% do view.registerJsFile('/static/js/slick.min.js') %}
     {% do view.registerJsFile('/static/js/bootstrap.bundle.min.js') %}
-    {% do view.registerJsFile('https://cdn.plyr.io/3.7.8/plyr.polyfilled.js') %}
+    {% do view.registerJsFile('/static/js/plyr.polyfilled.js') %}
     {% do view.registerJsFile('/static/js/scripts.js') %}
 
     <!-- Custom -->

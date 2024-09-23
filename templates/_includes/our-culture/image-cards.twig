@@ -4,7 +4,7 @@
       <div class="nav-product-salon culture-slider">
         {% for card in entry.imageCards.eagerly().all() %}
         <div class="slide">
-          <div class="">
+          <div class="card p-0 border-0">
             {% set image = card.image.eagerly().one() %}
             {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" class="w-100 img-fluid" />{% endif %}
             <div class="card-body px-0">

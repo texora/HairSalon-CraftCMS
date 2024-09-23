@@ -999,21 +999,34 @@ input:-webkit-autofill {
 .i-love-working  .plyr__control svg {
     font-size: 14px;
 }
-.trade-image {
-    height: 500px;
+.face-to-face {
+    padding: 16px;
+    position:relative;
+   /* width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
 }
+
 .trade-image img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 .trade-test {
     height: 100%;
     text-align: left;
     padding: 2rem;
+    position: relative;
+    z-index: 2;
 }
 .trade-test h3 {
     font-size: 2rem;
+}
+.trade-test p {
+    margin-bottom: 2rem;
+}
+.trade-test p:last-child {
+    margin-bottom: 0;
 }
 .test-process .section-title p {
     font-weight: 400;
@@ -1027,7 +1040,7 @@ input:-webkit-autofill {
     max-width: 405px;
     width: 100%;
     border: 0;
-    border-bottom: solid 1px #012B48;
+    border-bottom: solid 1px rgba(1, 43, 72, 0.20);
     font-family: "Bricolage Grotesque";
     font-weight: 500;
     color: #353535;
@@ -1038,11 +1051,15 @@ input:-webkit-autofill {
     padding: 0 0 20px 0;
 }
 .process-section .nav-link.active {
-    border-bottom: solid 1px rgba(1, 43, 72, 0.20);
+    border-bottom: solid 1px #012B48;
+}
+.process-section .nav-link svg path {
+    stroke-width: 1px;
+    fill: rgba(53, 53, 53, 0.20);
 }
 .process-section .nav-link.active svg path {
     stroke-width: 1px;
-    stroke: rgba(53, 53, 53, 0.20);
+    fill: #353535;
 }
 .process-section .nav-tabs {
     gap: 3.75rem;
@@ -1125,12 +1142,7 @@ input:-webkit-autofill {
 .cultire .cutting-styling-section .standards {
   --bs-gutter-x: 3.75rem !important;
 }
-.cultire .cutting-styling-section .card-body {
-  padding: 6px 10px;
-}
-.cultire .cutting-styling-section .card-body h4 {
-  font-family: "Bricolage Grotesque";
-}
+
 .cultire .revolutionise-section .good-people h2 {
   font-family: Acme;
    opacity: 0.15;
@@ -1158,18 +1170,19 @@ input:-webkit-autofill {
     position: static;
     padding-bottom: 0;
 }
-.cultire .cutting-styling-section .card-body{
-    padding-top: 0;
-}
-.cultire .cutting-styling-section .card-body h4{
+.cultire .cutting-styling-section .card-body h4 {
     background-color: #000;
     padding: 6px 10px;
     font-size: 18px;
     color: #fff;
+    font-family: "Bricolage Grotesque";
 }
-.cultire .cutting-styling-section .card-body p{
-    display: none;
+
+.cutting-styling-section .card-body p {
+    font-size: 14px;
+    line-height: 18px;
 }
+
 .cultire .openings-section .nav-product-salon{
     margin-bottom: 0;
 }
@@ -1181,6 +1194,42 @@ input:-webkit-autofill {
 }
 .about-banner img {
     z-index: 2;
+}
+@media(min-width:769px) {
+    .cutting-styling-section .card img {
+        height: 360px;
+        object-fit: cover;
+    }
+    .cutting-styling-section .card-body {
+        position: absolute;
+        height: 34px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+        padding-top: 0;
+        z-index: 2;
+    }
+    .cutting-styling-section .card:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background: rgb(0 0 0 / 30%);
+        height: 100%;
+        width: 100%;
+        left: 0;
+    }
+    .cutting-styling-section .card:hover .card-body {
+        height: calc(75%);
+        padding: 30px 0.5rem 0 0.5rem !important;
+    }
+    .cutting-styling-section .card:hover .card-body h4, 
+    .cutting-styling-section .card:hover .card-body p {
+        background-color: transparent;
+        color: #fff;
+        padding: 0;
+    }
 }
 @media (min-width: 992px) {
   .text-content {
@@ -1214,10 +1263,42 @@ input:-webkit-autofill {
      .salary-benefirs .competitive-section {
         margin-top: 60px;
     }
+    /*.trade-test-content {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }*/
+    /*.face-to-face {
+        background: url('../img/side-view-man-working-home.png');
+        height: 100%;
+        min-height: 485px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }*/
+    .trade-image {
+        height: 100%;
+        min-height: 485px;
+    }
+    .trade-image img {
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .cutting-styling-section .card:hover .card-body {
+        height: calc(92%);
+    }
 }
 @media (min-width: 1200px) {
     .content-width-50 {
         width: 560px;
+    }
+    .cutting-styling-section .card:hover .card-body {
+        height: calc(75%);
     }
 }
 @media (min-width: 1400px) {
@@ -1232,6 +1313,9 @@ input:-webkit-autofill {
     }
     .iamge-hover-display {
         left: 28%;
+    }
+    .cutting-styling-section .card:hover .card-body {
+        height: calc(90%);
     }
 }
 @media(max-width:1199px) {
@@ -1390,11 +1474,24 @@ input:-webkit-autofill {
         left: 27%;
     }
     .process-section .nav-tabs {
-        gap: 3rem;
+        gap: 2rem;
     }
     .trade-test {
-        padding: 1rem;
+        padding: 0 0 1rem 0rem;
     }
+    .face-to-face {
+        background: transparent;
+        padding: 0;
+    }
+    .process-section .nav-link {
+        max-width: 100%;
+    }
+    /*.face-to-face {
+        background-image: none !important;
+        min-height: fit-content;
+        padding: 0;
+    }*/
+    
 
 }
 @media (max-width: 768px) {
@@ -1512,7 +1609,7 @@ input:-webkit-autofill {
 }
 .cultire .cutting-styling-section .card-body h4{
     background-color: transparent;
-    padding: 20px 0 12px 0;
+    padding: 0;
     font-size: 18px;
     color: #353535;
 }
@@ -1699,9 +1796,7 @@ input:-webkit-autofill {
         margin: 80px 0;
     }
      .face-to-face {
-        background: transparent;
         padding: 0;
-        background: var(--Neutral-White, #FFF);
         box-shadow: 0px 1px 2px 0px rgba(35, 39, 46, 0.08);
     }
     .trade-test h3 {
@@ -1748,5 +1843,13 @@ input:-webkit-autofill {
         margin-left: -12px;
         margin-right: -12px;
     }
+    .face-to-face img {
+        height: 190px;
+        object-fit: cover;
+    }
+    .cutting-styling-section .slick-list {
+        padding: 0 !important;
+    }
 
 }
+
