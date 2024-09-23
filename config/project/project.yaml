@@ -1,4 +1,4 @@
-dateModified: 1727014349
+dateModified: 1727067432
 elementSources:
   craft\elements\Entry:
     -
@@ -28,6 +28,7 @@ elementSources:
       key: 'section:38dc9635-7a7d-484c-bffc-96bf8c1ae3e3' # Rollout Plans
       tableAttributes:
         - 'fieldInstance:13b2fc7f-1afa-46fc-9177-e53f51fc9547'
+        - 'field:7f82abc5-4a85-431f-8ffa-c9d3452c3c4e' # Phase
         - status
         - postDate
       type: native

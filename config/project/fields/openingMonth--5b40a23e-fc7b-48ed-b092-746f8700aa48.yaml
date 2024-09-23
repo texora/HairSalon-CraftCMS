@@ -15,7 +15,7 @@ settings:
           - '1'
         -
           - default
-          - ''
+          - '1'
     -
       __assoc__:
         -

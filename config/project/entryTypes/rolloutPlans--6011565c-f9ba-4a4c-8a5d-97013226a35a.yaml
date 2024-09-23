@@ -86,22 +86,6 @@ fieldLayouts:
           -
             dateAdded: '2024-09-21T04:53:34+00:00'
             elementCondition: null
-            fieldUid: 27b29006-47a2-40b1-a7c1-7f0db71cc8a2 # Icon
-            handle: phaseIcon
-            includeInCards: false
-            instructions: null
-            label: 'Phase Icon'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d97e0b4d-706c-4bdd-b9ce-6b4abb5c0372
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-21T04:53:34+00:00'
-            elementCondition: null
             fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
             handle: null
             includeInCards: false
