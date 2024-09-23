@@ -981,6 +981,9 @@ input:-webkit-autofill {
     align-items: center;
     justify-content: center;
 }
+.i-love-working .plyr__controls__item.plyr__control[data-plyr="fullscreen"]:hover {
+    background: #353535 !important;
+}
 .i-love-working .plyr--video .plyr__control--overlaid {
     display: flex !important;
     margin: 0;
@@ -999,6 +1002,22 @@ input:-webkit-autofill {
 .i-love-working  .plyr__control svg {
     font-size: 14px;
 }
+.recruitment-section .plyr__control--overlaid[data-plyr="play"], 
+.i-love-working  .plyr__control--overlaid[data-plyr="play"] {
+    background: url(../img/lightbox.png) !important;
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    border: 0;
+}
+.recruitment-section .plyr__control--overlaid svg, 
+.i-love-working .plyr__control--overlaid svg, 
+.i-love-working .plyr__controls__item.plyr__control[data-plyr="play"] {
+    display: none !important;
+}
+
 .face-to-face {
     padding: 16px;
     position:relative;
@@ -1157,6 +1176,7 @@ input:-webkit-autofill {
 .cultire .revolutionise-section .col-md-3:last-child {
     border: 0;
 }
+
 .number::before {
   content: "";
   position: absolute;
@@ -1184,7 +1204,7 @@ input:-webkit-autofill {
 }
 
 .cultire .openings-section .nav-product-salon{
-    margin-bottom: 0;
+    margin: 0;
 }
  .cultire .stylists-section .best h3 {
     font-family: "Bricolage Grotesque";
@@ -1197,7 +1217,7 @@ input:-webkit-autofill {
 }
 @media(min-width:769px) {
     .cutting-styling-section .card img {
-        height: 360px;
+        height: 290px;
         object-fit: cover;
     }
     .cutting-styling-section .card-body {
@@ -1290,7 +1310,7 @@ input:-webkit-autofill {
         width: 100%;
     }
     .cutting-styling-section .card:hover .card-body {
-        height: calc(92%);
+        height: calc(100%);
     }
 }
 @media (min-width: 1200px) {
@@ -1298,7 +1318,7 @@ input:-webkit-autofill {
         width: 560px;
     }
     .cutting-styling-section .card:hover .card-body {
-        height: calc(75%);
+        height: calc(90%);
     }
 }
 @media (min-width: 1400px) {
@@ -1317,10 +1337,21 @@ input:-webkit-autofill {
     .cutting-styling-section .card:hover .card-body {
         height: calc(90%);
     }
+    .cutting-styling-section .card img {
+        height: 360px; 
+    }
 }
 @media(max-width:1199px) {
     .welcome-to-halo .text-content {
         padding-top: 20px;
+    }
+    .collective-section .slick-slider, .openings-section .slick-slider {
+        margin-right:-20px;
+        margin-left:-20px;
+    }
+    .collective-section .slick-slide, .openings-section .slick-slide {
+        margin-right:20px;
+        margin-left:20px;
     }
 }
 
@@ -1852,4 +1883,6 @@ input:-webkit-autofill {
     }
 
 }
+
+
 

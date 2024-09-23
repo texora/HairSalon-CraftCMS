@@ -18,7 +18,7 @@
     <link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet">
 
     <!-- Custom -->
-    {% do view.registerCssFile('/static/css/main.css') %}
+    {% do view.registerCssFile('/static/css/holding.css') %}
 
     {% if pageCss is defined %}
         {% for cssFile in pageCss|default([]) %}
@@ -30,7 +30,7 @@
 
 <body class="{% if bodyClass is defined %} {{ bodyClass }}{% endif %}">
 
-    {% include '_includes/header' %}
+    {% include '_includes/header-holding' %}
 
     <main class="content-page bip" id="content-page">
 
@@ -38,10 +38,10 @@
 
     </main>
 
-    {% include '_includes/footer' %}
+    {% include '_includes/footer-holding' %}
 
 
-    {% do view.registerJsFile('/static/js/jquery.js') %}
+    {% do view.registerJsFile('/static/js/jquery.min.js') %}
     {% do view.registerJsFile('/static/js/popper.min.js') %}
     {% do view.registerJsFile('https://cdn.plyr.io/3.7.8/plyr.polyfilled.js') %}
     {% do view.registerJsFile('/static/js/bootstrap.min.js') %}

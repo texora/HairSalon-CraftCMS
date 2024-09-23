@@ -23,11 +23,13 @@
 								{% set image = tab.image.eagerly().one() %}
 								{% if image %}<div class="trade-image"> <img src="{{ image.url }}" alt="{{ image.title }}" /> </div>{% endif %}
 							</div>
-							<div class="col-12 col-lg-5">
-								<div class="trade-test">
-									{{ tab.tabContent }}
+							{% if tab.tabContent %}
+								<div class="col-12 col-lg-5">
+									<div class="trade-test">
+										{{ tab.tabContent }}
+									</div>
 								</div>
-							</div>
+							{% endif %}
 						</div>
 					</div>
 				</div>
