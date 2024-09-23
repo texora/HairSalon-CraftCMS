@@ -383,6 +383,21 @@ p {
     padding: 8px 12px;
     height: auto;
     text-transform: uppercase;
+    transition: 0.5s all;
+}
+.main-header-top .apply-btn:hover {
+    color: #fff !important;
+    background-color: #000;
+}
+.main-header-top.activeheader .apply-btn:hover,
+.vacancy .main-header-top .apply-btn:hover, 
+.our-people .main-header-top .apply-btn:hover, 
+.cultire .main-header-top .apply-btn:hover, 
+.apple .main-header-top .apply-btn:hover, 
+.header-position-relative .main-header-top .apply-btn:hover {
+    color: #000 !important;
+    border: solid 1px #000;
+    background-color: transparent;
 }
 .main-header-top nav a {
     font-weight: 400;
@@ -431,6 +446,9 @@ p {
     font-size: 24px;
     text-shadow: 0px 0px 0.5px #FFF;
     color: #353535;
+}
+.competitive-section .specialists h4 {
+    margin-bottom: 1rem;
 }
 .senior-card h6 {
     font-family: Gilroy;
@@ -558,11 +576,11 @@ input:-webkit-autofill {
   background-position: center;
 }
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-   background-image: url('/static/svg/arrow-next.svg');
+  background-image: url('/static/svg/arrow-next.svg');
   transform: rotate(180deg);
 }
 .openings-section .nav-product-salon .slick-next:before, .collective-section .nav-product .slick-next:before {
- background-image: url('/static/svg/arrow-next.svg');
+  background-image: url('/static/svg/arrow-next.svg');
 }
 .openings-section .nav-product-salon .slick-disabled, .collective-section .nav-product .slick-disabled {
     opacity: 0.5;
@@ -658,12 +676,21 @@ input:-webkit-autofill {
     font-weight: 400;
 }
 .home .i-love-working .card {
-    margin-left: auto;
+   margin-left: auto;
    max-width: 450px;
 }
+
 .home .i-love-working .flex-row-reverse .card {
     margin-left: 0;
     margin-right: auto;
+}
+.home .i-love-working .video-content {
+    max-width: 550px;
+    margin-right: auto;
+}
+.home .i-love-working .flex-row-reverse .video-content {
+    margin-left: auto;
+    margin-right: 0;
 }
 .looking-for ul {
     display: flex;
@@ -686,10 +713,10 @@ input:-webkit-autofill {
 .salary-benefirs .competitive-section .card:hover img {
    filter: brightness(0) invert(1);
 }
-.salary-benefirs .competitive-section .card:hover svg path {
+.competitive-section .card:hover svg path {
     stroke: #fff;
 }
-.salary-benefirs .specialists {
+.salary-benefirs .specialists, .competitive-section .column-gap {
    --bs-gutter-x: 4rem;
     row-gap: 4rem !important;
 }
@@ -1218,6 +1245,9 @@ input:-webkit-autofill {
 .about-banner img {
     z-index: 2;
 }
+.who-are-section p {
+    line-height: 28px;
+}
 @media(min-width:769px) {
     .cultire .cutting-styling-section .card img {
         height: 290px;
@@ -1244,7 +1274,7 @@ input:-webkit-autofill {
         left: 0;
     }
     .cultire .cutting-styling-section .card:hover .card-body {
-        height: calc(75%);
+        height: calc(95%);
         padding: 30px 0.5rem 0 0.5rem !important;
     }
     .cultire .cutting-styling-section .card:hover .card-body h4, 
@@ -1258,6 +1288,7 @@ input:-webkit-autofill {
     }
 
 }
+
 @media (min-width: 992px) {
   .text-content {
     max-width: 600px;
@@ -1302,7 +1333,7 @@ input:-webkit-autofill {
         left: 0;
         width: 100%;
     }
-    .cutting-styling-section .card:hover .card-body {
+    .cultire .cutting-styling-section .card:hover .card-body {
         height: calc(100%);
     }
 }
@@ -1310,8 +1341,8 @@ input:-webkit-autofill {
     .content-width-50 {
         width: 560px;
     }
-    .cutting-styling-section .card:hover .card-body {
-        height: calc(105%);
+    .cultire .cutting-styling-section .card:hover .card-body {
+        height: calc(100%);
     }
 }
 @media (min-width: 1400px) {
@@ -1327,11 +1358,17 @@ input:-webkit-autofill {
     .iamge-hover-display {
         left: 28%;
     }
-    .cutting-styling-section .card:hover .card-body {
-        height: calc(75%);
+    .cultire .cutting-styling-section .card:hover .card-body {
+        height: calc(95%);
     }
     .cutting-styling-section .card img {
         height: 360px; 
+    }
+}
+@media(min-width:992px) and (max-width:1199px) {
+    .cultire .cutting-styling-section .card-body p {
+       font-size: 13px;
+       line-height: 17px;
     }
 }
 @media(max-width:1199px) {
@@ -1356,7 +1393,7 @@ input:-webkit-autofill {
     .home .collective-section .location h4 {
         text-align: left;
     }
-    .salary-benefirs .specialists {
+    .salary-benefirs .specialists, .competitive-section .column-gap {
        --bs-gutter-x: 3rem;
         row-gap: 3rem !important;
     }
@@ -1511,11 +1548,15 @@ input:-webkit-autofill {
     .process-section .nav-link {
         max-width: 100%;
     }
-    /*.face-to-face {
-        background-image: none !important;
-        min-height: fit-content;
-        padding: 0;
-    }*/
+    .i-love-working .like-share {
+        width: 70%;
+    }
+    .i-love-working .save {
+        width: 30%;
+    }
+    .home .i-love-working h3 {
+        font-size: 2rem;
+    }
     
 
 }
@@ -1641,6 +1682,7 @@ input:-webkit-autofill {
 .cultire .cutting-styling-section .card-body p{
     display: block;
 }
+
 }
 @media(max-width:767px) {
     h2, .openings-section h2 {
@@ -1707,12 +1749,18 @@ input:-webkit-autofill {
     .home .looking-for {
         padding: 60px 0 25px 0;
     }
+    .home .i-love-working .video-content, 
+    .home .i-love-working .flex-row-reverse .video-content, 
+    .home .i-love-working .card, 
+    .home .i-love-working .flex-row-reverse .card {
+        margin: 0 auto;
+    }
     .unparalleled, .looking-for, .cutting-styling-section, .competitive-section, .great-hair-section {
         margin: 60px 0;
     }
-    .salary-benefirs .specialists {
+    .salary-benefirs .specialists, .competitive-section .column-gap {
        --bs-gutter-x: 1.5rem;
-        row-gap: 1.25rem !important;
+        row-gap: 2rem !important;
     }
     .salary-benefirs .great-hair-section {
         margin: 0;
@@ -1782,6 +1830,9 @@ input:-webkit-autofill {
     .unparalleled, .rollout-section, .who-are-section {
         margin: 50px 0;
     }
+    header + .who-are-section {
+        margin-top: 0;
+    }
     .apple .who-are-section {
         margin-top: 0;
     }
@@ -1836,6 +1887,9 @@ input:-webkit-autofill {
     }
     .trade-test p, .test-process .section-title p {
         font-size: 1rem;
+    }
+    .cultire .openings-section .nav-product-salon .slick-prev {
+        bottom: -20px;
     }
 }
 

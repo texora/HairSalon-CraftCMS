@@ -1,7 +1,7 @@
 <header class="main-header-top">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"><img class="img-fluid" src="./static/images/halohair-logo.svg" alt="{{ siteName }}"></a>
+            <a class="navbar-brand" href="{{ url('jobs') }}"><img class="img-fluid" src="{{ url('static/images/halohair-logo.svg') }}" alt="{{ siteName }}"></a>
              <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -10,23 +10,23 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('about-us') }}">About Us</a>
+                        <a class="nav-link" href="{{ url('jobs/about-us') }}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('vacancies') }}">Vacancies</a>
+                        <a class="nav-link" href="{{ url('jobs/vacancies') }}">Vacancies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('salary-benefits') }}">Salary & Benefits</a>
+                        <a class="nav-link" href="{{ url('jobs/salary-benefits') }}">Salary & Benefits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('our-people') }}">Our People</a>
+                        <a class="nav-link" href="{{ url('jobs/our-people') }}">Our People</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('our-culture') }}">Our Culture</a>
+                        <a class="nav-link" href="{{ url('jobs/our-culture') }}">Our Culture</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a class="apply-btn" href="{{ url('apply') }}">Apply</a>
+                    <a class="apply-btn" href="{{ url('jobs/apply') }}">Apply</a>
                 </div>
             </div>
         </div>

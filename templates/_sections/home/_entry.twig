@@ -1,37 +1,14 @@
-{% extends "_layouts/main" %}
-
-{% set bodyClass = 'home' %}
-
-{% block main %}
-
-{% cache using key 'home-page' %}
-
-    {% include '_includes/home/hero' %}
-    {% include '_includes/home/halo-career' %}
-    {% include '_includes/home/salon-openings' %}
-    {% include '_includes/home/join-us' %}
-    {% include '_includes/work-at-halo' %}
-    {% include '_includes/home/video-testimonials' %}
-
-    <div class="modal video-modal fade" id="video-popup" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                
-                <div class="modal-body">
-                    <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halo Hair Group</title>
+</head>
+<body style="margin:0; padding: 0;">
+    <div class="center-image" style="height: 100vh;width: 100%;background-color: #000;display: flex;justify-content: center;align-items: center;">
+        <img src="./static/images/halo-logo.png" alt="Halo Hair Group" style="max-width: 100%;height: auto;">
     </div>
 
-{% endcache %}
-
-{% endblock %}
-{% js %}
-    const videoPlayer = Array.from(document.querySelectorAll('.plyrVideo')).map((p) => new Plyr(p));
-{% endjs %}
+</body>
+</html>

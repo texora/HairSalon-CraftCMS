@@ -13,14 +13,27 @@
                 <div class="col-12 col-md-6 offset-lg-1">
                     <div class="email-form">
                         {% if siteGlobals.formText %}<h4>{{ siteGlobals.formText|nl2br }}</h4>{% endif %}
-                        <form>
+                        {% if craft.app.session.hasFlash('wheelformSuccess') %}
+                            <div class="alert alert-success bg-success" role="alert">
+                                <p class="text-white opacity-100 w-100 mw-100 mb-0">{{ craft.app.session.getFlash('wheelformSuccess') }}</p>
+                            </div>
+                            {% js %}
+                                $(document).ready(function() {
+                                    $('html, body').animate({scrollTop: $(".work-at-halo").offset().top}, 1000);
+                                })
+                            {% endjs %}
+                        {% endif %}
+                        <form class="my-4" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+                            {{ csrfInput() }}
+                            <input type="hidden" name="action" value="wheelform/message/send">
+                            <input type="hidden" name="form_id" value="1">
                             <div class="email">
                                 <label for="email">Email</label>
-                                <input type="email" class="email-bx form-control" name="email" placeholder="Enter Your Email address">
+                                <input type="email" class="email-bx form-control" name="email" placeholder="Enter Your Email address" required />
                             </div>
                             <div class="email">
                                 <label for="city">City</label>
-                                <select class="form-control city-bx">
+                                <select class="form-control city-bx" name="city">
                                     {% for rolloutPlan in craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
                                         <option value="{{ rolloutPlan.title }}">{{ rolloutPlan.title }}</option>
                                     {% endfor %}

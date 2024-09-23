@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/apply/_entry.twig
-    uriFormat: apply
+    uriFormat: jobs/apply
 type: single

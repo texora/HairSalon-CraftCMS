@@ -1,4 +1,4 @@
-dateModified: 1727084829
+dateModified: 1727090567
 elementSources:
   craft\elements\Entry:
     -
@@ -37,7 +37,7 @@ elementSources:
         - postDate
         - desc
       disabled: false
-      key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs
+      key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs Listing
       tableAttributes:
         - status
         - postDate
@@ -45,13 +45,13 @@ elementSources:
         - link
       type: native
     -
-      heading: 'Landing Pages'
+      heading: 'Job Pages'
       type: heading
     -
-      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Holding Page
+      key: 'single:0ccd9cb4-cb6f-44da-b932-3dae09c2db79' # Home
       type: native
     -
-      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Home
+      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Jobs
       type: native
     -
       key: 'single:dd713845-af4e-4e60-9d0a-171d3ed41bb9' # About Us
@@ -100,7 +100,7 @@ fs:
     url: 'https://halo-hair.files.svdcdn.com'
 meta:
   __names__:
-    0ccd9cb4-cb6f-44da-b932-3dae09c2db79: 'Holding Page' # Holding Page
+    0ccd9cb4-cb6f-44da-b932-3dae09c2db79: Home # Home
     1dfa55bc-6378-42c8-978f-4266cf07fc70: 'Text / Image Row' # Text / Image Row
     1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us' # About Us
     1f1a03f8-9f09-4e72-90b2-73744ea2d88c: Full # Full
@@ -133,7 +133,7 @@ meta:
     96eb5731-03f7-428c-97b7-32172b537746: Card # Card
     97cdda06-67e6-4755-a9d3-2534f16a2c73: 'Salary Benefits' # Salary Benefits
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
-    743ec001-12a3-48f1-8ebe-cb880deb1e5a: Jobs # Jobs
+    743ec001-12a3-48f1-8ebe-cb880deb1e5a: 'Jobs Listing' # Jobs Listing
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
     812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
@@ -169,7 +169,7 @@ meta:
     e49f78c7-9b22-409e-b03e-671922e6915f: 'Our Culture' # Our Culture
     f0f5c790-85e7-436d-9f47-3e1a7966a1b1: 'Job Type' # Job Type
     f1bd2935-9135-4dfd-aec4-e7459ca70d1d: 'Employee Speaks' # Employee Speaks
-    f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: Home # Home
+    f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: Jobs # Jobs
     f5d1ded3-5a5e-400e-836c-7c4d1d346ab1: 'Trade Test Process' # Trade Test Process
 plugins:
   ckeditor:

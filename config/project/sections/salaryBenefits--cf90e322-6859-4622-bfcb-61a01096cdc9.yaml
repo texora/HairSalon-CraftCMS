@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/salary-benefits/_entry.twig
-    uriFormat: salary-benefits
+    uriFormat: jobs/salary-benefits
 type: single

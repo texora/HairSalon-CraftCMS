@@ -34,24 +34,38 @@
                 <div class="col-12 col-md-6 offset-lg-1">
                     <div class="email-form">
                         {% if siteGlobals.formText %}<h4>{{ siteGlobals.formText|nl2br }}</h4>{% endif %}
-                        <form>
+                        {% if craft.app.session.hasFlash('wheelformSuccess') %}
+                            <div class="alert alert-success bg-success" role="alert">
+                                <p class="text-white opacity-100 w-100 mw-100 mb-0">{{ craft.app.session.getFlash('wheelformSuccess') }}</p>
+                            </div>
+                            {% js %}
+                                $(document).ready(function() {
+                                    $('html, body').animate({scrollTop: $(".work-at-halo").offset().top}, 1000);
+                                })
+                            {% endjs %}
+                        {% endif %}
+                        <form class="my-4" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+                            {{ csrfInput() }}
+                            <input type="hidden" name="action" value="wheelform/message/send">
+                            <input type="hidden" name="form_id" value="2">
                             <div class="email">
                                 <label for="fname">Name</label>
-                                <input type="text" class="email-bx form-control" name="fname" placeholder="Sarah Smith"> </div>
+                                <input type="text" class="email-bx form-control" name="name" placeholder="Sarah Smith"> 
+                            </div>
                             <div class="email">
                                 <label for="experience">Number of Years Experience</label>
-                                <input type="text" class="email-bx form-control" name="experience" placeholder="3 years experience"> </div>
+                                <input type="text" class="email-bx form-control" name="yearsExpereince" placeholder="3 years experience"> </div>
                             <div class="email">
                                 <label for="insta">Instagram</label>
-                                <input type="text" class="email-bx form-control" name="insta" placeholder="@Instagram"> </div>
+                                <input type="text" class="email-bx form-control" name="instagram" placeholder="@Instagram"> </div>
                             <div class="email">
                                 <label for="qualifi">Qualifications</label>
-                                <input type="text" class="email-bx form-control" name="qualifi" placeholder="NVQ Level 3"> </div>
+                                <input type="text" class="email-bx form-control" name="qualifications" placeholder="NVQ Level 3"> </div>
                             <div class="email">
                                 <label for="phonen">Phone Number</label>
-                                <input type="tel" class="email-bx form-control" name="phonen" placeholder="07543 234 554"> </div>
+                                <input type="tel" class="email-bx form-control" name="phoneNumber" placeholder="07543 234 554"> </div>
                             <div class="email">
-                                <button class="btn btn-black" type="submit">submit</button>
+                                <button class="btn btn-black" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
