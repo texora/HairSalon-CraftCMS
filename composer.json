@@ -5,13 +5,11 @@
     "craftcms/ckeditor": "^4.2.0",
     "craftcms/cms": "5.3.6",
     "mmikkel/retcon": "^3.2.0",
-    "nystudio107/craft-imageoptimize": "^5.0.2",
     "nystudio107/craft-seomatic": "^5.1.2",
     "servd/craft-asset-storage": "^4.0.6",
     "spicyweb/craft-embedded-assets": "^5.1.2",
     "verbb/expanded-singles": "^3.0.0",
     "verbb/hyper": "^2.0.5",
-    "verbb/image-resizer": "^4.0.1",
     "vlucas/phpdotenv": "^5.4.0",
     "wrav/oembed": "^3.1.1",
     "xpertbot/craft-wheelform": "^4.0.2"

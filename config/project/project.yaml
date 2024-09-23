@@ -1,4 +1,4 @@
-dateModified: 1727092711
+dateModified: 1727094861
 elementSources:
   craft\elements\Entry:
     -
@@ -192,15 +192,6 @@ plugins:
     enabled: true
     licenseKey: CDRRYOX785ZGO5RCDHP53TAZ
     schemaVersion: 1.0.0
-  image-optimize:
-    edition: standard
-    enabled: true
-    licenseKey: 6VBBLSE3G9M4GEP56ER0U02M
-    schemaVersion: 1.0.0
-  image-resizer:
-    edition: standard
-    enabled: false
-    schemaVersion: 2.0.0
   oembed:
     edition: standard
     enabled: true
