@@ -16,16 +16,16 @@
                         {% set offset = limit * count %}
                         {% for jobBenefit in benefitsQ.limit(limit).offset(offset).all() %}
                             <div class="d-flex gap-3 border-b">
-                               <div class="megamenu-icon">
+                               <div class="megamenu-icon me-2">
                                     {% set icon = jobBenefit.benefitIcon.eagerly().one() %}
                                     {% if icon and icon.extension == 'svg' %}
                                         {{ svg(icon) }}
                                     {% endif %}
                                </div>
                                <div class="megamenu-content">
-                                    <a href="{{ jobBenefit.cta.url }}">
-                                   <h6>{{ jobBenefit.title }}</h6>
-                                   {% if jobBenefit.benefitText %}<p>{{ jobBenefit.benefitText }}</p>{% endif %}
+                                    <a href="{{ jobBenefit.cta.url }}" style="color: #353535 !important;">
+                                        <h6>{{ jobBenefit.title }}</h6>
+                                        {% if jobBenefit.benefitText %}<p>{{ jobBenefit.benefitText }}</p>{% endif %}
                                     </a>
                                </div>
                             </div>
