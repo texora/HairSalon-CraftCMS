@@ -36,7 +36,7 @@
                             {% if job.salaryText %}<h6>{{ job.salaryText }}</h6>{% endif %}
                             <hr>
                             <p>{{ job.shortDescription|nl2br }}</p>
-                            <a class="view-job d-block" href="{{ url('apply') }}">{{ "View job details and apply"|t }}</a>
+                            <a class="view-job d-block" href="{{ url('jobs/apply') }}">{{ "View job details and apply"|t }}</a>
                         </div>
                     </div>
                 </div>

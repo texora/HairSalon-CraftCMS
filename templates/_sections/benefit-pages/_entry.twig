@@ -1,0 +1,55 @@
+{% extends "_layouts/main" %}
+
+{% set bodyClass = 'salaries header-position-relative' %}
+
+{% block main %}
+
+{% cache using key 'benefits-page-' ~ entry.slug %}
+
+    {% set heroImage = entry.heroImage.eagerly().one() %}
+    {% if heroImage %}
+        <section class="who-are-section something-section reward-success">
+            <div class="container-fluid">
+                <div class="row align-items-center left-content">
+                    <div class="col-12 col-lg-6 px-0 content-width-50">
+                        <div class="experienced text-content">
+                            {% if entry.heroHeading %}<h2 class="mb-4">{{ entry.heroHeading }}</h2>{% endif %}
+                            {{ entry.heroText }}
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 businesspeople px-0">
+                        <div class="image"> <img src="{{ heroImage.url }}" alt="{{ entry.title }}" /> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+
+    {% if entry.benefits.type('benefits').count() %}
+        <section class="stylists-section competitive-section">
+            <div class="container">
+                <div class="row specialists column-gap">
+                    {% for benefit in entry.benefits.type('benefits').all() %}
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card"> 
+                                <div class="mb-3">
+                                    {% set icon = benefit.benefitIcon.eagerly().one() %}
+                                    {% if icon and icon.extension == 'svg' %}
+                                        {{ svg(icon) }}
+                                    {% else %}
+                                        <img src="{{ icon.url }}" width="40" alt="{{ benefit.title }}" />
+                                    {% endif %}
+                                </div>
+                                <h4>{{ benefit.title }}</h4>
+                                <p>{{ benefit.benefitText|nl2br }}</p>  
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% endif %}
+
+{% endcache %}
+
+{% endblock %}
