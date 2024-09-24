@@ -1,0 +1,38 @@
+{% set jobBenefitEntry = craft.entries().section('salaryBenefits').one() %}
+{% set benefitsQ = jobBenefitEntry.benefits.type('benefits') %}
+
+{% set totalBenefits = benefitsQ.count() %}
+{% set limit = ceil(totalBenefits/4) %}
+
+<div class="dropdown-menu megamenu sm-menu" aria-labelledby="dropdown01">
+    <div class="container">
+        <div class="megamenu-title mb-4">
+            <h6>Our Benefits</h6>
+        </div>
+        <div class="row">
+            {% for count in 0..3 %}
+                <div class=" col-12 col-sm-6 col-lg-3">
+                    <div class="megamenu-item d-flex flex-column gap-sm-3 gap-2">
+                        {% set offset = limit * count %}
+                        {% for jobBenefit in benefitsQ.limit(limit).offset(offset).all() %}
+                            <div class="d-flex gap-3 border-b">
+                               <div class="megamenu-icon">
+                                    {% set icon = jobBenefit.benefitIcon.eagerly().one() %}
+                                    {% if icon and icon.extension == 'svg' %}
+                                        {{ svg(icon) }}
+                                    {% endif %}
+                               </div>
+                               <div class="megamenu-content">
+                                    <a href="{{ jobBenefit.cta.url }}">
+                                   <h6>{{ jobBenefit.title }}</h6>
+                                   {% if jobBenefit.benefitText %}<p>{{ jobBenefit.benefitText }}</p>{% endif %}
+                                    </a>
+                               </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

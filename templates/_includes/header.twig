@@ -8,15 +8,16 @@
         <span></span>
     </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav navbar-light ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('jobs/about-us') }}">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('jobs/vacancies') }}">Vacancies</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('jobs/salary-benefits') }}">Salary & Benefits</a>
+                    <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="{{ url('jobs/salary-benefits') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Salary & Benefits</a>
+                        {% include '_includes/benefits-menu' %}
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('jobs/our-people') }}">Our People</a>
