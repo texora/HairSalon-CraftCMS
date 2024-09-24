@@ -1,4 +1,4 @@
-dateModified: 1727169809
+dateModified: 1727178732
 elementSources:
   craft\elements\Entry:
     -
@@ -29,7 +29,6 @@ elementSources:
       tableAttributes:
         - status
         - postDate
-        - expiryDate
         - authors
         - link
       type: native
@@ -45,6 +44,7 @@ elementSources:
       tableAttributes:
         - 'fieldInstance:13b2fc7f-1afa-46fc-9177-e53f51fc9547'
         - 'field:7f82abc5-4a85-431f-8ffa-c9d3452c3c4e' # Phase
+        - 'field:84283218-957b-4c9d-a1d9-ed73c435cde8' # Image
         - status
         - postDate
       type: native
@@ -55,10 +55,10 @@ elementSources:
       disabled: false
       key: 'section:743ec001-12a3-48f1-8ebe-cb880deb1e5a' # Jobs Listing
       tableAttributes:
+        - 'field:f0f5c790-85e7-436d-9f47-3e1a7966a1b1' # Job Type
         - status
         - postDate
         - authors
-        - link
       type: native
     -
       heading: 'Job Pages'

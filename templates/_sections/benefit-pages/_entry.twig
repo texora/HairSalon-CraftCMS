@@ -43,7 +43,7 @@
                                     </div>
                                 {% endif %}
                                 {% if benefit.heading %}<h4>{{ benefit.heading }}</h4>{% endif %}
-                                <p>{{ benefit.summary|nl2br }}</p>  
+                                <p>{{ benefit.summary|raw|nl2br }}</p>  
                             </div>
                         </div>
                     {% endfor %}

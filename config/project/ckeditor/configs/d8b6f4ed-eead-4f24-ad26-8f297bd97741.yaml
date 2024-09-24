@@ -13,3 +13,7 @@ toolbar:
   - underline
   - fontBackgroundColor
   - fontFamily
+  - '|'
+  - bulletedList
+  - numberedList
+  - todoList
