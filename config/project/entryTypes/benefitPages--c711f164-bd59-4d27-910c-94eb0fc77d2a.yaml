@@ -83,6 +83,28 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2024-09-24T12:47:53+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 27aa4704-5037-483e-a64c-6d34e609cea2
+            userCondition: null
+          -
+            dateAdded: '2024-09-24T12:47:53+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: megaMenuLine
+            includeInCards: false
+            instructions: null
+            label: 'Mega Menu Line'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e72d6681-efd4-416f-986f-cd65a3365762
+            userCondition: null
+            warning: null
+            width: 100
         name: Hero
         uid: 9fd0e2f3-287c-4739-9126-f59fd36f1fda
         userCondition: null
