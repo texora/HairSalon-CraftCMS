@@ -1,4 +1,4 @@
-dateModified: 1727161845
+dateModified: 1727169809
 elementSources:
   craft\elements\Entry:
     -
@@ -123,6 +123,7 @@ meta:
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
     3c9ec943-aefe-47ec-81c4-89c792843eb3: 'Image Card' # Image Card
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
+    4bf1c1f4-99ad-4552-a05e-55e3c79d1f67: 'Job Benefits' # Job Benefits
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
     5b40a23e-fc7b-48ed-b092-746f8700aa48: 'Opening Month' # Opening Month
@@ -166,6 +167,7 @@ meta:
     b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
     b421bd1c-2476-4b2e-99f3-997e88b3f7df: 'Our People' # Our People
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
+    c9c531be-d612-42d8-9bf3-a7acc503af2d: 'Job Benefits' # Job Benefits
     c15e8516-7e75-4c32-b6a2-98d2d78dba3e: Cards # Cards
     c94b79ec-0b53-47e3-8ef9-4b8562781846: Home # Home
     c711f164-bd59-4d27-910c-94eb0fc77d2a: 'Benefit Pages' # Benefit Pages

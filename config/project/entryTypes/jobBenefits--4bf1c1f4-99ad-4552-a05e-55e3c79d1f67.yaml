@@ -1,0 +1,99 @@
+color: null
+fieldLayouts:
+  fe5ee54d-3711-489b-a48e-5521754cf6f6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-24T09:17:41+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 993c9107-cf32-4091-9e3b-631888d6f649
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-24T09:22:59+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: heading
+            includeInCards: false
+            instructions: null
+            label: Heading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc4ef79e-56f7-4b62-9964-b3f441ea738f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-24T09:22:59+00:00'
+            elementCondition: null
+            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            handle: summary
+            includeInCards: false
+            instructions: null
+            label: Summary
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e21b7356-9c63-4276-bcf9-afdfb4c667a1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-24T09:22:59+00:00'
+            elementCondition: null
+            fieldUid: 27b29006-47a2-40b1-a7c1-7f0db71cc8a2 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68c071dc-5ef6-4f5c-916f-5d309981a37d
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: d10d5f8b-efb6-4c42-ae0d-fee4e7d1cb1e
+        userCondition: null
+handle: jobBenefits
+hasTitleField: false
+icon: list-radio
+name: 'Job Benefits'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

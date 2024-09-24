@@ -25,23 +25,25 @@
         </section>
     {% endif %}
 
-    {% if entry.benefits.type('benefits').count() %}
+    {% if entry.jobBenefits.type('jobBenefits').count() %}
         <section class="stylists-section competitive-section">
             <div class="container">
                 <div class="row specialists column-gap">
-                    {% for benefit in entry.benefits.type('benefits').all() %}
+                    {% for benefit in entry.jobBenefits.type('jobBenefits').all() %}
                         <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card"> 
-                                <div class="mb-3">
-                                    {% set icon = benefit.benefitIcon.eagerly().one() %}
-                                    {% if icon and icon.extension == 'svg' %}
-                                        {{ svg(icon) }}
-                                    {% else %}
-                                        <img src="{{ icon.url }}" width="40" alt="{{ benefit.title }}" />
-                                    {% endif %}
-                                </div>
-                                <h4>{{ benefit.title }}</h4>
-                                <p>{{ benefit.benefitText|nl2br }}</p>  
+                            <div class="card">
+                                {% set icon = benefit.icon.eagerly().one() %} 
+                                {% if icon %}
+                                    <div class="mb-3">
+                                        {% if icon.extension == 'svg' %}
+                                            {{ svg(icon) }}
+                                        {% else %}
+                                            <img src="{{ icon.url }}" width="40" alt="{{ benefit.heading }}" />
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                                {% if benefit.heading %}<h4>{{ benefit.heading }}</h4>{% endif %}
+                                <p>{{ benefit.summary|nl2br }}</p>  
                             </div>
                         </div>
                     {% endfor %}

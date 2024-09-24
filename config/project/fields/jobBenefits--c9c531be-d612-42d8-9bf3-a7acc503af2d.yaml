@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: jobBenefits
+instructions: null
+name: 'Job Benefits'
+searchable: false
+settings:
+  createButtonLabel: 'Add Job Benefit'
+  entryTypes:
+    - 4bf1c1f4-99ad-4552-a05e-55e3c79d1f67 # Job Benefits
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
