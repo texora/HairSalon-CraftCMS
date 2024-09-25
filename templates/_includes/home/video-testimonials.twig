@@ -7,6 +7,7 @@
                         <div class="video-content">
                             <h3>"{{ videoTestimonial.testimonialText }}"</h3>
                             {% set photo = videoTestimonial.authorPhoto.eagerly().one() %}
+                            {% set videoPoster = videoTestimonial.videoPoster.eagerly().one() %}
                             <h5>{% if photo %}<img src="{{ photo.url('authorThumb') }}" class="rounded-circle" alt="{{ videoTestimonial.testimonialAuthor }}" />{% endif %} {% if videoTestimonial.testimonialAuthor %}<span>{{ videoTestimonial.testimonialAuthor }}</span>{% if videoTestimonial.authorDesignation %}, {{ videoTestimonial.authorDesignation }}{% endif %}</h5>{% endif %}
                         </div>
                     </div>
@@ -14,7 +15,14 @@
                         <div class="card">
                             <h4>Halo</h4>
                             {% if videoTestimonial.video %}
-                                <div class="plyrVideo" data-plyr-provider="youtube" data-plyr-embed-id="{{ videoTestimonial.video.media.code }}"></div>
+                                <div class="video-poster position-relative d-block">
+                                    {% if videoPoster %}
+                                        <img src="{{ videoPoster.url }}" alt="{{ videoTestimonial.video.media.title }}" />
+                                    {% elseif photo %}
+                                        <img src="{{ photo.image }}" alt="{{ videoTestimonial.video.media.title }}" />
+                                    {% endif %}
+                                    <button type="button" class="video-btn position-absolute top-50 start-50 translate-middle border-0 mt-0" data-bs-toggle="modal" data-src="{{ videoTestimonial.video.media.url }}" data-bs-target="#video-popup"><img src="/static/svg/play.svg" alt="" width="48"></button>
+                                </div>
                             {% endif %}
                             <div class="card-body">
                                 <div class="row">

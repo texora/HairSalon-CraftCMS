@@ -84,36 +84,38 @@ $("document").ready(function() {
        $('.main-header-top').toggleClass('open-header');
   	});
 
-  	// Desktop hover functionality
-    $('.navbar-light .dmenu').hover(
-        function () {
-            $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-        },
-        function () {
-            $(this).find('.sm-menu').first().stop(true, true).slideUp(105);
-        }
-    );
+	  // Desktop hover functionality
+		$('.navbar-light .dmenu').hover(
+		    function () {
+		        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+		    },
+		    function () {
+		        $(this).find('.sm-menu').first().stop(true, true).slideUp(105);
+		    }
+		);
 
-    // Mobile click functionality
-    $('.navbar-light .dmenu > a').on("click", function (e) {
-        e.preventDefault(); // Prevent default anchor behavior
-        var submenu = $(this).siblings('.sm-menu');
-
+		$('.navbar-light .dmenu > a').on('click', function(event) {
+        // Check if the click target is the span element
+        if ($(event.target).is('span')) {
+            console.log('Clicked on the span.');
+            var submenu = $(this).siblings('.sm-menu');
         // Close other open submenus
         $('.sm-menu').not(submenu).slideUp(105);
-
         // Toggle the clicked submenu
         submenu.stop(true, true).slideToggle(150);
-    });
-
-    // Close menu when clicking outside
-    $(document).on("click", function (e) {
-        if (!$(e.target).closest('.dmenu').length) {
-            $('.sm-menu').slideUp(105);
+        } else {
+            console.log('Clicked on the text outside the span.');
+            var href = $(this).attr('href');
+            window.location.href = href;
         }
+        // Prevent the default action (navigation)
+        event.preventDefault();
     });
 
 });
+
+
+
 
 
 // Declare a variable to store the video source
@@ -142,7 +144,6 @@ if(jQuery('.video-btn').length){
 	  document.getElementById('video').src = videoSrc;
 	});
 }
-
 
 
 

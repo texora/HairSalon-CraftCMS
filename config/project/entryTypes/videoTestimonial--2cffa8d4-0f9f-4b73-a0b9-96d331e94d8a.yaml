@@ -114,7 +114,23 @@ fieldLayouts:
             uid: 12f2205f-6d77-4196-8300-d0d472379b49
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2024-09-25T09:49:46+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: videoPoster
+            includeInCards: false
+            instructions: null
+            label: 'Viddeo Poster'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29a2d399-f6f8-49f7-80b4-c8b22c853c57
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: a671de7c-95a4-4936-96b1-c44074314f06
         userCondition: null
