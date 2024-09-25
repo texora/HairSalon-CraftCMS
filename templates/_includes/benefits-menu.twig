@@ -23,10 +23,10 @@
                                     {% endif %}
                                </div>
                                <div class="megamenu-content">
-                                    <a href="{{ jobBenefit.cta.url }}" style="color: #353535 !important;">
+                                    {% if not jobBenefit.cta.isEmpty() %}<a href="{{ jobBenefit.cta.url }}" style="color: #353535 !important;">{% endif %}
                                         <h6>{{ jobBenefit.title }}</h6>
                                         {% if jobBenefit.benefitText %}<p>{{ jobBenefit.benefitText|truncate(60, '...') }}</p>{% endif %}
-                                    </a>
+                                    {% if not jobBenefit.cta.isEmpty() %}</a>{% endif %}
                                </div>
                             </div>
                         {% endfor %}

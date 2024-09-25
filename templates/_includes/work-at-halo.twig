@@ -13,17 +13,17 @@
                 <div class="col-12 col-md-6 offset-lg-1">
                     <div class="email-form">
                         {% if siteGlobals.formText %}<h4>{{ siteGlobals.formText|nl2br }}</h4>{% endif %}
-                        {% if craft.app.session.hasFlash('wheelformSuccess') %}
-                            <div class="alert alert-success bg-success" role="alert">
-                                <p class="text-white opacity-100 w-100 mw-100 mb-0">{{ craft.app.session.getFlash('wheelformSuccess') }}</p>
+                        {# % if craft.app.session.hasFlash('wheelformSuccess') % #}
+                            <div class="alert alert-success bg-success d-none" role="alert">
+                                <p class="text-white opacity-100 w-100 mw-100 mb-0">{# { craft.app.session.getFlash('wheelformSuccess') } #}Thank you for showing an interest in working for Halo Hair Group. Our team will be in contact with you soon.</p>
                             </div>
-                            {% js %}
+                            {# % js %}
                                 $(document).ready(function() {
                                     $('html, body').animate({scrollTop: $(".work-at-halo").offset().top}, 1000);
                                 })
-                            {% endjs %}
-                        {% endif %}
-                        <form class="my-4" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+                            {% endjs % #}
+                        {# % endif % #}
+                        <form class="my-4" id="formWorkAtHalo" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
                             {{ csrfInput() }}
                             <input type="hidden" name="action" value="wheelform/message/send">
                             <input type="hidden" name="form_id" value="1">
@@ -71,3 +71,25 @@
         </div>
     </div>
 </section>
+{% js %}
+    $(document).ready(function(){
+        $('form#formWorkAtHalo').submit(function(ev) {
+            ev.preventDefault();
+            $('form#formWorkAtHalo').find("button[type='submit']").attr('disabled', true);
+            $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMITTING...');
+            var data = $(this).serialize();
+            $.post('/wheelform/message/send',
+                data,
+                function(response) {
+                    if (response.success) {
+                        $(".alert-success").removeClass('d-none');
+                        $('form#formWorkAtHalo')[0].reset();
+                    } else {
+                        alert('An error occurred. Please try again.');
+                    }
+                    $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMIT');
+                }
+            );
+        });
+    })
+{% endjs %}

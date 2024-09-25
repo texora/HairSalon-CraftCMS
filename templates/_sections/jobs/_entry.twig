@@ -4,19 +4,19 @@
 
 {% block main %}
 
-{% cache using key 'jobs-page' %}
-
+{% cache using key 'jobs-page-1' %}
     {% include '_includes/home/hero' %}
     {% include '_includes/home/halo-career' %}
     {% include '_includes/home/salon-openings' %}
     {% include '_includes/home/join-us' %}
+{% endcache %}
     {% include '_includes/work-at-halo' %}
+{% cache using key 'jobs-page-video-testimonials' %}
     {% include '_includes/home/video-testimonials' %}
-
+{% endcache %}
     <div class="modal video-modal fade" id="video-popup" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                
+            <div class="modal-content">                
                 <div class="modal-body">
                     <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></span>
                     </button>
@@ -28,9 +28,6 @@
             </div>
         </div>
     </div>
-
-{% endcache %}
-
 {% endblock %}
 {% js %}
     const videoPlayer = Array.from(document.querySelectorAll('.plyrVideo')).map((p) => new Plyr(p));
