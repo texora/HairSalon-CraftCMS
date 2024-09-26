@@ -44,55 +44,11 @@
                                 })
                             {% endjs % #}
                         {# % endif % #}
-                        <form class="my-4" id="formWorkAtHalo" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
-                            {{ csrfInput() }}
-                            <input type="hidden" name="action" value="wheelform/message/send">
-                            <input type="hidden" name="form_id" value="2">
-                            <div class="email">
-                                <label for="fname">Name</label>
-                                <input type="text" class="email-bx form-control" name="name" placeholder="Sarah Smith"> 
-                            </div>
-                            <div class="email">
-                                <label for="experience">Number of Years Experience</label>
-                                <input type="text" class="email-bx form-control" name="yearsExpereince" placeholder="3 years experience"> </div>
-                            <div class="email">
-                                <label for="insta">Instagram</label>
-                                <input type="text" class="email-bx form-control" name="instagram" placeholder="@Instagram"> </div>
-                            <div class="email">
-                                <label for="qualifi">Qualifications</label>
-                                <input type="text" class="email-bx form-control" name="qualifications" placeholder="NVQ Level 3"> </div>
-                            <div class="email">
-                                <label for="phonen">Phone Number</label>
-                                <input type="tel" class="email-bx form-control" name="phoneNumber" placeholder="07543 234 554"> </div>
-                            <div class="email">
-                                <button class="btn btn-black" type="submit">Submit</button>
-                            </div>
-                        </form>
+
+                        {% dynamicInclude '_dynamic/apply-form-full' %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-{% js %}
-    $(document).ready(function(){
-        $('form#formWorkAtHalo').submit(function(ev) {
-            ev.preventDefault();
-            $('form#formWorkAtHalo').find("button[type='submit']").attr('disabled', true);
-            $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMITTING...');
-            var data = $(this).serialize();
-            $.post('/wheelform/message/send',
-                data,
-                function(response) {
-                    if (response.success) {
-                        $(".alert-success").removeClass('d-none');
-                        $('form#formWorkAtHalo')[0].reset();
-                    } else {
-                        alert('An error occurred. Please try again.');
-                    }
-                    $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMIT');
-                }
-            );
-        });
-    })
-{% endjs %}

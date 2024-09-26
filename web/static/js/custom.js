@@ -111,12 +111,7 @@ $("document").ready(function() {
         // Prevent the default action (navigation)
         event.preventDefault();
     });
-
 });
-
-
-
-
 
 // Declare a variable to store the video source
 
@@ -145,5 +140,23 @@ if(jQuery('.video-btn').length){
 	});
 }
 
-
-
+$(document).ready(function(){
+	$(document).on("submit", "form#formWorkAtHalo", function(ev) {
+        ev.preventDefault();
+        $('form#formWorkAtHalo').find("button[type='submit']").attr('disabled', true);
+        $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMITTING...');
+        var data = $(this).serialize();
+        $.post('/wheelform/message/send',
+            data,
+            function(response) {
+                if (response.success) {
+                    $(".alert-success").removeClass('d-none');
+                    $('form#formWorkAtHalo')[0].reset();
+                } else {
+                    alert('An error occurred. Please try again.');
+                }
+                $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMIT');
+            }
+        );
+    });
+})

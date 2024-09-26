@@ -23,26 +23,8 @@
                                 })
                             {% endjs % #}
                         {# % endif % #}
-                        <form class="my-4" id="formWorkAtHalo" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
-                            {{ csrfInput() }}
-                            <input type="hidden" name="action" value="wheelform/message/send">
-                            <input type="hidden" name="form_id" value="1">
-                            <div class="email">
-                                <label for="email">Email</label>
-                                <input type="email" class="email-bx form-control" name="email" placeholder="Enter Your Email address" required />
-                            </div>
-                            <div class="email">
-                                <label for="city">City</label>
-                                <select class="form-control city-bx" name="city">
-                                    {% for rolloutPlan in craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
-                                        <option value="{{ rolloutPlan.title }}">{{ rolloutPlan.title }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                            <div class="email">
-                                <button class="btn btn-black" type="submit">submit</button>
-                            </div>
-                        </form>
+
+                        {% dynamicInclude '_dynamic/apply-form-default' %}
                     </div>
                 </div>
             </div>
@@ -71,25 +53,3 @@
         </div>
     </div>
 </section>
-{% js %}
-    $(document).ready(function(){
-        $('form#formWorkAtHalo').submit(function(ev) {
-            ev.preventDefault();
-            $('form#formWorkAtHalo').find("button[type='submit']").attr('disabled', true);
-            $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMITTING...');
-            var data = $(this).serialize();
-            $.post('/wheelform/message/send',
-                data,
-                function(response) {
-                    if (response.success) {
-                        $(".alert-success").removeClass('d-none');
-                        $('form#formWorkAtHalo')[0].reset();
-                    } else {
-                        alert('An error occurred. Please try again.');
-                    }
-                    $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMIT');
-                }
-            );
-        });
-    })
-{% endjs %}
