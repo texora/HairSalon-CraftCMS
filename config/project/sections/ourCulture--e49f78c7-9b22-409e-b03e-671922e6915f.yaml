@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/our-culture/_entry.twig
-    uriFormat: jobs/our-culture
+    uriFormat: our-culture
 type: single

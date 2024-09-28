@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/about-us/_entry.twig
-    uriFormat: jobs/about-us
+    uriFormat: about-us
 type: single

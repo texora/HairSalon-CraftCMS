@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _sections/jobs/_entry.twig
-    uriFormat: jobs
+    uriFormat: __home__
 type: single
