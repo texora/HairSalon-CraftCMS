@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{% set segment1 = craft.app.request.getSegment(1) %}
-{% set env = getenv('CRAFT_ENVIRONMENT') %}
-
+{% set siteGlobals = craft.entries().section('siteGlobals').one() %}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

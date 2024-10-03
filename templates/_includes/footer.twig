@@ -3,27 +3,39 @@
         <div class="row footer-menu mb-5 mb-md-0">
             <div class="col-12 col-md-6 col-lg-7">
                 <div class="row row-gap-5">
-                    <div class="col-6 col-md-4">
-                        <ul class="d-flex flex-column gap-4">
-                            <li><a href="{{ url('/') }}">Halohairgroup.com</a></li>
-                            <li><a href="{{ url('about-us') }}">About Us</a></li>
-                            <li><a href="{{ url('vacancies') }}">Vacancies</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <ul class="d-flex flex-column gap-4">
-                            <li><a href="{{ url('salary-benefits') }}">Salary & Benefits</a></li>
-                            <li><a href="{{ url('our-people') }}">Our People</a></li>
-                            <li><a href="{{ url('our-culture') }}">Our Culture</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <ul class="d-flex flex-column gap-4">
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Cookies</a></li>
-                        </ul>
-                    </div>
+                    {% if siteGlobals.footerManu1|length %}
+                        <div class="col-6 col-md-4">
+                            <ul class="d-flex flex-column gap-4">
+                                {% for link in siteGlobals.footerManu1 %}
+                                    {% if not link.isEmpty() %}
+                                        <li>{{ link.getLink() }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                    {% if siteGlobals.footerManu2|length %}
+                        <div class="col-6 col-md-4">
+                            <ul class="d-flex flex-column gap-4">
+                                {% for link in siteGlobals.footerManu2 %}
+                                    {% if not link.isEmpty() %}
+                                        <li>{{ link.getLink() }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                    {% if siteGlobals.footerManu3|length %}
+                        <div class="col-6 col-md-4">
+                            <ul class="d-flex flex-column gap-4">
+                                {% for link in siteGlobals.footerManu3 %}
+                                    {% if not link.isEmpty() %}
+                                        <li>{{ link.getLink() }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 offset-lg-1 mt-5 mt-md-0">

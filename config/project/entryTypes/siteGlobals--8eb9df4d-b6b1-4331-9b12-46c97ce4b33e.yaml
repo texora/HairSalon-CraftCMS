@@ -186,6 +186,110 @@ fieldLayouts:
         name: 'Work with Halo'
         uid: f546d70d-bc48-4575-8360-c74763ef8154
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-10-03T02:47:20+00:00'
+            elementCondition: null
+            fieldUid: d6b4db56-93c1-47b7-99a7-d1b453b1c281 # CTAs
+            handle: headerMenu
+            includeInCards: false
+            instructions: null
+            label: 'Header Menu'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0d39d93-3e10-4697-a8cc-3970c32b4816
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-10-03T06:25:51+00:00'
+            elementCondition: null
+            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
+            handle: applyButton
+            includeInCards: false
+            instructions: null
+            label: 'Apply Button'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 314b70af-127b-46eb-9abb-a98b4cc910e0
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-10-03T02:48:19+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 64c3c1c8-9683-4f3a-9967-302bab9cca85
+            userCondition: null
+          -
+            dateAdded: '2024-10-03T02:47:20+00:00'
+            elementCondition: null
+            fieldUid: d6b4db56-93c1-47b7-99a7-d1b453b1c281 # CTAs
+            handle: footerManu1
+            includeInCards: false
+            instructions: null
+            label: 'Footer Manu Column 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88d3b61e-bbd8-4ec7-a70a-283275431bb7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-03T02:48:19+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c048321a-dcf4-4417-8c99-8407361efe7a
+            userCondition: null
+          -
+            dateAdded: '2024-10-03T02:47:20+00:00'
+            elementCondition: null
+            fieldUid: d6b4db56-93c1-47b7-99a7-d1b453b1c281 # CTAs
+            handle: footerManu2
+            includeInCards: false
+            instructions: null
+            label: 'Footer Manu Column 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1801242-1236-4d72-a612-1695af789c39
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-10-03T02:48:19+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 32ff306c-1efb-4139-99ff-193e0c7515bf
+            userCondition: null
+          -
+            dateAdded: '2024-10-03T02:47:20+00:00'
+            elementCondition: null
+            fieldUid: d6b4db56-93c1-47b7-99a7-d1b453b1c281 # CTAs
+            handle: footerManu3
+            includeInCards: false
+            instructions: null
+            label: 'Footer Manu Column 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6631a9eb-4a38-4531-996e-a733ef897a48
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Site Navigation'
+        uid: e6de1314-dcac-4494-8ebc-b5687e026717
+        userCondition: null
 handle: siteGlobals
 hasTitleField: false
 icon: ''

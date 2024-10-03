@@ -1,7 +1,14 @@
 <header class="main-header-top">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"><img class="img-fluid" src="{{ url('static/images/halohair-logo.svg') }}" alt="{{ siteName }}"></a>
+            <a class="navbar-brand" href="{{ url('/') }}">
+                {% set logo = siteGlobals.image.eagerly().one() %}
+                {% if logo and logo.extension == 'svg' %}
+                    {{ svg(logo) }}
+                {% else %}
+                    <img class="img-fluid" src="{{ url('static/images/halohair-logo.svg') }}" alt="{{ siteName }}">
+                {% endif %}
+            </a>
              <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -9,26 +16,29 @@
     </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar-light ms-auto me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('about-us') }}">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('vacancies') }}">Vacancies</a>
-                    </li>
-                    <li class="nav-item dropdown dmenu">
-                        <a class="nav-link dropdown-toggle" href="{{ url('salary-benefits') }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Salary & Benefits <span class="dropdown-icon"></span></a>
-                        {% include '_includes/benefits-menu' %}
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('our-people') }}">Our People</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('our-culture') }}">Our Culture</a>
-                    </li>
+                    {% for link in siteGlobals.headerMenu %}
+                        {% set linkElement = link.getElement() %}
+                        {% if linkElement.slug == 'salary-benefits' %}
+                            <li class="nav-item dropdown dmenu">
+                                <a class="nav-link dropdown-toggle" href="{{ link.url }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link.text }} <span class="dropdown-icon"></span></a>
+                                {% include '_includes/benefits-menu' %}
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                {{ link.getLink({
+                                    class: 'nav-link'
+                                }) }}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
-                <div class="d-flex">
-                    <a class="apply-btn" href="{{ url('jobs/apply') }}">Apply</a>
-                </div>
+                {% if not siteGlobals.applyButton.isEmpty() %}
+                    <div class="d-flex">
+                        {{ siteGlobals.applyButton.getLink({
+                            class: 'apply-btn'
+                        }) }}
+                    </div>
+                {% endif %}
             </div>
         </div>
     </nav>

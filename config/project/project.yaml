@@ -1,4 +1,4 @@
-dateModified: 1727501262
+dateModified: 1727937400
 elementSources:
   craft\elements\Entry:
     -
@@ -176,6 +176,7 @@ meta:
     cf90e322-6859-4622-bfcb-61a01096cdc9: 'Salary & Benefits' # Salary & Benefits
     cfe1f9f6-7ba4-4eec-af4d-d8fcd8687f6d: 'Text / Image Cards' # Text / Image Cards
     d1fc2d2e-2b87-44e9-83dc-bf4de8243e18: 'Text Image Grid' # Text Image Grid
+    d6b4db56-93c1-47b7-99a7-d1b453b1c281: CTAs # CTAs
     d6c8cf87-bfda-4180-803b-408375d5b40b: Apply # Apply
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
