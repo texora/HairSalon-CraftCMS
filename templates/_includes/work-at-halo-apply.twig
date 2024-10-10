@@ -45,7 +45,7 @@
                             {% endjs % #}
                         {# % endif % #}
 
-                        {% dynamicInclude '_dynamic/apply-form-full' %}
+                        {% dynamicInclude '_dynamic/apply-form-full' with {pageSlug: entry.slug} only %}
                     </div>
                 </div>
             </div>

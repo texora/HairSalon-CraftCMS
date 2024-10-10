@@ -141,21 +141,21 @@ if(jQuery('.video-btn').length){
 }
 
 $(document).ready(function(){
-	$(document).on("submit", "form#formWorkAtHalo", function(ev) {
+	$(document).on("submit", "form.form-join-halo", function(ev) {
         ev.preventDefault();
-        $('form#formWorkAtHalo').find("button[type='submit']").attr('disabled', true);
-        $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMITTING...');
+        $('form.form-join-halo').find("button[type='submit']").attr('disabled', true);
+        $('form.form-join-halo').find("button[type='submit']").text('SUBMITTING...');
         var data = $(this).serialize();
         $.post('/wheelform/message/send',
             data,
             function(response) {
                 if (response.success) {
                     $(".alert-success").removeClass('d-none');
-                    $('form#formWorkAtHalo')[0].reset();
+                    $('form.form-join-halo')[0].reset();
                 } else {
                     alert('An error occurred. Please try again.');
                 }
-                $('form#formWorkAtHalo').find("button[type='submit']").text('SUBMIT');
+                $('form.form-join-halo').find("button[type='submit']").text('SUBMIT');
             }
         );
     });

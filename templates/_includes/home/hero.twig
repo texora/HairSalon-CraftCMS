@@ -7,7 +7,7 @@
             <div class="col-12 col-md-6">
                 {% if entry.youtubeVideo %}
                     <div class="banner-video">
-                        <button type="button" class="video-btn" data-bs-toggle="modal" data-src="{{ entry.youtubeVideo.media.url }}" data-bs-target="#video-popup"><img src="/static/svg/play.svg" alt=""> Watch the film</button>
+                        <button type="button" id="homeModalVideo" class="video-btn" data-bs-toggle="modal" data-src="{{ entry.youtubeVideo.media.url }}" data-bs-target="#video-popup"><img src="/static/svg/play.svg" alt=""> Watch the film</button>
                     </div>
                 {% endif %}
             </div>
