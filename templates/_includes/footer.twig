@@ -40,18 +40,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 offset-lg-1 mt-5 mt-md-0">
                 <div class="up-to-date">
-              <form>
-                <label for="email">Stay up to date</label>
-                      <div class="input-group">
-                        <input type="email" name="email" class="form-control" placeholder="Enter Your Email address">
-                        <button class="submit" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="8" viewBox="0 0 40 8" fill="none">
-                                <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64644L37.1716 0.464463C36.9763 0.269201 36.6597 0.269201 36.4645 0.464463C36.2692 0.659725 36.2692 0.976308 36.4645 1.17157L39.2929 4L36.4645 6.82842C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.73079 36.9763 7.73079 37.1716 7.53553L40.3536 4.35355ZM4.37114e-08 4.5L40 4.5L40 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="white"/>
-                            </svg>
-                        </button>
-                      </div>
-              </form>
-            </div>
+                    {% dynamicInclude '_dynamic/email-sign-up' %}
+                </div>
             </div>
         </div>
         <!-- <h1>HALO</h1> -->
