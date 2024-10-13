@@ -5,6 +5,13 @@ headingLevels:
   - 4
   - 5
 name: 'Text Only'
+options:
+  alignment:
+    options:
+      - left
+      - right
+      - center
+      - justify
 toolbar:
   - heading
   - '|'
@@ -13,6 +20,7 @@ toolbar:
   - underline
   - fontBackgroundColor
   - fontFamily
+  - alignment
   - '|'
   - bulletedList
   - numberedList

@@ -669,7 +669,11 @@ p {
     font-size: 3rem;
 }
 
-.banner-section h2, .different-section h2 {
+.banner-section h2{
+    color: #fff;
+}
+
+.different-section h2 {
     color: #fff;
     text-align: center;
 }
@@ -683,7 +687,6 @@ p {
     color: #fff;
     font-size: 20px;
     line-height: 28px;
-    text-align: center;
 }
 
 footer {
