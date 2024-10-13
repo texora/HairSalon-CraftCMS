@@ -1,4 +1,4 @@
-dateModified: 1728782310
+dateModified: 1728783630
 elementSources:
   craft\elements\Entry:
     -
@@ -170,6 +170,7 @@ meta:
     c9c531be-d612-42d8-9bf3-a7acc503af2d: 'Job Benefits' # Job Benefits
     c15e8516-7e75-4c32-b6a2-98d2d78dba3e: Cards # Cards
     c94b79ec-0b53-47e3-8ef9-4b8562781846: Home # Home
+    c97c5e93-fa46-4607-9bb5-73aab466f0bb: 'Job Thumb' # Job Thumb
     c711f164-bd59-4d27-910c-94eb0fc77d2a: 'Benefit Pages' # Benefit Pages
     c8305476-25b6-417d-9392-07aa86e5d502: 'Recruitment Process' # Recruitment Process
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video

@@ -26,7 +26,7 @@
                     <div class="senior-card">
                          <div class="position-relative">
                             {% set image = job.image.eagerly().one() %}
-                            {% if image %}<img src="{{ image.url }}" alt="{{ job.title }}" />{% endif %}
+                            {% if image %}<img src="{{ image.url('jobThumb') }}" alt="{{ job.title }}" />{% endif %}
                             <div class="senior-card-badge position-absolute bottom-0 end-0">
                                 {{ job.jobType.label }}
                             </div>
