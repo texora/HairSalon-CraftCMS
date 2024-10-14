@@ -1,4 +1,4 @@
-dateModified: 1728821860
+dateModified: 1728870604
 elementSources:
   craft\elements\Entry:
     -
@@ -139,6 +139,7 @@ meta:
     27b29006-47a2-40b1-a7c1-7f0db71cc8a2: Icon # Icon
     38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Rollout Plans' # Rollout Plans
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
+    57e46740-bfbe-4ccd-a49e-a9b613807a45: Lightswitch # Lightswitch
     64b3113c-4c07-47b2-bed6-94149314dc80: 'RTE - Text Only' # RTE - Text Only
     65abf317-e671-4d15-b847-6c77d624328a: 'Recruitment Process' # Recruitment Process
     067dc454-76f0-47fe-8a39-6380da7fc55e: SEO # SEO

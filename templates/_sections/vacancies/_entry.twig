@@ -6,7 +6,9 @@
 
 {% cache using key 'vacancies-page' %}
 
-    {% include '_includes/hero-half-img' %}
+    {% if not entry.hideHeroSection %}
+        {% include '_includes/hero-half-img' %}
+    {% endif %}
     {% include '_includes/vacancies/cards' %}
     {% include '_includes/vacancies/jobs' %}
 {% endcache %}

@@ -34,7 +34,23 @@ fieldLayouts:
             uid: 7f11450c-9b5a-485b-a5aa-c2f7061468d7
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2024-10-14T01:50:04+00:00'
+            elementCondition: null
+            fieldUid: 57e46740-bfbe-4ccd-a49e-a9b613807a45 # Lightswitch
+            handle: hideHeroSection
+            includeInCards: false
+            instructions: 'Would you like to hide hero section on the page?'
+            label: 'Hide Hero Section?'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac909291-5012-4235-b216-8222d54dab31
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2024-09-22T05:19:04+00:00'
             elementCondition: null
