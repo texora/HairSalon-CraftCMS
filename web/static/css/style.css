@@ -56,7 +56,7 @@ header{position: fixed;width: 100%;top: 0;z-index: 999;}
     bottom: 0;
     right: 0;
 }
-.about-banner h1, .salary-banner h1{width: 50%;text-align: center;margin: auto;}
+.about-banner h1, .salary-banner h1{/*width: 50%;text-align: center;*/ margin: auto;}
  .banner-section a{ display: flex;
     text-align: right;
     color: #fff;

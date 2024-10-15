@@ -36,9 +36,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-22T05:30:06+00:00'
+            dateAdded: '2024-10-14T12:13:50+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
             handle: heroText
             includeInCards: false
             instructions: null
@@ -47,7 +47,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 072b75c1-a374-4387-8d4c-e1aa96290690
+            uid: 9826d752-f2f1-4c59-8bc8-446f439f985a
             userCondition: null
             warning: null
             width: 100
@@ -60,7 +60,7 @@ fieldLayouts:
             instructions: null
             label: 'Hero Image'
             providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a5e8abdb-a771-447a-bda0-dd922a3354d7

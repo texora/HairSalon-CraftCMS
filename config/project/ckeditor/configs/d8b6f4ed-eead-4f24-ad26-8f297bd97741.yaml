@@ -12,6 +12,12 @@ options:
       - right
       - center
       - justify
+  fontSize:
+    options:
+      - tiny
+      - small
+      - big
+      - huge
 toolbar:
   - heading
   - '|'
@@ -19,9 +25,14 @@ toolbar:
   - italic
   - underline
   - fontBackgroundColor
-  - fontFamily
-  - alignment
   - '|'
+  - fontColor
+  - fontSize
+  - fontFamily
+  - '|'
+  - alignment
   - bulletedList
   - numberedList
   - todoList
+  - '|'
+  - link

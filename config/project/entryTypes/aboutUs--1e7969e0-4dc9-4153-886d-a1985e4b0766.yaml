@@ -36,9 +36,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-22T04:57:29+00:00'
+            dateAdded: '2024-10-14T12:07:13+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
             handle: heroText
             includeInCards: false
             instructions: null
@@ -47,7 +47,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4a568788-2e26-4a0d-b180-f97568aa5345
+            uid: 362bf54f-2e9b-4efb-b9ff-3d0ab972477a
             userCondition: null
             warning: null
             width: 100

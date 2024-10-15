@@ -8,17 +8,15 @@
 
     <section class="different-section">
       <div class="container">
-        <div class="row justify-content-center w-100 mx-auto">
-          <div class="col-12 col-md-8 mx-auto">
-            <h1 class="px-2 px-md-0">{{ entry.introHeading }}</h1>
+        <div class="row w-100 mx-auto">
+          <div class="col-12 col-md-10 mx-auto">
             <div class="px-md-5">
-              <p>{{ entry.introText|nl2br }}</p>
+              {{ entry.introText }}
             </div>
           </div>
         </div>
       </div>
     </section>
-
 
     {% include '_includes/our-people/employee-speaks' %}
 
