@@ -2,7 +2,7 @@ columnSuffix: null
 handle: rteFull
 instructions: null
 name: 'RTE - Full'
-searchable: false
+searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: '*'

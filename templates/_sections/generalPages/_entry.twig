@@ -1,0 +1,25 @@
+{% extends "_layouts/main" %}
+
+{% set bodyClass = 'our-people' %}
+
+{% block main %}
+
+{% cache using key entry.slug %}
+  
+  {% if entry.pageContent %}
+    <section class="general-pages-section py-5">
+      <div class="container">
+        <div class="row w-100 mx-auto">
+          <div class="col-12 col-md-12 mx-auto">
+            {{ entry.pageContent }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+{% endcache %}
+
+{% include '_includes/work-at-halo' %}
+
+{% endblock %}

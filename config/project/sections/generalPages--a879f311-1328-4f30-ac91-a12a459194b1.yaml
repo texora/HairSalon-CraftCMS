@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6405f652-9433-4c53-9feb-e2324d8b8973 # General Pages
+handle: generalPages
+maxAuthors: 1
+name: 'General Pages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/generalPages/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: bfbabde6-9a2e-48b1-bcfb-2b275b68a60a
+type: structure

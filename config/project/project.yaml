@@ -1,4 +1,4 @@
-dateModified: 1728908947
+dateModified: 1729078823
 elementSources:
   craft\elements\Entry:
     -
@@ -60,6 +60,9 @@ elementSources:
         - status
         - postDate
         - authors
+      type: native
+    -
+      key: 'section:a879f311-1328-4f30-ac91-a12a459194b1' # General Pages
       type: native
     -
       heading: 'Job Pages'
@@ -152,6 +155,7 @@ meta:
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: 'Jobs Listing' # Jobs Listing
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
     812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
+    6405f652-9433-4c53-9feb-e2324d8b8973: 'General Pages' # General Pages
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Benefit Pages' # Benefit Pages
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
     6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Rollout Plans' # Rollout Plans
@@ -161,6 +165,7 @@ meta:
     a5c4bb68-a93b-4064-94ed-c61308d2b930: 'Process Steps' # Process Steps
     a53cfce4-0998-4b8c-b0de-13a33d2f6c6e: 'Process Step' # Process Step
     a424a048-14aa-4cdc-a80e-3cbedee60726: Vacancies # Vacancies
+    a879f311-1328-4f30-ac91-a12a459194b1: 'General Pages' # General Pages
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
     acb66ef8-b78e-4e0f-8040-e9fd7a84dc02: Apply # Apply
     afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
