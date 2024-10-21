@@ -1,0 +1,9 @@
+baseUrl: $INGLEBY_URL
+enabled: '1'
+handle: ingleby
+hasUrls: true
+language: en-GB
+name: Ingleby
+primary: false
+siteGroup: 5a77901a-6b9c-460b-bb5c-032b263bc717 # Halo
+sortOrder: 5

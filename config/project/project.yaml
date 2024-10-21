@@ -1,4 +1,4 @@
-dateModified: 1729078823
+dateModified: 1729513764
 elementSources:
   craft\elements\Entry:
     -
@@ -118,11 +118,13 @@ fs:
 meta:
   __names__:
     0ccd9cb4-cb6f-44da-b932-3dae09c2db79: Home # Home
+    0d1a2199-8227-4113-8872-9224a1f10ef4: Ingleby # Ingleby
     1dfa55bc-6378-42c8-978f-4266cf07fc70: 'Text / Image Row' # Text / Image Row
     1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us' # About Us
     1f1a03f8-9f09-4e72-90b2-73744ea2d88c: Full # Full
     1f9056e2-e8fd-4663-8027-0bfb8882ade5: 'Text Only' # Text Only
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
+    2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: Jobs # Jobs
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
     3c9ec943-aefe-47ec-81c4-89c792843eb3: 'Image Card' # Image Card
@@ -139,6 +141,7 @@ meta:
     8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec: 'Text Area' # Text Area
     8eb9df4d-b6b1-4331-9b12-46c97ce4b33e: 'Site Globals' # Site Globals
     8f985adb-f8ad-4b76-acd5-678c5e7c8e6d: Vacancies # Vacancies
+    9dde76c9-a679-4b79-a41f-2967846b76f4: Glasgow # Glasgow
     27b29006-47a2-40b1-a7c1-7f0db71cc8a2: Icon # Icon
     38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Rollout Plans' # Rollout Plans
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
@@ -155,6 +158,8 @@ meta:
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: 'Jobs Listing' # Jobs Listing
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
     812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
+    822d8c30-81b1-4042-b211-0f5bf17fe786: Darlington # Darlington
+    5241ddf9-1a26-4245-babb-b5b96cbea919: Durham # Durham
     6405f652-9433-4c53-9feb-e2324d8b8973: 'General Pages' # General Pages
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Benefit Pages' # Benefit Pages
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
