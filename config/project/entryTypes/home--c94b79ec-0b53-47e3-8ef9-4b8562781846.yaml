@@ -90,53 +90,21 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-21T07:35:31+00:00'
+            dateAdded: '2024-10-21T13:56:33+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: highlightedHeading
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: textContent
             includeInCards: false
             instructions: null
-            label: 'Highlighted Heading Text'
+            label: 'Text Content'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 276b3fbf-89c2-4447-8ebd-908005f275e0
+            uid: 53c9425f-1c1a-4c14-ba35-2c3422ec3f9d
             userCondition: null
             warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-21T07:35:31+00:00'
-            elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: greyHeading
-            includeInCards: false
-            instructions: null
-            label: 'Grey Heading Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5c2da70f-e2f9-43e6-986b-c59317654138
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-21T07:35:31+00:00'
-            elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: singleLineText
-            includeInCards: false
-            instructions: null
-            label: 'Single Line Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8d055799-28f0-4d8e-8fc8-d6709a5e30d3
-            userCondition: null
-            warning: null
-            width: 50
+            width: 100
           -
             dateAdded: '2024-09-21T07:35:31+00:00'
             elementCondition: null
@@ -152,39 +120,39 @@ fieldLayouts:
             uid: 63cd0db7-0ed4-447c-b4e7-3a20fd3203dc
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-09-21T11:39:56+00:00'
+            dateAdded: '2024-10-21T13:56:33+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: careerHeading
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: careerSectionLeftText
             includeInCards: false
             instructions: null
-            label: 'Career Heading'
+            label: 'Career Section Left Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0c2f2a1f-65de-4832-9909-c4648528cdb8
+            uid: 452324fc-e01f-4137-a1a5-7a9695887a10
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-09-21T11:39:56+00:00'
+            dateAdded: '2024-10-21T13:56:33+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: careerSubheading
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: careerSectionRightText
             includeInCards: false
             instructions: null
-            label: 'Career Subheading'
+            label: 'Career Section Right Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4c532405-4e75-42f3-8673-700e4002de87
+            uid: fc34d715-3f6c-40d8-a036-5d4659c61c57
             userCondition: null
             warning: null
-            width: 50
+            width: 100
         name: 'Halo Career'
         uid: a0f0a532-c200-4c44-8e5a-386fb8a3b862
         userCondition: null
@@ -276,8 +244,8 @@ icon: ''
 name: Home
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site
