@@ -361,7 +361,7 @@ p {
 
 .btn {
     transition: 0.5s all;
-    width: 180px;
+    min-width: 180px;
     padding: 16px 14px;
     font-family: Gilroy;
     font-size: 18px;
@@ -851,7 +851,7 @@ input:-webkit-autofill {
 .work-at .btn {
     border: 1px solid #fff;
     background: transparent;
-    width: 250px;
+    min-width: 250px;
     margin-top: 20px;
     height: auto;
     padding: 16px 20px;
@@ -874,7 +874,7 @@ input:-webkit-autofill {
 
 .looking-for .btn-black, .btn-black {
     background: #000000;
-    width: 180px;
+    min-width: 180px;
     height: auto;
     padding: 16px 14px;
     font-family: Gilroy;
@@ -976,7 +976,7 @@ input:-webkit-autofill {
 .salary-benefirs .stylists-section .btn {
     background: transparent;
     border: 1px solid #000;
-    width: 160px;
+    min-width: 160px;
     height: auto;
     padding: 10px;
     margin-top: 16px;
@@ -1139,7 +1139,7 @@ input:-webkit-autofill {
 }
 
 .who-are-section .btn {
-    width: 220px;
+    min-width: 220px;
 }
 
 .image img {

@@ -1,19 +1,23 @@
-<section class="join-us">
-    <div class="container">
-        <div class="changing-uk">
-            <div class="row align-items-center row-gap-5">
-                <div class="col-12 col-md-6">
-                    {% if entry.heading %}<h2>{{ entry.heading|nl2br }}</h2>{% endif %}
-                    {{ entry.cta2.getLink({
-                        class: 'btn btn-white'
-                    }) }}
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column align-items-end pe-md-5">
-                        <img src="/static/images/forver.png" alt="forver">
+{% if entry.joinUsText|length %}
+    <section class="join-us">
+        <div class="container">
+            <div class="changing-uk">
+                <div class="row align-items-center row-gap-5">
+                    <div class="col-12 col-md-6">
+                        <div class="text-white py-4">
+                            {{ entry.joinUsText }}
+                            {{ entry.cta2.getLink({
+                                class: 'btn btn-white'
+                            }) }}
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column align-items-end pe-md-5">
+                            <img src="/static/images/forver.png" alt="Join Us" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+{% endif %}
