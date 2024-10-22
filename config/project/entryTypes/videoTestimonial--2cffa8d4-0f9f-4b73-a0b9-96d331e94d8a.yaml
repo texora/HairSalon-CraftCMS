@@ -36,9 +36,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-21T07:41:13+00:00'
+            dateAdded: '2024-10-22T06:20:32+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
             handle: testimonialText
             includeInCards: false
             instructions: null
@@ -47,7 +47,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a4515454-008f-4cd1-a8ea-545338108364
+            uid: c0299e8d-7ace-4156-a506-b1f6629813df
             userCondition: null
             warning: null
             width: 100
@@ -140,8 +140,8 @@ icon: radio
 name: 'Video Testimonial'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

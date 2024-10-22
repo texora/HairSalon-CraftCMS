@@ -5,7 +5,7 @@
                 <div class="row align-items-center row-gap-5{% if loop.index % 2 == 0 %} flex-row-reverse{% endif %}">
                     <div class="col-12 col-md-6 ">
                         <div class="video-content">
-                            <h3>"{{ videoTestimonial.testimonialText }}"</h3>
+                            {{ videoTestimonial.testimonialText }}
                             {% set photo = videoTestimonial.authorPhoto.eagerly().one() %}
                             {% set videoPoster = videoTestimonial.videoPoster.eagerly().one() %}
                             <h5>{% if photo %}<img src="{{ photo.url('authorThumb') }}" class="rounded-circle" alt="{{ videoTestimonial.testimonialAuthor }}" />{% endif %} {% if videoTestimonial.testimonialAuthor %}<span>{{ videoTestimonial.testimonialAuthor }}</span>{% if videoTestimonial.authorDesignation %}, {{ videoTestimonial.authorDesignation }}{% endif %}</h5>{% endif %}

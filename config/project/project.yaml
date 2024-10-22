@@ -1,4 +1,4 @@
-dateModified: 1729576179
+dateModified: 1729578658
 elementSources:
   craft\elements\Entry:
     -
@@ -119,6 +119,7 @@ meta:
   __names__:
     0ccd9cb4-cb6f-44da-b932-3dae09c2db79: Home # Home
     0d1a2199-8227-4113-8872-9224a1f10ef4: Ingleby # Ingleby
+    0d205f8c-46fe-41bf-8a0d-0f64b3877490: 'Simple Text' # Simple Text
     1dfa55bc-6378-42c8-978f-4266cf07fc70: 'Text / Image Row' # Text / Image Row
     1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us' # About Us
     1f1a03f8-9f09-4e72-90b2-73744ea2d88c: Full # Full
@@ -174,6 +175,7 @@ meta:
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
     acb66ef8-b78e-4e0f-8040-e9fd7a84dc02: Apply # Apply
     afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
+    b7b36318-f071-4097-8730-a77ac7b5fe96: 'RTE - Simple Text' # RTE - Simple Text
     b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
     b12f7f4a-e079-45fe-9285-fdd1643c6db6: 'Author Thumb' # Author Thumb
     b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
