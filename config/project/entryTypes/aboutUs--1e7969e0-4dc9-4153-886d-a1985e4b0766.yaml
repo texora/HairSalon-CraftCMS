@@ -126,7 +126,7 @@ fieldLayouts:
             uid: 79fea9d7-0064-4734-9a13-b5fe065c8c83
             userCondition: null
             warning: null
-            width: 50
+            width: 25
           -
             dateAdded: '2024-09-22T05:04:58+00:00'
             elementCondition: null
@@ -142,7 +142,7 @@ fieldLayouts:
             uid: 564e2e84-74f8-465b-900f-f9d7db931d45
             userCondition: null
             warning: null
-            width: 50
+            width: 75
         name: 'Who We Are Section'
         uid: 45b1c981-d6ef-4ac5-aa89-f18efc3fe9d2
         userCondition: null
@@ -234,8 +234,8 @@ icon: ''
 name: 'About Us'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

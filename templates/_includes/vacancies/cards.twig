@@ -6,7 +6,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card d-flex flex-column">
               {% if card.cardTitle %}<h4>{{ card.cardTitle }}</h4>{% endif %}
-              <p>{{ card.cardText|nl2br }}</p>
+              {{ card.cardText }}
             </div>
           </div>
         {% endfor %}
