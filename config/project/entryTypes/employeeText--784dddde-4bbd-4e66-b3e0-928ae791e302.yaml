@@ -42,7 +42,7 @@ fieldLayouts:
             handle: testimonialText
             includeInCards: false
             instructions: null
-            label: testimonialText
+            label: 'Testimonial Text'
             providesThumbs: false
             required: false
             tip: null
@@ -50,7 +50,7 @@ fieldLayouts:
             uid: 4b5b578f-867a-479d-af57-47a75108805e
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             dateAdded: '2024-09-22T05:52:27+00:00'
             elementCondition: null
@@ -66,7 +66,7 @@ fieldLayouts:
             uid: 93403303-db85-493c-86db-3b9541ba2970
             userCondition: null
             warning: null
-            width: 100
+            width: 25
         name: Content
         uid: 66dc11b9-261b-4b65-89d5-799ca51042d9
         userCondition: null

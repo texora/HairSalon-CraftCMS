@@ -1,4 +1,5 @@
 headingLevels:
+  - 2
   - 3
   - 4
   - 5
@@ -17,6 +18,11 @@ options:
         class: ck-heading_paragraph
         model: paragraph
         title: Paragraph
+      -
+        class: ck-heading_heading2
+        model: heading2
+        title: 'Heading 2'
+        view: h2
       -
         class: ck-heading_heading3
         model: heading3

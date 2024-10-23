@@ -10,7 +10,7 @@
                 <div class="col-12 col-md-6">
                   <div class="d-flex justify-content-between flex-column h-100">
                     <h3>{{ card.title }}</h3>
-                    <p>{{ card.text|nl2br }}</p>
+                    {{ card.text }}
                   </div>
                 </div>
                 {% set image = card.image.eagerly().one() %}
@@ -25,7 +25,7 @@
             <div class="best">
               <div class="d-flex justify-content-between flex-column h-100">
                 <h3>{{ card.title }}</h3>
-                <p>{{ card.text|nl2br }}</p>
+                {{ card.text }}
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@
                 <div class="col-12 col-md-6">
                   <div class="d-flex justify-content-between flex-column h-100">
                     <h3>{{ card.title }}</h3>
-                    <p>{{ card.text|nl2br }}</p>
+                    {{ card.text }}
                   </div>
                 </div>
                 {% set image = card.image.eagerly().one() %}
@@ -56,7 +56,7 @@
             <div class="best">
               <div class="d-flex justify-content-between flex-column h-100">
                 <h3>{{ card.title }}</h3>
-                <p>{{ card.text|nl2br }}</p>
+                {{ card.text }}
               </div>
             </div>
           </div>

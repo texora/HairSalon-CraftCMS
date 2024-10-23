@@ -1,22 +1,19 @@
 <section class="revolutionise-section">
   <div class="container">
-    <h2 class="mb-0">
-      {{ entry.highlightedText }}
-      <span>
-        {{ entry.greyText }}
-      </span>
-    </h2>
-    <div class="row good-people">
-      {% for row in entry.process %}
-        <div class="col-12 col-md-3">
-          <div class="d-flex flex-column row-gap-0 row-gap-md-5">
-            <div class="number position-relative">
-              <h2>0{{ loop.index }}</h2>
+    {{ entry.mainText }}
+    {% if entry.process.type('processText').count() %}
+      <div class="row good-people">
+        {% for row in entry.process.type('processText').all() %}
+          <div class="col-12 col-md-3">
+            <div class="d-flex flex-column row-gap-0 row-gap-md-5">
+              <div class="number position-relative">
+                <h2>0{{ loop.index }}</h2>
+              </div>
+              {{ row.text }}
             </div>
-            <p>{{ row.processText }}</p>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </section>

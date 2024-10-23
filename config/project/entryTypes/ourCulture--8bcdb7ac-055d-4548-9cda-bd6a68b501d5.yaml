@@ -96,37 +96,21 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-22T06:19:19+00:00'
+            dateAdded: '2024-10-22T11:21:42+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: highlightedText
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
+            handle: mainText
             includeInCards: false
             instructions: null
-            label: 'Highlighted Text'
+            label: 'Main Text'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0cf97f1b-610f-4951-a241-a2a637abc581
+            uid: f1b33c81-3aed-4bf3-9689-968fd0e51247
             userCondition: null
             warning: null
-            width: 50
-          -
-            dateAdded: '2024-09-22T06:19:19+00:00'
-            elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
-            handle: greyText
-            includeInCards: false
-            instructions: null
-            label: 'Grey Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 09a605b5-ec7e-4ec7-b0d8-a4aa44277c87
-            userCondition: null
-            warning: null
-            width: 50
+            width: 100
           -
             dateAdded: '2024-09-22T06:20:54+00:00'
             elementCondition: null
@@ -196,8 +180,8 @@ icon: ''
 name: 'Our Culture'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

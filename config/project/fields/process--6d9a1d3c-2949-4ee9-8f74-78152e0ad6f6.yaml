@@ -4,34 +4,17 @@ instructions: null
 name: Process
 searchable: false
 settings:
-  addRowLabel: 'Add Process'
-  columns:
-    __assoc__:
-      -
-        - col1
-        -
-          __assoc__:
-            -
-              - heading
-              - 'Process Text'
-            -
-              - handle
-              - processText
-            -
-              - width
-              - ''
-            -
-              - type
-              - multiline
-  defaults:
-    -
-      __assoc__:
-        -
-          - col1
-          - ''
-  maxRows: null
-  minRows: null
-  staticRows: false
+  createButtonLabel: 'Add Process'
+  entryTypes:
+    - 7eadd07d-e23b-4b39-8180-5438582847dd # Process Text
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: blocks
 translationKeyFormat: null
-translationMethod: none
-type: craft\fields\Table
+translationMethod: site
+type: craft\fields\Matrix

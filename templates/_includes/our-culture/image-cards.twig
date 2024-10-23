@@ -8,8 +8,7 @@
             {% set image = card.image.eagerly().one() %}
             {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" class="w-100 img-fluid" />{% endif %}
             <div class="card-body px-0">
-              {% if card.heading %}<h4 class="mb-0">{{ card.heading }}</h4>{% endif %}
-              <p>{{ card.text|nl2br }}</p>
+              {{ card.text }}
             </div>
           </div>
         </div>

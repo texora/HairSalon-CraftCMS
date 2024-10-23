@@ -50,39 +50,23 @@ fieldLayouts:
             uid: e2beefad-537e-4134-8183-7b753d135a06
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
-            dateAdded: '2024-09-22T13:17:58+00:00'
+            dateAdded: '2024-10-22T11:23:50+00:00'
             elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: heading
-            includeInCards: false
-            instructions: null
-            label: Heading
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e56509bb-b88c-44bd-a1c8-085788b5b432
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-22T13:17:58+00:00'
-            elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
             handle: text
             includeInCards: false
-            instructions: 'It wil display for mobile devices'
+            instructions: null
             label: Text
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a27add80-1bed-4ee1-891f-629bf305d34a
+            uid: c6d9287e-8c56-4e98-a95a-9d6d545a02d8
             userCondition: null
             warning: null
-            width: 100
+            width: 75
         name: Content
         uid: 90dffe3e-4e2c-4d7c-9c58-7fd8969d79ab
         userCondition: null
@@ -92,8 +76,8 @@ icon: address-card
 name: 'Image Card'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

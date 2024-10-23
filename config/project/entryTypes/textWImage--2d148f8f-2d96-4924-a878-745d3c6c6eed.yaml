@@ -36,9 +36,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-22T06:10:31+00:00'
+            dateAdded: '2024-10-22T10:59:24+00:00'
             elementCondition: null
-            fieldUid: 8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec # Text Area
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
             handle: text
             includeInCards: false
             instructions: null
@@ -47,10 +47,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 787399c0-ee4e-41aa-b414-a7e90b1a340c
+            uid: cba54c5b-f987-44c1-a8d8-70574119e480
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             dateAdded: '2024-09-22T06:10:31+00:00'
             elementCondition: null
@@ -66,7 +66,7 @@ fieldLayouts:
             uid: b50b52b5-8ef7-4236-8239-25c8b4df3c21
             userCondition: null
             warning: null
-            width: 100
+            width: 25
         name: Content
         uid: 6626a1ac-07a4-4588-a778-7005078114ab
         userCondition: null
@@ -76,8 +76,8 @@ icon: id-card
 name: 'Text w/ Image'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

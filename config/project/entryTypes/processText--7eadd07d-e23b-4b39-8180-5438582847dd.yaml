@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  2e815ba2-9da0-4f6a-8d1d-64980b3a5bd1:
+  1c75a427-7bf1-4055-86d1-6636f9a18b3c:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-22T06:59:33+00:00'
+            dateAdded: '2024-10-22T11:03:27+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,28 +31,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d379545f-afe4-49b6-b391-f92e38cbb527
+            uid: ef248818-13c7-466c-9058-4b445cf59ca0
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-22T07:01:38+00:00'
-            elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: heading
-            includeInCards: false
-            instructions: null
-            label: Heading
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 994a9233-901d-4930-9e6c-c441ade04ee6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-10-23T05:28:45+00:00'
+            dateAdded: '2024-10-22T11:05:13+00:00'
             elementCondition: null
             fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
             handle: text
@@ -63,33 +47,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ce9d2c1c-3a8c-4c58-93dc-5e826c9b570e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-22T07:01:38+00:00'
-            elementCondition: null
-            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: hoverImage
-            includeInCards: false
-            instructions: null
-            label: 'Hover Image'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cfc7b634-4c51-4c74-ad21-73cea26cf1c7
+            uid: 9ac5a781-5a85-4377-ac76-00b844d6ca8e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: ce97989f-56bd-4548-9aeb-11a738b8395d
+        uid: 7bef3188-e578-42cb-8bbd-b51c1fdeee3e
         userCondition: null
-handle: processStep
+handle: processText
 hasTitleField: false
 icon: ''
-name: 'Process Step'
+name: 'Process Text'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: ''
