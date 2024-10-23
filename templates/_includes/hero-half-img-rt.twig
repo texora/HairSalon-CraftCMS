@@ -1,10 +1,10 @@
 <section class="who-are-section vacancies-section mb-0">
   <div class="container-fluid">
-    <div class="align-items-center flex-column-reverse flex-md-row row row-gap-5">
+    <div class="flex-column-reverse flex-md-row row row-gap-5">
       <div class="col-12 col-lg-6 businesspeople px-0">
         {% set image = entry.heroImage.eagerly().one() %}
         {% if image %}
-          <div class="image">
+          <div class="image object-fit-cover">
             <img src="{{ image.url }}" alt="{{ image.title }}" />
           </div>
         {% endif %}
@@ -15,7 +15,7 @@
         #}
       </div>
       <div class="col-12 col-lg-6 content-width-50">
-        <div class="experienced text-content">
+        <div class="experienced text-content d-lg-flex flex-lg-column h-100 justify-content-center">
           {{ entry.heroText }}
         </div>
       </div>

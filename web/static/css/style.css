@@ -137,9 +137,12 @@ color: #353535;
     padding: 0 50px;
     margin: 100px 0;
 }
+.changing-uk h2 {
+    margin-bottom: 1rem;
+}
 .changing-uk button{background: #fff;color: #000;}
 .work-at-halo button{border: 1px solid #fff;background: transparent;width: 250px;margin-top: 20px;}
- .work-at-halo p, .work-at-halo  ul{
+ .work-at-halo p, .work-at-halo  ul li{
     font-size: 18px;
     font-family: Gilroy;
     font-weight: 400;
@@ -207,7 +210,6 @@ color: #353535;
 .i-love-working h5 span {
     color: #000;
     font-weight: 600;
-    margin-left: 10px;
 }
 .i-love-working iframe, .recruitment-section iframe{width: 100%;}
 .i-love-working h5{margin-top: 20px;}
@@ -306,6 +308,9 @@ footer h1 {
       font-size: 20px;
     color: #7C532F;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 .unparalleled, .looking-for, .cutting-styling-section, .competitive-section,
 .great-hair-section{margin: 100px 0;}

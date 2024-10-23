@@ -351,27 +351,34 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bricolage Grotesque";
     font-weight: 500;
 }
+
 h1 {
-     font-size: 4rem;
+    font-size: 4rem;
     line-height: normal;
 }
+
 h2 {
     font-size: 3rem;
     line-height: normal;
 }
+
 h3 {
     font-size: 1.875rem;
 }
+
 h4 {
     font-size: 1.5rem;
 }
+
 h5 {
     font-size: 1.375rem;
 }
+
 p {
     font-size: 18px;
 }
@@ -572,15 +579,18 @@ section ul li, section ol li {
     background-color: hsl(0deg 0% 0% / 40%);
     z-index: 1;
 }
+
 .work-at .work-at-halo {
     color: #fff;
 }
+
 .changing-uk h2, .work-at-halo h2 {
     font-size: 56px;
     color: #fff;
     line-height: 68px;
     margin-bottom: 0;
 }
+
 .looking-for .work-at-halo h2 {
     margin-bottom: 0.5rem;
     font-size: 3rem;
@@ -684,7 +694,7 @@ section ul li, section ol li {
 .banner-section h1 {
     line-height: 70px;
     width: 100%;
-      font-size: 64px;
+    font-size: 64px;
     color: #fff;
 }
 
@@ -693,7 +703,7 @@ section ul li, section ol li {
     font-size: 3rem;
 }
 
-.banner-section h2{
+.banner-section h2 {
     color: #fff;
 }
 
@@ -701,6 +711,7 @@ section ul li, section ol li {
     color: #fff;
     text-align: center;
 }
+
 .banner-section p {
     color: #fff;
     font-size: 20px;
@@ -798,7 +809,7 @@ input:-webkit-autofill {
 }
 
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-    background-image: url('/static/svg/arrow-next.svg');
+   background-image: url('/static/svg/arrow-next.svg');
     transform: rotate(180deg);
     left: 0;
 }
@@ -960,8 +971,8 @@ input:-webkit-autofill {
     font-weight: 500;
     font-family: 'Bricolage Grotesque';
     display: flex;
-     font-size: 24px;
-     line-height: 29px;
+    font-size: 24px;
+    line-height: 29px;
     align-items: center;
 }
 
@@ -1090,10 +1101,14 @@ input:-webkit-autofill {
     font-family: 'Bricolage Grotesque';
     font-weight: 500;
     color: #00000099;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .i-love-working h5 img {
-    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
 }
 
 .collective-section .slick-slider, .openings-section .slick-slider {
@@ -1224,7 +1239,6 @@ input:-webkit-autofill {
     margin-top: 0;
     background: #f1ede6;
 }
-
 .vacancy .who-are-section h2,
 .vacancy .who-are-section p {
     color: #353535;
@@ -1268,6 +1282,7 @@ input:-webkit-autofill {
 .our-people .different-section {
     padding: 120px 0;
 }
+
 .our-people .recruitment-section h3 {
     font-size: 32px;
     color: #fff;
@@ -1340,7 +1355,7 @@ input:-webkit-autofill {
 
 .recruitment-section .plyr__control--overlaid[data-plyr="play"], 
 .i-love-working  .plyr__control--overlaid[data-plyr="play"] {
-    background: url('/static/svg/play.svg') !important;
+   background: url('/static/svg/play.svg') !important;
     width: 65px;
     height: 65px;
     background-repeat: no-repeat !important;
@@ -1392,12 +1407,15 @@ input:-webkit-autofill {
     font-family: "Bricolage Grotesque";
     font-weight: 500;
 }
+
 .apple .test-process h4 {
     margin-top: 0 !important;
 }
+
 .apple .test-process .personal-kit p {
-   line-height: 20px;
+    line-height: 20px;
 }
+
 .process-section .nav-link {
     max-width: 405px;
     width: 100%;
@@ -1579,6 +1597,7 @@ input:-webkit-autofill {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .reward-success .curve-text {
     right: 0 !important;
 }
@@ -1586,6 +1605,22 @@ input:-webkit-autofill {
 .about-banner img {
     z-index: 2;
 }
+
+.video-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video-player iframe, .video-player video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
 @media(min-width:769px) {
     .cultire .cutting-styling-section .card img {
         height: 290px;
@@ -1732,6 +1767,9 @@ input:-webkit-autofill {
     .about .unparalleled .row {
         --bs-gutter-x: 6rem;
     }
+    .cultire .who-are-section .image, .cultire .who-are-section .image img {
+        height: 100%;
+    }
 }
 
 @media(min-width:992px) and (max-width:1199px) {
@@ -1752,12 +1790,17 @@ input:-webkit-autofill {
         margin-right: 20px;
         margin-left: 20px;
     }
+
     .working-bx::before {
         left: -100px;
     }
 
     .working-bx::after {
         right: -100px;
+    }
+
+    .our-people .recruitment-section .director {
+        width: 65%;
     }
 }
 
@@ -1895,15 +1938,19 @@ input:-webkit-autofill {
         background: #000;
         color: #fff !important;
     }
+
     .main-header-top nav .nav-link, .main-header-top .dropdown {
         width: auto;
     }
-     .dropdown-icon {
+
+    .dropdown-icon {
         right: 5px;
     }
+
     .main-header-top .dropdown:hover .dropdown-icon {
         transform: rotate(0deg);
     }
+
     .dropdown-icon:after {
         content: "";
         position: absolute;
@@ -1982,18 +2029,6 @@ input:-webkit-autofill {
 
     .main-header-top .dropdown-menu p {
         margin-bottom: 0.5rem;
-    }
-    .i-love-working .video-player, .recruitment-section .video-player {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: auto;
-    }
-    .i-love-working iframe, .recruitment-section iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
     }
 }
 
@@ -2146,6 +2181,7 @@ input:-webkit-autofill {
         padding: 0;
         font-size: 18px;
         color: #353535;
+        margin-bottom: 0.5rem;
     }
 
     .cultire .cutting-styling-section .card-body p {
@@ -2157,18 +2193,23 @@ input:-webkit-autofill {
     h1 {
         font-size: 3rem;
     }
+
     h2, .openings-section h2, .looking-for .work-at-halo h2 {
         font-size: 2rem;
     }
+
     h3 {
         font-size: 1.5rem;
     }
+
     h4 {
         font-size: 1.375rem;
     }
+
     h5 {
         font-size: 1.25rem;
     }
+
     p, section ul li, section ol li {
         font-size: 14px;
     }
@@ -2217,8 +2258,9 @@ input:-webkit-autofill {
 
     .looking-for ul {
         float: none;
-        gap: 1rem;
+        gap: 2rem;
     }
+
     .looking-for ul li {
         font-size: 20px;
     }
@@ -2368,8 +2410,6 @@ input:-webkit-autofill {
     .about .unparalleled {
         margin-bottom: 0;
     }
-
-    
 
     .content-width-50 .text-content {
         max-width: 540px;

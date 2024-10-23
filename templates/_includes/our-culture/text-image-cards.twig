@@ -4,24 +4,24 @@
       <div class="row specialists row-gap-2 d-none d-md-flex">
         {% for card in entry.textImageCards.eagerly().all() %}
           {% if card.type == 'textWImage' %}
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-lg-8">
             <div class="best">
               <div class="row justify-content-between">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-xl-6">
                   <div class="d-flex justify-content-between flex-column h-100">
                     <h3>{{ card.title }}</h3>
                     {{ card.text }}
                   </div>
                 </div>
                 {% set image = card.image.eagerly().one() %}
-                <div class="col-12 col-md-5">
-                  {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
+                <div class="col-12 col-md-6 col-xl-5">
+                  {% if image %}<img class="object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
                 </div>
               </div>
             </div>
           </div>
           {% elseif card.type == 'textOnly' %}
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-lg-4">
             <div class="best">
               <div class="d-flex justify-content-between flex-column h-100">
                 <h3>{{ card.title }}</h3>
@@ -35,24 +35,24 @@
       <div class="row specialists row-gap-2 d-flex d-md-none">
         {% for card in entry.textImageCards.eagerly().all() %}
           {% if card.type == 'textWImage' %}
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-lg-8">
             <div class="best">
               <div class="row justify-content-between">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-xl-6">
                   <div class="d-flex justify-content-between flex-column h-100">
                     <h3>{{ card.title }}</h3>
                     {{ card.text }}
                   </div>
                 </div>
                 {% set image = card.image.eagerly().one() %}
-                <div class="col-12 col-md-5">
-                  {% if image %}<img src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
+                <div class="col-12 col-md-6 col-xl-5">
+                  {% if image %}<img class="object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}" />{% endif %}
                 </div>
               </div>
             </div>
           </div>
           {% elseif card.type == 'textOnly' %}
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-lg-4">
             <div class="best">
               <div class="d-flex justify-content-between flex-column h-100">
                 <h3>{{ card.title }}</h3>

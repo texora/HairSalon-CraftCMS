@@ -8,7 +8,7 @@
                             {{ videoTestimonial.testimonialText }}
                             {% set photo = videoTestimonial.authorPhoto.eagerly().one() %}
                             {% set videoPoster = videoTestimonial.videoPoster.eagerly().one() %}
-                            <h5>{% if photo %}<img src="{{ photo.url('authorThumb') }}" class="rounded-circle" alt="{{ videoTestimonial.testimonialAuthor }}" />{% endif %} {% if videoTestimonial.testimonialAuthor %}<span>{{ videoTestimonial.testimonialAuthor }}</span>{% if videoTestimonial.authorDesignation %}, {{ videoTestimonial.authorDesignation }}{% endif %}</h5>{% endif %}
+                            <h5>{% if photo %}<img src="{{ photo.url('authorThumb') }}" class="rounded-circle object-fit-cover" alt="{{ videoTestimonial.testimonialAuthor }}" />{% endif %} <div class="testimonial-author">{% if videoTestimonial.testimonialAuthor %}<span>{{ videoTestimonial.testimonialAuthor }}</span>{% if videoTestimonial.authorDesignation %}, {{ videoTestimonial.authorDesignation }}{% endif %}</div></h5>{% endif %}
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
