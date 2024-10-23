@@ -10,15 +10,15 @@
     {% if heroImage %}
         <section class="who-are-section something-section reward-success">
             <div class="container-fluid">
-                <div class="row align-items-center left-content">
+                <div class="row left-content row-gap-4">
                     <div class="col-12 col-lg-6 px-0 content-width-50">
-                        <div class="experienced text-content">
+                        <div class="experienced text-content d-lg-flex flex-lg-column h-100 justify-content-center">
                             {% if entry.heroHeading %}<h2 class="mb-4">{{ entry.heroHeading }}</h2>{% endif %}
                             {{ entry.heroText }}
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 businesspeople px-0">
-                        <div class="image"> <img src="{{ heroImage.url }}" alt="{{ entry.title }}" /> </div>
+                        <div class="image"> <img class="object-fit-cover" src="{{ heroImage.url }}" alt="{{ entry.title }}" /> </div>
                     </div>
                 </div>
             </div>

@@ -137,9 +137,7 @@ color: #353535;
     padding: 0 50px;
     margin: 100px 0;
 }
-.changing-uk h2 {
-    margin-bottom: 1rem;
-}
+
 .changing-uk button{background: #fff;color: #000;}
 .work-at-halo button{border: 1px solid #fff;background: transparent;width: 250px;margin-top: 20px;}
  .work-at-halo p, .work-at-halo  ul li{
@@ -309,7 +307,6 @@ footer h1 {
     color: #7C532F;
     font-weight: 600;
     display: flex;
-    align-items: center;
     gap: 0.25rem;
 }
 .unparalleled, .looking-for, .cutting-styling-section, .competitive-section,

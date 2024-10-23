@@ -21,7 +21,7 @@
 						<div class="row row-gap-4">
 							<div class="col-12 col-lg-7">
 								{% set image = tab.image.eagerly().one() %}
-								{% if image %}<div class="trade-image"> <img src="{{ image.url }}" alt="{{ image.title }}" /> </div>{% endif %}
+								{% if image %}<div class="trade-image"> <img class="object-fit-cover w-100" src="{{ image.url }}" alt="{{ image.title }}" /> </div>{% endif %}
 							</div>
 							{% if tab.tabContent %}
 								<div class="col-12 col-lg-5">

@@ -551,7 +551,17 @@ section ul li, section ol li {
 .main-header-top .dropdown-menu .row {
     row-gap: 1rem;
 }
-
+.main-header-top.activeheader {
+        animation: slideDown 0.5s ease-out;
+}
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
 .banner-section {
     position: relative;
     background-position: top center;
@@ -590,7 +600,9 @@ section ul li, section ol li {
     line-height: 68px;
     margin-bottom: 0;
 }
-
+.changing-uk h2 {
+    margin-bottom: 1rem;
+}
 .looking-for .work-at-halo h2 {
     margin-bottom: 0.5rem;
     font-size: 3rem;
@@ -809,7 +821,7 @@ input:-webkit-autofill {
 }
 
 .openings-section .nav-product-salon .slick-prev:before, .collective-section .nav-product .slick-prev:before {
-   background-image: url('/static/svg/arrow-next.svg');
+     background-image: url('/static/svg/arrow-next.svg');
     transform: rotate(180deg);
     left: 0;
 }
@@ -1233,7 +1245,9 @@ input:-webkit-autofill {
     padding-top: 120px;
     margin: 0;
 }
-
+.vacancy .cutting-styling-section + .stylists-section {
+    padding-bottom: 120px !important;
+}
 .vacancy .who-are-section,
 .cultire .who-are-section {
     margin-top: 0;
@@ -1355,7 +1369,7 @@ input:-webkit-autofill {
 
 .recruitment-section .plyr__control--overlaid[data-plyr="play"], 
 .i-love-working  .plyr__control--overlaid[data-plyr="play"] {
-   background: url('/static/svg/play.svg') !important;
+    background: url('/static/svg/play.svg') !important;
     width: 65px;
     height: 65px;
     background-repeat: no-repeat !important;
@@ -1375,10 +1389,11 @@ input:-webkit-autofill {
     position: relative;
 }
 
-.trade-image img {
+/*.trade-image img {
     object-fit: cover;
+    width: 100%;
 }
-
+*/
 .trade-test {
     height: 100%;
     text-align: left;
@@ -1459,6 +1474,7 @@ input:-webkit-autofill {
     margin: 30px 0;
     padding: 20px 0;
     border-bottom: solid 1px rgba(53, 53, 53, 0.50);
+    row-gap: 2rem !important
 }
 
 .personal-kit:hover {
@@ -1737,6 +1753,9 @@ input:-webkit-autofill {
     .about .unparalleled .row {
         --bs-gutter-x: 4rem;
     }
+    .phase-sunderland .sunderland ul li {
+     align-items: center;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -1767,7 +1786,8 @@ input:-webkit-autofill {
     .about .unparalleled .row {
         --bs-gutter-x: 6rem;
     }
-    .cultire .who-are-section .image, .cultire .who-are-section .image img {
+    .cultire .who-are-section .image, .cultire .who-are-section .image img, 
+    .apple .who-are-section .image, .apple .who-are-section .image img {
         height: 100%;
     }
 }
@@ -1801,6 +1821,10 @@ input:-webkit-autofill {
 
     .our-people .recruitment-section .director {
         width: 65%;
+    }
+    .building-section h2, .changing-uk h2, .work-at-halo h2 {
+        font-size: 50px;
+        line-height: 60px;
     }
 }
 
@@ -2030,6 +2054,11 @@ input:-webkit-autofill {
     .main-header-top .dropdown-menu p {
         margin-bottom: 0.5rem;
     }
+    .work-at .email-form {
+        max-width: 100%;
+        margin: 15px auto 0 auto;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -2044,7 +2073,6 @@ input:-webkit-autofill {
     .vacancy .stylists-section {
         padding-top: 80px;
     }
-
     .vacancy .specialists {
         row-gap: 32px !important;
     }
@@ -2056,6 +2084,9 @@ input:-webkit-autofill {
 
     .vacancy .cutting-styling-section {
         padding: 80px 0;
+    }
+    .vacancy .cutting-styling-section + .stylists-section {
+        padding-bottom: 80px !important;
     }
 
     .our-people .different-section p {
@@ -2210,7 +2241,7 @@ input:-webkit-autofill {
         font-size: 1.25rem;
     }
 
-    p, section ul li, section ol li {
+    p {
         font-size: 14px;
     }
 
