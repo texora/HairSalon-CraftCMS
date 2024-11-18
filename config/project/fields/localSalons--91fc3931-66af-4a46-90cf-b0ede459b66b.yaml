@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: localSalons
+instructions: null
+name: 'Local Salons'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add Local Salons'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:38dc9635-7a7d-484c-bffc-96bf8c1ae3e3' # Local Salons
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

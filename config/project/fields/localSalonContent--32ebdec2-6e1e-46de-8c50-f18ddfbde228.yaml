@@ -1,0 +1,27 @@
+columnSuffix: null
+handle: localSalonContent
+instructions: null
+name: 'Local Salon Content'
+searchable: false
+settings:
+  createButtonLabel: 'Add Page Section'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 20719496-58c0-4027-9186-9aea86bd4365 # Features w/ CTAs Section
+    - b30c7324-129a-47c8-b2a1-109d011ee287 # Services Section
+    - 446df8be-12fb-456d-a827-6e09a5b1f15a # Team Section
+    - db0eba9c-e40f-4df7-a5af-e0bd0d7d46cf # Articles & News Section
+    - 240a6aad-64e3-46ca-8126-104480673800 # Newsletter Subscribe Section
+    - 64d5fb1c-b9f8-460b-9c44-c9b292e8afc0 # Photo Collage
+    - 094e4fb6-0820-4cba-ba7d-ff6a1f41529b # Image Cards Section
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

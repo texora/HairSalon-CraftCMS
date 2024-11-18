@@ -5,6 +5,7 @@ name: 'Text / Image Cards'
 searchable: false
 settings:
   createButtonLabel: 'Add Card'
+  defaultIndexViewMode: cards
   entryTypes:
     - 2d148f8f-2d96-4924-a878-745d3c6c6eed # Text w/ Image
     - 1f9056e2-e8fd-4663-8027-0bfb8882ade5 # Text Only

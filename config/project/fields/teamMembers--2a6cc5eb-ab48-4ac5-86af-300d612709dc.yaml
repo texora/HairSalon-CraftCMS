@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: teamMembers
+instructions: null
+name: 'Team Members'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add Team Members'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:925df286-518b-4bdb-a7d5-ccd461be7236' # Team
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

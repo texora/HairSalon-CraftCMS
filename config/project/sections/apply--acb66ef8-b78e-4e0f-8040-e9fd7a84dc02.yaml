@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - d6c8cf87-bfda-4180-803b-408375d5b40b # Apply
+  - d6c8cf87-bfda-4180-803b-408375d5b40b # Apply Page
 handle: apply
 maxAuthors: 1
 name: Apply

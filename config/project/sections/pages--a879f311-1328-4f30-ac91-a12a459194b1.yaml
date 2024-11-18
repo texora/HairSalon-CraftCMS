@@ -1,0 +1,36 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6405f652-9433-4c53-9feb-e2324d8b8973 # Content Page
+  - 1e7969e0-4dc9-4153-886d-a1985e4b0766 # About Us Page
+  - d6c8cf87-bfda-4180-803b-408375d5b40b # Apply Page
+  - 8bcdb7ac-055d-4548-9cda-bd6a68b501d5 # Our Culture Page
+  - 69dd3687-8b36-4e2c-b797-7ed6b86a8ee8 # Our People Page
+  - 97cdda06-67e6-4755-a9d3-2534f16a2c73 # Salary Benefits Page
+  - 8f985adb-f8ad-4b76-acd5-678c5e7c8e6d # Vacancies Page
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/generalPages/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: bfbabde6-9a2e-48b1-bcfb-2b275b68a60a
+type: structure

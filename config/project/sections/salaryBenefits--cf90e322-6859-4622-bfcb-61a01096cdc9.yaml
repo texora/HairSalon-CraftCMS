@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 97cdda06-67e6-4755-a9d3-2534f16a2c73 # Salary Benefits
+  - 97cdda06-67e6-4755-a9d3-2534f16a2c73 # Salary Benefits Page
 handle: salaryBenefits
 maxAuthors: 1
 name: 'Salary & Benefits'

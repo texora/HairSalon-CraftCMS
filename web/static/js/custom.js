@@ -97,14 +97,12 @@ $("document").ready(function() {
 		$('.navbar-light .dmenu > a').on('click', function(event) {
         // Check if the click target is the span element
         if ($(event.target).is('span')) {
-            console.log('Clicked on the span.');
             var submenu = $(this).siblings('.sm-menu');
         // Close other open submenus
         $('.sm-menu').not(submenu).slideUp(105);
         // Toggle the clicked submenu
         submenu.stop(true, true).slideToggle(150);
         } else {
-            console.log('Clicked on the text outside the span.');
             var href = $(this).attr('href');
             window.location.href = href;
         }
@@ -123,7 +121,6 @@ if(jQuery('.video-btn').length){
 	  button.addEventListener('click', () => {
 	    // Get the video source from the data-src attribute
 	    videoSrc = button.dataset.src;
-	    console.log(videoSrc);
 	  });
 	});
 

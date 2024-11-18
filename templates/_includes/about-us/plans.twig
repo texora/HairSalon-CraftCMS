@@ -7,13 +7,13 @@
         </div>
       </div>
     {% endif %}
-    {% set rolloutPlans = craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
-    {% for rolloutPlan, cities in rolloutPlans|group("phase") %}
+    {% set localSalons = craft.entries().section('localSalons').orderBy('openingYear ASC, phase ASC').all() %}
+    {% for localSalon, cities in localSalons|group("phase") %}
       <div class="row phase-sunderland">
         <div class="col-12 col-lg-3">
           <div class="phase d-flex align-items-start">
-            <h4>{{ 'Phase ' ~ rolloutPlan ~ ', ' ~ cities[0].openingYear }}</h4>
-            {{ svg('@webroot/static/svg/phase-'  ~ rolloutPlan ~ '-' ~ cities[0].openingYear ~ '.svg') }}
+            <h4>{{ 'Phase ' ~ localSalon ~ ', ' ~ cities[0].openingYear }}</h4>
+            {{ svg('@webroot/static/svg/phase-'  ~ localSalon ~ '-' ~ cities[0].openingYear ~ '.svg') }}
           </div>
         </div>
         <div class="col-12 col-lg-9 sunderland">

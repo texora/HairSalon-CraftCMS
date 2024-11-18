@@ -9,7 +9,7 @@
     <div class="email">
         <label for="city">City</label>
         <select class="form-control city-bx" name="city">
-            {% for rolloutPlan in craft.entries().section('rolloutPlans').orderBy('openingYear ASC, phase ASC').all() %}
+            {% for rolloutPlan in craft.entries().section('localSalons').orderBy('openingYear ASC, phase ASC').all() %}
                 <option value="{{ rolloutPlan.title }}">{{ rolloutPlan.title }}</option>
             {% endfor %}
         </select>

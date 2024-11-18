@@ -25,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -177,7 +177,7 @@ fieldLayouts:
 handle: ourCulture
 hasTitleField: true
 icon: ''
-name: 'Our Culture'
+name: 'Our Culture Page'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

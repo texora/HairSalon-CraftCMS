@@ -1,10 +1,11 @@
-dateModified: 1729662083
+dateModified: 1731912411
 elementSources:
   craft\elements\Entry:
     -
       defaultSort:
         - postDate
         - desc
+      defaultViewMode: ''
       disabled: false
       key: '*'
       tableAttributes:
@@ -40,7 +41,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:38dc9635-7a7d-484c-bffc-96bf8c1ae3e3' # Rollout Plans
+      key: 'section:38dc9635-7a7d-484c-bffc-96bf8c1ae3e3' # Local Salons
       tableAttributes:
         - 'fieldInstance:13b2fc7f-1afa-46fc-9177-e53f51fc9547'
         - 'field:7f82abc5-4a85-431f-8ffa-c9d3452c3c4e' # Phase
@@ -62,7 +63,27 @@ elementSources:
         - authors
       type: native
     -
-      key: 'section:a879f311-1328-4f30-ac91-a12a459194b1' # General Pages
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:a879f311-1328-4f30-ac91-a12a459194b1' # Pages
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      key: 'section:3777c10e-da81-4c0b-9f87-85cb8bd27b14' # Article & News
+      type: native
+    -
+      key: 'section:3caf09ec-53df-4e14-a191-76ad960d2171' # Services
+      type: native
+    -
+      key: 'section:925df286-518b-4bdb-a7d5-ccd461be7236' # Team
       type: native
     -
       heading: 'Job Pages'
@@ -121,14 +142,17 @@ meta:
     0d1a2199-8227-4113-8872-9224a1f10ef4: Ingleby # Ingleby
     0d205f8c-46fe-41bf-8a0d-0f64b3877490: 'Simple Text' # Simple Text
     1dfa55bc-6378-42c8-978f-4266cf07fc70: 'Text / Image Row' # Text / Image Row
-    1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us' # About Us
+    1e7969e0-4dc9-4153-886d-a1985e4b0766: 'About Us Page' # About Us Page
     1f1a03f8-9f09-4e72-90b2-73744ea2d88c: Full # Full
     1f9056e2-e8fd-4663-8027-0bfb8882ade5: 'Text Only' # Text Only
+    2a6cc5eb-ab48-4ac5-86af-300d612709dc: 'Team Members' # Team Members
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
     2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: Jobs # Jobs
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
+    3b0d478f-3b10-4424-9f3c-fd2c2d304e29: 'Article & News' # Article & News
     3c9ec943-aefe-47ec-81c4-89c792843eb3: 'Image Card' # Image Card
+    3caf09ec-53df-4e14-a191-76ad960d2171: Services # Services
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
     4bf1c1f4-99ad-4552-a05e-55e3c79d1f67: 'Job Benefits' # Job Benefits
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
@@ -138,47 +162,62 @@ meta:
     6d9a1d3c-2949-4ee9-8f74-78152e0ad6f6: Process # Process
     7aea93d0-d819-4905-8279-efcfd692ad42: Text # Text
     7eadd07d-e23b-4b39-8180-5438582847dd: 'Process Text' # Process Text
+    07edd6a8-1941-47c3-8535-ccc56f465ac0: Services # Services
     7f82abc5-4a85-431f-8ffa-c9d3452c3c4e: Phase # Phase
-    8bcdb7ac-055d-4548-9cda-bd6a68b501d5: 'Our Culture' # Our Culture
+    8bcdb7ac-055d-4548-9cda-bd6a68b501d5: 'Our Culture Page' # Our Culture Page
     8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec: 'Text Area' # Text Area
     8eb9df4d-b6b1-4331-9b12-46c97ce4b33e: 'Site Globals' # Site Globals
-    8f985adb-f8ad-4b76-acd5-678c5e7c8e6d: Vacancies # Vacancies
+    8f985adb-f8ad-4b76-acd5-678c5e7c8e6d: 'Vacancies Page' # Vacancies Page
     9dde76c9-a679-4b79-a41f-2967846b76f4: Glasgow # Glasgow
     27b29006-47a2-40b1-a7c1-7f0db71cc8a2: Icon # Icon
-    38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Rollout Plans' # Rollout Plans
+    32ebdec2-6e1e-46de-8c50-f18ddfbde228: 'Local Salon Content' # Local Salon Content
+    38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Local Salons' # Local Salons
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
     57e46740-bfbe-4ccd-a49e-a9b613807a45: Lightswitch # Lightswitch
     64b3113c-4c07-47b2-bed6-94149314dc80: 'RTE - Text Only' # RTE - Text Only
+    64d5fb1c-b9f8-460b-9c44-c9b292e8afc0: 'Photo Collage' # Photo Collage
     65abf317-e671-4d15-b847-6c77d624328a: 'Recruitment Process' # Recruitment Process
     067dc454-76f0-47fe-8a39-6380da7fc55e: SEO # SEO
     68ba543b-e8a1-466a-9338-af5cc2d458dd: Images # Images
-    69dd3687-8b36-4e2c-b797-7ed6b86a8ee8: 'Our People' # Our People
+    69dd3687-8b36-4e2c-b797-7ed6b86a8ee8: 'Our People Page' # Our People Page
+    91fc3931-66af-4a46-90cf-b0ede459b66b: 'Local Salons' # Local Salons
+    094e4fb6-0820-4cba-ba7d-ff6a1f41529b: 'Image Cards Section' # Image Cards Section
     96afe1ed-1049-4810-88fc-7c06133c2e03: 'RTE - Full' # RTE - Full
     96eb5731-03f7-428c-97b7-32172b537746: Card # Card
-    97cdda06-67e6-4755-a9d3-2534f16a2c73: 'Salary Benefits' # Salary Benefits
+    97cdda06-67e6-4755-a9d3-2534f16a2c73: 'Salary Benefits Page' # Salary Benefits Page
+    240a6aad-64e3-46ca-8126-104480673800: 'Newsletter Subscribe Section' # Newsletter Subscribe Section
+    446df8be-12fb-456d-a827-6e09a5b1f15a: 'Team Section' # Team Section
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: 'Jobs Listing' # Jobs Listing
+    0760dd42-e38c-4c5c-af04-3c9b32d0b198: Team # Team
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text
     812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
     822d8c30-81b1-4042-b211-0f5bf17fe786: Darlington # Darlington
+    925df286-518b-4bdb-a7d5-ccd461be7236: Team # Team
+    1290b18c-3072-4138-8fd2-b4808503a83f: 'Text w/ Image Cards' # Text w/ Image Cards
+    3777c10e-da81-4c0b-9f87-85cb8bd27b14: 'Article & News' # Article & News
     5241ddf9-1a26-4245-babb-b5b96cbea919: Durham # Durham
-    6405f652-9433-4c53-9feb-e2324d8b8973: 'General Pages' # General Pages
+    6405f652-9433-4c53-9feb-e2324d8b8973: 'Content Page' # Content Page
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Benefit Pages' # Benefit Pages
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
+    875175ae-1cd7-4e52-82ea-3ba5a7a69033: Services # Services
     6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Rollout Plans' # Rollout Plans
+    20719496-58c0-4027-9186-9aea86bd4365: 'Features w/ CTAs Section' # Features w/ CTAs Section
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
     87994572-cfd6-45fd-960d-a94a832a89c5: 'Employee Video' # Employee Video
     a5c4bb68-a93b-4064-94ed-c61308d2b930: 'Process Steps' # Process Steps
     a53cfce4-0998-4b8c-b0de-13a33d2f6c6e: 'Process Step' # Process Step
     a424a048-14aa-4cdc-a80e-3cbedee60726: Vacancies # Vacancies
-    a879f311-1328-4f30-ac91-a12a459194b1: 'General Pages' # General Pages
+    a879f311-1328-4f30-ac91-a12a459194b1: Pages # Pages
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
     acb66ef8-b78e-4e0f-8040-e9fd7a84dc02: Apply # Apply
     afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
+    b3e9cdaa-43c9-498a-bbab-42cad816e875: Button # Button
     b7b36318-f071-4097-8730-a77ac7b5fe96: 'RTE - Simple Text' # RTE - Simple Text
     b9fcd03b-b339-45a2-a20c-a1ad70811bfb: Benefits # Benefits
     b12f7f4a-e079-45fe-9285-fdd1643c6db6: 'Author Thumb' # Author Thumb
+    b30c7324-129a-47c8-b2a1-109d011ee287: 'Services Section' # Services Section
     b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
     b421bd1c-2476-4b2e-99f3-997e88b3f7df: 'Our People' # Our People
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
@@ -193,10 +232,11 @@ meta:
     cfe1f9f6-7ba4-4eec-af4d-d8fcd8687f6d: 'Text / Image Cards' # Text / Image Cards
     d1fc2d2e-2b87-44e9-83dc-bf4de8243e18: 'Text Image Grid' # Text Image Grid
     d6b4db56-93c1-47b7-99a7-d1b453b1c281: CTAs # CTAs
-    d6c8cf87-bfda-4180-803b-408375d5b40b: Apply # Apply
+    d6c8cf87-bfda-4180-803b-408375d5b40b: 'Apply Page' # Apply Page
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
     d54816d2-a954-46ab-b48e-ee1b79a75db5: 'Youtube Video' # Youtube Video
+    db0eba9c-e40f-4df7-a5af-e0bd0d7d46cf: 'Articles & News Section' # Articles & News Section
     dd713845-af4e-4e60-9d0a-171d3ed41bb9: 'About Us' # About Us
     df45790b-b0f0-427e-89e2-4767cbbf719c: Jobs # Jobs
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
@@ -278,7 +318,7 @@ system:
   live: true
   name: 'Halo Hair Group'
   retryDuration: null
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.5.0.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

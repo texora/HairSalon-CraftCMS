@@ -1,13 +1,13 @@
 columnSuffix: null
-handle: jobBenefits
+handle: textWImageCards
 instructions: null
-name: 'Job Benefits'
+name: 'Text w/ Image Cards'
 searchable: false
 settings:
-  createButtonLabel: Add
+  createButtonLabel: 'New Card'
   defaultIndexViewMode: cards
   entryTypes:
-    - 4bf1c1f4-99ad-4552-a05e-55e3c79d1f67 # Job Benefits
+    - 2d148f8f-2d96-4924-a878-745d3c6c6eed # Text w/ Image
   includeTableView: false
   maxEntries: null
   minEntries: null

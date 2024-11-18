@@ -1,0 +1,133 @@
+color: orange
+fieldLayouts:
+  2087f2c4-b622-4736-a7f1-858255a88b71:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: sectionHeading
+            includeInCards: false
+            instructions: null
+            label: 'Section Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4f672a1-2d61-47e7-8aa9-7c4a52c4550c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4e4e052-1851-448e-9b5f-087722797b12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta1
+            includeInCards: false
+            instructions: null
+            label: 'CTA 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1af580bc-f85e-4105-9d22-841017833ece
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: ctaText
+            includeInCards: false
+            instructions: null
+            label: 'CTA Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5aaa8c84-b67f-402d-ad2c-48b630f3e950
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta2
+            includeInCards: false
+            instructions: null
+            label: 'CTA 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea071886-fe4f-4354-81c3-5afbb8170e7c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta3
+            includeInCards: false
+            instructions: null
+            label: 'CTA 3'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa34f072-23a8-4a30-9776-5204b1c2ce15
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-18T05:14:45+00:00'
+            elementCondition: null
+            fieldUid: c9c531be-d612-42d8-9bf3-a7acc503af2d # Job Benefits
+            handle: features
+            includeInCards: false
+            instructions: null
+            label: Features
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b279d1c1-ae64-466c-aa57-e0c693f2cb84
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f0c94ef3-efa4-4fce-966d-1c4df428f0cf
+        userCondition: null
+handle: featuresWCtasSection
+hasTitleField: false
+icon: sidebar
+name: 'Features w/ CTAs Section'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

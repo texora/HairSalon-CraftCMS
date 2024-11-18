@@ -25,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -231,7 +231,7 @@ fieldLayouts:
 handle: aboutUs
 hasTitleField: true
 icon: ''
-name: 'About Us'
+name: 'About Us Page'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

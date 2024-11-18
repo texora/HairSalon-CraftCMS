@@ -1,6 +1,6 @@
-color: green
+color: null
 fieldLayouts:
-  51c4cf31-406a-4c76-849a-1a9aab716a80:
+  9c558655-0d6c-4aa6-8526-cacaa0e6e5e6:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-09-22T06:08:05+00:00'
+            dateAdded: '2024-10-16T11:30:00+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: Heading
+            label: null
             max: null
             min: null
             name: null
@@ -31,46 +31,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 0d0ae655-4518-4bfe-8459-b6adb31633eb
+            uid: 8ac9c8e7-dd9e-47f0-b357-e85a9e80e79a
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2024-11-18T05:50:50+00:00'
+            dateAdded: '2024-10-16T11:31:39+00:00'
             elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: subheading
+            fieldUid: 96afe1ed-1049-4810-88fc-7c06133c2e03 # RTE - Full
+            handle: pageContent
             includeInCards: false
             instructions: null
-            label: Subheading
+            label: 'Page Content'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2adba5f3-df98-48b3-9290-46a4c23937b1
+            uid: 6e218535-13d4-47eb-8313-766f5643cf8f
             userCondition: null
             warning: null
-            width: 50
+            width: 100
+        name: Content
+        uid: 9f55e453-29f0-4843-84dd-63f009c4caba
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
-            dateAdded: '2024-10-22T10:59:24+00:00'
+            dateAdded: '2024-10-16T11:31:39+00:00'
             elementCondition: null
-            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
-            handle: text
-            includeInCards: false
-            instructions: null
-            label: Text
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cba54c5b-f987-44c1-a8d8-70574119e480
-            userCondition: null
-            warning: null
-            width: 75
-          -
-            dateAdded: '2024-09-22T06:10:31+00:00'
-            elementCondition: null
-            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
             handle: null
             includeInCards: false
             instructions: null
@@ -79,19 +69,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b50b52b5-8ef7-4236-8239-25c8b4df3c21
+            uid: 32934a0d-ac75-4b08-8280-e028be8977f5
             userCondition: null
             warning: null
-            width: 25
-        name: Content
-        uid: 6626a1ac-07a4-4588-a778-7005078114ab
+            width: 100
+        name: SEO
+        uid: 18f8de69-430f-445a-bf7c-e4f7dd6f4b98
         userCondition: null
-handle: textWImage
+handle: contentPage
 hasTitleField: true
-icon: id-card
-name: 'Text w/ Image'
-showSlugField: false
-showStatusField: false
+icon: ''
+name: 'Content Page'
+showSlugField: true
+showStatusField: true
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''

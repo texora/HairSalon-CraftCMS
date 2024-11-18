@@ -1,0 +1,67 @@
+color: cyan
+fieldLayouts:
+  861d0d61-e677-4fa0-bcf3-efefe951ac9c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-18T05:38:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: 'Section Heading'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2ec4a13b-8b92-4e78-a0f1-1e81fa91b81e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-18T05:40:28+00:00'
+            elementCondition: null
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a4409da-6c8f-42e9-8c19-1b66bdada4ad
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ebd97994-9eea-4b46-84b3-9b9dcd4e4209
+        userCondition: null
+handle: newsletterSubscribeSection
+hasTitleField: true
+icon: envelope
+name: 'Newsletter Subscribe Section'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

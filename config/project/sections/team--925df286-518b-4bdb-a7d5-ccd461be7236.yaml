@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 8f985adb-f8ad-4b76-acd5-678c5e7c8e6d # Vacancies Page
-handle: vacancies
+  - 0760dd42-e38c-4c5c-af04-3c9b32d0b198 # Team
+handle: team
 maxAuthors: 1
-name: Vacancies
+name: Team
 previewTargets:
   -
     __assoc__:
@@ -21,7 +21,7 @@ propagationMethod: all
 siteSettings:
   4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
     enabledByDefault: true
-    hasUrls: true
-    template: _sections/vacancies/_entry.twig
-    uriFormat: vacancies
-type: single
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

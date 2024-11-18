@@ -1,0 +1,67 @@
+color: lime
+fieldLayouts:
+  b65ecfda-44da-44fa-93c4-c81061fb94ae:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-18T05:17:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: 'Section Heading'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 395d9ca4-682d-4b74-99f2-1bc975ee363a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-18T05:19:26+00:00'
+            elementCondition: null
+            fieldUid: 2a6cc5eb-ab48-4ac5-86af-300d612709dc # Team Members
+            handle: null
+            includeInCards: false
+            instructions: 'If no team member is selected then it will be shown from Team section (members which are assigned to this local salon).'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 951bb1e4-a543-46f9-bdf6-d28a04fb1705
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3ddbee25-b6db-4c4a-91c0-93aed6d7766f
+        userCondition: null
+handle: teamSection
+hasTitleField: true
+icon: users
+name: 'Team Section'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

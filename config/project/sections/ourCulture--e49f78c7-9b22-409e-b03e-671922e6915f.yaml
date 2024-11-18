@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 8bcdb7ac-055d-4548-9cda-bd6a68b501d5 # Our Culture
+  - 8bcdb7ac-055d-4548-9cda-bd6a68b501d5 # Our Culture Page
 handle: ourCulture
 maxAuthors: 1
 name: 'Our Culture'

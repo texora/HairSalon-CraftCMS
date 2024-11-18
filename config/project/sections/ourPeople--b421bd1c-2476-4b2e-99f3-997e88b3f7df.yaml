@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 69dd3687-8b36-4e2c-b797-7ed6b86a8ee8 # Our People
+  - 69dd3687-8b36-4e2c-b797-7ed6b86a8ee8 # Our People Page
 handle: ourPeople
 maxAuthors: 1
 name: 'Our People'

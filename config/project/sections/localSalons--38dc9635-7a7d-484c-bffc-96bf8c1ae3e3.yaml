@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 6011565c-f9ba-4a4c-8a5d-97013226a35a # Rollout Plans
-handle: rolloutPlans
+handle: localSalons
 maxAuthors: 1
-name: 'Rollout Plans'
+name: 'Local Salons'
 propagationMethod: all
 siteSettings:
   4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group

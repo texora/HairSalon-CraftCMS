@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 1e7969e0-4dc9-4153-886d-a1985e4b0766 # About Us
+  - 1e7969e0-4dc9-4153-886d-a1985e4b0766 # About Us Page
 handle: aboutUs
 maxAuthors: 1
 name: 'About Us'

@@ -25,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -99,8 +99,106 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-        name: Content
+        name: 'Opening Detail'
         uid: 45091198-6547-4036-aa85-4d1135c1e130
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-17T12:32:42+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: heroImage
+            includeInCards: false
+            instructions: null
+            label: 'Hero Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63bd51d7-4918-45c1-a612-a423c636fb03
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-17T12:32:42+00:00'
+            elementCondition: null
+            fieldUid: cf0e65ca-30ab-4935-927a-fcd42d5112b6 # Video
+            handle: heroVideo
+            includeInCards: false
+            instructions: null
+            label: 'Hero Video'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25c679e4-f93d-4d55-8504-5a9f77bfc67a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-17T12:32:42+00:00'
+            elementCondition: null
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: heroText
+            includeInCards: false
+            instructions: null
+            label: 'Hero Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fb500f79-97b6-4662-81ce-f20e828c2371
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Page Hero'
+        uid: 142cd355-dee2-4002-b617-3bd8ee7f0751
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-18T06:45:15+00:00'
+            elementCondition: null
+            fieldUid: 32ebdec2-6e1e-46de-8c50-f18ddfbde228 # Local Salon Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df6dd13c-6040-4e10-9dfa-316cbb8f52a1
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Page Content'
+        uid: 5c196bfa-7396-4cec-bb3a-484885441334
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-18T06:45:15+00:00'
+            elementCondition: null
+            fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6882cbc-fdd1-4c2d-9942-656dc1ebb4dd
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Page SEO'
+        uid: 74b6a757-f1f7-4e01-8755-4419f5d03699
         userCondition: null
 handle: rolloutPlans
 hasTitleField: true
@@ -108,8 +206,8 @@ icon: ''
 name: 'Rollout Plans'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site
