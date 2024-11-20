@@ -1,4 +1,4 @@
-dateModified: 1732021827
+dateModified: 1732084846
 elementSources:
   craft\elements\Entry:
     -
@@ -90,7 +90,17 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:3caf09ec-53df-4e14-a191-76ad960d2171' # Services
+      tableAttributes:
+        - status
+        - postDate
+        - authors
+        - link
       type: native
     -
       key: 'section:925df286-518b-4bdb-a7d5-ccd461be7236' # Team
@@ -212,9 +222,11 @@ meta:
     812c0fbf-668a-47f6-b48f-433f3e4d5550: 'Image Cards' # Image Cards
     822d8c30-81b1-4042-b211-0f5bf17fe786: Darlington # Darlington
     925df286-518b-4bdb-a7d5-ccd461be7236: Team # Team
+    978b3c92-4e18-4829-b037-0a0c198f3a67: 'Heading Position' # Heading Position
     1290b18c-3072-4138-8fd2-b4808503a83f: 'Text w/ Image Cards' # Text w/ Image Cards
     3777c10e-da81-4c0b-9f87-85cb8bd27b14: 'Article & News' # Article & News
     5241ddf9-1a26-4245-babb-b5b96cbea919: Durham # Durham
+    6237cfb7-a277-4a24-83f1-baadcffccf14: 'Styled Cards' # Styled Cards
     6405f652-9433-4c53-9feb-e2324d8b8973: 'Content Page' # Content Page
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Benefit Pages' # Benefit Pages
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
@@ -240,6 +252,7 @@ meta:
     b30c7324-129a-47c8-b2a1-109d011ee287: 'Services Section' # Services Section
     b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
     b421bd1c-2476-4b2e-99f3-997e88b3f7df: 'Our People' # Our People
+    bbe95096-cb61-466c-b699-4d5e43ea42f9: 'Heading Style' # Heading Style
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
     c9c531be-d612-42d8-9bf3-a7acc503af2d: 'Job Benefits' # Job Benefits
     c15e8516-7e75-4c32-b6a2-98d2d78dba3e: Cards # Cards
@@ -256,6 +269,7 @@ meta:
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
     d54816d2-a954-46ab-b48e-ee1b79a75db5: 'Youtube Video' # Youtube Video
+    d9978140-66dc-440e-8058-42ac5ced68bf: 'Styled Cards' # Styled Cards
     db0eba9c-e40f-4df7-a5af-e0bd0d7d46cf: 'Articles & News Section' # Articles & News Section
     dba1f4d5-7074-4028-8aa4-6b32b64e86ab: Features # Features
     dd713845-af4e-4e60-9d0a-171d3ed41bb9: 'About Us' # About Us

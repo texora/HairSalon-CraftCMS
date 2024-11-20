@@ -1,5 +1,20 @@
-<header class="main-header-top w-100 position-fixed top-0">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
+<header class="main-header-top w-100 top-0">
+     <div class="header-top-bar bg-silver-light py-2">
+         <div class="container">
+             <div class="text-black d-flex flex-wrap gap-2 justify-content-between align-items-center">
+                 <div>
+                     <a class="text-uppercase" href="#">HALO HAIR GROUP</a>
+                 </div>
+                 <div>
+                    <ul class="d-flex gap-3 list-unstyled mb-0">
+                         <li><a class="text-uppercase" href="#">JOBS</a></li>
+                         <li><a class="text-uppercase" href="#">SELECT A SALON</a></li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-brown">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}

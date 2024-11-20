@@ -204,8 +204,8 @@ handle: rolloutPlans
 hasTitleField: true
 icon: ''
 name: 'Rollout Plans'
-showSlugField: false
-showStatusField: false
+showSlugField: true
+showStatusField: true
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''

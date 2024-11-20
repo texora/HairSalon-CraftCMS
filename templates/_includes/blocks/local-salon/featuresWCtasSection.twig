@@ -9,7 +9,7 @@
             {% set image = block.image.eagerly().one() %}
             {% if image %}
                 <div class="col-12 col-lg-6">
-                    <div class="visit-image position-relative overlay d-flex justify-content-end flex-column" style="background-image: url({{ image.url }});">
+                    <div class="visit-image position-relative overlay-bg-gradient d-flex justify-content-end flex-column" style="background-image: url({{ image.url }});">
                         <div class="book-now position-relative z-2 text-white">
                             {{ block.imageOverlappingText }}
                             <div class="group-btn mt-3 d-inline-flex flex-column gap-3">

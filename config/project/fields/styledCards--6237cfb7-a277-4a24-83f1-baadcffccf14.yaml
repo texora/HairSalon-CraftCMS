@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: styledCards
+instructions: null
+name: 'Styled Cards'
+searchable: false
+settings:
+  createButtonLabel: 'Add Card'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - d9978140-66dc-440e-8058-42ac5ced68bf # Styled Cards
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

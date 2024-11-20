@@ -1,7 +1,7 @@
-{% set totalCards = block.textWImageCards.count() %}
+{% set totalCards = block.imageCards.count() %}
 {% set offset = ceil( totalCards / 2 ) %}
-{% set cards1 = block.textWImageCards.limit(offset).all() %}
-{% set cards2 = block.textWImageCards.limit(offset).offset(offset).all() %}
+{% set cards1 = block.imageCards.limit(offset).all() %}
+{% set cards2 = block.imageCards.limit(offset).offset(offset).all() %}
 <section class="grid-two-columns py-100">
     <div class="container max-container">
         <div class="row space-x-4 row-gap-md-5 row-gap-4">
@@ -15,13 +15,25 @@
                             {% endif %}
                             {% if card.subheading %}
                                 <div class="caption-title position-absolute end-0 z-2">
-                                    <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.subheading }}</a>
+                                    <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.subheading|nl2br }}</a>
                                 </div>
                             {% endif %}
-                            {% if card.title %}
-                                <div class="card-img-overlay text-white z-2 px-sm-4 p-3">
-                                   <h4>{{ card.title }}</h4>
-                                </div>
+                            {% if card.heading %}
+                                {% if card.headingStyle == 'text' %}
+                                    <div class="card-img-overlay text-white z-2 px-sm-4 p-3">
+                                       <h4>{{ card.heading|nl2br }}</h4>
+                                    </div>
+                                {% elseif card.headingStyle == 'button' %}
+                                    {% if card.headingPosition == 'leftBottom' %}
+                                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                                            <a class="bg-brown text-white p-3 d-inline-block">{{ card.heading|nl2br }}</a>
+                                        </div>
+                                    {% elseif card.headingPosition == 'rightBottom' %}
+                                        <div class="caption-title caption-title-bottom position-absolute end-0 z-2">
+                                            <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.heading|nl2br }}</a>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
                             {% endif %}
                         </div>
                         <div class="card-body px-0">
@@ -31,7 +43,7 @@
                 {% endfor %}
             </div>
             <div class="col-12 col-md-6 d-flex flex-column row-gap-md-5 row-gap-4">
-                {% for card in cards1 %}
+                {% for card in cards2 %}
                     {% set image = card.image.eagerly().one() %}
                     <div class="card border-0 rounded-0">
                         <div class="card-image position-relative overlay">
@@ -43,10 +55,22 @@
                                     <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.subheading }}</a>
                                 </div>
                             {% endif %}
-                            {% if card.title %}
-                                <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
-                                    <a class="bg-brown text-white p-3 d-inline-block">{{ card.title }}</a>
-                                </div>
+                            {% if card.heading %}
+                                {% if card.headingStyle == 'text' %}
+                                    <div class="card-img-overlay text-white z-2 px-sm-4 p-3">
+                                       <h4>{{ card.heading|nl2br }}</h4>
+                                    </div>
+                                {% elseif card.headingStyle == 'button' %}
+                                    {% if card.headingPosition == 'leftBottom' %}
+                                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                                            <a class="bg-brown text-white p-3 d-inline-block">{{ card.heading|nl2br }}</a>
+                                        </div>
+                                    {% elseif card.headingPosition == 'rightBottom' %}
+                                        <div class="caption-title caption-title-bottom position-absolute end-0 z-2">
+                                            <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.heading|nl2br }}</a>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
                             {% endif %}
                         </div>
                         <div class="card-body px-0">

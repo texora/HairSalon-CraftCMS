@@ -24,4 +24,7 @@ siteSettings:
     hasUrls: true
     template: services/_entry.twig
     uriFormat: 'services/{slug}'
-type: channel
+structure:
+  maxLevels: 1
+  uid: 7756dbe0-dc64-4ddf-85a5-f5e3e3be3e00
+type: structure

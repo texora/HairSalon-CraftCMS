@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: headingPosition
+instructions: null
+name: 'Heading Position'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Right Bottom'
+        -
+          - value
+          - rightBottom
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Left Bottom'
+        -
+          - value
+          - leftBottom
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

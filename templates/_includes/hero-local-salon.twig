@@ -1,7 +1,7 @@
 {% set heroImage = entry.heroImage.eagerly().one() %}
 {% set heroVideo = entry.heroVideo.eagerly().one() %}
 {% if heroImage %}
-    <section class="banner-section overlay position-relative" style="background: url({{ heroImage.url }});">
+    <section class="banner-section overlay position-relative" style="background-image: url({{ heroImage.url }});">
         <div class="container">
             <div class="row align-items-center row-gap-4 position-relative z-2 text-white">
                 <div class="col-12 col-lg-6">

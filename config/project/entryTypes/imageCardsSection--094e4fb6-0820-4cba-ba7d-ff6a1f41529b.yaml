@@ -6,18 +6,18 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-11-18T06:44:13+00:00'
+            dateAdded: '2024-11-20T06:39:10+00:00'
             elementCondition: null
-            fieldUid: 1290b18c-3072-4138-8fd2-b4808503a83f # Text w/ Image Cards
-            handle: null
+            fieldUid: 6237cfb7-a277-4a24-83f1-baadcffccf14 # Styled Cards
+            handle: imageCards
             includeInCards: false
             instructions: null
-            label: null
+            label: 'Image Cards'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ad8fc380-05ac-4c45-8853-0ed8aac23a37
+            uid: fc8204c1-166a-4d61-8769-d594c197eaad
             userCondition: null
             warning: null
             width: 100

@@ -10,7 +10,7 @@
         {% set staticCardImage = block.staticCardImage.eagerly().one() %}
         <div class="row gx-xl-60 row-gap-4 row-gap-md-5">
             <div class="col-12 col-lg-6 d-flex flex-column row-gap-4 row-gap-md-5">
-                <div class="card overlay border-0 rounded-0 text-display-lg">
+                <div class="card overlay-bg-gradient border-0 rounded-0 text-display-lg">
                     <div class="card-image position-relative">
                         {% set featuredImage = latestNews.featuredImage.eagerly().one() %}
                         {% if featuredImage %}
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 {% if staticCardImage %}
-                    <div class="card overlay border-0 rounded-0 text-display-lg">
+                    <div class="card overlay-bg-gradient border-0 rounded-0 text-display-lg">
                         <div class="card-image position-relative">
                             <img class="img-fluid object-fit-cover large-image-lg" src="{{ staticCardImage.url }}" alt="{{ staticCardImage.title }}">
                             <div class="card-img-overlay text-white z-3 p-32">
@@ -34,7 +34,7 @@
                         </div>   
                     </div>
                 {% endif %}
-                <div class="card overlay border-0 rounded-0 text-display-lg">
+                <div class="card overlay-bg-gradient border-0 rounded-0 text-display-lg">
                     <div class="card-image position-relative">
                         {% set featuredImage = latestNews1.featuredImage.eagerly().one() %}
                         {% if featuredImage %}
@@ -61,7 +61,7 @@
                     <div class="col-12 col-md-6 d-flex flex-column row-gap-4 row-gap-md-5">
                         {% for news in otherNews1 %}
                             {% set featuredImage = news.featuredImage.eagerly().one() %}
-                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay{% endif %}">
+                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay-bg-gradient{% endif %}">
                                 <div class="card-image position-relative">
                                     {% if featuredImage %}
                                         <img class="img-fluid object-fit-cover{% if loop.index % 2 == 0 %} large-image-md2{% endif %}" src="{{ featuredImage.url }}" alt="{{ news.title }}" />
@@ -81,7 +81,7 @@
                     <div class="col-12 col-md-6 d-flex flex-column row-gap-4 row-gap-md-5">
                         {% for news in otherNews2 %}
                             {% set featuredImage = news.featuredImage.eagerly().one() %}
-                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay{% endif %}">
+                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay-bg-gradient{% endif %}">
                                 <div class="card-image position-relative">
                                     <img class="img-fluid object-fit-cover{% if loop.index % 2 == 0 %} large-image-md2{% else %} large-image-md{% endif %}" src="{{ featuredImage.url }}" alt="{{ news.title }}">
                                     <div class="card-img-overlay{% if loop.index % 2 == 0 %} text-white z-3 px-sm-4 p-3{% else %} position-relative px-0 pb-0{% endif %}">

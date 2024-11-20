@@ -24,4 +24,7 @@ siteSettings:
     hasUrls: false
     template: null
     uriFormat: null
-type: channel
+structure:
+  maxLevels: 1
+  uid: f16ecfd3-c3f6-4a55-b790-fed63740bae0
+type: structure
