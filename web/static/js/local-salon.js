@@ -2,7 +2,7 @@ $("document").ready(function() {
 
     $(function() {
         $(window).on("scroll", function() {
-            if ($(window).scrollTop() > 60) {
+            if ($(window).scrollTop() > 130) {
                 $(".main-header-top").addClass("activeheader");
             } else {
                 //remove the background property so it comes transparent again (defined in your css)

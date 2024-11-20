@@ -1,0 +1,17 @@
+{% extends "_layouts/local-salon" %}
+
+{% set bodyClass = '' %}
+
+{% block main %}
+
+{% cache using key 'local-salon-' ~ entry.slug %}
+
+    {% include '_includes/hero-local-salon' %}
+
+    {% for block in entry.localSalonContent.all() %}
+        {% include '_includes/blocks/local-salon/' ~ block.type ignore missing %}
+    {% endfor %}
+
+{% endcache %}
+
+{% endblock %}

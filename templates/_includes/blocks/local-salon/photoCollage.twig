@@ -1,13 +1,13 @@
 {% set photoCollage1 = block.photoCollage.eagerly().one() %}
-{% set photoCollage2 = block.photoCollage.eagerly().nth(1) %}
-{% set photoCollage3 = block.photoCollage.eagerly().nth(2) %}
-{% set photoCollage4 = block.photoCollage.eagerly().nth(3) %}
-{% set photoCollage5 = block.photoCollage.eagerly().nth(4) %}
-{% set photoCollage6 = block.photoCollage.eagerly().nth(5) %}
-{% set photoCollage7 = block.photoCollage.eagerly().nth(6) %}
-{% set photoCollage8 = block.photoCollage.eagerly().nth(7) %}
-{% set photoCollage9 = block.photoCollage.eagerly().nth(8) %}
-{% set photoCollage10 = block.photoCollage.eagerly().nth(9) %}
+{% set photoCollage2 = block.photoCollage.nth(1) %}
+{% set photoCollage3 = block.photoCollage.nth(2) %}
+{% set photoCollage4 = block.photoCollage.nth(3) %}
+{% set photoCollage5 = block.photoCollage.nth(4) %}
+{% set photoCollage6 = block.photoCollage.nth(5) %}
+{% set photoCollage7 = block.photoCollage.nth(6) %}
+{% set photoCollage8 = block.photoCollage.nth(7) %}
+{% set photoCollage9 = block.photoCollage.nth(8) %}
+{% set photoCollage10 = block.photoCollage.nth(9) %}
 <section class="full-width-image position-relative mx-auto">
     <div class="image-collage d-flex flex-lg-nowrap">
             <div class="image-collage-box image-collage-1 w-100 h-100">
@@ -36,7 +36,7 @@
                             {% if photoCollage6 %}
                                 <img class="w-100 h-100 img-fluid object-fit-cover vertical-image-1" src="{{ photoCollage6.url }}" alt="{{ photoCollage6.title }}">
                             {% endif %}
-                            {% if photoCollage7 is defined %}
+                            {% if photoCollage7 %}
                                 <img class="w-100 h-100 img-fluid object-fit-cover" src="{{ photoCollage7.url }}" alt="{{ photoCollage7.url }}">
                             {% endif %}
                         </div>
