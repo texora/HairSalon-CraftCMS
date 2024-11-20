@@ -9,7 +9,7 @@
                 {% for card in cards1 %}
                     {% set image = card.image.eagerly().one() %}
                     <div class="card border-0 rounded-0">
-                        <div class="card-image position-relative overlay">
+                        <div class="card-image position-relative">
                             {% if image %}
                                 <img class="img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}" />
                             {% endif %}
@@ -46,7 +46,7 @@
                 {% for card in cards2 %}
                     {% set image = card.image.eagerly().one() %}
                     <div class="card border-0 rounded-0">
-                        <div class="card-image position-relative overlay">
+                        <div class="card-image position-relative">
                             {% if image %}
                                 <img class="img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}">
                             {% endif %}

@@ -20,7 +20,7 @@
                 {% set photo = teamMember.photo.eagerly().one() %}
                 <div class="slide">
                     <div class="card border-0">
-                        <div class="card-image overlay position-relative">
+                        <div class="card-image position-relative">
                             {% if photo %}
                                 <img class="img-fluid object-fit-cover" src="{{ photo.url }}" alt="{{ teamMember.title }}" />
                             {% endif %}
