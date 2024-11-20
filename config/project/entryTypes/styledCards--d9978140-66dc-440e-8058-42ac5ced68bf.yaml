@@ -60,7 +60,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: 'Button Heading Position'
             providesThumbs: false
             required: false
             tip: null
