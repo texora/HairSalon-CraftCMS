@@ -1,0 +1,37 @@
+<section class="our-services py-5">
+    <div class="container">
+        {% if block.title %}
+            <div class="section-title mb-4 mb-md-5">
+                <h2>{{ block.title }}</h2>
+            </div>
+        {% endif %}
+        <div class="our-services-slider horizontal-space custom-arrow" id="our-services-slider">
+            {% if block.services.count() %}
+                {% set services = block.services.eagerly().all() %}
+            {% else %}
+                {% set serviceEntries = craft.entries().section('services').relatedTo(entry).site('default').limit(10) %}
+                {% if serviceEntries.count() %}
+                    {% set services = serviceEntries.all() %}
+                {% else %}
+                    {% set services = craft.entries().section('services').site('default').limit(10).all() %}
+                {% endif %}
+            {% endif %}
+            {% for service in services %}
+                {% set image = service.serviceImage.eagerly().one() %}
+                <div class="slide">
+                    <div class="card border-0">
+                        {% if image %}
+                            <div class="card-image">
+                                <img class="img-fluid" src="{{ image.url }}" alt="{{ service.title }}" />
+                            </div>
+                        {% endif %}
+                        <div class="card-body px-0">
+                            <h4>{{ service.title }}</h4>
+                            <p>{{ service.serviceDescription|striptags|truncate(200, '...') }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,103 @@
+<section class="news-section pt-5 pb-100">
+    <div class="container">
+        {% if block.title %}
+            <div class="section-title mb-4 mb-md-5">
+                <h2>{{ block.title }}</h2>
+            </div>
+        {% endif %}
+        {% set latestNews = craft.entries().section('articleNews').orderBy('postDate DESC').site('default').one() %}
+        {% set latestNews1 = craft.entries().section('articleNews').orderBy('postDate DESC').site('default').offset(1).one() %}
+        {% set staticCardImage = block.staticCardImage.eagerly().one() %}
+        <div class="row gx-xl-60 row-gap-4 row-gap-md-5">
+            <div class="col-12 col-lg-6 d-flex flex-column row-gap-4 row-gap-md-5">
+                <div class="card overlay border-0 rounded-0 text-display-lg">
+                    <div class="card-image position-relative">
+                        {% set featuredImage = latestNews.featuredImage.eagerly().one() %}
+                        {% if featuredImage %}
+                            <img class="img-fluid object-fit-cover large-image-xl" src="{{ featuredImage.url }}" alt="{{ latestNews.title }}" />
+                        {% endif %}
+                        <div class="card-img-overlay text-white z-3 p-32">
+                            <div class="mb-3"><span class="tag bg-white text-black px-3 py-1 rounded-5 text-uppercase d-inline-block">LATEST</span></div>
+                            <h4 class="mb-md-4 mb-3"><a href="{{ latestNews.url }}">{{ latestNews.title }}</a></h4>
+                            <p>By {{ latestNews.author.fullName }}</p>
+                            <p>{{ latestNews.postDate|date('jS F, Y') }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% if staticCardImage %}
+                    <div class="card overlay border-0 rounded-0 text-display-lg">
+                        <div class="card-image position-relative">
+                            <img class="img-fluid object-fit-cover large-image-lg" src="{{ staticCardImage.url }}" alt="{{ staticCardImage.title }}">
+                            <div class="card-img-overlay text-white z-3 p-32">
+                                <h4 class="mb-md-4 mb-3">{{ block.staticCardText }}</h4>
+                            </div>
+                        </div>   
+                    </div>
+                {% endif %}
+                <div class="card overlay border-0 rounded-0 text-display-lg">
+                    <div class="card-image position-relative">
+                        {% set featuredImage = latestNews1.featuredImage.eagerly().one() %}
+                        {% if featuredImage %}
+                            <img class="img-fluid object-fit-cover large-image-xl" src="{{ featuredImage.url }}" alt="{{ latestNews1.title }}" />
+                        {% endif %}
+                        <div class="card-img-overlay text-white z-3 p-32">
+                            {% if latestNews1.articleNewsCategories.count() %}
+                                <div class="mb-3"><span class="tag bg-white text-black px-3 py-1 rounded-5 text-uppercase d-inline-block">{{ latestNews1.articleNewsCategories.one().title }}</span></div>
+                            {% endif %}
+                            <h4 class="mb-md-4 mb-3"><a href="{{ latestNews1.url }}">{{ latestNews1.title }}</a></h4>
+                            <p>By {{ latestNews1.author.fullName }}</p>
+                            <p>{{ latestNews1.postDate|date('jS F, Y') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% set otherNewsQ = craft.entries().section('articleNews').orderBy('postDate DESC').id(['not', latestNews.id, latestNews1.id]).site('default') %}
+            {% set totalNews = otherNewsQ.count() %}
+            {% set offset = ceil( totalNews / 2 ) %}
+            {% set otherNews1 = otherNewsQ.limit(offset).all() %}
+            {% set otherNews2 = otherNewsQ.limit(offset).offset(offset).all() %}
+            <div class="col-12 col-lg-6">
+                <div class="row gx-xl-60 row-gap-4 row-gap-md-5">
+                    <div class="col-12 col-md-6 d-flex flex-column row-gap-4 row-gap-md-5">
+                        {% for news in otherNews1 %}
+                            {% set featuredImage = news.featuredImage.eagerly().one() %}
+                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay{% endif %}">
+                                <div class="card-image position-relative">
+                                    {% if featuredImage %}
+                                        <img class="img-fluid object-fit-cover{% if loop.index % 2 == 0 %} large-image-md2{% endif %}" src="{{ featuredImage.url }}" alt="{{ news.title }}" />
+                                    {% endif %}
+                                    <div class="card-img-overlay {% if loop.index % 2 == 0 %}text-white z-3 px-sm-4 p-3{% else %}position-relative px-0 pb-0{% endif %}">
+                                        {% if news.articleNewsCategories.count() %}
+                                            <div class="mb-3"><span class="tag px-3 py-1 rounded-5 text-uppercase d-inline-block{% if loop.index % 2 == 0 %} bg-white text-black{% else %} bg-gray text-white{% endif %}">{{ news.articleNewsCategories.one().title }}</span></div>
+                                        {% endif %}
+                                        <h4 class="mb-md-3"><a href="{{ news.url }}">{{ news.title }}</a></h4>
+                                        <p>By {{ news.author.fullName }}</p>
+                                        <p>{{ news.postDate|date('jS F, Y') }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column row-gap-4 row-gap-md-5">
+                        {% for news in otherNews2 %}
+                            {% set featuredImage = news.featuredImage.eagerly().one() %}
+                            <div class="card border-0 rounded-0 text-display-md{% if loop.index % 2 == 0 %} overlay{% endif %}">
+                                <div class="card-image position-relative">
+                                    <img class="img-fluid object-fit-cover{% if loop.index % 2 == 0 %} large-image-md2{% else %} large-image-md{% endif %}" src="{{ featuredImage.url }}" alt="{{ news.title }}">
+                                    <div class="card-img-overlay{% if loop.index % 2 == 0 %} text-white z-3 px-sm-4 p-3{% else %} position-relative px-0 pb-0{% endif %}">
+                                        {% if news.articleNewsCategories.count() %}
+                                            <div class="mb-3"><span class="tag px-3 py-1 rounded-5 text-uppercase d-inline-block{% if loop.index % 2 == 0 %} bg-white text-black{% else %} bg-gray text-white{% endif %}">{{ news.articleNewsCategories.one().title }}</span></div>
+                                        {% endif %}
+                                        <h4 class="mb-md-3"><a href="{{ news.url }}">{{ news.title }}</a></h4>
+                                        <p>By {{ news.author.fullName }}</p>
+                                        <p>{{ news.postDate|date('jS F, Y') }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

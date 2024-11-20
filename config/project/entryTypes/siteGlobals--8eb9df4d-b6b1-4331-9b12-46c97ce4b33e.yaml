@@ -6,36 +6,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-09-21T07:17:32+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cd7ef261-806b-4e58-b2fe-2363b8f79e89
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-09-21T07:27:02+00:00'
             elementCondition: null
             fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
@@ -222,6 +192,22 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2024-11-19T11:13:27+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: bookButton
+            includeInCards: false
+            instructions: null
+            label: 'Book Button'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e65d14a-f12d-4317-b86f-159aad8b6ce5
+            userCondition: null
+            warning: null
+            width: 50
+          -
             dateAdded: '2024-10-03T02:48:19+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
@@ -290,14 +276,68 @@ fieldLayouts:
         name: 'Site Navigation'
         uid: e6de1314-dcac-4494-8ebc-b5687e026717
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-19T05:16:25+00:00'
+            elementCondition: null
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
+            handle: notificationText
+            includeInCards: false
+            instructions: null
+            label: 'Notification Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa4435e4-8a4f-438d-8507-2a783702da6f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-19T05:16:25+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: ctaText
+            includeInCards: false
+            instructions: null
+            label: 'CTA Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2b4548b-4cb3-4dc8-adcb-9a9c11556a7d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-19T05:16:49+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta1
+            includeInCards: false
+            instructions: null
+            label: CTA
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0156b6de-f436-4cf3-a638-889c4b4e4ae1
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Top Notification'
+        uid: d54209b5-663e-4966-92b0-adc8111530b3
+        userCondition: null
 handle: siteGlobals
 hasTitleField: false
 icon: ''
 name: 'Site Globals'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

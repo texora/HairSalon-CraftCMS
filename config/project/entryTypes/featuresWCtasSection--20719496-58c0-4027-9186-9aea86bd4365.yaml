@@ -6,18 +6,32 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-11-18T05:14:45+00:00'
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-19T06:27:47+00:00'
+            disabled: false
             elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: sectionHeading
+            id: null
             includeInCards: false
+            inputType: null
             instructions: null
             label: 'Section Heading'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
             providesThumbs: false
+            readonly: false
             required: false
+            size: null
+            step: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d4f672a1-2d61-47e7-8aa9-7c4a52c4550c
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 559742bc-0478-42aa-8c21-99153290fe63
             userCondition: null
             warning: null
             width: 100
@@ -36,7 +50,23 @@ fieldLayouts:
             uid: d4e4e052-1851-448e-9b5f-087722797b12
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2024-11-19T05:45:49+00:00'
+            elementCondition: null
+            fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
+            handle: imageOverlappingText
+            includeInCards: false
+            instructions: null
+            label: 'Image Overlapping Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d60484c-a6f8-4682-ba7f-2bf799705be7
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2024-11-18T05:14:45+00:00'
             elementCondition: null
@@ -56,22 +86,6 @@ fieldLayouts:
           -
             dateAdded: '2024-11-18T05:14:45+00:00'
             elementCondition: null
-            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
-            handle: ctaText
-            includeInCards: false
-            instructions: null
-            label: 'CTA Text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5aaa8c84-b67f-402d-ad2c-48b630f3e950
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-11-18T05:14:45+00:00'
-            elementCondition: null
             fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
             handle: cta2
             includeInCards: false
@@ -81,39 +95,23 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ea071886-fe4f-4354-81c3-5afbb8170e7c
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-11-18T05:14:45+00:00'
-            elementCondition: null
-            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
-            handle: cta3
-            includeInCards: false
-            instructions: null
-            label: 'CTA 3'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
             uid: fa34f072-23a8-4a30-9776-5204b1c2ce15
             userCondition: null
             warning: null
             width: 50
           -
-            dateAdded: '2024-11-18T05:14:45+00:00'
+            dateAdded: '2024-11-19T06:12:30+00:00'
             elementCondition: null
-            fieldUid: c9c531be-d612-42d8-9bf3-a7acc503af2d # Job Benefits
-            handle: features
+            fieldUid: 2c098971-cf38-4baf-99ba-c248dd975d79 # Features
+            handle: null
             includeInCards: false
             instructions: null
-            label: Features
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b279d1c1-ae64-466c-aa57-e0c693f2cb84
+            uid: 46b33b2c-72c2-450c-b500-cfaf39b8316e
             userCondition: null
             warning: null
             width: 100
@@ -121,7 +119,7 @@ fieldLayouts:
         uid: f0c94ef3-efa4-4fce-966d-1c4df428f0cf
         userCondition: null
 handle: featuresWCtasSection
-hasTitleField: false
+hasTitleField: true
 icon: sidebar
 name: 'Features w/ CTAs Section'
 showSlugField: false

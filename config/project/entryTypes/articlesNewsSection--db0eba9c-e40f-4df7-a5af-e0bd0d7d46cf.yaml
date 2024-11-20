@@ -36,6 +36,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-11-19T07:24:05+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: staticCardImage
+            includeInCards: false
+            instructions: null
+            label: 'Static Card Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92649112-d8c8-4870-9e8e-8bb97cdf9fc2
+            userCondition: null
+            warning: null
+            width: 50
+          -
             dateAdded: '2024-11-18T05:28:16+00:00'
             elementCondition: null
             fieldUid: b7b36318-f071-4097-8730-a77ac7b5fe96 # RTE - Simple Text
@@ -50,7 +66,7 @@ fieldLayouts:
             uid: bc278004-1b75-4814-bda3-75f7857e843b
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-11-18T05:28:16+00:00'
             dismissible: false

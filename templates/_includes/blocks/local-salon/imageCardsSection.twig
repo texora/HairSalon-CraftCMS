@@ -1,0 +1,60 @@
+{% set totalCards = block.textWImageCards.count() %}
+{% set offset = ceil( totalCards / 2 ) %}
+{% set cards1 = block.textWImageCards.limit(offset).all() %}
+{% set cards2 = block.textWImageCards.limit(offset).offset(offset).all() %}
+<section class="grid-two-columns py-100">
+    <div class="container max-container">
+        <div class="row space-x-4 row-gap-md-5 row-gap-4">
+            <div class="col-12 col-md-6 d-flex flex-column row-gap-md-5 row-gap-4">
+                {% for card in cards1 %}
+                    {% set image = card.image.eagerly().one() %}
+                    <div class="card border-0 rounded-0">
+                        <div class="card-image position-relative overlay">
+                            {% if image %}
+                                <img class="img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}" />
+                            {% endif %}
+                            {% if card.subheading %}
+                                <div class="caption-title position-absolute end-0 z-2">
+                                    <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.subheading }}</a>
+                                </div>
+                            {% endif %}
+                            {% if card.title %}
+                                <div class="card-img-overlay text-white z-2 px-sm-4 p-3">
+                                   <h4>{{ card.title }}</h4>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="card-body px-0">
+                           {{ card.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column row-gap-md-5 row-gap-4">
+                {% for card in cards1 %}
+                    {% set image = card.image.eagerly().one() %}
+                    <div class="card border-0 rounded-0">
+                        <div class="card-image position-relative overlay">
+                            {% if image %}
+                                <img class="img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}">
+                            {% endif %}
+                            {% if card.subheading %}
+                                <div class="caption-title position-absolute end-0 z-2">
+                                    <a class="bg-brown text-white text-end p-3 d-inline-block">{{ card.subheading }}</a>
+                                </div>
+                            {% endif %}
+                            {% if card.title %}
+                                <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                                    <a class="bg-brown text-white p-3 d-inline-block">{{ card.title }}</a>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="card-body px-0">
+                           {{ card.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

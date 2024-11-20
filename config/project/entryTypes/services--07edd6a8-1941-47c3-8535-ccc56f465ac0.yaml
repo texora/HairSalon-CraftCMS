@@ -55,7 +55,7 @@ fieldLayouts:
             dateAdded: '2024-11-17T12:13:31+00:00'
             elementCondition: null
             fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
-            handle: null
+            handle: serviceDescription
             includeInCards: false
             instructions: null
             label: 'Service Description'
@@ -64,6 +64,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: dbf2a88c-c5da-4d87-b475-f79e11c30a85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-19T06:45:19+00:00'
+            elementCondition: null
+            fieldUid: 91fc3931-66af-4a46-90cf-b0ede459b66b # Local Salons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 417e668a-2f9e-4b2c-a09a-93b5ab87f823
             userCondition: null
             warning: null
             width: 100

@@ -1,0 +1,47 @@
+{% set heroImage = entry.heroImage.eagerly().one() %}
+{% set heroVideo = entry.heroVideo.eagerly().one() %}
+{% if heroImage %}
+    <section class="banner-section overlay position-relative" style="background: url({{ heroImage.url }});">
+        <div class="container">
+            <div class="row align-items-center row-gap-4 position-relative z-2 text-white">
+                <div class="col-12 col-lg-6">
+                   <div class="banner-text-content d-flex flex-column justify-content-center h-100">
+                        {{ entry.heroText }}
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% elseif heroVideo %}
+    {% set vid = craft.embeddedAssets.get(heroVideo) %}
+    <section class="banner-video position-relative overflow-hidden">
+        <iframe class="auto-player" src="https://www.youtube.com/embed/{{ vid.getVideoId() }}?controls=0&t=31s&loop=1&playlist=nUscsykrN64&showinfo=0&rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <div class="container">
+            <div class="row align-items-center row-gap-4  text-white">
+                <div class="col-12 col-lg-6">
+                   <div class="banner-text-content position-absolute">
+                        {{ entry.heroText }}
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% js %}
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        function onYouTubeIframeAPIReady() {
+             document.querySelectorAll('.auto-player').forEach((item) => {
+                 new YT.Player(item, {
+                     events: {
+                         'onReady': (event) => {
+                             event.target.playVideo();
+                             event.target.mute();
+                         }
+                     }
+                 })
+             })
+        }
+    {% endjs %}
+{% endif %}

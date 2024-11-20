@@ -10,25 +10,25 @@ settings:
   linkTypes:
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Entry
-        -
+        1:
           - label
           - Entry
-        -
+        2:
           - handle
           - default-verbb-hyper-links-entry
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 3e0a9144-4cd5-4a12-a689-2ccc4d7b2d35
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -307,9 +307,12 @@ settings:
                               -
                                 - uid
                                 - 963d2c88-76c5-4bb7-80f9-19deda6169f8
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -910,25 +913,25 @@ settings:
                                 - 3081bd64-8a86-494e-aa00-0a3cd984a6f8
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Asset
-        -
+        1:
           - label
           - Asset
-        -
+        2:
           - handle
           - default-verbb-hyper-links-asset
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 7a7e1e51-499c-4fca-a90e-dc47b000c938
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -1207,9 +1210,12 @@ settings:
                               -
                                 - uid
                                 - ca3dd986-ff77-42c2-9358-36beb4a87688
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -1511,25 +1517,25 @@ settings:
                                 - 2666fcee-40e0-48a8-8155-ee34fe4dc85f
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Category
-        -
+        1:
           - label
           - Category
-        -
+        2:
           - handle
           - default-verbb-hyper-links-category
-        -
+        3:
           - enabled
           - false
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 12a1d087-b489-4e20-b65c-5e3ab1bea4d5
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -1808,9 +1814,12 @@ settings:
                               -
                                 - uid
                                 - 943e4078-8849-4ae3-b2ba-13324b4a1234
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -2710,28 +2719,29 @@ settings:
                                 - df2e08b4-1f72-4bc5-8da7-c5ce2136959d
         -
           - sites
-          - '*'
+          -
+            - 4fdc851f-7db3-4c90-880c-a187ac552886 # Halo Hair Group
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\User
-        -
+        1:
           - label
           - User
-        -
+        2:
           - handle
           - default-verbb-hyper-links-user
-        -
+        3:
           - enabled
           - false
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 096b69e8-b0ea-48a2-bb3b-d82fc37276c9
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -3010,9 +3020,12 @@ settings:
                               -
                                 - uid
                                 - 69c644c6-4b8a-4cb1-a3fd-c7ec11d65fe3
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
   maxLinks: null
   minLinks: null
   multipleLinks: true

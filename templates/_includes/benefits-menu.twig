@@ -1,4 +1,4 @@
-{% set jobBenefitEntry = craft.entries().section('salaryBenefits').one() %}
+{% set jobBenefitEntry = craft.entries().section('salaryBenefits').site('default').one() %}
 {% set benefitsQ = jobBenefitEntry.benefits.type('benefits') %}
 
 {% set totalBenefits = benefitsQ.count() %}

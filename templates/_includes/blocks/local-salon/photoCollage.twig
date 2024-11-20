@@ -1,0 +1,32 @@
+<section class="full-width-image position-relative">
+    <div class="row gy-4 masonry mx-0 position-relative">
+        {% for image in block.photoCollage.all() %}
+            <div class="col-6 col-md-4 px-0 mt-0"> <img class="w-100 img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}"> </div>
+        {% endfor %}
+    </div>
+    {% if block.photoCollageText %}
+        <div class="container">
+            <div class="section-title text-white position-absolute z-2 font-40">
+                {{ block.photoCollageText }}
+            </div>
+        </div>
+    {% endif %}
+</section>
+{% do view.registerJsFile('https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js') %}
+{% do view.registerJsFile('https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js') %}
+{% js %}
+    window.onload = function () {
+        var imgDefer = document.getElementsByTagName("img");
+        for (var i = 0; i < imgDefer.length; i++) {
+            if (imgDefer[i].getAttribute("data-src")) {
+                imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
+            }
+        }
+        var $container = $(".masonry");
+        $container.imagesLoaded(function () {
+            $container.masonry({
+                percentPosition: true
+            });
+        });
+    };
+{% endjs %}

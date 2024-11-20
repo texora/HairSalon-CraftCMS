@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: features
+instructions: null
+name: Features
+searchable: false
+settings:
+  createButtonLabel: 'Add Feature'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - dba1f4d5-7074-4028-8aa4-6b32b64e86ab # Features
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
