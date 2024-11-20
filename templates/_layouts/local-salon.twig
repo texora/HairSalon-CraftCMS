@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden">
-{% set siteGlobals = craft.entries().section('siteGlobals').site('default').one() %}
-{% set entry = craft.entries().section('localSalons').slug('darlington').site('default').one() %}
+{% set siteGlobals = craft.entries().section('siteGlobals').site('jobs').one() %}
+{% set entry = craft.entries().section('localSalons').slug('darlington').site('jobs').one() %}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,24 +39,6 @@
     {% do view.registerJsFile('/static/js/popper.min.js') %}
     {% do view.registerJsFile('/static/js/slick.min.js') %}
     {% do view.registerJsFile('/static/js/local-salon.js') %}
-    {% do view.registerJsFile('https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js') %}
-    {% do view.registerJsFile('https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js') %}
-    {% js %}
-        window.onload = function () {
-            var imgDefer = document.getElementsByTagName("img");
-            for (var i = 0; i < imgDefer.length; i++) {
-                if (imgDefer[i].getAttribute("data-src")) {
-                    imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
-                }
-            }
-            var $container = $(".masonry");
-            $container.imagesLoaded(function () {
-                $container.masonry({
-                    percentPosition: true
-                });
-            });
-        };
-    {% endjs %}
 
     <!-- Custom -->
     {% if pageJs is defined and pageJs|length %}

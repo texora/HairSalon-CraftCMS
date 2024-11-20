@@ -9,11 +9,11 @@
             {% if block.services.count() %}
                 {% set services = block.services.eagerly().all() %}
             {% else %}
-                {% set serviceEntries = craft.entries().section('services').relatedTo(entry).site('default').limit(10) %}
+                {% set serviceEntries = craft.entries().section('services').relatedTo(entry).site('jobs').limit(10) %}
                 {% if serviceEntries.count() %}
                     {% set services = serviceEntries.all() %}
                 {% else %}
-                    {% set services = craft.entries().section('services').site('default').limit(10).all() %}
+                    {% set services = craft.entries().section('services').site('jobs').limit(10).all() %}
                 {% endif %}
             {% endif %}
             {% for service in services %}

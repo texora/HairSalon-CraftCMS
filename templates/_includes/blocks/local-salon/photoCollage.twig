@@ -1,12 +1,65 @@
-<section class="full-width-image position-relative">
-    <div class="row gy-4 masonry mx-0 position-relative">
-        {% for image in block.photoCollage.all() %}
-            <div class="col-6 col-md-4 px-0 mt-0"> <img class="w-100 img-fluid object-fit-cover" src="{{ image.url }}" alt="{{ image.title }}"> </div>
-        {% endfor %}
+{% set photoCollage1 = block.photoCollage.eagerly().one() %}
+{% set photoCollage2 = block.photoCollage.eagerly().nth(1) %}
+{% set photoCollage3 = block.photoCollage.eagerly().nth(2) %}
+{% set photoCollage4 = block.photoCollage.eagerly().nth(3) %}
+{% set photoCollage5 = block.photoCollage.eagerly().nth(4) %}
+{% set photoCollage6 = block.photoCollage.eagerly().nth(5) %}
+{% set photoCollage7 = block.photoCollage.eagerly().nth(6) %}
+{% set photoCollage8 = block.photoCollage.eagerly().nth(7) %}
+{% set photoCollage9 = block.photoCollage.eagerly().nth(8) %}
+{% set photoCollage10 = block.photoCollage.eagerly().nth(9) %}
+<section class="full-width-image position-relative mx-auto">
+    <div class="image-collage d-flex flex-lg-nowrap">
+            <div class="image-collage-box image-collage-1 w-100 h-100">
+                {% if photoCollage1 %}
+                    <img class="w-100 img-fluid object-fit-cover" src="{{ photoCollage1.url }}" alt="{{ photoCollage1.title }}">
+                {% endif %}
+                <div class="two-images d-lg-flex flex-column flex-lg-row w-100">
+                    {% if photoCollage2 %}
+                        <img class="img-fluid object-fit-cover" src="{{ photoCollage2.url }}" alt="{{ photoCollage2.title }}">
+                    {% endif %}
+                    {% if photoCollage3 %}
+                        <img class="img-fluid object-fit-cover" src="{{ photoCollage3.url }}" alt="{{ photoCollage3.title }}">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="image-collage-box image-collage-2 w-100">
+                <div class="d-flex flex-column h-100">
+                    {% if photoCollage4 %}
+                        <img class="w-100 h-100 img-fluid object-fit-cover" src="{{ photoCollage4.url }}" alt="{{ photoCollage4.title }}">
+                    {% endif %}
+                    <div class="two-images d-lg-flex">
+                        {% if photoCollage5 %}
+                            <img class="img-fluid object-fit-cover" src=".{{ photoCollage4.url }}" alt="{{ photoCollage5.title }}">
+                        {% endif %}
+                        <div class="vertical-two-images d-lg-flex flex-column w-100">
+                            {% if photoCollage6 %}
+                                <img class="w-100 h-100 img-fluid object-fit-cover vertical-image-1" src="{{ photoCollage6.url }}" alt="{{ photoCollage6.title }}">
+                            {% endif %}
+                            {% if photoCollage7 is defined %}
+                                <img class="w-100 h-100 img-fluid object-fit-cover" src="{{ photoCollage7.url }}" alt="{{ photoCollage7.url }}">
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-collage-box image-collage-3 w-100">
+                <div class="d-flex flex-column h-100">
+                    {% if photoCollage8 %}
+                        <img class="img-fluid object-fit-cover" src="{{ photoCollage8.url }}" alt="{{ photoCollage8.title }}">
+                    {% endif %}
+                    {% if photoCollage9 %}
+                        <img class="img-fluid object-fit-cover" src="{{ photoCollage9.url }}" alt="{{ photoCollage9.title }}">
+                    {% endif %}
+                    {% if photoCollage10 %}
+                        <img class="img-fluid object-fit-cover vertical-image-3" src="{{ photoCollage10.url }}" alt="{{ photoCollage10.title }}">
+                    {% endif %}
+                </div>
+            </div>
     </div>
     {% if block.photoCollageText %}
         <div class="container">
-            <div class="section-title text-white position-absolute z-2 font-40">
+            <div class="section-title text-white position-absolute z-2 font-40 ps-sm-5">
                 {{ block.photoCollageText }}
             </div>
         </div>

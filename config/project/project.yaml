@@ -1,4 +1,4 @@
-dateModified: 1732088660
+dateModified: 1732107794
 elementSources:
   craft\elements\Entry:
     -
@@ -174,7 +174,7 @@ meta:
     2a6cc5eb-ab48-4ac5-86af-300d612709dc: 'Team Members' # Team Members
     2c098971-cf38-4baf-99ba-c248dd975d79: Features # Features
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
-    2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: Jobs # Jobs
+    2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: 'Halo Hair Group' # Halo Hair Group
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
     3b0d478f-3b10-4424-9f3c-fd2c2d304e29: 'Article & News' # Article & News
@@ -182,7 +182,7 @@ meta:
     3caf09ec-53df-4e14-a191-76ad960d2171: Services # Services
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
     4bf1c1f4-99ad-4552-a05e-55e3c79d1f67: 'Job Benefits' # Job Benefits
-    4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
+    4fdc851f-7db3-4c90-880c-a187ac552886: Jobs # Jobs
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
     5b40a23e-fc7b-48ed-b092-746f8700aa48: 'Opening Month' # Opening Month
     5c1885e7-2d6a-4df5-8de7-646816d23c2a: Benefits # Benefits

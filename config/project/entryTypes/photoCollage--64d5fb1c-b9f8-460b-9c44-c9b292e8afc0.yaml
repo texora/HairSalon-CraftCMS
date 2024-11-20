@@ -11,7 +11,7 @@ fieldLayouts:
             fieldUid: 68ba543b-e8a1-466a-9338-af5cc2d458dd # Images
             handle: photoCollage
             includeInCards: false
-            instructions: null
+            instructions: 'Please upload 10 images.'
             label: 'Photo Collage'
             providesThumbs: false
             required: false

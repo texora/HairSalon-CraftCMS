@@ -19,7 +19,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Jobs
     enabledByDefault: true
     hasUrls: true
     template: _sections/jobs/_entry.twig
