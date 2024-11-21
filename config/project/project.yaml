@@ -1,4 +1,4 @@
-dateModified: 1732164892
+dateModified: 1732188788
 elementSources:
   craft\elements\Entry:
     -
@@ -72,7 +72,6 @@ elementSources:
       tableAttributes:
         - status
         - postDate
-        - expiryDate
         - authors
         - link
       type: native
@@ -103,7 +102,16 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:925df286-518b-4bdb-a7d5-ccd461be7236' # Team
+      tableAttributes:
+        - status
+        - postDate
+        - authors
       type: native
     -
       heading: 'Job Pages'
@@ -231,7 +239,7 @@ meta:
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Benefit Pages' # Benefit Pages
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text
     875175ae-1cd7-4e52-82ea-3ba5a7a69033: Services # Services
-    6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Rollout Plans' # Rollout Plans
+    6011565c-f9ba-4a4c-8a5d-97013226a35a: 'Local Salon' # Local Salon
     20719496-58c0-4027-9186-9aea86bd4365: 'Features w/ CTAs Section' # Features w/ CTAs Section
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image

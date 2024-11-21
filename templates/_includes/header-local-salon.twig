@@ -16,12 +16,19 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light py-3 bg-brown">
         <div class="container">
-            <a class="navbar-brand" href="{{ currentSite.baseUrl }}">
+            <a class="navbar-brand" href="{{ getenv('PRIMARY_SITE_URL') }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
-                {% if logo and logo.extension == 'svg' %}
-                    {{ svg(logo) }}
+                {% set localLogo = entry.logo.eagerly().one() %}
+                {% if localLogo and currentSite.handle not in ['jobs', 'main'] %}
+                    {% if localLogo.extension == 'svg' %}
+                        {{ svg(localLogo) }}
+                    {% endif %}
                 {% else %}
-                    <img class="img-fluid" src="{{ getenv('PRIMARY_SITE_URL') ~ '/static/images/halohair-logo.svg' }}" alt="{{ siteName }}">
+                    {% if logo and logo.extension == 'svg' %}
+                        {{ svg(logo) }}
+                    {% else %}
+                        <img class="img-fluid" src="{{ getenv('PRIMARY_SITE_URL') ~ '/static/images/halohair-logo.svg' }}" alt="{{ siteName }}">
+                    {% endif %}
                 {% endif %}
             </a>
              <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

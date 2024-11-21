@@ -34,7 +34,7 @@ fieldLayouts:
             uid: f3a312df-1a06-48f3-9a31-f07401ca51a3
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-09-21T06:45:25+00:00'
             elementCondition: null
@@ -99,7 +99,23 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-        name: 'Opening Detail'
+          -
+            dateAdded: '2024-11-21T11:17:32+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: logo
+            includeInCards: false
+            instructions: null
+            label: Logo
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 54821e8c-28df-4c96-9f5c-9ae267249017
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'General Detail'
         uid: 45091198-6547-4036-aa85-4d1135c1e130
         userCondition: null
       -
@@ -200,10 +216,10 @@ fieldLayouts:
         name: 'Page SEO'
         uid: 74b6a757-f1f7-4e01-8755-4419f5d03699
         userCondition: null
-handle: rolloutPlans
+handle: localSalon
 hasTitleField: true
 icon: ''
-name: 'Rollout Plans'
+name: 'Local Salon'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''
