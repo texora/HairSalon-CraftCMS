@@ -15,7 +15,24 @@
 {% elseif heroVideo %}
     {% set vid = craft.embeddedAssets.get(heroVideo) %}
     <section class="banner-video position-relative overflow-hidden">
-        <iframe class="auto-player" src="https://www.youtube.com/embed/{{ vid.getVideoId() }}?controls=0&t=31s&loop=1&playlist=nUscsykrN64&showinfo=0&rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        {% if vid.providerName|lower == 'vimeo' %}
+            <iframe 
+                class="auto-player" 
+                src="https://player.vimeo.com/video/{{ vid.getVideoId() }}?autoplay=1&loop=1&muted=1&controls=0" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        {% elseif vid.providerName|lower == 'youtube' %}
+            <iframe 
+                class="auto-player" 
+                src="https://www.youtube.com/embed/{{ vid.getVideoId() }}?controls=0&loop=1&showinfo=0&rel=0&enablejsapi=1" 
+                title="Halo Hair Group" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        {% endif %}
         <div class="container">
             <div class="row align-items-center row-gap-4  text-white">
                 <div class="col-12 col-lg-6">

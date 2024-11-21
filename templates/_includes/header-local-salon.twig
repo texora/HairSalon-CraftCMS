@@ -3,7 +3,7 @@
          <div class="container">
              <div class="text-black d-flex flex-wrap gap-2 justify-content-between align-items-center">
                  <div>
-                     <a class="text-uppercase" href="https://www.halohairgroup.com">HALO HAIR GROUP</a>
+                     <a class="text-uppercase" href="{{ currentSite.baseUrl }}">HALO HAIR {% if currentSite.handle == 'main' %}Group{% else %}{{ currentSite.name }}{% endif %}</a>
                  </div>
                  <div>
                     <ul class="d-flex gap-3 list-unstyled mb-0">
@@ -16,7 +16,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light py-3 bg-brown">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ currentSite.baseUrl }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
                 {% if logo and logo.extension == 'svg' %}
                     {{ svg(logo) }}

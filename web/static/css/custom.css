@@ -416,6 +416,9 @@ section ul li, section ol li {
 .main-header-top.activeheader .navbar-brand img, .main-header-top.open-header .navbar-brand img {
     filter: brightness(100) invert(1);
 }
+.main-header-top.activeheader .navbar-brand svg path, .main-header-top.open-header .navbar-brand svg path {
+    fill: #000;
+}
 
 .main-header-top .apply-btn {
     padding: 8px 12px;
@@ -475,7 +478,20 @@ section ul li, section ol li {
 }
 
 .main-header-top .dropdown-toggle::after {
-    display: none;
+    content: "";
+    position: absolute;
+    right: -19px;
+    top: 20px;
+    width: 24px;
+    height: 14px;
+    background: transparent;
+    display: inline-block;
+    border: 0;
+    margin: 0;
+}
+.main-header-top .dropdown:hover .dropdown-toggle::after, 
+.main-header-top .dropdown-toggle:hover::after  {
+    height: 100%;
 }
 
 .dropdown-icon {
@@ -490,7 +506,6 @@ section ul li, section ol li {
     border-top-color: #adb5bd;
     transition: 0.5s  all;
 }
-
 .main-header-top .dropdown:hover .dropdown-icon {
     transform: rotate(180deg);
 }
@@ -505,6 +520,7 @@ section ul li, section ol li {
 
 .main-header-top .dropdown {
     position: static;
+    padding-right: 20px;
 }
 
 .main-header-top .megamenu {
@@ -2054,6 +2070,10 @@ input:-webkit-autofill {
     .main-header-top .dropdown-menu p {
         margin-bottom: 0.5rem;
     }
+    .main-header-top .dropdown {
+        position: static;
+        padding-right: 0px;
+    }
     .work-at .email-form {
         max-width: 100%;
         margin: 15px auto 0 auto;
@@ -2577,5 +2597,10 @@ input:-webkit-autofill {
 
     .process-section .nav-link {
         text-align: left;
+    }
+}
+@media(max-width:360px) {
+    .banner-section {
+        height: 750px;
     }
 }
