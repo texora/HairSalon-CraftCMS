@@ -1,0 +1,15 @@
+{% if entry.introText %}
+  <section class="different-section">
+    <div class="container">
+      <div class="row w-100 mx-auto">
+        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+          <div class="px-lg-5">
+            {{ entry.introText }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% include '_includes/our-people/employee-speaks' %}
+{% include '_includes/work-at-halo' %}

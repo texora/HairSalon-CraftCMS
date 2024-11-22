@@ -1,25 +1,14 @@
 {% extends "_layouts/main" %}
 
-{% set bodyClass = 'our-people' %}
+{% set bodyClassArr = ['aboutUs': 'about', 'apply': 'apple', 'ourCulture': 'cultire', 'ourPeople': 'our-people', 'salaryBenefits': 'salary-benefirs', 'vacancies': 'vacancy'] %}
+{% set bodyClass = bodyClassArr[entry.type] is defined ? bodyClassArr[entry.type] : null %}
 
 {% block main %}
 
-{% cache using key entry.slug %}
-  
-  {% if entry.pageContent %}
-    <section class="general-pages-section py-5">
-      <div class="container">
-        <div class="row w-100 mx-auto">
-          <div class="col-12 col-md-12 mx-auto">
-            {{ entry.pageContent }}
-          </div>
-        </div>
-      </div>
-    </section>
-  {% endif %}
+  {% cache using key entry.slug %}
 
-{% endcache %}
+    {% include '_includes/entryTypes/jobs/' ~ entry.type ignore missing %}
 
-{% include '_includes/work-at-halo' %}
+  {% endcache %}
 
 {% endblock %}
