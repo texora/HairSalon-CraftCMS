@@ -1,7 +1,21 @@
 {% extends "_layouts/main" %}
 
-{% set bodyClassArr = ['aboutUs': 'about', 'apply': 'apple', 'ourCulture': 'cultire', 'ourPeople': 'our-people', 'salaryBenefits': 'salary-benefirs', 'vacancies': 'vacancy'] %}
-{% set bodyClass = bodyClassArr[entry.type] is defined ? bodyClassArr[entry.type] : null %}
+{% switch entry.type %}
+    {% case 'aboutUs' %}
+        {% set bodyClass = 'about' %}
+    {% case 'apply' %}
+        {% set bodyClass = 'apple' %}
+    {% case 'ourCulture' %}
+        {% set bodyClass = 'cultire' %}
+    {% case 'ourPeople' %}
+        {% set bodyClass = 'our-people' %}
+    {% case 'salaryBenefits' %}
+        {% set bodyClass = 'salary-benefirs' %}
+    {% case 'vacancies' %}
+        {% set bodyClass = 'vacancy' %}
+    {% default %}
+        {% set bodyClass = '' %}
+{% endswitch %}
 
 {% block main %}
 

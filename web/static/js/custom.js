@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', () => {
 	const controls = [
 	   'play-large', // The large play button in the center
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const player = Plyr.setup('.video-player', { controls });
 
 });
+*/
 
 $("document").ready(function() {
 	$('.nav-product').slick({

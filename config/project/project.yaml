@@ -1,4 +1,4 @@
-dateModified: 1732265627
+dateModified: 1732279783
 elementSources:
   craft\elements\Entry:
     -
@@ -117,7 +117,7 @@ elementSources:
       heading: 'Landing Pages'
       type: heading
     -
-      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Home
+      key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Jobs Home
       type: native
     -
       key: 'single:dd713845-af4e-4e60-9d0a-171d3ed41bb9'
@@ -284,7 +284,7 @@ meta:
     e8c8e356-5c73-4595-b2c6-b5973a67da4c: 'Holding Page' # Holding Page
     f0f5c790-85e7-436d-9f47-3e1a7966a1b1: 'Job Type' # Job Type
     f1bd2935-9135-4dfd-aec4-e7459ca70d1d: 'Employee Speaks' # Employee Speaks
-    f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: Home # Home
+    f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: 'Jobs Home' # Jobs Home
     f5d1ded3-5a5e-400e-836c-7c4d1d346ab1: 'Trade Test Process' # Trade Test Process
     fb98f8d7-fb51-44ef-9719-79ec3dfef9b6: 'Footer Menu Column 3' # Footer Menu Column 3
 plugins:
@@ -311,6 +311,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
+    licenseKey: C9AUVXM4P86WTVFGAZ736CSB
     schemaVersion: 2.1.0
   oembed:
     edition: standard
