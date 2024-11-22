@@ -1,4 +1,4 @@
-dateModified: 1732279783
+dateModified: 1732281198
 elementSources:
   craft\elements\Entry:
     -
@@ -182,7 +182,7 @@ meta:
     2a6cc5eb-ab48-4ac5-86af-300d612709dc: 'Team Members' # Team Members
     2c098971-cf38-4baf-99ba-c248dd975d79: Features # Features
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
-    2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: Jobs # Jobs
+    2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: 'Halo Hair Jobs' # Halo Hair Jobs
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
     2f4521a5-bf9c-4655-bd15-483fa28c005f: Year # Year
     3b0d478f-3b10-4424-9f3c-fd2c2d304e29: 'Article & News' # Article & News
@@ -238,6 +238,7 @@ meta:
     5241ddf9-1a26-4245-babb-b5b96cbea919: Durham # Durham
     6237cfb7-a277-4a24-83f1-baadcffccf14: 'Styled Cards' # Styled Cards
     6405f652-9433-4c53-9feb-e2324d8b8973: 'Content Page' # Content Page
+    6414f52f-2b2b-4b12-9ff6-96e2fdf75b8d: 'Local Salon' # Local Salon
     16675a87-08c8-4f34-b9d9-1218d1eced39: 'Job Benefits' # Job Benefits
     24514dd6-7de5-437f-9cfe-38a979ea83fb: 'Footer Menu Column 1' # Footer Menu Column 1
     75916bae-efdb-428b-b8e2-0904b4627e76: 'Rich Text' # Rich Text

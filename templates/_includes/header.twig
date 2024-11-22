@@ -33,13 +33,9 @@
                         {% endif %}
                     {% endnav %}
                 </ul>
-                {% if not siteGlobals.applyButton.isEmpty() %}
-                    <div class="d-flex">
-                        {{ siteGlobals.applyButton.getLink({
-                            class: 'apply-btn'
-                        }) }}
-                    </div>
-                {% endif %}
+                <div class="d-flex">
+                    <a href="{{ url('aaply') }}" class="apply-btn">Apply</a>
+                </div>
             </div>
         </div>
     </nav>
