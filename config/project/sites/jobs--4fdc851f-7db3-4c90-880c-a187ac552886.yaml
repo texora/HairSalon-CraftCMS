@@ -1,9 +1,0 @@
-baseUrl: $JOBS_URL
-enabled: true
-handle: jobs
-hasUrls: true
-language: en-US
-name: Jobs
-primary: false
-siteGroup: 5a77901a-6b9c-460b-bb5c-032b263bc717 # Halo
-sortOrder: 1

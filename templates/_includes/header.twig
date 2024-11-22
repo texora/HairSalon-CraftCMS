@@ -1,7 +1,7 @@
 <header class="main-header-top">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ currentSite.baseUrl }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
                 {% if logo and logo.extension == 'svg' %}
                     {{ svg(logo) }}
@@ -16,21 +16,22 @@
     </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar-light ms-auto me-auto mb-2 mb-lg-0">
-                    {% for link in siteGlobals.headerMenu %}
-                        {% set linkElement = link.getElement() %}
-                        {% if linkElement.slug == 'salary-benefits' %}
+
+                    {% set nodes = craft.navigation.nodes('mainNavigation1').all() %}
+                    {% nav node in nodes %}
+                        {% if 'salary-benefits' in node.url %}
                             <li class="nav-item dropdown dmenu">
-                                <a class="nav-link dropdown-toggle" href="{{ link.url }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link.text }} <span class="dropdown-icon"></span></a>
+                                <a class="nav-link dropdown-toggle" href="{{ node.url }}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{- node.title -}} <span class="dropdown-icon"></span></a>
                                 {% include '_includes/benefits-menu' %}
                             </li>
                         {% else %}
                             <li class="nav-item">
-                                {{ link.getLink({
-                                    class: 'nav-link'
-                                }) }}
+                                <a {% if node.url %}href="{{ node.url }}"{% endif %} class="nav-link{% if node.active %} is-active{% endif %}"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                    {{- node.title -}}
+                                </a>
                             </li>
                         {% endif %}
-                    {% endfor %}
+                    {% endnav %}
                 </ul>
                 {% if not siteGlobals.applyButton.isEmpty() %}
                     <div class="d-flex">

@@ -1,9 +1,9 @@
-baseUrl: $PRIMARY_SITE_URL
+baseUrl: $JOBS_URL
 enabled: true
-handle: main
+handle: jobs
 hasUrls: true
 language: en-GB
-name: 'Halo Hair Group'
-primary: true
+name: Jobs
+primary: false
 siteGroup: 5a77901a-6b9c-460b-bb5c-032b263bc717 # Halo
 sortOrder: 2

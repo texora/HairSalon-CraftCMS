@@ -8,11 +8,11 @@
         {% if block.teamMembers.count() %}
             {% set teamMembers = block.teamMembers.all() %}
         {% else %}
-            {% set teamMemberEntries = craft.entries().section('team').relatedTo(entry).site('jobs') %}
+            {% set teamMemberEntries = craft.entries().section('team').relatedTo(entry).site('haloGroup') %}
             {% if teamMemberEntries.count() %}
                 {% set teamMembers = teamMemberEntries.all() %}
             {% else %}
-                {% set teamMembers = craft.entries().section('team').site('jobs').limit(10).all() %}
+                {% set teamMembers = craft.entries().section('team').site('haloGroup').limit(10).all() %}
             {% endif %}
         {% endif %}
         <div class="our-services-slider horizontal-space custom-arrow" id="team-slider">

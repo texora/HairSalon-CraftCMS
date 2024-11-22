@@ -5,8 +5,8 @@
                 <h2>{{ block.title }}</h2>
             </div>
         {% endif %}
-        {% set latestNews = craft.entries().section('articleNews').orderBy('postDate DESC').site('jobs').one() %}
-        {% set latestNews1 = craft.entries().section('articleNews').orderBy('postDate DESC').site('jobs').offset(1).one() %}
+        {% set latestNews = craft.entries().section('articleNews').orderBy('postDate DESC').site('haloGroup').one() %}
+        {% set latestNews1 = craft.entries().section('articleNews').orderBy('postDate DESC').site('haloGroup').offset(1).one() %}
         {% set staticCardImage = block.staticCardImage.eagerly().one() %}
         <div class="row gx-xl-60 row-gap-4 row-gap-md-5">
             <div class="col-12 col-lg-6 d-flex flex-column row-gap-4 row-gap-md-5">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            {% set otherNewsQ = craft.entries().section('articleNews').orderBy('postDate DESC').id(['not', latestNews.id, latestNews1.id]).site('jobs') %}
+            {% set otherNewsQ = craft.entries().section('articleNews').orderBy('postDate DESC').id(['not', latestNews.id, latestNews1.id]).site('haloGroup') %}
             {% set totalNews = otherNewsQ.count() %}
             {% set offset = ceil( totalNews / 2 ) %}
             {% set otherNews1 = otherNewsQ.limit(offset).all() %}

@@ -6,6 +6,36 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-22T08:42:13+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7ee7d1f7-d8b9-487d-b61e-1e47ed0a543f
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2024-10-14T12:24:02+00:00'
             elementCondition: null
             fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
@@ -69,7 +99,7 @@ fieldLayouts:
         uid: 2c37d5a1-5169-4d8b-a301-e605081eda44
         userCondition: null
 handle: ourPeople
-hasTitleField: false
+hasTitleField: true
 icon: ''
 name: 'Our People Page'
 showSlugField: false

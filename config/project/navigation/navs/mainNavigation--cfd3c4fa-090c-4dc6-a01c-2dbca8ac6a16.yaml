@@ -1,0 +1,212 @@
+defaultPlacement: end
+fieldLayouts:
+  ff2ec83b-e969-4505-a0a6-24cc5c2743bd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 030f10ec-54ac-4bc6-bcde-f383dc9436f9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            elementCondition: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: verbb\navigation\fieldlayoutelements\NodeTypeElements
+            uid: 3aea5678-be24-484b-8dde-0c4b6630d677
+            userCondition: null
+            warning: null
+          -
+            attribute: newWindow
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: true
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\NewWindowField
+            uid: cb453d0d-4ecc-4ccb-8bb5-3d80acea95f5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Node
+        uid: c63d08c9-d779-4c8c-9375-28da0255df9c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            attribute: urlSuffix
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            mandatory: false
+            max: null
+            maxlength: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\UrlSuffixField
+            uid: 22166fbb-1b0c-4196-ae21-735e7122496d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: classes
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            mandatory: false
+            max: null
+            maxlength: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\ClassesField
+            uid: 2a7ab919-ced2-4d9e-810a-70e98b078cf1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: customAttributes
+            dateAdded: '2024-11-22T07:32:03+00:00'
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            mandatory: false
+            orientation: null
+            providesThumbs: false
+            requirable: true
+            required: false
+            tip: null
+            translatable: false
+            type: verbb\navigation\fieldlayoutelements\CustomAttributesField
+            uid: 068c3053-0339-44aa-8efd-d383cd6cd94a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Advanced
+        uid: 8e976137-9350-47e6-83d0-cc333ddbfa43
+        userCondition: null
+handle: mainNavigation
+instructions: ''
+maxNodes: null
+name: 'Main Navigation'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  verbb\navigation\nodetypes\CustomType:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+  verbb\navigation\nodetypes\SiteType:
+    enabled: '1'
+propagationMethod: all
+siteSettings:
+  0d1a2199-8227-4113-8872-9224a1f10ef4: # Ingleby
+    enabled: false
+  2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: # Jobs
+    enabled: false
+  4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
+    enabled: true
+  9dde76c9-a679-4b79-a41f-2967846b76f4: # Glasgow
+    enabled: false
+  822d8c30-81b1-4042-b211-0f5bf17fe786: # Darlington
+    enabled: false
+  5241ddf9-1a26-4245-babb-b5b96cbea919: # Durham
+    enabled: false
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: bffaf5c3-3100-4d19-9ecd-02eafc4d7dde

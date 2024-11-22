@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 8bcdb7ac-055d-4548-9cda-bd6a68b501d5 # Our Culture Page
-handle: ourCulture
+  - c711f164-bd59-4d27-910c-94eb0fc77d2a # Benefit Pages
+handle: jobBenefits
 maxAuthors: 1
-name: 'Our Culture'
+name: 'Job Benefits'
 previewTargets:
   -
     __assoc__:
@@ -19,9 +19,9 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  4fdc851f-7db3-4c90-880c-a187ac552886: # Jobs
+  2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: # Jobs
     enabledByDefault: true
     hasUrls: true
-    template: _sections/our-culture/_entry.twig
-    uriFormat: our-culture
-type: single
+    template: _sections/job-benefits/_entry.twig
+    uriFormat: 'benefits/{slug}'
+type: channel

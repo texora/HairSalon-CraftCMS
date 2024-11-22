@@ -3,36 +3,45 @@
         <div class="row footer-menu mb-5 mb-md-0">
             <div class="col-12 col-md-6 col-lg-7">
                 <div class="row row-gap-5">
-                    {% if siteGlobals.footerManu1|length %}
+                    {% set nodes = craft.navigation.nodes('footerMenuColumn1').all() %}
+                    {% if nodes|length %}
                         <div class="col-6 col-md-4">
                             <ul class="d-flex flex-column gap-4">
-                                {% for link in siteGlobals.footerManu1 %}
-                                    {% if not link.isEmpty() %}
-                                        <li>{{ link.getLink() }}</li>
-                                    {% endif %}
-                                {% endfor %}
+                                {% nav node in nodes %}
+                                    <li>
+                                        <a {% if node.url %}href="{{ node.url }}"{% endif %} class="{% if node.active %}is-active{% endif %}"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                            {{- node.title -}}
+                                        </a>
+                                    </li>
+                                {% endnav %}
                             </ul>
                         </div>
                     {% endif %}
-                    {% if siteGlobals.footerManu2|length %}
+                    {% set nodes = craft.navigation.nodes('footerMenuColumn2').all() %}
+                    {% if nodes|length %}
                         <div class="col-6 col-md-4">
                             <ul class="d-flex flex-column gap-4">
-                                {% for link in siteGlobals.footerManu2 %}
-                                    {% if not link.isEmpty() %}
-                                        <li>{{ link.getLink() }}</li>
-                                    {% endif %}
-                                {% endfor %}
+                                {% nav node in nodes %}
+                                    <li>
+                                        <a {% if node.url %}href="{{ node.url }}"{% endif %} class="{% if node.active %}is-active{% endif %}"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                            {{- node.title -}}
+                                        </a>
+                                    </li>
+                                {% endnav %}
                             </ul>
                         </div>
                     {% endif %}
-                    {% if siteGlobals.footerManu3|length %}
+                    {% set nodes = craft.navigation.nodes('footerMenuColumn3').all() %}
+                    {% if nodes|length %}
                         <div class="col-6 col-md-4">
                             <ul class="d-flex flex-column gap-4">
-                                {% for link in siteGlobals.footerManu3 %}
-                                    {% if not link.isEmpty() %}
-                                        <li>{{ link.getLink() }}</li>
-                                    {% endif %}
-                                {% endfor %}
+                                {% nav node in nodes %}
+                                    <li>
+                                        <a {% if node.url %}href="{{ node.url }}"{% endif %} class="{% if node.active %}is-active{% endif %}"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                            {{- node.title -}}
+                                        </a>
+                                    </li>
+                                {% endnav %}
                             </ul>
                         </div>
                     {% endif %}
