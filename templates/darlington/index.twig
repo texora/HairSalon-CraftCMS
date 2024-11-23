@@ -6,7 +6,7 @@
 
 {% cache using key 'local-salon-' ~ entry.slug %}
 
-    {% include '_includes/hero-local-salon' %}
+    {% include '_includes/hero/local-salon' %}
 
     {% for block in entry.localSalonContent.all() %}
         {% include '_includes/blocks/local-salon/' ~ block.type ignore missing %}

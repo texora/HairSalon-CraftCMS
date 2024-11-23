@@ -1,0 +1,94 @@
+columnSuffix: null
+handle: pricingFor3Lengths
+instructions: null
+name: 'Pricing for 3 Lengths'
+searchable: false
+settings:
+  addRowLabel: 'Add Price'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Strands
+            -
+              - handle
+              - strands
+            -
+              - width
+              - ''
+            -
+              - type
+              - number
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Price 16-inch'
+            -
+              - handle
+              - price16Inch
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Price 18-inch'
+            -
+              - handle
+              - price18Inch
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Price 20-inch'
+            -
+              - handle
+              - price20Inch
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+        -
+          - col3
+          - ''
+        -
+          - col4
+          - ''
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

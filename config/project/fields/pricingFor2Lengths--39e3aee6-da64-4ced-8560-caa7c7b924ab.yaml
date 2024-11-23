@@ -1,0 +1,64 @@
+columnSuffix: null
+handle: pricingFor2Lengths
+instructions: null
+name: 'Pricing for 2 lengths'
+searchable: false
+settings:
+  addRowLabel: 'Add Pricing'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Strands
+            -
+              - handle
+              - strands
+            -
+              - width
+              - ''
+            -
+              - type
+              - number
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Price 16-inch'
+            -
+              - handle
+              - price16Inch
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Price 20-inch'
+            -
+              - handle
+              - price20Inch
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults: null
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

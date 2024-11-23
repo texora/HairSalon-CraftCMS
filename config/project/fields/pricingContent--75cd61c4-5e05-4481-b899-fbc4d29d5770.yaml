@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: pricingContent
+instructions: null
+name: 'Pricing Content'
+searchable: false
+settings:
+  createButtonLabel: 'Add Pricing Section'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - a348560a-0781-4e0a-a371-3068e0d856ed # Services Pricing 
+    - 3d57cf5d-1477-4fd8-aafc-6919487c36db # CTAs
+    - 2c896ff2-2bf6-450d-8410-e89a59a298d4 # Extension Pricing
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

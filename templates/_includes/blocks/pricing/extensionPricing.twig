@@ -1,0 +1,75 @@
+<section class="extensions-section pt-5 pdding-b-100">
+    <div class="container">
+        <div class="row row-gap-4 mb-4 mb-md-5">
+            <div class="col-12 col-lg-6">
+                <div class="section-title">
+                    {% if block.subtitle %}<h6 class="text-uppercase">\   {{ block.subtitle }}</h6>{% endif %}
+                    <h2>{{ block.title }}</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="extensions-content ms-lg-auto">
+                    {{ block.text }}
+                    {% if block.bookButton %}
+                      <a class="btn btn-transparent d-block d-lg-inline-block" href="{{ block.bookButton.value }}">{{ block.bookButton.label }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row row-gap-4 gx-xl-5">
+          {% for extTableBlock in block.extensionsTable.all() %}
+            {% if extTableBlock.type == 'extensionsPricing2' %}
+            <div class="col-12 col-lg-6">
+                <table class="table  prices-table">
+                  <thead>
+                    <tr>
+                      {% set brandLogo = extTableBlock.brandLogo.eagerly().one() %}
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">
+                        {% if brandLogo %}<img class="img-fluid" src="{{ brandLogo.url }}" alt="{{ brandLogo.title }}" />{% endif %}
+                      </th>
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">16-inch</th>
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">20-inch</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for row in extTableBlock.inchPricing16 %}
+                      <tr>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.strands }} strands</td>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price16Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price20Inch }}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+            {% elseif extTableBlock.type == 'extensionsPricingFor3' %}
+            <div class="col-12 col-lg-6">
+                <table class="table  prices-table">
+                  <thead>
+                    <tr>
+                      {% set brandLogo = extTableBlock.brandLogo.eagerly().one() %}
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">
+                        {% if brandLogo %}<img class="img-fluid" src="{{ brandLogo.url }}" alt="{{ brandLogo.title }}" />{% endif %}
+                      </th>
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">16-inch</th>
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">18-inch</th>
+                      <th class="border-bottom-0 p-3 py-md-3 p-md-4" scope="col">20-inch</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for row in extTableBlock.pricingFor3Lengths %}
+                      <tr>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.strands }} strands</td>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price16Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price18Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price20Inch }}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

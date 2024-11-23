@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  5aa9f011-7e8a-419b-87e6-a06b5c5be63e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-23T08:27:29+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: brandLogo
+            includeInCards: false
+            instructions: null
+            label: 'Brand Logo'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad2ca95a-5829-4dfc-b7a7-55e7992e4fe3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-23T08:27:29+00:00'
+            elementCondition: null
+            fieldUid: 39e3aee6-da64-4ced-8560-caa7c7b924ab # Pricing for 2 lengths
+            handle: inchPricing16
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f45b1e2d-9bdc-4429-92be-283f00297d38
+            userCondition: null
+            warning: null
+            width: 100
+        name: Extension
+        uid: 9fa70688-3233-41d0-865a-acbf62470d23
+        userCondition: null
+handle: extensionsPricing2
+hasTitleField: false
+icon: ''
+name: 'Extensions Pricing for 2 lengths'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

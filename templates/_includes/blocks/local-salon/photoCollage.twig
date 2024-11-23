@@ -9,12 +9,12 @@
 {% set photoCollage9 = block.photoCollage.nth(8) %}
 {% set photoCollage10 = block.photoCollage.nth(9) %}
 <section class="full-width-image position-relative mx-auto">
-    <div class="image-collage d-flex flex-lg-nowrap">
-            <div class="image-collage-box image-collage-1 w-100 h-100">
+    <div class="image-collage d-sm-flex flex-wrap flex-xl-nowrap">
+            <div class="image-collage-box image-collage-1 h-100">
                 {% if photoCollage1 %}
                     <img class="w-100 img-fluid object-fit-cover" src="{{ photoCollage1.url }}" alt="{{ photoCollage1.title }}">
                 {% endif %}
-                <div class="two-images d-lg-flex flex-column flex-lg-row w-100">
+                <div class="two-images d-flex w-100">
                     {% if photoCollage2 %}
                         <img class="img-fluid object-fit-cover" src="{{ photoCollage2.url }}" alt="{{ photoCollage2.title }}">
                     {% endif %}
@@ -23,28 +23,23 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="image-collage-box image-collage-2 w-100">
+            <div class="image-collage-box image-collage-2">
                 <div class="d-flex flex-column h-100">
                     {% if photoCollage4 %}
                         <img class="w-100 h-100 img-fluid object-fit-cover" src="{{ photoCollage4.url }}" alt="{{ photoCollage4.title }}">
                     {% endif %}
-                    <div class="two-images d-lg-flex">
+                    <div class="two-images d-flex w-100">
                         {% if photoCollage5 %}
                             <img class="img-fluid object-fit-cover" src="{{ photoCollage5.url }}" alt="{{ photoCollage5.title }}">
                         {% endif %}
-                        <div class="vertical-two-images d-lg-flex flex-column w-100">
-                            {% if photoCollage6 %}
-                                <img class="w-100 h-100 img-fluid object-fit-cover vertical-image-1" src="{{ photoCollage6.url }}" alt="{{ photoCollage6.title }}">
-                            {% endif %}
-                            {% if photoCollage7 %}
-                                <img class="w-100 h-100 img-fluid object-fit-cover" src="{{ photoCollage7.url }}" alt="{{ photoCollage7.url }}">
-                            {% endif %}
-                        </div>
+                        {% if photoCollage7 %}
+                            <img class="img-fluid object-fit-cover" src="{{ photoCollage7.url }}" alt="{{ photoCollage7.url }}">
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            <div class="image-collage-box image-collage-3 w-100">
-                <div class="d-flex flex-column h-100">
+            <div class="image-collage-box image-collage-3">
+                <div class="d-flex flex-xl-column h-100">
                     {% if photoCollage8 %}
                         <img class="img-fluid object-fit-cover" src="{{ photoCollage8.url }}" alt="{{ photoCollage8.title }}">
                     {% endif %}
@@ -59,7 +54,7 @@
     </div>
     {% if block.photoCollageText %}
         <div class="container">
-            <div class="section-title text-white position-absolute z-2 font-40 ps-sm-5">
+            <div class="section-title pb-md-2 text-white position-absolute z-2 font-40 ps-sm-5">
                 {{ block.photoCollageText }}
             </div>
         </div>

@@ -1,11 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 07edd6a8-1941-47c3-8535-ccc56f465ac0 # Services
-  - ce61c6e4-1c7e-45c4-be92-e14ccd17ddcc # Extensions
-handle: services
+  - d2994672-2ce6-4284-beed-ea905b67ace1 # Pricing Content
+handle: pricing
 maxAuthors: 1
-name: Services
+name: Pricing
 previewTargets:
   -
     __assoc__:
@@ -23,9 +22,6 @@ siteSettings:
   4fdc851f-7db3-4c90-880c-a187ac552886: # Halo Hair Group
     enabledByDefault: true
     hasUrls: true
-    template: services/_entry.twig
-    uriFormat: 'services/{slug}'
-structure:
-  maxLevels: 1
-  uid: 7756dbe0-dc64-4ddf-85a5-f5e3e3be3e00
-type: structure
+    template: _sections/pricing/_entry.twig
+    uriFormat: pricing
+type: single

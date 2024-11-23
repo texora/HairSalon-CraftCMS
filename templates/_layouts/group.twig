@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+{% set siteGlobals = craft.entries().section('siteGlobals').site('haloGroup').one() %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="../static/images/favicon-180.png" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-92.png" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-80.png" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-70.png" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-64.png" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-32.png" />
+
+    {% do view.registerCssFile('/static/css/group.css') %}
+
+    {% if pageCss is defined %}
+        {% for cssFile in pageCss|default([]) %}
+            {% do view.registerCssFile('/static/css/pages/' ~ cssFile ~ '.css') %}
+        {% endfor %}
+    {% endif %}
+
+</head>
+
+<body class="{% if bodyClass is defined %} {{ bodyClass }}{% endif %}">
+
+    {% include '_includes/header-group' %}
+
+    {% block main %}{% endblock %}
+
+    {% include '_includes/footer' %}
+
+    {% do view.registerJsFile('/static/js/jquery.min.js') %}
+    {% do view.registerJsFile('/static/js/bootstrap.min.js') %}
+    {% do view.registerJsFile('/static/js/popper.min.js') %}
+    {% do view.registerJsFile('/static/js/slick.min.js') %}
+    {% do view.registerJsFile('/static/js/group.js') %}
+
+    <!-- Custom -->
+    {% if pageJs is defined and pageJs|length %}
+        {% for jsFile in pageJs %}
+            {% do view.registerJsFile('/static/js/pages/' ~ jsFile ~ '.js') %}
+        {% endfor %}
+    {% endif %}
+
+    {% block pageJs %}{% endblock %}
+
+</body>
+</html>

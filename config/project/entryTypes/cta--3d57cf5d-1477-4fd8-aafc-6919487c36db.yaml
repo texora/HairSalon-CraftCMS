@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  5ad7fc68-1d65-4b43-b09b-164d23750e21:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-23T08:50:32+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: cta1Text
+            includeInCards: false
+            instructions: null
+            label: 'CTA 1 Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 135e9c3a-f387-443f-9a8b-a67bbbece156
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-23T08:50:32+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta1
+            includeInCards: false
+            instructions: null
+            label: 'CTA 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21ab0693-5b80-4fa0-80a6-950b39daf636
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-23T08:50:32+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: cta2Text
+            includeInCards: false
+            instructions: null
+            label: 'CTA 2 Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4013430b-c01d-4ced-827b-40c2c7b4c9a9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-23T08:50:32+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta2
+            includeInCards: false
+            instructions: null
+            label: 'CTA 2'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec5babc3-1ac9-4bc4-9656-4eb9c389f61f
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 1a1ecd1f-e6fd-42dc-9e9a-53916034fb04
+        userCondition: null
+handle: cta
+hasTitleField: false
+icon: ''
+name: CTAs
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

@@ -5,7 +5,9 @@
             <div class="row align-items-start row-gap-5">
                 <div class="col-12 col-lg-6">
                     {{ siteGlobals.text2 }}
-                    {{ siteGlobals.cta2.getLink({
+                    {{ tag('a', {
+                        text: siteGlobals.cta2.label,
+                        href: siteGlobals.cta2.value,
                         class: 'btn benefits btn-black'
                     }) }}
                 </div>
@@ -27,7 +29,9 @@
                 <div class="col-12 col-lg-5 text-white">
                     {% if siteGlobals.heading %}<h2>{{ siteGlobals.heading }}</h2>{% endif %}
                     {{ siteGlobals.text }}
-                    {{ siteGlobals.cta.getLink({
+                    {{ tag('a', {
+                        text: siteGlobals.cta.label,
+                        href: siteGlobals.cta.value,
                         class: 'btn benefits'
                     }) }}
                 </div>

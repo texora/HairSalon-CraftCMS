@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: pricing
+instructions: null
+name: Pricing
+searchable: false
+settings:
+  createButtonLabel: 'Add Service'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 4d17033f-2f51-4f32-a8cc-f134fa1ae701 # Pricing
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

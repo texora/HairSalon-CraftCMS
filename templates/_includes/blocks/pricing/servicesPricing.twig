@@ -1,0 +1,49 @@
+<section class="packages-section padding-y-60{% if block.greyBg %} bg-silver-light{% endif %}">
+    <div class="container">
+        <div class="section-title mb-4 mb-md-5">
+            {% if block.subtitle %}<h6 class="text-uppercase">\  {{ block.subtitle }}</h6>{% endif %}
+            <h2>{{ block.title }}</h2>
+        </div>
+        <div class="row space-x-4 row-gap-5">
+            {% for pricingBlock in block.pricing.type('pricing').all() %}
+                <div class="col-12 col-lg-6">
+                    <div class="packages-list border-bottom pb-4">
+                        <div class="d-flex justify-content-between gap-2 mb-2">
+                            <h3>{{ pricingBlock.title }}</h3>
+                            <h3>{{ pricingBlock.price|money|replace('.00', '') }}</h3>
+                        </div>
+                        {{ pricingBlock.serviceDescription }}
+                        {% if block.bookLink %}
+                            <a class="d-flex align-items-center gap-2 text-uppercase" href="{{ block.bookLink.value }}">{{ block.bookLink.label }} <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L0.999999 1" stroke="#C5A78C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+            {% if block.cta1 or block.cta2 %}
+                <div class="col-12 col-lg-6 d-lg-block d-none">
+                    <div class="row row-gap-4 gx-3">
+                        {% if block.cta1 %}
+                            <div class="col-12 col-lg-6">
+                                <div class="contact-cta-box border text-center d-flex flex-column align-items-center justify-content-center h-100 gap-3">
+                                    {% if block.cta1Text %}<h4>{{ block.cta1Text }}</h4>{% endif %}
+                                    <a class="btn btn-brown" href="{{ block.cta1.value }}">{{ block.cta1.label }}</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if block.cta2 %}
+                            <div class="col-12 col-lg-6">
+                                <div class="contact-cta-box contact-number border text-center d-flex flex-column align-items-center justify-content-center h-100 gap-3">
+                                    {% if block.cta2Text %}<h4>{{ block.cta2Text }}</h4>{% endif %}
+                                    <a class="border-bottom" href="{{ block.cta1.value }}">{{ block.cta2.label }}</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

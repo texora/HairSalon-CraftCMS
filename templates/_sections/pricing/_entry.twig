@@ -1,0 +1,15 @@
+{% extends "_layouts/group" %}
+
+{% block main %}
+
+  {% cache using key entry.slug %}
+
+    {% include '_includes/hero/pricing' %}
+
+    {% for block in entry.pricingContent.all() %}
+        {% include '_includes/blocks/pricing/' ~ block.type ignore missing %}
+    {% endfor %}
+
+  {% endcache %}
+
+{% endblock %}

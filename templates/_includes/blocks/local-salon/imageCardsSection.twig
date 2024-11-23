@@ -2,7 +2,7 @@
 {% set offset = ceil( totalCards / 2 ) %}
 {% set cards1 = block.imageCards.limit(offset).all() %}
 {% set cards2 = block.imageCards.limit(offset).offset(offset).all() %}
-<section class="grid-two-columns py-100">
+<section class="grid-two-columns py-100 d-md-block d-none">
     <div class="container max-container">
         <div class="row space-x-4 row-gap-md-5 row-gap-4">
             <div class="col-12 col-md-6 d-flex flex-column row-gap-md-5 row-gap-4">
@@ -78,6 +78,131 @@
                         </div>
                     </div>
                 {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="grid-two-columns py-100 d-md-none d-block">
+    <div class="container max-container">
+        <div class="custom-arrow mb-4" id="grid-two-slider">
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="./assets/images/banner-image.png" alt="banner-image">
+                        <div class="caption-title caption-title-bottom position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">No Juniors, only experienced stylists</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Our team are highly experienced, qualified and educated stylists, colourist s and specialist treatment expert s. We don’t employ any juniors or inexperienced stylists because we want to offer the best service possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="https://halo-hair.transforms.svdcdn.com/production/Halo-Hair-Group-Amber-6.png?w=540&h=390&fm=webp&auto=compress&fit=crop&dm=1728869733&s=06c80c57388b42888224337315496e44" alt="banner-image">
+                        <div class="caption-title caption-title-bottom position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Vibrant Colours, or Subtle Shades</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Our colourist s are experts in balayage, ombre, and foiling. They excel in current t rends like pastel shades, root smudging, and lived -in highlights. Transform your hair with st unning, personalised colours and a flawless finish every time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="./assets/images/banner-image.png" alt="banner-image">
+                        <div class="caption-title position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">THE BEST HAIRCARE</a>
+                        </div>
+                        <div class="card-img-overlay text-white z-2 px-sm-4 p-3">
+                           <h4>We’re the ONLY salon in Darlington to use the leading styling technology from Dyson</h4>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>You won’t believe the difference using Dyson profession hair technology makes. we use Dyson Supersonic Professional hair dryers for their exceptional performance. Lighter, and fast-drying, ensuring precision styling and control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="https://halo-hair.transforms.svdcdn.com/production/Halo-Hair-Group-Sacha-4.png?w=540&h=390&fm=webp&auto=compress&fit=crop&dm=1728869575&s=3ea30dba2d6c441cc7c71f44b85e463f" alt="banner-image">
+                        <div class="caption-title position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Time for a new style?</a>
+                        </div>
+                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                            <a class="bg-brown text-white p-3 d-inline-block" href="#">OUR TEAM ARE SPECIALLY TRAINED TO RESTYLE YOUR HAIR</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Our colourist s are experts in balayage, ombre, and foiling. They excel in current t rends like pastel shades, root smudging, and lived -in highlights. Transform your hair with st unning, personalised colours and a flawless finish every time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="https://halo-hair.transforms.svdcdn.com/production/Halo-Hair-Group-Katie-6.png?w=540&h=390&fm=webp&auto=compress&fit=crop&dm=1728822710&s=447cabe9553719382d59315bd4d32d4c" alt="banner-image">
+                        <div class="caption-title caption-title-bottom position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Our Undivided Attention</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>We don’t pass you to juniors or apprentices to apply or remove your colour. We don’t pass you on to get blow dried. You Mast er Stylist takes care of every aspect of your appoint ment. From washing and conditioning to drying and finishing your hair.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="./assets/images/banner-image.png" alt="banner-image">
+                        <div class="caption-title position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Balayage</a>
+                        </div>
+                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                            <a class="bg-brown text-white p-3 d-inline-block" href="#">Sun-Kissed Perfection</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Our Balayage Specialist s offer a st unning array of colour options, including Ash Blonde, Babylights, Hazelnut, Chunky Blonde, Platinum,, Cacao Brown, Caramel, Strawberry Blonde, and Vanilla Blonde. We have over 100 balayage combinations to offer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="https://halo-hair.transforms.svdcdn.com/production/Halo-Hair-Group-Amber-6.png?w=540&h=390&fm=webp&auto=compress&fit=crop&dm=1728869733&s=06c80c57388b42888224337315496e44" alt="banner-image">
+                        <div class="caption-title position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Book a free hair analysis</a>
+                        </div>
+                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                            <a class="bg-brown text-white p-3 d-inline-block" href="#">LATEST HAIR CARE TECHNOLOGY FROM SCHWARZKOPF PROFESSIONAL</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Experience the future of hair care with our Schwarzkopf SalonLab Smart technology. Near-Infrared sensors and innovative diagnostics app, t o analyse your hair’s microscopic propert ies t o ensure the most suitable styling and colour products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card border-0 rounded-0">
+                    <div class="card-image position-relative">
+                        <img class="img-fluid object-fit-cover" src="./assets/images/banner-image.png" alt="banner-image">
+                        <div class="caption-title position-absolute end-0 z-2">
+                            <a class="bg-brown text-white text-end p-3 d-inline-block" href="#">Blonde</a>
+                        </div>
+                        <div class="caption-title caption-title-left-bottom position-absolute start-0 z-2">
+                            <a class="bg-brown text-white p-3 d-inline-block" href="#">Blonde Brilliance</a>
+                        </div>
+                    </div>
+                    <div class="card-body px-0">
+                       <p>Expert Blonde Specialists mast er every shade from platinum to honey blonde. Using techniques like balayage, foiling, and toning, they creat e seamless, nat ural -looking blondes tailored to your unique style</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

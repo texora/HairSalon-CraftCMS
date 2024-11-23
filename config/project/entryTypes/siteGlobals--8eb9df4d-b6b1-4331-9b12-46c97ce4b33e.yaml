@@ -67,18 +67,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-21T07:27:02+00:00'
+            dateAdded: '2024-11-23T06:37:05+00:00'
             elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
-            handle: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: cta
             includeInCards: false
             instructions: null
-            label: null
+            label: CTA
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 79f46f60-1b17-4695-bdf5-8b5c7fde318e
+            uid: 3b273e29-757d-4761-b99a-1be28156fdc0
             userCondition: null
             warning: null
             width: 100
@@ -122,18 +122,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-21T07:27:02+00:00'
+            dateAdded: '2024-11-23T06:47:44+00:00'
             elementCondition: null
-            fieldUid: aa88dbbd-c68f-44c0-bb5f-efd07e8cb367 # CTA
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
             handle: cta2
             includeInCards: false
             instructions: null
-            label: null
+            label: CTA
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: daebc77f-3ba0-4dca-aa41-f3d05e477543
+            uid: 979198c5-18b2-4c08-8579-68be31ad6aff
             userCondition: null
             warning: null
             width: 100
@@ -153,7 +153,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Work with Halo'
+        name: 'Jobs Work with Halo'
         uid: f546d70d-bc48-4575-8360-c74763ef8154
         userCondition: null
       -

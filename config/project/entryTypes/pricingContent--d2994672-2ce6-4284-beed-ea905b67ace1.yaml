@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  84d61265-c07b-4a00-b8b7-a6d32acf5bab:
+  4f51b758-9653-4013-8932-8ffe763bd377:
     tabs:
       -
         elementCondition: null
@@ -10,14 +10,14 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-11-17T12:11:20+00:00'
+            dateAdded: '2024-11-23T08:39:11+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
             instructions: null
-            label: 'Service Name'
+            label: null
             max: null
             min: null
             name: null
@@ -31,46 +31,84 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d4dba9ac-e3aa-477e-831f-522cbeb37b56
+            uid: 5938c1b4-0acd-453a-8b2a-dd767190df0d
             userCondition: null
             warning: null
             width: 50
           -
-            dateAdded: '2024-11-17T12:13:31+00:00'
+            dateAdded: '2024-11-23T09:24:17+00:00'
+            elementCondition: null
+            fieldUid: 7aea93d0-d819-4905-8279-efcfd692ad42 # Text
+            handle: subtitle
+            includeInCards: false
+            instructions: null
+            label: Subtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97ea1afe-9c83-4d9b-96e4-a0ff998bfe11
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-23T08:44:36+00:00'
             elementCondition: null
             fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
-            handle: serviceImage
+            handle: heroImage
             includeInCards: false
             instructions: null
-            label: 'Service Image'
+            label: 'Hero Image'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f7970b77-ac60-4d46-82ce-782ed86a3ab6
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-11-17T12:13:31+00:00'
-            elementCondition: null
-            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
-            handle: serviceDescription
-            includeInCards: false
-            instructions: null
-            label: 'Service Description'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: dbf2a88c-c5da-4d87-b475-f79e11c30a85
+            uid: 87e79c95-9509-4194-9e52-2284ace176d7
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-11-19T06:45:19+00:00'
+            dateAdded: '2024-11-23T08:44:36+00:00'
             elementCondition: null
-            fieldUid: 91fc3931-66af-4a46-90cf-b0ede459b66b # Local Salons
+            fieldUid: 64b3113c-4c07-47b2-bed6-94149314dc80 # RTE - Text Only
+            handle: heroText
+            includeInCards: false
+            instructions: null
+            label: 'Hero Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78b09391-516b-4871-9da8-7eba7fb4e1fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-23T09:46:11+00:00'
+            elementCondition: null
+            fieldUid: b3e9cdaa-43c9-498a-bbab-42cad816e875 # Button
+            handle: heroCta
+            includeInCards: false
+            instructions: null
+            label: 'Hero CTA'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f39e286f-1db6-4665-8f69-705e53c3444c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 2f05a937-398f-4553-a4e9-542bb8f6df80
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-23T08:44:36+00:00'
+            elementCondition: null
+            fieldUid: 75cd61c4-5e05-4481-b899-fbc4d29d5770 # Pricing Content
             handle: null
             includeInCards: false
             instructions: null
@@ -79,40 +117,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 417e668a-2f9e-4b2c-a09a-93b5ab87f823
+            uid: 377a4bcc-974c-4bbb-913f-a008f42fc3da
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: ae9245eb-3e30-4e15-be0b-98d5c83cb800
+        uid: 05142aae-5264-423c-bcef-fd59909226f0
         userCondition: null
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-11-23T08:32:06+00:00'
-            elementCondition: null
-            fieldUid: 6dada193-0bf2-4eab-8249-d9965ed96f23 # Pricing
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bf51917d-862c-49bb-a103-41b8769c47a1
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Service Pricing'
-        uid: 0a60d9d8-2e9e-4bef-911a-114f43501e13
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2024-11-17T12:13:31+00:00'
+            dateAdded: '2024-11-23T10:34:03+00:00'
             elementCondition: null
             fieldUid: 067dc454-76f0-47fe-8a39-6380da7fc55e # SEO
             handle: null
@@ -123,19 +139,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b3f50910-294a-4d07-9ef1-ec836dac5e00
+            uid: d3ceaa33-b838-4e11-906d-b17bc8c207e6
             userCondition: null
             warning: null
             width: 100
         name: SEO
-        uid: 841afebc-ad29-43b9-aa6e-3559bdb3df6b
+        uid: b99ba612-ea37-45d5-b3f9-a299854a1c7b
         userCondition: null
-handle: services
+handle: pricingContent
 hasTitleField: true
 icon: ''
-name: Services
-showSlugField: true
-showStatusField: true
+name: 'Pricing Content'
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''

@@ -1,4 +1,4 @@
-dateModified: 1732281198
+dateModified: 1732360370
 elementSources:
   craft\elements\Entry:
     -
@@ -120,28 +120,16 @@ elementSources:
       key: 'single:f4a67cd2-d8bf-4d6a-9f38-4241b1f27393' # Jobs Home
       type: native
     -
-      key: 'single:dd713845-af4e-4e60-9d0a-171d3ed41bb9'
-      type: native
-    -
-      key: 'single:a424a048-14aa-4cdc-a80e-3cbedee60726'
-      type: native
-    -
-      key: 'single:cf90e322-6859-4622-bfcb-61a01096cdc9'
-      type: native
-    -
-      key: 'single:b421bd1c-2476-4b2e-99f3-997e88b3f7df'
-      type: native
-    -
-      key: 'single:e49f78c7-9b22-409e-b03e-671922e6915f'
-      type: native
-    -
-      key: 'single:acb66ef8-b78e-4e0f-8040-e9fd7a84dc02'
-      type: native
-    -
       heading: Categories
       type: heading
     -
       key: 'section:23e5198a-09b9-4a49-848c-69fd8a0da9c1' # Article Categories
+      type: native
+    -
+      heading: 'Landinag Pages'
+      type: heading
+    -
+      key: 'single:90892548-6800-4a9b-9702-b05e76d77bae' # Pricing
       type: native
 email:
   fromEmail: $SERVD_SMTP_USERNAME
@@ -181,6 +169,7 @@ meta:
     1f9056e2-e8fd-4663-8027-0bfb8882ade5: 'Text Only' # Text Only
     2a6cc5eb-ab48-4ac5-86af-300d612709dc: 'Team Members' # Team Members
     2c098971-cf38-4baf-99ba-c248dd975d79: Features # Features
+    2c896ff2-2bf6-450d-8410-e89a59a298d4: 'Extension Pricing' # Extension Pricing
     2cffa8d4-0f9f-4b73-a0b9-96d331e94d8a: 'Video Testimonial' # Video Testimonial
     2d9f82e7-e967-491c-8b4c-b45ce52ab7e1: 'Halo Hair Jobs' # Halo Hair Jobs
     2d148f8f-2d96-4924-a878-745d3c6c6eed: 'Text w/ Image' # Text w/ Image
@@ -188,13 +177,16 @@ meta:
     3b0d478f-3b10-4424-9f3c-fd2c2d304e29: 'Article & News' # Article & News
     3c9ec943-aefe-47ec-81c4-89c792843eb3: 'Image Card' # Image Card
     3caf09ec-53df-4e14-a191-76ad960d2171: Services # Services
+    3d57cf5d-1477-4fd8-aafc-6919487c36db: CTAs # CTAs
     4a757ae5-8a0f-4384-ab08-99d5e96e32dc: 'Bullet Points' # Bullet Points
     4bf1c1f4-99ad-4552-a05e-55e3c79d1f67: 'Job Benefits' # Job Benefits
+    4d17033f-2f51-4f32-a8cc-f134fa1ae701: Pricing # Pricing
     4fdc851f-7db3-4c90-880c-a187ac552886: 'Halo Hair Group' # Halo Hair Group
     5a77901a-6b9c-460b-bb5c-032b263bc717: Halo # Halo
     5b40a23e-fc7b-48ed-b092-746f8700aa48: 'Opening Month' # Opening Month
     5c1885e7-2d6a-4df5-8de7-646816d23c2a: Benefits # Benefits
     6d9a1d3c-2949-4ee9-8f74-78152e0ad6f6: Process # Process
+    6dada193-0bf2-4eab-8249-d9965ed96f23: Pricing # Pricing
     7aea93d0-d819-4905-8279-efcfd692ad42: Text # Text
     7eadd07d-e23b-4b39-8180-5438582847dd: 'Process Text' # Process Text
     07edd6a8-1941-47c3-8535-ccc56f465ac0: Services # Services
@@ -203,11 +195,13 @@ meta:
     8c2ae0e0-bafc-45d7-ac4b-2de4bd0cabec: 'Text Area' # Text Area
     8eb9df4d-b6b1-4331-9b12-46c97ce4b33e: 'Site Globals' # Site Globals
     8f985adb-f8ad-4b76-acd5-678c5e7c8e6d: 'Vacancies Page' # Vacancies Page
+    9a317b51-ae0e-4d3a-ba59-4ec92537f560: 'Extensions Table' # Extensions Table
     9dde76c9-a679-4b79-a41f-2967846b76f4: Glasgow # Glasgow
     23e5198a-09b9-4a49-848c-69fd8a0da9c1: 'Article Categories' # Article Categories
     27b29006-47a2-40b1-a7c1-7f0db71cc8a2: Icon # Icon
     32ebdec2-6e1e-46de-8c50-f18ddfbde228: 'Local Salon Content' # Local Salon Content
     38dc9635-7a7d-484c-bffc-96bf8c1ae3e3: 'Local Salons' # Local Salons
+    39e3aee6-da64-4ced-8560-caa7c7b924ab: 'Pricing for 2 lengths' # Pricing for 2 lengths
     52a63f08-5474-4cca-bc26-0d405b83ba7a: Simple # Simple
     57e46740-bfbe-4ccd-a49e-a9b613807a45: Lightswitch # Lightswitch
     64b3113c-4c07-47b2-bed6-94149314dc80: 'RTE - Text Only' # RTE - Text Only
@@ -216,12 +210,15 @@ meta:
     067dc454-76f0-47fe-8a39-6380da7fc55e: SEO # SEO
     68ba543b-e8a1-466a-9338-af5cc2d458dd: Images # Images
     69dd3687-8b36-4e2c-b797-7ed6b86a8ee8: 'Our People Page' # Our People Page
+    75cd61c4-5e05-4481-b899-fbc4d29d5770: 'Pricing Content' # Pricing Content
     91fc3931-66af-4a46-90cf-b0ede459b66b: 'Local Salons' # Local Salons
     094e4fb6-0820-4cba-ba7d-ff6a1f41529b: 'Image Cards Section' # Image Cards Section
     96afe1ed-1049-4810-88fc-7c06133c2e03: 'RTE - Full' # RTE - Full
     96eb5731-03f7-428c-97b7-32172b537746: Card # Card
     97cdda06-67e6-4755-a9d3-2534f16a2c73: 'Salary Benefits Page' # Salary Benefits Page
+    120ae2f3-6207-4501-92e4-c3107dc65cb5: 'Pricing for 3 Lengths' # Pricing for 3 Lengths
     240a6aad-64e3-46ca-8126-104480673800: 'Newsletter Subscribe Section' # Newsletter Subscribe Section
+    426a30a4-47d8-46db-a2bd-65ca49fdbb41: 'Extensions Pricing for 3 lengths' # Extensions Pricing for 3 lengths
     446df8be-12fb-456d-a827-6e09a5b1f15a: 'Team Section' # Team Section
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
     721bca08-d340-48b7-be98-07598595e974: 'Main Navigation' # Main Navigation
@@ -248,11 +245,14 @@ meta:
     71388431-55ea-4c3f-a6a8-6b7a3bdd51b6: 'Video Testimonials' # Video Testimonials
     84283218-957b-4c9d-a1d9-ed73c435cde8: Image # Image
     87994572-cfd6-45fd-960d-a94a832a89c5: 'Employee Video' # Employee Video
+    90892548-6800-4a9b-9702-b05e76d77bae: Pricing # Pricing
     a5c4bb68-a93b-4064-94ed-c61308d2b930: 'Process Steps' # Process Steps
     a53cfce4-0998-4b8c-b0de-13a33d2f6c6e: 'Process Step' # Process Step
     a879f311-1328-4f30-ac91-a12a459194b1: Pages # Pages
+    a348560a-0781-4e0a-a371-3068e0d856ed: 'Services Pricing ' # Services Pricing 
     aa88dbbd-c68f-44c0-bb5f-efd07e8cb367: CTA # CTA
     ad8ae5e8-8807-4a2e-98bf-1b57748f7b72: 'Article/News Categories' # Article/News Categories
+    aebcb78c-1818-4356-8b66-9643f869cc01: 'Public Schema' # Public Schema
     afc98222-b9e8-4b9c-9a97-4d7ac76eb77f: 'Job Grid' # Job Grid
     b034d3bd-57dd-43c8-824b-e15bac0ee2e4: 'Article Categories' # Article Categories
     b3e9cdaa-43c9-498a-bbab-42cad816e875: Button # Button
@@ -261,6 +261,7 @@ meta:
     b12f7f4a-e079-45fe-9285-fdd1643c6db6: 'Author Thumb' # Author Thumb
     b30c7324-129a-47c8-b2a1-109d011ee287: 'Services Section' # Services Section
     b298e3da-2b5d-47a1-a1c7-24bf013ae262: 'Trade Test Process' # Trade Test Process
+    b7405174-bb8b-4245-9f7d-abb0b0ba7331: Paragraph # Paragraph
     bbe95096-cb61-466c-b699-4d5e43ea42f9: 'Heading Style' # Heading Style
     c5ad5b48-ebb0-4704-9f40-8a12ff6648e2: 'Site Uploads' # Site Uploads
     c9c531be-d612-42d8-9bf3-a7acc503af2d: 'Job Benefits' # Job Benefits
@@ -269,6 +270,7 @@ meta:
     c97c5e93-fa46-4607-9bb5-73aab466f0bb: 'Job Thumb' # Job Thumb
     c711f164-bd59-4d27-910c-94eb0fc77d2a: 'Benefit Pages' # Benefit Pages
     c8305476-25b6-417d-9392-07aa86e5d502: 'Recruitment Process' # Recruitment Process
+    ce61c6e4-1c7e-45c4-be92-e14ccd17ddcc: Extensions # Extensions
     cf0e65ca-30ab-4935-927a-fcd42d5112b6: Video # Video
     cfd3c4fa-090c-4dc6-a01c-2dbca8ac6a16: 'Main Navigation' # Main Navigation
     cfe1f9f6-7ba4-4eec-af4d-d8fcd8687f6d: 'Text / Image Cards' # Text / Image Cards
@@ -277,7 +279,10 @@ meta:
     d6c8cf87-bfda-4180-803b-408375d5b40b: 'Apply Page' # Apply Page
     d8b6f4ed-eead-4f24-ad26-8f297bd97741: 'Text Only' # Text Only
     d12a0940-24db-484d-bf19-8c937a040875: 'Form Cities (with opening date)' # Form Cities (with opening date)
+    d33ff7bc-71cd-4b20-a416-4683b4fe6922: Price # Price
+    d6882d39-c187-4881-abda-0cedabc7c304: 'Extensions Pricing for 2 lengths' # Extensions Pricing for 2 lengths
     d54816d2-a954-46ab-b48e-ee1b79a75db5: 'Youtube Video' # Youtube Video
+    d2994672-2ce6-4284-beed-ea905b67ace1: 'Pricing Content' # Pricing Content
     d9978140-66dc-440e-8058-42ac5ced68bf: 'Styled Cards' # Styled Cards
     db0eba9c-e40f-4df7-a5af-e0bd0d7d46cf: 'Articles & News Section' # Articles & News Section
     dba1f4d5-7074-4028-8aa4-6b32b64e86ab: Features # Features
@@ -287,6 +292,7 @@ meta:
     f1bd2935-9135-4dfd-aec4-e7459ca70d1d: 'Employee Speaks' # Employee Speaks
     f4a67cd2-d8bf-4d6a-9f38-4241b1f27393: 'Jobs Home' # Jobs Home
     f5d1ded3-5a5e-400e-836c-7c4d1d346ab1: 'Trade Test Process' # Trade Test Process
+    fa17e174-c530-4f36-8305-39230e6384a1: 'RTE - Paragraph' # RTE - Paragraph
     fb98f8d7-fb51-44ef-9719-79ec3dfef9b6: 'Footer Menu Column 3' # Footer Menu Column 3
 plugins:
   ckeditor:

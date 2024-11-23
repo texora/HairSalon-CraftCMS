@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: extensionsTable
+instructions: null
+name: 'Extensions Table'
+searchable: false
+settings:
+  createButtonLabel: 'Add Extensions Table'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - d6882d39-c187-4881-abda-0cedabc7c304 # Extensions Pricing for 2 lengths
+    - 426a30a4-47d8-46db-a2bd-65ca49fdbb41 # Extensions Pricing for 3 lengths
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
