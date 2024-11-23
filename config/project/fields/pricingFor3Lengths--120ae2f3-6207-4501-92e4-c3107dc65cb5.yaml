@@ -38,7 +38,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - number
       -
         - col3
         -
@@ -54,7 +54,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - number
       -
         - col4
         -
@@ -70,7 +70,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - number
   defaults:
     -
       __assoc__:

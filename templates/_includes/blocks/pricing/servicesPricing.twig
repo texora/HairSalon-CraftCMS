@@ -3,6 +3,7 @@
         <div class="section-title mb-4 mb-md-5">
             {% if block.subtitle %}<h6 class="text-uppercase">\  {{ block.subtitle }}</h6>{% endif %}
             <h2>{{ block.title }}</h2>
+            {{ block.text }}
         </div>
         <div class="row space-x-4 row-gap-5">
             {% for pricingBlock in block.pricing.type('pricing').all() %}

@@ -38,7 +38,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - number
       -
         - col3
         -
@@ -54,7 +54,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - number
   defaults: null
   maxRows: null
   minRows: null
