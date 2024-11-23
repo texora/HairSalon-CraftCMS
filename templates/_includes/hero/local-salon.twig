@@ -43,28 +43,4 @@
             </div>
         </div>
     </section>
-    {% js %}
-        var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        function onYouTubeIframeAPIReady() {
-         document.querySelectorAll('.auto-player').forEach((item) => {
-             new YT.Player(item, {
-                 events: {
-                     'onReady': (event) => {
-                         event.target.playVideo();
-                         event.target.mute();
-                     }
-                 }
-             })
-         })
-        }
-
-        const iframeYT = document.querySelector(".banner-video iframe");
-        const style = document.createElement("style");
-        iframeYT.contentDocument.head.appendChild(style);
-        console.dir(iframeYT.contentDocument);
-    {% endjs %}
 {% endif %}
