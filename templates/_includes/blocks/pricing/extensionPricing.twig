@@ -35,8 +35,8 @@
                     {% for row in extTableBlock.inchPricing16 %}
                       <tr>
                         <td class="border-bottom-0 p-3 p-md-4">{{ row.strands }} strands</td>
-                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price16Inch }}</td>
-                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price20Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">£{{ row.price16Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">£{{ row.price20Inch }}</td>
                       </tr>
                     {% endfor %}
                   </tbody>
@@ -60,9 +60,9 @@
                     {% for row in extTableBlock.pricingFor3Lengths %}
                       <tr>
                         <td class="border-bottom-0 p-3 p-md-4">{{ row.strands }} strands</td>
-                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price16Inch }}</td>
-                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price18Inch }}</td>
-                        <td class="border-bottom-0 p-3 p-md-4">{{ row.price20Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">£{{ row.price16Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">£{{ row.price18Inch }}</td>
+                        <td class="border-bottom-0 p-3 p-md-4">£{{ row.price20Inch }}</td>
                       </tr>
                     {% endfor %}
                   </tbody>
