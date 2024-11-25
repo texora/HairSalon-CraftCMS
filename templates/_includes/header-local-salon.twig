@@ -19,9 +19,13 @@
             <a class="navbar-brand" href="{{ getenv('PRIMARY_SITE_URL') }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
                 {% set localLogo = entry.logo.eagerly().one() %}
-                {% if localLogo and currentSite.handle not in ['jobs', 'main'] %}
-                    {% if localLogo.extension == 'svg' %}
-                        {{ svg(localLogo) }}
+                {% set localLogoMobile = entry.logo.eagerly().one() %}
+                {% if currentSite.handle not in ['jobs', 'main'] %}
+                    {% if localLogo %}
+                        <img class="img-fluid d-none d-md-inline-block d-lg-inline-block" src="{{ localLogo.url }}" alt="{{ siteName }}">
+                    {% endif %}
+                    {% if localLogoMobile %}
+                        <img class="img-fluid d-block d-md-none" src="{{ localLogoMobile.url }}" alt="{{ siteName }}">
                     {% endif %}
                 {% else %}
                     {% if logo and logo.extension == 'svg' %}

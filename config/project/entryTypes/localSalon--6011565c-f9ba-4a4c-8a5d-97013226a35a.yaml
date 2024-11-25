@@ -106,12 +106,28 @@ fieldLayouts:
             handle: logo
             includeInCards: false
             instructions: null
-            label: Logo
+            label: 'Desktop Logo'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 54821e8c-28df-4c96-9f5c-9ae267249017
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-25T11:24:17+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: logoMobile
+            includeInCards: false
+            instructions: null
+            label: 'Logo Mobile'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ef7bb60-9d2c-4694-bdc4-776717e22eb9
             userCondition: null
             warning: null
             width: 50

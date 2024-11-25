@@ -1,7 +1,7 @@
 <header class="main-header-top">
     <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="{{ currentSite.baseUrl }}">
+            <a class="navbar-brand" href="{{ getenv('PRIMARY_SITE_URL') }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
                 {% if logo and logo.extension == 'svg' %}
                     {{ svg(logo) }}
@@ -34,7 +34,7 @@
                     {% endnav %}
                 </ul>
                 <div class="d-flex">
-                    <a href="{{ url('aaply') }}" class="apply-btn">Apply</a>
+                    <a href="{{ url('apply') }}" class="apply-btn">Apply</a>
                 </div>
             </div>
         </div>
