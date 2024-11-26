@@ -4,7 +4,7 @@
       {% set video = block.video.eagerly().one() %}
       {% if video %}
         <section class="recruitment-section position-static">
-          <div class="player-wrapper position-relative">
+          <div class="player-wrapper position-relative mb-5">
             <!-- YouTube Video -->
             <div class="video-player" id="player1">
               {% if video.extension == 'mp4' %}
