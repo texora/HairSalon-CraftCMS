@@ -16,7 +16,7 @@
                 {% if vid.providerName|lower in ['youtube', 'vimeo', 'wistia', 'dailymotion'] %}
                   <div class="embed-responsive embed-responsive-16by9">
                     {{ vid.getIframeCode(
-                        ['autoplay=0', 'controls=0', 'playsinline=1'],
+                        ['autoplay=0', 'controls=1', 'playsinline=1, muted=0'],
                         ['loading=lazy', 'class=embed-responsive-item'],
                         ['frameborder']
                     ) }}
