@@ -1,0 +1,41 @@
+.text-with-image {
+     padding:4.6875rem 0 2rem 0;
+    .banner-title {
+        margin-bottom: 2.5rem;
+    }
+    h6 {
+        opacity: 60%;
+        font-size: $font-size-sm;
+    }
+    p {
+        font-size: $font-size-18;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .icon {
+        max-width: 3.25rem; /* 52px */
+    }
+    .content-width {
+        max-width: 30rem; /* 480px */
+    }
+}
+@media(min-width:768px) {
+    .text-with-image {
+        padding:3.75rem 0;
+        h6 {
+            font-size: $font-size-base;
+        }
+        .banner-title {
+            margin-bottom: 10.3125rem;
+        }
+        .icon {
+            max-width: 3.75rem; /* 60px */
+        }
+        p {
+            font-size: $h5-font-size;
+            line-height: var(--line-height-26);
+            margin-bottom:1.5rem;
+        }
+    }
+}

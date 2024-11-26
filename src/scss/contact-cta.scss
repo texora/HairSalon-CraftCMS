@@ -1,0 +1,35 @@
+.contact-cta-box {
+	padding: 3rem 2rem;
+	border-color:#00000033 !important;
+	h4 {
+		font-size: $h5-font-size;
+		margin-bottom: 0;
+	}
+	.btn {
+		max-width: 15rem;
+		width: 100%;
+	}
+}
+.contact-number{
+	a {
+		font-weight: $font-weight-bold;
+		font-size: $h5-font-size;
+		color: var(--arable-brown);
+		border-color:var(--arable-brown) !important;
+	}
+}
+
+@media(min-width:768px) {
+	.contact-cta-box {
+		padding: 3.75rem 2rem;
+		.btn {
+			max-width: 21.25rem;
+		}
+	}
+	.contact-number{
+		a {
+			font-size: $h4-font-size;
+		}
+	}
+}
+

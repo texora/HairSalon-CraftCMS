@@ -1745,3 +1745,14 @@ $kbd-bg:                            var(--#{$prefix}body-color) !default;
 $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, removing in v6
 
 $pre-color:                         null !default;
+
+
+// custom font-size
+
+$font-size-18:                $font-size-base * 1.125 !default; /* 18px */
+$font-size-22:                $font-size-base * 1.375 !default; /* 22px */
+$font-size-36:                $font-size-base * 2.25 !default; /* 36px */
+$font-size-48:                $font-size-base * 3 !default; /* 48px */
+$font-size-56:                $font-size-base * 3.5 !default; /* 56px */
+$font-size-60:                $font-size-base * 3.75 !default; /* 60px */
+$font-size-64:                $font-size-base * 4 !default; /* 64px */

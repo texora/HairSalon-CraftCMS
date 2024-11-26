@@ -1,0 +1,155 @@
+.full-width-image {
+	max-width: 90rem; /* 1440px */
+	.section-title {
+		top: 23%;
+		transform:none;
+		h2 {
+			text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+             font-size: $h4-font-size;
+             line-height: var(--line-height-32);
+		}
+	}
+}
+.image-collage-box {
+	&:nth-child(1) {
+		img {
+			&:nth-child(1) {
+				aspect-ratio: 375/400;
+			}
+		}
+		.two-images {
+			img {
+				&:nth-child(2), &:nth-child(1) {
+					aspect-ratio: 233/282;
+					width: 50%;
+				}
+			}
+		}
+	}
+	&:nth-child(2) {
+		img {
+			&:nth-child(1) {
+				aspect-ratio: 375/250;
+			}
+		}
+		.two-images {
+			img {
+				&:nth-child(1) {
+					aspect-ratio: 207/250;
+					width: 55%;
+				}
+				&:nth-child(2) {
+					aspect-ratio: 168/250;
+					width: 45%;
+				}
+			}
+		}
+	}
+	&:nth-child(3) {
+		img {
+			&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+				aspect-ratio: 125/151;
+				width: 33.33%;
+			}
+		}
+	}
+}
+@media(min-width:576px) {
+	.image-collage-box {
+		&:nth-child(1) {
+			width: 50%;
+			max-width: 50%;
+		}
+		&:nth-child(2) {
+			width: 50%;
+			max-width: 50%;
+		}
+		&:nth-child(3) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+@media(min-width:768px) {
+	.full-width-image {
+		.section-title {
+			max-width: 70%;
+			top: 35%;
+			h2 {
+				font-size:$h1-font-size;
+				line-height: var(--line-height-48);
+			}
+		}
+	}
+	.image-collage-box {
+		&:nth-child(1) {
+			img {
+				&:nth-child(1) {
+					aspect-ratio: 466/528;
+				}
+			}
+		}
+		&:nth-child(2) {
+			img {
+				&:nth-child(1) {
+					aspect-ratio: 723/404;
+				}
+			}
+			.two-images {
+				img {
+					&:nth-child(1) {
+						aspect-ratio: 400/403;
+					}
+					&:nth-child(2) {
+						aspect-ratio: 323/403;
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			img {
+				&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+					width:100%;
+				}
+			}
+		}
+	}
+}
+@media(min-width:1200px) {
+	.full-width-image {
+		.section-title {
+			max-width: 50%;
+		}
+	}
+	.image-collage-box {
+		&:nth-child(1) {
+			width: 100%;
+			max-width: 466px;
+		}
+		&:nth-child(2) {
+			width: 100%;
+			max-width: 723px;
+
+		}
+		&:nth-child(3) {
+			max-width: 251px;
+			img {
+				&:nth-child(1), &:nth-child(2) {
+					aspect-ratio: 251/252;
+					width:100%;
+				}
+				&:nth-child(3) {
+					aspect-ratio: 251/306;
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

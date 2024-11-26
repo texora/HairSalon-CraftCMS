@@ -1,0 +1,17 @@
+.team-section {
+	.card-image {
+		img {
+			height: 100%;
+			min-height: 18.75rem; /* 300px */
+		}
+	}
+}
+@media(min-width:768px) {
+	.team-section {
+		.card-image {
+			img {
+				min-height: 31.25rem; /* 500px */
+			}
+		}
+	}
+}
