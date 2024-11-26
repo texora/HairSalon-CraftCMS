@@ -6,11 +6,13 @@
                 <div class="col-12 col-md-5 text-white">
                     {% if siteGlobals.heading %}<h2>{{ siteGlobals.heading }}</h2>{% endif %}
                     {{ siteGlobals.text }}
-                    {{ tag('a', {
-                        text: siteGlobals.cta.label,
-                        href: siteGlobals.cta.value,
-                        class: 'btn benefits'
-                    }) }}
+                    {% if siteGlobals.cta %}
+                        {{ tag('a', {
+                            text: siteGlobals.cta.label,
+                            href: siteGlobals.cta.value,
+                            class: 'btn benefits'
+                        }) }}
+                    {% endif %}
                 </div>
                 <div class="col-12 col-md-6 offset-lg-1">
                     <div class="email-form">
