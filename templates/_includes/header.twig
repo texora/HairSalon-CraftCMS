@@ -3,7 +3,10 @@
         <div class="container">
             <a class="navbar-brand" href="{{ getenv('PRIMARY_SITE_URL') }}">
                 {% set logo = siteGlobals.image.eagerly().one() %}
-                {% if logo and logo.extension == 'svg' %}
+                {% set entryLogo = entry.logo.eagerly().one() %}
+                {% if entryLogo and entryLogo.extension == 'svg' %}
+                    {{ svg(entryLogo) }}
+                {% elseif logo and logo.extension == 'svg' %}
                     {{ svg(logo) }}
                 {% else %}
                     <img class="img-fluid" src="{{ getenv('PRIMARY_SITE_URL') ~ '/static/images/halohair-logo.svg' }}" alt="{{ siteName }}">

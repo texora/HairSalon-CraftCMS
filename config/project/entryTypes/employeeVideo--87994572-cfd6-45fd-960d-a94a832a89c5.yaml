@@ -6,48 +6,18 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-09-22T05:47:49+00:00'
-            disabled: false
+            dateAdded: '2024-11-26T05:01:05+00:00'
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 00dfac9a-3943-48a7-94b3-a9670f895ab7
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-22T05:51:23+00:00'
-            elementCondition: null
-            fieldUid: d54816d2-a954-46ab-b48e-ee1b79a75db5 # Youtube Video
+            fieldUid: 734fcaa6-5b7e-47f5-86ea-1d350cdfaecf # Embedded Asset
             handle: video
             includeInCards: false
-            instructions: 'Please entry Youtube or Vimeo video URL'
+            instructions: 'Embed video or upload video file.'
             label: Video
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 449e8455-db60-4798-93ca-06e0c1fdf4ae
+            uid: 890f011c-e298-4c82-b387-00faf03e3052
             userCondition: null
             warning: null
             width: 100
@@ -76,8 +46,8 @@ icon: user
 name: 'Employee Video'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

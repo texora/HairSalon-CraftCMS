@@ -1,32 +1,41 @@
 {% if entry.employeeSpeaks.count() %}
   {% for block in entry.employeeSpeaks.type(['employeeVideo', 'employeeText']).eagerly().all() %}
     {% if block.type == 'employeeVideo' %}
-    <section class="recruitment-section position-static">
-      <div class="player-wrapper position-relative">
-        <!-- YouTube Video -->
-        <div class="video-player" id="player1">
-          <iframe
-            width="560"
-            height="800"
-            src="{{ block.video.media.url }}"
-            allowfullscreen
-            allowtransparency
-            allow="autoplay"
-            data-plyr-provider="youtube"
-            data-plyr-embed-id=""
-          ></iframe>
-        </div>
-      </div>
-      {% if block.videoText %}
-        <div class="container">
-          <div class="director-container position-relative">
-            <div class="director end-0">
-              {{ block.videoText }}
+      {% set video = block.video.eagerly().one() %}
+      {% if video %}
+        <section class="recruitment-section position-static">
+          <div class="player-wrapper position-relative">
+            <!-- YouTube Video -->
+            <div class="video-player" id="player1">
+              {% if video.extension == 'mp4' %}
+                <video class="w-100">
+                  <source src="{{ video.url }}" type="video/mp4">
+                </video>
+              {% else %}
+                {% set vid = craft.embeddedAssets.get(video) %}
+                {% if vid.providerName|lower in ['youtube', 'vimeo', 'wistia', 'dailymotion'] %}
+                  <div class="embed-responsive embed-responsive-16by9">
+                    {{ vid.getIframeCode(
+                        ['autoplay=0', 'controls=0', 'playsinline=1'],
+                        ['loading=lazy', 'class=embed-responsive-item'],
+                        ['frameborder']
+                    ) }}
+                  </div>
+                {% endif %}
+              {% endif %}
             </div>
           </div>
-        </div>
-      {% endif %}
-    </section>
+          {% if block.videoText %}
+            <div class="container">
+              <div class="director-container position-relative">
+                <div class="director end-0">
+                  {{ block.videoText }}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </section>
+    {% endif %}
   {% elseif block.type == 'employeeText' %}
     <section class="working-section">
       <div class="container">

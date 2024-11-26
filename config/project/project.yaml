@@ -1,4 +1,4 @@
-dateModified: 1732533857
+dateModified: 1732597269
 elementSources:
   craft\elements\Entry:
     -
@@ -222,6 +222,7 @@ meta:
     446df8be-12fb-456d-a827-6e09a5b1f15a: 'Team Section' # Team Section
     0596fc40-de8d-419a-a76d-0d5412a5f315: 'Site Globals' # Site Globals
     721bca08-d340-48b7-be98-07598595e974: 'Main Navigation' # Main Navigation
+    734fcaa6-5b7e-47f5-86ea-1d350cdfaecf: 'Embedded Asset' # Embedded Asset
     743ec001-12a3-48f1-8ebe-cb880deb1e5a: 'Jobs Listing' # Jobs Listing
     0760dd42-e38c-4c5c-af04-3c9b32d0b198: Team # Team
     784dddde-4bbd-4e66-b3e0-928ae791e302: 'Employee Text' # Employee Text

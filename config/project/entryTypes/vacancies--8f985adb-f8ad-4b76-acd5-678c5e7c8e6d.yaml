@@ -82,7 +82,23 @@ fieldLayouts:
             uid: 21a54972-7fd5-4d16-a84b-643f759aa84b
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2024-11-26T04:53:02+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: logo
+            includeInCards: false
+            instructions: null
+            label: Logo
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5fca73bd-436f-463f-99c1-8f49ee909e39
+            userCondition: null
+            warning: null
+            width: 50
         name: 'Hero Section'
         uid: bb87d5db-575d-4434-84a5-613cafed1789
         userCondition: null

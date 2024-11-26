@@ -5,6 +5,7 @@ name: 'Employee Speaks'
 searchable: false
 settings:
   createButtonLabel: 'Add Employee Testimonial'
+  defaultIndexViewMode: cards
   entryTypes:
     - 87994572-cfd6-45fd-960d-a94a832a89c5 # Employee Video
     - 784dddde-4bbd-4e66-b3e0-928ae791e302 # Employee Text

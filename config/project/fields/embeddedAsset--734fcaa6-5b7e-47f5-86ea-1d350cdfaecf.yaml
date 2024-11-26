@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: embeddedAsset
+instructions: null
+name: 'Embedded Asset'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - json
+    - video
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:c5ad5b48-ebb0-4704-9f40-8a12ff6648e2' # Site Uploads
+  defaultUploadLocationSubpath: video
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:c5ad5b48-ebb0-4704-9f40-8a12ff6648e2' # Site Uploads
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add Video'
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: true
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

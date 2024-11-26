@@ -40,9 +40,11 @@
             <div class="row align-items-start row-gap-5">
                 <div class="col-12 col-md-6">
                     {{ siteGlobals.text2 }}
-                    {{ siteGlobals.cta2.getLink({
-                        class: 'btn benefits btn-black'
-                    }) }}
+                    {% if siteGlobals.cta2 %}
+                        {{ siteGlobals.cta2.getLink({
+                            class: 'btn benefits btn-black'
+                        }) }}
+                    {% endif %}
                 </div>
                 <div class="col-12 col-md-6">
                     <ul>

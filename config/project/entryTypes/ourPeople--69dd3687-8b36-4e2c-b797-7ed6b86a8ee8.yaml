@@ -34,7 +34,23 @@ fieldLayouts:
             uid: 7ee7d1f7-d8b9-487d-b61e-1e47ed0a543f
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2024-11-26T04:52:14+00:00'
+            elementCondition: null
+            fieldUid: 84283218-957b-4c9d-a1d9-ed73c435cde8 # Image
+            handle: logo
+            includeInCards: false
+            instructions: null
+            label: 'Header Logo'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d1e1cf60-a517-4e4e-9c2c-2d844591860b
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2024-10-14T12:24:02+00:00'
             elementCondition: null
