@@ -1,0 +1,29 @@
+.packages-section {
+	.packages-list {
+		border-color:var(--gray-medium) !important;
+		h3 {
+			font-size: $h5-font-size;
+		}
+		p {
+			line-height: var(--line-height-20);
+		}
+		a {
+			font-size: $font-size-18;
+			font-weight: $font-weight-medium;
+			color: var(--brown-light);
+		}
+	}
+}
+@media(min-width:768px) {
+	.packages-section {
+		.packages-list {
+			h3 {
+				font-size: $h4-font-size;
+			}
+		}
+		.contact-cta-box {
+			padding: 2.5rem 2rem;
+		}
+	}
+}
+

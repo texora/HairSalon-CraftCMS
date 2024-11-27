@@ -1,0 +1,81 @@
+footer {
+	padding: 4rem 0 0;
+	ul {
+		list-style: none;
+		padding: 0;
+		font-family: Gilroy;
+		font-size: $font-size-base;
+		a {
+			text-decoration: none;
+			color: $white;
+		}
+	}
+	.up-to-date {
+		position: relative;
+		input {
+			border: none;
+			border-radius: 0;
+			padding: 0;
+			height: 2.5rem;
+			background: transparent;
+			color: $white;
+			font-family: Gilroy;
+			letter-spacing: -0.25px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+			font-size: $font-size-18;
+			padding-right: 1rem;
+			padding-left: 0;
+		}
+		a {
+			position: absolute;
+			right: 0;
+			bottom: 0.625rem;
+			height: 2.5rem;
+			padding: 0.875rem;
+			width: 3.75rem;
+		}
+		.form-control {
+			&:focus {
+				box-shadow: 0 0 0;
+				border-color: $white;
+				color: $white;
+				border-color: rgba(255, 255, 255, 0.40);
+				background-color: transparent;
+			}
+		}
+		label {
+			margin-bottom: 0.5rem;
+			color: $white;
+		}
+		button {
+			border: 0;
+			background-color: transparent;
+			box-shadow: none;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+		}
+		input {
+			&::placeholder {
+				color: $white;
+			}
+			&:-internal-autofill-selected {
+				background-color: transparent;
+			}
+			&:-webkit-autofill {
+				-webkit-box-shadow: 0 0 0px 1000px white inset;
+			}
+		}
+	}
+}
+.footer-title-image {
+	margin-top: 3.75rem;
+    img {
+    	padding-left: 0;
+    }
+}
+@media(min-width:768px) {
+	.footer-title-image {
+        img {
+        	padding-left: 2.5rem;
+        }
+    }
+}

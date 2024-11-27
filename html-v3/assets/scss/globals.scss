@@ -1,0 +1,721 @@
+:root {
+    --gray:#353535;
+    --gray-light:#9A9A9A;
+    --arable-brown:#7C532F;
+    --brown-light:#C5A78C;
+    --nh-sliver:#bdbdbd;
+    --silver-light:#F1EDE6;
+    --gray-medium:#DADADA;
+    --line-height-12:0.75rem; /* 12px */
+    --line-height-18:1.125rem; /* 18px */
+    --line-height-20:1.25rem; /* 20px */
+    --line-height-23:1.4375rem; /* 23px */
+    --line-height-24:1.5rem; /* 24px */
+    --line-height-26:1.625rem; /* 26px */
+    --line-height-28:1.75rem; /* 28px */
+    --line-height-29:1.8125rem; /* 29px */
+    --line-height-32:2rem; /* 32px */
+    --line-height-36: 2.25rem; /* 36px */
+    --line-height-40: 2.5rem; /* 40px */
+    --line-height-48: 3rem; /* 48px */
+    --line-height-56: 3.5rem; /* 56px */
+    --line-height-60: 3.75rem; /* 60px */
+    --line-height-70: 4.375rem; /* 70px */
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: local('../fonts/Gilroy Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraboldItalic.eot');
+    src: local('../fonts/Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
+        url('../fonts/Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('../fonts/Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: $font-weight-bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.eot');
+    src: local('../fonts/Gilroy Black'), local('Gilroy-Black'),
+        url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff'),
+        url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: local('../fonts/Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: $font-weight-light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('../fonts/Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: $font-weight-semibold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('../fonts/Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: $font-weight-medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-MediumItalic.eot');
+    src: local('../fonts/Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('../fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-MediumItalic.woff') format('woff'),
+        url('../fonts/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: $font-weight-medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-BlackItalic.eot');
+    src: local('../fonts/Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+        url('../fonts/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-BlackItalic.woff') format('woff'),
+        url('../fonts/Gilroy-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-UltraLight.eot');
+    src: local('../fonts/Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('../fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
+        url('../fonts/Gilroy-UltraLight.woff') format('woff'),
+        url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-RegularItalic.eot');
+    src: local('../fonts/Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('../fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-RegularItalic.woff') format('woff'),
+        url('../fonts/Gilroy-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiboldItalic.eot');
+    src: local('../fonts/Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
+        url('../fonts/Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-SemiboldItalic.ttf') format('truetype');
+    font-weight: $font-weight-semibold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-HeavyItalic.eot');
+    src: local('../fonts/Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+        url('../fonts/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-HeavyItalic.woff') format('woff'),
+        url('../fonts/Gilroy-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Extrabold.eot');
+    src: local('../fonts/Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-BoldItalic.eot');
+    src: local('../fonts/Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('../fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-BoldItalic.woff') format('woff'),
+        url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: $font-weight-bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-UltraLightItalic.eot');
+    src: local('../fonts/Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+        url('../fonts/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-UltraLightItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-UltraLightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-LightItalic.eot');
+    src: local('../fonts/Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('../fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-LightItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-LightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: $font-weight-light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Heavy.eot');
+    src: local('../fonts/Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('../fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilroy-Heavy.woff') format('woff'),
+        url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Thin.eot');
+    src: local('../fonts/Gilroy Thin'), local('Gilroy-Thin'),
+        url('../fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Thin.woff2') format('woff2'),
+        url('../fonts/Gilroy-Thin.woff') format('woff'),
+        url('../fonts/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ThinItalic.eot');
+    src: local('../fonts/Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+        url('../fonts/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-ThinItalic.woff') format('woff'),
+        url('../fonts/Gilroy-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/** font Bricolage Grotesque **/
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-ExtraLight.eot');
+    src: url('../fonts/BricolageGrotesque-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-ExtraLight.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-ExtraLight.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-ExtraLight.svg#BricolageGrotesque-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-ExtraBold.eot');
+    src: url('../fonts/BricolageGrotesque-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-ExtraBold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-ExtraBold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-ExtraBold.svg#BricolageGrotesque-ExtraBold') format('svg');
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Bold.eot');
+    src: url('../fonts/BricolageGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Bold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Bold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Bold.svg#BricolageGrotesque-Bold') format('svg');
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Regular.eot');
+    src: url('../fonts/BricolageGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Regular.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Regular.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Regular.svg#BricolageGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-SemiBold.eot');
+    src: url('../fonts/BricolageGrotesque-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-SemiBold.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-SemiBold.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-SemiBold.svg#BricolageGrotesque-SemiBold') format('svg');
+    font-weight: $font-weight-semibold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('../fonts/BricolageGrotesque-Medium.eot');
+    src: url('../fonts/BricolageGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BricolageGrotesque-Medium.woff2') format('woff2'),
+        url('../fonts/BricolageGrotesque-Medium.woff') format('woff'),
+        url('../fonts/BricolageGrotesque-Medium.ttf') format('truetype'),
+        url('../fonts/BricolageGrotesque-Medium.svg#BricolageGrotesque-Medium') format('svg');
+    font-weight: $font-weight-medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    font-family: Gilroy;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    line-height: var(--line-height-24);
+    overflow-x: hidden;
+    color: var(--gray);
+    margin: 0;
+    padding: 0;  
+}
+
+@mixin flexprob {
+    display:flex;
+    flex-direction:column;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque";
+    font-weight: $font-weight-medium;
+    a {
+    color: inherit;
+   }
+}
+h1 {
+    font-size: $font-size-48;
+    line-height: var(--line-height-56);
+}
+
+h2 {
+    font-size: $h2-font-size;
+    line-height: var(--line-height-36);
+}
+
+h3 {
+    font-size: $h4-font-size;
+}
+
+h4 {
+  font-size: $font-size-lg;
+  line-height: var(--line-height-29);
+}
+
+h5 {
+    font-size: $font-size-lg;
+}
+.section-title-md {
+    h2 {
+        font-size: $h4-font-size;
+        line-height: var(--line-height-32);
+        font-weight: $font-weight-bold;
+    }
+}
+
+p {
+    font-size: $font-size-base;
+    line-height: var(--line-height-23);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+section {
+    ul, ol {
+        li {
+            font-size: $font-size-base;
+            margin-bottom: 0.3125rem;
+        }
+    }
+}
+.btn {
+    transition: 0.5s all;
+    min-width: 11.25rem; /* 180px */
+    padding: 1rem 1.25rem;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    border: 1px solid transparent;
+}
+.btn-transparent {
+    background-color: transparent ;
+    border: solid 1px $white;
+    color: $white;
+    &:hover, &:focus {
+        color: var(--black);
+        background-color: $white;
+    }
+}
+.btn-black {
+    background: $black;
+    color: $white;
+    &:hover, &:focus {
+        border: 1px solid $black;
+    }
+}
+.btn-brown {
+     background-color: var(--arable-brown);
+     color: $white;
+     &:hover {
+        border: 1px solid $black;
+     }
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.bg-brown {
+    background-color: var(--arable-brown);
+}
+.bg-silver-light {
+    background-color: var(--silver-light);
+}
+.bg-brown-light {
+    background-color: var(--brown-light);
+}
+.p-32 {
+    padding: 1rem;
+}
+.py-60 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.pt-60 {
+        padding-top: 2rem;
+}
+.pb-60 {
+    padding-bottom: 2rem;
+}
+.padding-y-60 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+.py-80 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.pt-80 {
+        padding-top: 3rem;
+}
+.pb-80 {
+    padding-bottom: 3rem;
+}
+.padding-t-80 {
+    padding-top: 5rem;
+}
+.pt-100 {
+        padding-top: 3.25rem;
+}
+.pb-100 {
+    padding-bottom: 3.25rem;
+}
+.py-100 {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+}
+.pdding-b-100 {
+    padding-bottom: 4.5rem;
+}
+.border-gray {
+    border-color: #35353533 !important;
+}
+.horizontal-space {
+    .slick-slide{
+        margin-left:  0.625rem;
+        margin-right:  0.625rem;
+    }
+
+    .slick-list {
+        margin-left: 0rem;
+        margin-right: -0.625rem;
+    }
+}
+.custom-arrow {
+    .slick-next, .slick-prev {
+        top: auto;
+        z-index: 1;
+        bottom: -2.375rem;
+        margin: auto;
+        width: 4rem;
+        right: -5.3125rem;
+        left:0;
+        &:before {
+            content: "";
+            width: 4rem;
+            height: 0.75rem;
+            stroke-width: 2px;
+            stroke: var(--gray);
+            display: inline-block;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            background-image: url(/static/svg/arrow-next.svg);
+            right: 0;
+        }
+    }
+    .slick-prev {
+        left: -5.3125rem;
+        right:0;
+        &:before {
+           background-image: url(/static/svg/arrow-next.svg);
+/*            background-image: url(../images/arrow-next.svg);*/
+            transform: rotate(180deg);
+            left: 0;
+        }
+    }
+    &.slick-slider {
+        margin-right: -0.75rem;
+        margin-left: -0.75rem;
+    }
+    .slick-slide {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+}
+
+.bg-position {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+.container {
+    padding:0 1.25rem /* 20px */
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 84.6875rem; /* 1355px */
+    }
+}
+@media(min-width:768px) {
+    .container {
+        padding:0 0.75rem /* 12px */
+    }
+    h1 {
+        font-size: $font-size-64;
+        line-height: var(--line-height-70);
+    }
+
+    h2,  {
+        font-size: $font-size-48;
+        line-height: normal;
+    }
+    .font-40 {
+        h2 {
+             font-size: $h1-font-size;
+        }
+    }
+    .section-title-md {
+        h2 {
+            font-size: $font-size-48;
+            line-height: normal;
+            font-weight: $font-weight-medium;
+        }
+    }
+
+    h3 {
+        font-size: $h2-font-size;
+    }
+
+    h4 {
+        font-size: $h4-font-size;
+        line-height: normal;
+    }
+
+    h5 {
+        font-size: $font-size-22;
+    }
+    p {
+        font-size: $font-size-base;
+        line-height: var(--line-height-23);
+    }
+    section {
+        ul, ol {
+            li {
+                font-size: $font-size-18;
+            }
+        }
+    }
+    .p-32 {
+        padding: 2rem;
+    }
+    .py-60 {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+    .pt-60 {
+        padding-top: 3.75rem;
+    }
+    .pb-60 {
+        padding-bottom: 3.75rem;
+    }
+    .pt-80 {
+        padding-top: 5rem;
+    }
+    .pb-80 {
+        padding-bottom: 5rem;
+    }
+    .py-80 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .pt-80 {
+        padding-top: 5rem;
+    }
+    .pb-80 {
+        padding-bottom: 5rem;
+    }
+    .pt-100 {
+        padding-top: 6.25rem;
+    }
+    .pb-100 {
+        padding-bottom: 6.25rem;
+    }
+    .py-100 {
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+    .pdding-b-100 {
+        padding-bottom: 6.25rem;
+    }
+    .space-x-4 {
+        --bs-gutter-x: 2.5rem;
+    }
+    .btn {
+        font-size: $font-size-18;
+    }
+    .horizontal-space {
+        .slick-slide{
+            margin-left:  1.25rem;
+            margin-right:  1.25rem;
+        }
+
+        .slick-list {
+            margin-left: -1.25rem;
+            margin-right: -1.25rem;
+        }
+    }
+    .custom-arrow {
+        .slick-next, .slick-prev {
+            bottom: -2.8125rem;
+        }
+        &.slick-slider, .slick-slide {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+@media(min-width:1200px) {
+    .max-container {
+        max-width:69.0625rem; /* 1105px */
+    }
+    .space-x-4 {
+        --bs-gutter-x: 3.5rem;
+    }
+    .horizontal-space {
+        .slick-slide{
+            margin-left:  1.6875rem;
+            margin-right:  1.6875rem;
+        }
+
+        .slick-list {
+            margin-left: -1.6875rem;
+            margin-right: -1.6875rem;
+        }
+    }
+}

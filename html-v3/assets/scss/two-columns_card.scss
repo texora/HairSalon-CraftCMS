@@ -1,0 +1,55 @@
+.grid-two-columns {
+	.card-image {
+		.card-img-overlay {
+			top: inherit;
+		}
+		img {
+			min-height: 25rem; /* 400px */
+		}
+	}
+}
+.caption-title {
+	top: 15%;
+	
+	a {
+		font-size: $font-size-18;
+		line-height: var(--line-height-23);
+		font-family: "Bricolage Grotesque";
+    	font-weight: $font-weight-medium;
+    	max-width:21.25rem; /* 340px */
+	}
+}
+.caption-title-bottom {
+	bottom: 5%;
+	top: inherit;
+	a {
+		font-size: $font-size-lg;
+	}
+}
+.caption-title-left-bottom {
+	top: inherit;
+	bottom: 0;
+	a {
+		font-weight: $font-weight-normal;
+	}
+}
+@media(min-width:768px) {
+	.grid-two-columns {
+		.card-image {
+			img {
+				aspect-ratio: 522/542;
+				min-height:inherit;
+			}
+		}
+	}
+	.caption-title-bottom {
+		bottom: 15%;
+		a {
+			font-size: $h4-font-size;
+			line-height: var(--line-height-28);
+		}
+	}
+	.grid-two-columns .col-12:nth-child(2) {
+	    margin-top: 11.25rem; /* 180px */
+	}
+}

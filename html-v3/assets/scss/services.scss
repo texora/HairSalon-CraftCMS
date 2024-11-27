@@ -1,0 +1,40 @@
+.our-services {
+	.card {
+		.card-body {
+			h4 {
+				margin-bottom: 0.75rem;
+				font-size: $h4-font-size;
+			}
+			p {
+				font-size: $font-size-base;
+				line-height: var(--line-height-23);
+			}
+		}
+	}
+}
+.our-services {
+	.card {
+		h3, h4, p {
+			font-weight: $font-weight-bold;
+		}
+	}
+}
+@media(min-width:431px) {
+	.our-services {
+		.card {
+			.card-image {
+				img {
+					aspect-ratio: 289/256;
+				}
+			}
+			.card-body {
+				p {
+					font-weight: $font-weight-normal;
+				}
+			}
+			h3, h4 {
+				font-weight: $font-weight-medium;
+			}
+		}
+	}
+}

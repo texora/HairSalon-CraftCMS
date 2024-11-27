@@ -1,0 +1,55 @@
+.extensions-section {
+	.btn {
+		border-color: var(--brown-light);
+		color: var(--brown-light);
+		padding: 0.65rem 1.25rem;
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+	}
+	p {
+		font-size: $font-size-18;
+		line-height: var( --line-height-24);
+	}
+}
+.prices-table {
+	thead {
+		tr {
+			th {
+				background-color: var(--brown-light);
+				font-weight: $font-weight-medium;
+				img {
+					max-width: 5.375rem;
+				}
+			}
+		}
+	}
+	tr {
+		td, th {
+			border-right: solid 1px #fff;
+			background-color: transparent;
+			line-height: var( --line-height-20);
+			vertical-align: middle;
+		}
+		&:hover * {
+			background-color: var(--silver-light);
+		}
+		&:nth-child(even) {
+			background-color: var(--silver-light);
+		}
+	}
+}
+@media(min-width:768px) {
+	.extensions-content {
+		max-width: 28.4375rem; /* 455px */
+	}
+	.prices-table {
+		tr {
+			td, th {
+				font-size: $h5-font-size;
+				line-height: var( --line-height-24);
+			}
+		}
+	}
+}

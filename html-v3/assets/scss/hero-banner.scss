@@ -1,0 +1,124 @@
+.section-title {
+    padding-bottom: 1px;
+    h6 {
+        opacity: 60%;
+        font-size: $font-size-sm;
+    }
+}
+.banner-section {
+    background-image: url(../images/darlington-salon.png);
+    min-height: 31.25rem; /*500px */
+    padding: 5.5rem 0 3rem 0; /* 88px */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center;
+   p {
+    font-size: $h5-font-size;
+    line-height: var(--line-height-26);
+    font-weight: $font-weight-bold;
+   }
+   h1 {
+        font-size: $h2-font-size;
+        line-height: var(--line-height-36);
+        font-weight: $font-weight-bold;
+        margin-bottom:1.375rem;
+   }
+   br {
+    display: none;
+   }
+}
+.overlay, .overlay-bg-gradient {
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        left: 0;
+        background-color: hsl(0deg 0% 0% / 60%);
+        z-index: 1;
+    }
+}
+
+.overlay-bg-gradient {
+    &:after {
+        background-color: transparent;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+}
+.top-bar {
+    top: 5.375rem;
+    font-size: $font-size-sm;
+    p, span, a {
+        font-size: $font-size-sm;
+        color: $white;
+    }
+}
+.banner-video {
+    height: auto;
+    padding-bottom:56.25%;
+    h1 {
+        font-size: $h2-font-size;
+        line-height: var(--line-height-36);
+        font-weight: $font-weight-bold;
+    }
+    p {
+        font-size: $font-size-sm;
+        line-height: var(--line-height-18);
+    }
+    .banner-text-content  {
+        top: 13%;
+        max-width: 630px;
+    }
+    iframe {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+    br {
+        display: none;
+    }
+}
+@media(min-width:768px) {
+    .banner-section {
+        padding: 7.5rem 0 5rem 0; /* 88px */
+        min-height:39.6875rem; /* 635px */
+        h1 {
+            font-size: $font-size-64;
+            line-height: var(--line-height-70);
+            font-weight: $font-weight-medium;
+        }
+        p {
+            font-size: $h4-font-size;
+            line-height: var(--line-height-32);
+            font-weight: $font-weight-medium;
+        }
+        br {
+            display: block;
+        }
+    }
+    .banner-video {
+        h1 {
+            font-size: $font-size-64;
+            line-height: var(--line-height-70);
+            font-weight: $font-weight-medium;
+        }
+        p {
+            font-size: $h4-font-size;
+            line-height: var(--line-height-32);
+        }
+        .banner-text-content  {
+            top: 20%;
+        } 
+        br {
+            display: block;
+        }
+    }
+    .section-title {
+        h6 {
+            font-size: $font-size-base;
+        }
+    } 
+}
