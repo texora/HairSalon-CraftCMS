@@ -24,10 +24,6 @@
 /craft/storage/*
 /storage/*
 
-# ASSETS
-/public/assets/*
-/web/assets/*
-
 # IMAGER TRANSFORMS
 /public/imager/*
 /web/imager/*
